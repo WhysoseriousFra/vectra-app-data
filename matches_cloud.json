@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T17:35:28.428887Z",
+  "generated_at": "2026-04-19T18:05:27.418216Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_033",
   "matchday": 33,
@@ -391,7 +391,7 @@
         "city": "Pisa"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
@@ -444,13 +444,13 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "referee_ready",
-        "has_lineups": false,
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 0,
+        "away_score": 0
       },
       "referee": {
         "assigned": true,
@@ -458,18 +458,18 @@
         "referee_name": "Maurizio Mariani"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "pending",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "partial",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-4-2-1",
+          "starting_count": 11,
+          "bench_count": 10
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-2-3-1",
+          "starting_count": 11,
+          "bench_count": 13
         }
       }
     },

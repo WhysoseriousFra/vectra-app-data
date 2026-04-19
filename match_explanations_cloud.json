@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T17:35:27.447277Z",
+  "generated_at": "2026-04-19T18:05:26.471714Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -191,7 +191,7 @@
       "vectra_match_id": "vxm_000028",
       "home_team_name": "Pisa",
       "away_team_name": "Genoa",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "balanced_goal_environment",
         "balance_edge_label": "moderate_away_edge",
@@ -233,9 +233,9 @@
           "Margine strutturale: un vantaggio netto per la squadra di casa.",
           "Ambiente partita: un profilo di gara aperta.",
           "Minaccia offensiva Juventus: molto alta.",
-          "Minaccia offensiva Bologna: presente ma contenuta."
+          "Minaccia offensiva Bologna: bassa."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Juventus emerge con un vantaggio strutturale più netto, mentre Bologna appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Juventus emerge con un vantaggio strutturale più netto, mentre Bologna appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
