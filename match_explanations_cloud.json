@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T10:05:31.569243Z",
+  "generated_at": "2026-04-19T15:14:08.593552Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -139,7 +139,7 @@
       "vectra_match_id": "vxm_000026",
       "home_team_name": "Cremonese",
       "away_team_name": "Torino",
-      "match_status": "UPCOMING",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "balanced_goal_environment",
         "balance_edge_label": "slight_away_edge",
@@ -165,7 +165,7 @@
       "vectra_match_id": "vxm_000027",
       "home_team_name": "Verona",
       "away_team_name": "Milan",
-      "match_status": "UPCOMING",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_away_edge",
@@ -183,7 +183,7 @@
           "Minaccia offensiva Verona: bassa.",
           "Minaccia offensiva Milan: molto alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un profilo di gara aperta. Milan emerge con un vantaggio strutturale più netto, mentre Verona appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un profilo di gara aperta. Milan emerge con un vantaggio strutturale più netto, mentre Verona appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
@@ -209,7 +209,7 @@
           "Minaccia offensiva Pisa: bassa.",
           "Minaccia offensiva Genoa: alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un ambiente offensivo intermedio. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un ambiente offensivo intermedio. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
