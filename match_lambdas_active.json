@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T15:14:06.675804Z",
+  "generated_at": "2026-04-19T15:35:28.605133Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -1835,17 +1835,6 @@
               "impact_delta": 0.026999
             },
             {
-              "vectra_player_id": "vxp_000408",
-              "display_name": "Grassi",
-              "role": "Midfielder",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.057387,
-              "defense_score": 0.271615,
-              "build_score": 0.40167,
-              "impact_delta": 0.062012
-            },
-            {
               "vectra_player_id": "vxp_000130",
               "display_name": "Vandeputte",
               "role": "Midfielder",
@@ -1866,6 +1855,17 @@
               "defense_score": 0.189844,
               "build_score": 0.424463,
               "impact_delta": 0.054138
+            },
+            {
+              "vectra_player_id": "vxp_000408",
+              "display_name": "Grassi",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.057387,
+              "defense_score": 0.271615,
+              "build_score": 0.40167,
+              "impact_delta": 0.062012
             },
             {
               "vectra_player_id": "vxp_000240",
@@ -2542,17 +2542,6 @@
               "impact_delta": 0.00681
             },
             {
-              "vectra_player_id": "vxp_000213",
-              "display_name": "Moreo",
-              "role": "Forward",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.220201,
-              "defense_score": 0.257258,
-              "build_score": 0.324041,
-              "impact_delta": 0.078569
-            },
-            {
               "vectra_player_id": "vxp_000327",
               "display_name": "Tramoni",
               "role": "Forward",
@@ -2562,6 +2551,17 @@
               "defense_score": 0.274038,
               "build_score": 0.381347,
               "impact_delta": 0.083553
+            },
+            {
+              "vectra_player_id": "vxp_000213",
+              "display_name": "Moreo",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.220201,
+              "defense_score": 0.257258,
+              "build_score": 0.324041,
+              "impact_delta": 0.078569
             }
           ]
         },
