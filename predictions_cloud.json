@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T20:35:26.160149Z",
+  "generated_at": "2026-04-19T21:05:29.532343Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_033",
   "matchday": 33,
@@ -144,7 +144,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-19T20:35:26.160149Z",
+          "generated_at": "2026-04-19T21:05:29.532343Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -289,7 +289,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-19T20:35:26.160149Z",
+          "generated_at": "2026-04-19T21:05:29.532343Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -434,7 +434,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-19T20:35:26.160149Z",
+          "generated_at": "2026-04-19T21:05:29.532343Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -579,7 +579,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-19T20:35:26.160149Z",
+          "generated_at": "2026-04-19T21:05:29.532343Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -724,7 +724,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-19T20:35:26.160149Z",
+          "generated_at": "2026-04-19T21:05:29.532343Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -869,7 +869,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-19T20:35:26.160149Z",
+          "generated_at": "2026-04-19T21:05:29.532343Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -1014,7 +1014,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-19T20:35:26.160149Z",
+          "generated_at": "2026-04-19T21:05:29.532343Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -1159,7 +1159,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-19T20:35:26.160149Z",
+          "generated_at": "2026-04-19T21:05:29.532343Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -1181,7 +1181,7 @@
         }
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "active_stage_source": "match_lambdas_lineups.json"
       },
@@ -1304,7 +1304,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-19T20:35:26.160149Z",
+          "generated_at": "2026-04-19T21:05:29.532343Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -1449,7 +1449,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-19T20:35:26.160149Z",
+          "generated_at": "2026-04-19T21:05:29.532343Z",
           "has_lineups": false,
           "has_referee": true
         }
