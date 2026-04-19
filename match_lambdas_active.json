@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T16:05:28.254474Z",
+  "generated_at": "2026-04-19T16:35:26.297699Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -1835,17 +1835,6 @@
               "impact_delta": 0.026999
             },
             {
-              "vectra_player_id": "vxp_000408",
-              "display_name": "Grassi",
-              "role": "Midfielder",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.057387,
-              "defense_score": 0.271615,
-              "build_score": 0.40167,
-              "impact_delta": 0.062012
-            },
-            {
               "vectra_player_id": "vxp_000130",
               "display_name": "Vandeputte",
               "role": "Midfielder",
@@ -1866,6 +1855,17 @@
               "defense_score": 0.189844,
               "build_score": 0.424463,
               "impact_delta": 0.054138
+            },
+            {
+              "vectra_player_id": "vxp_000408",
+              "display_name": "Grassi",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.057387,
+              "defense_score": 0.271615,
+              "build_score": 0.40167,
+              "impact_delta": 0.062012
             },
             {
               "vectra_player_id": "vxp_000240",
@@ -2454,17 +2454,6 @@
               "impact_delta": 0.073621
             },
             {
-              "vectra_player_id": "vxp_000268",
-              "display_name": "Angori",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.172469,
-              "defense_score": 0.263678,
-              "build_score": 0.385086,
-              "impact_delta": 0.076255
-            },
-            {
               "vectra_player_id": "vxp_000182",
               "display_name": "Caracciolo",
               "role": "Defender",
@@ -2496,6 +2485,17 @@
               "defense_score": 0.488548,
               "build_score": 0.444356,
               "impact_delta": 0.091416
+            },
+            {
+              "vectra_player_id": "vxp_000268",
+              "display_name": "Angori",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.172469,
+              "defense_score": 0.263678,
+              "build_score": 0.385086,
+              "impact_delta": 0.076255
             },
             {
               "vectra_player_id": "vxp_000184",
@@ -2542,17 +2542,6 @@
               "impact_delta": 0.00681
             },
             {
-              "vectra_player_id": "vxp_000327",
-              "display_name": "Tramoni",
-              "role": "Forward",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.218059,
-              "defense_score": 0.274038,
-              "build_score": 0.381347,
-              "impact_delta": 0.083553
-            },
-            {
               "vectra_player_id": "vxp_000213",
               "display_name": "Moreo",
               "role": "Forward",
@@ -2562,6 +2551,17 @@
               "defense_score": 0.257258,
               "build_score": 0.324041,
               "impact_delta": 0.078569
+            },
+            {
+              "vectra_player_id": "vxp_000327",
+              "display_name": "Tramoni",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.218059,
+              "defense_score": 0.274038,
+              "build_score": 0.381347,
+              "impact_delta": 0.083553
             }
           ]
         },
@@ -2578,28 +2578,6 @@
               "defense_score": 0.257413,
               "build_score": 0.474689,
               "impact_delta": 0.046857
-            },
-            {
-              "vectra_player_id": "vxp_000419",
-              "display_name": "Sabelli",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 0.5067,
-              "attack_score": 0.039112,
-              "defense_score": 0.103802,
-              "build_score": 0.174246,
-              "impact_delta": 0.013858
-            },
-            {
-              "vectra_player_id": "vxp_000082",
-              "display_name": "Martín",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.324053,
-              "defense_score": 0.203988,
-              "build_score": 0.459222,
-              "impact_delta": 0.095359
             },
             {
               "vectra_player_id": "vxp_000357",
@@ -2633,6 +2611,28 @@
               "defense_score": 0.546406,
               "build_score": 0.552245,
               "impact_delta": 0.107525
+            },
+            {
+              "vectra_player_id": "vxp_000419",
+              "display_name": "Sabelli",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 0.5067,
+              "attack_score": 0.039112,
+              "defense_score": 0.103802,
+              "build_score": 0.174246,
+              "impact_delta": 0.013858
+            },
+            {
+              "vectra_player_id": "vxp_000082",
+              "display_name": "Martín",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.324053,
+              "defense_score": 0.203988,
+              "build_score": 0.459222,
+              "impact_delta": 0.095359
             },
             {
               "vectra_player_id": "vxp_000214",
