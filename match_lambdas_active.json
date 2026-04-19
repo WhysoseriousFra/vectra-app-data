@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T19:35:23.629801Z",
+  "generated_at": "2026-04-19T20:05:23.926115Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -1835,17 +1835,6 @@
               "impact_delta": 0.026999
             },
             {
-              "vectra_player_id": "vxp_000408",
-              "display_name": "Grassi",
-              "role": "Midfielder",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.057387,
-              "defense_score": 0.271615,
-              "build_score": 0.40167,
-              "impact_delta": 0.062012
-            },
-            {
               "vectra_player_id": "vxp_000130",
               "display_name": "Vandeputte",
               "role": "Midfielder",
@@ -1866,6 +1855,17 @@
               "defense_score": 0.189844,
               "build_score": 0.424463,
               "impact_delta": 0.054138
+            },
+            {
+              "vectra_player_id": "vxp_000408",
+              "display_name": "Grassi",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.057387,
+              "defense_score": 0.271615,
+              "build_score": 0.40167,
+              "impact_delta": 0.062012
             },
             {
               "vectra_player_id": "vxp_000240",
@@ -2117,28 +2117,6 @@
               "impact_delta": 0.054744
             },
             {
-              "vectra_player_id": "vxp_000099",
-              "display_name": "Nelsson",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.061329,
-              "defense_score": 0.702917,
-              "build_score": 0.433894,
-              "impact_delta": 0.111941
-            },
-            {
-              "vectra_player_id": "vxp_000052",
-              "display_name": "Edmundsson",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 0.65,
-              "attack_score": 0.048956,
-              "defense_score": 0.42888,
-              "build_score": 0.312517,
-              "impact_delta": 0.047308
-            },
-            {
               "vectra_player_id": "vxp_000274",
               "display_name": "Valentini",
               "role": "Defender",
@@ -2181,6 +2159,28 @@
               "defense_score": 0.085018,
               "build_score": 0.147109,
               "impact_delta": 0.010501
+            },
+            {
+              "vectra_player_id": "vxp_000099",
+              "display_name": "Nelsson",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.061329,
+              "defense_score": 0.702917,
+              "build_score": 0.433894,
+              "impact_delta": 0.111941
+            },
+            {
+              "vectra_player_id": "vxp_000052",
+              "display_name": "Edmundsson",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 0.65,
+              "attack_score": 0.048956,
+              "defense_score": 0.42888,
+              "build_score": 0.312517,
+              "impact_delta": 0.047308
             },
             {
               "vectra_player_id": "vxp_000091",
@@ -2868,6 +2868,17 @@
               "impact_delta": 0.142273
             },
             {
+              "vectra_player_id": "vxp_000055",
+              "display_name": "Conceição",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.435031,
+              "defense_score": 0.19125,
+              "build_score": 0.479886,
+              "impact_delta": 0.110735
+            },
+            {
               "vectra_player_id": "vxp_000036",
               "display_name": "Boga",
               "role": "Forward",
@@ -2888,17 +2899,6 @@
               "defense_score": 0.115833,
               "build_score": 0.401587,
               "impact_delta": 0.091808
-            },
-            {
-              "vectra_player_id": "vxp_000055",
-              "display_name": "Conceição",
-              "role": "Forward",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.435031,
-              "defense_score": 0.19125,
-              "build_score": 0.479886,
-              "impact_delta": 0.110735
             }
           ]
         },
