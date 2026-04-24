@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T19:35:24.535071Z",
+  "generated_at": "2026-04-24T20:05:29.789981Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -95,6 +95,17 @@
               "impact_delta": 0.066789
             },
             {
+              "vectra_player_id": "vxp_000301",
+              "display_name": "Gutiérrez",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 0.9292,
+              "attack_score": 0.120003,
+              "defense_score": 0.150754,
+              "build_score": 0.40194,
+              "impact_delta": 0.053429
+            },
+            {
               "vectra_player_id": "vxp_000034",
               "display_name": "Rrahmani",
               "role": "Defender",
@@ -128,15 +139,15 @@
               "impact_delta": 0.093777
             },
             {
-              "vectra_player_id": "vxp_000301",
-              "display_name": "Gutiérrez",
-              "role": "Defender",
+              "vectra_player_id": "vxp_000072",
+              "display_name": "De Bruyne",
+              "role": "Midfielder",
               "resolved": true,
-              "availability_reliability": 0.9292,
-              "attack_score": 0.120003,
-              "defense_score": 0.150754,
-              "build_score": 0.40194,
-              "impact_delta": 0.053429
+              "availability_reliability": 0.77,
+              "attack_score": 0.24253,
+              "defense_score": 0.081125,
+              "build_score": 0.462398,
+              "impact_delta": 0.054379
             },
             {
               "vectra_player_id": "vxp_000261",
@@ -161,15 +172,15 @@
               "impact_delta": 0.116589
             },
             {
-              "vectra_player_id": "vxp_000072",
-              "display_name": "De Bruyne",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000110",
+              "display_name": "Politano",
+              "role": "Forward",
               "resolved": true,
-              "availability_reliability": 0.77,
-              "attack_score": 0.24253,
-              "defense_score": 0.081125,
-              "build_score": 0.462398,
-              "impact_delta": 0.054379
+              "availability_reliability": 1.0,
+              "attack_score": 0.291345,
+              "defense_score": 0.09375,
+              "build_score": 0.450776,
+              "impact_delta": 0.078147
             },
             {
               "vectra_player_id": "vxp_000100",
@@ -192,17 +203,6 @@
               "defense_score": 0.111012,
               "build_score": 0.169549,
               "impact_delta": 0.016229
-            },
-            {
-              "vectra_player_id": "vxp_000110",
-              "display_name": "Politano",
-              "role": "Forward",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.291345,
-              "defense_score": 0.09375,
-              "build_score": 0.450776,
-              "impact_delta": 0.078147
             }
           ]
         },
@@ -219,6 +219,17 @@
               "defense_score": 0.347322,
               "build_score": 0.66567,
               "impact_delta": 0.078146
+            },
+            {
+              "vectra_player_id": "vxp_000232",
+              "display_name": "F. Terracciano",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.096794,
+              "defense_score": 0.42828,
+              "build_score": 0.49445,
+              "impact_delta": 0.090329
             },
             {
               "vectra_player_id": "vxp_000259",
@@ -263,17 +274,6 @@
               "defense_score": 0.144119,
               "build_score": 0.2436,
               "impact_delta": 0.030132
-            },
-            {
-              "vectra_player_id": "vxp_000232",
-              "display_name": "F. Terracciano",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.096794,
-              "defense_score": 0.42828,
-              "build_score": 0.49445,
-              "impact_delta": 0.090329
             },
             {
               "vectra_player_id": "vxp_000307",
