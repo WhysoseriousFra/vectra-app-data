@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T19:05:23.007817Z",
+  "generated_at": "2026-04-24T19:35:24.535071Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -95,17 +95,6 @@
               "impact_delta": 0.066789
             },
             {
-              "vectra_player_id": "vxp_000301",
-              "display_name": "Gutiérrez",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 0.9292,
-              "attack_score": 0.120003,
-              "defense_score": 0.150754,
-              "build_score": 0.40194,
-              "impact_delta": 0.053429
-            },
-            {
               "vectra_player_id": "vxp_000034",
               "display_name": "Rrahmani",
               "role": "Defender",
@@ -139,15 +128,15 @@
               "impact_delta": 0.093777
             },
             {
-              "vectra_player_id": "vxp_000015",
-              "display_name": "McTominay",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000301",
+              "display_name": "Gutiérrez",
+              "role": "Defender",
               "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.387862,
-              "defense_score": 0.301562,
-              "build_score": 0.485273,
-              "impact_delta": 0.116589
+              "availability_reliability": 0.9292,
+              "attack_score": 0.120003,
+              "defense_score": 0.150754,
+              "build_score": 0.40194,
+              "impact_delta": 0.053429
             },
             {
               "vectra_player_id": "vxp_000261",
@@ -161,6 +150,17 @@
               "impact_delta": 0.071763
             },
             {
+              "vectra_player_id": "vxp_000015",
+              "display_name": "McTominay",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.387862,
+              "defense_score": 0.301562,
+              "build_score": 0.485273,
+              "impact_delta": 0.116589
+            },
+            {
               "vectra_player_id": "vxp_000072",
               "display_name": "De Bruyne",
               "role": "Midfielder",
@@ -170,17 +170,6 @@
               "defense_score": 0.081125,
               "build_score": 0.462398,
               "impact_delta": 0.054379
-            },
-            {
-              "vectra_player_id": "vxp_000110",
-              "display_name": "Politano",
-              "role": "Forward",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.291345,
-              "defense_score": 0.09375,
-              "build_score": 0.450776,
-              "impact_delta": 0.078147
             },
             {
               "vectra_player_id": "vxp_000100",
@@ -203,6 +192,17 @@
               "defense_score": 0.111012,
               "build_score": 0.169549,
               "impact_delta": 0.016229
+            },
+            {
+              "vectra_player_id": "vxp_000110",
+              "display_name": "Politano",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.291345,
+              "defense_score": 0.09375,
+              "build_score": 0.450776,
+              "impact_delta": 0.078147
             }
           ]
         },
@@ -219,17 +219,6 @@
               "defense_score": 0.347322,
               "build_score": 0.66567,
               "impact_delta": 0.078146
-            },
-            {
-              "vectra_player_id": "vxp_000418",
-              "display_name": "Floriani M.",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 0.8142,
-              "attack_score": 0.046709,
-              "defense_score": 0.144119,
-              "build_score": 0.2436,
-              "impact_delta": 0.030132
             },
             {
               "vectra_player_id": "vxp_000259",
@@ -263,6 +252,17 @@
               "defense_score": 0.352882,
               "build_score": 0.406378,
               "impact_delta": 0.055966
+            },
+            {
+              "vectra_player_id": "vxp_000418",
+              "display_name": "Floriani M.",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 0.8142,
+              "attack_score": 0.046709,
+              "defense_score": 0.144119,
+              "build_score": 0.2436,
+              "impact_delta": 0.030132
             },
             {
               "vectra_player_id": "vxp_000232",
@@ -309,17 +309,6 @@
               "impact_delta": 0.05452
             },
             {
-              "vectra_player_id": "vxp_000240",
-              "display_name": "Bonazzoli",
-              "role": "Forward",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.278445,
-              "defense_score": 0.168958,
-              "build_score": 0.466247,
-              "impact_delta": 0.085543
-            },
-            {
               "vectra_player_id": "vxp_000245",
               "display_name": "Okereke",
               "role": "Forward",
@@ -329,6 +318,17 @@
               "defense_score": 0.02475,
               "build_score": 0.104317,
               "impact_delta": 0.004042
+            },
+            {
+              "vectra_player_id": "vxp_000240",
+              "display_name": "Bonazzoli",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.278445,
+              "defense_score": 0.168958,
+              "build_score": 0.466247,
+              "impact_delta": 0.085543
             }
           ]
         }
