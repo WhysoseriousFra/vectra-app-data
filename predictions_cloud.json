@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T20:05:33.816002Z",
+  "generated_at": "2026-04-24T20:35:26.021245Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_034",
   "matchday": 34,
@@ -144,7 +144,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-24T20:05:33.816002Z",
+          "generated_at": "2026-04-24T20:35:26.021245Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -289,7 +289,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-24T20:05:33.816002Z",
+          "generated_at": "2026-04-24T20:35:26.021245Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -434,7 +434,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-24T20:05:33.816002Z",
+          "generated_at": "2026-04-24T20:35:26.021245Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -579,7 +579,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-24T20:05:33.816002Z",
+          "generated_at": "2026-04-24T20:35:26.021245Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -625,11 +625,11 @@
         },
         "top_scorelines": [
           {
-            "score": "1-1",
+            "score": "1-0",
             "probability": 0.1029
           },
           {
-            "score": "1-0",
+            "score": "1-1",
             "probability": 0.1029
           },
           {
@@ -649,7 +649,7 @@
           "outcome": "home_win",
           "probability": 0.5947,
           "confidence": 0.3775,
-          "scoreline": "1-1",
+          "scoreline": "1-0",
           "scoreline_probability": 0.1029,
           "over_under": "over_2_5",
           "over_under_probability": 0.5633,
@@ -724,7 +724,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-24T20:05:33.816002Z",
+          "generated_at": "2026-04-24T20:35:26.021245Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -869,7 +869,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-24T20:05:33.816002Z",
+          "generated_at": "2026-04-24T20:35:26.021245Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -1014,7 +1014,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-24T20:05:33.816002Z",
+          "generated_at": "2026-04-24T20:35:26.021245Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -1159,7 +1159,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-24T20:05:33.816002Z",
+          "generated_at": "2026-04-24T20:35:26.021245Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -1304,7 +1304,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-24T20:05:33.816002Z",
+          "generated_at": "2026-04-24T20:35:26.021245Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -1449,7 +1449,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-24T20:05:33.816002Z",
+          "generated_at": "2026-04-24T20:35:26.021245Z",
           "has_lineups": false,
           "has_referee": true
         }
