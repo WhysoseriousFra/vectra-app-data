@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T20:35:23.392783Z",
+  "generated_at": "2026-04-24T21:05:22.760672Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -341,7 +341,7 @@
       "away_team_id": "vxt_000018",
       "home_team_name": "Napoli",
       "away_team_name": "Cremonese",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-04-24T18:45:00Z",
       "stadium": "Diego Armando Maradona",
       "city": "Napoli",
