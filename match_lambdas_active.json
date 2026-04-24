@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T21:05:27.514008Z",
+  "generated_at": "2026-04-24T08:00:46.157039Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -8,13 +8,39 @@
   "matches_count": 10,
   "stage_counts": {
     "base_ready": 0,
-    "referee_ready": 0,
+    "referee_ready": 10,
     "lineups_ready": 0,
-    "missing": 10
+    "missing": 0
   },
   "data": {
     "vxm_000031": {
       "vectra_match_id": "vxm_000031",
+      "prediction_stage": "referee_ready",
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000001",
+        "reason_flags": [
+          "home_bias_positive"
+        ]
+      },
+      "lambda_before": {
+        "home": 2.45,
+        "away": 0.65
+      },
+      "lambda_after": {
+        "home": 2.45,
+        "away": 0.65
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -23,76 +49,6 @@
       "home_team_name": "Napoli",
       "away_team_name": "Cremonese",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 2.45,
-      "lambda_away_core": 0.65,
-      "components": {
-        "home": {
-          "offense_factor": 0.5458,
-          "defense_weakness_opponent": 0.9552,
-          "build_up_factor": 0.7748,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.5594,
-            "norm_shots_on_target_per_game": 0.5982,
-            "norm_shots_per_game": 0.4302,
-            "norm_xg_per_shot": 0.6709,
-            "norm_goals_per_match": 0.5555,
-            "norm_big_chances_per_match": 0.5306,
-            "norm_box_entries_per_match": 0.4735,
-            "norm_attack_profile": 0.4264
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.9048,
-            "norm_pass_success_pct": 0.9167,
-            "norm_field_tilt_pct": 0.7099,
-            "norm_opp_box_touches_per_match": 0.4581,
-            "norm_build_up_profile": 0.8641
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 1.0,
-            "norm_shots_conceded_per_game": 1.0,
-            "norm_defense_profile": 0.0,
-            "inverse_defense_profile": 1.0,
-            "norm_goals_conceded_per_match": 0.6875,
-            "norm_field_tilt_pct": 0.0913,
-            "inverse_field_tilt_pct": 0.9087
-          }
-        },
-        "away": {
-          "offense_factor": 0.1265,
-          "defense_weakness_opponent": 0.2465,
-          "build_up_factor": 0.1765,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.054,
-            "norm_shots_on_target_per_game": 0.1875,
-            "norm_shots_per_game": 0.0,
-            "norm_xg_per_shot": 0.6391,
-            "norm_goals_per_match": 0.0889,
-            "norm_big_chances_per_match": 0.0204,
-            "norm_box_entries_per_match": 0.0,
-            "norm_attack_profile": 0.0433
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.2857,
-            "norm_pass_success_pct": 0.25,
-            "norm_field_tilt_pct": 0.0913,
-            "norm_opp_box_touches_per_match": 0.0,
-            "norm_build_up_profile": 0.2255
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.2019,
-            "norm_shots_conceded_per_game": 0.2739,
-            "norm_defense_profile": 0.7338,
-            "inverse_defense_profile": 0.2662,
-            "norm_goals_conceded_per_match": 0.25,
-            "norm_field_tilt_pct": 0.7099,
-            "inverse_field_tilt_pct": 0.2901
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-04-24T18:45:00Z",
       "stadium": "Diego Armando Maradona",
       "city": "Napoli",
@@ -103,6 +59,32 @@
     },
     "vxm_000032": {
       "vectra_match_id": "vxm_000032",
+      "prediction_stage": "referee_ready",
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000007",
+        "reason_flags": [
+          "home_bias_positive"
+        ]
+      },
+      "lambda_before": {
+        "home": 1.0808,
+        "away": 0.7138
+      },
+      "lambda_after": {
+        "home": 1.0808,
+        "away": 0.7138
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -111,76 +93,6 @@
       "home_team_name": "Parma",
       "away_team_name": "Pisa",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 1.0808,
-      "lambda_away_core": 0.7138,
-      "components": {
-        "home": {
-          "offense_factor": 0.1081,
-          "defense_weakness_opponent": 0.9165,
-          "build_up_factor": 0.2427,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.1045,
-            "norm_shots_on_target_per_game": 0.1161,
-            "norm_shots_per_game": 0.2258,
-            "norm_xg_per_shot": 0.0,
-            "norm_goals_per_match": 0.0222,
-            "norm_big_chances_per_match": 0.1224,
-            "norm_box_entries_per_match": 0.1326,
-            "norm_attack_profile": 0.1125
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.2857,
-            "norm_pass_success_pct": 0.4167,
-            "norm_field_tilt_pct": 0.1433,
-            "norm_opp_box_touches_per_match": 0.082,
-            "norm_build_up_profile": 0.2855
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.9965,
-            "norm_shots_conceded_per_game": 0.8174,
-            "norm_defense_profile": 0.1732,
-            "inverse_defense_profile": 0.8268,
-            "norm_goals_conceded_per_match": 1.0,
-            "norm_field_tilt_pct": 0.0,
-            "inverse_field_tilt_pct": 1.0
-          }
-        },
-        "away": {
-          "offense_factor": 0.1912,
-          "defense_weakness_opponent": 0.708,
-          "build_up_factor": 0.0564,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.2288,
-            "norm_shots_on_target_per_game": 0.0804,
-            "norm_shots_per_game": 0.0755,
-            "norm_xg_per_shot": 0.6815,
-            "norm_goals_per_match": 0.0445,
-            "norm_big_chances_per_match": 0.1224,
-            "norm_box_entries_per_match": 0.1856,
-            "norm_attack_profile": 0.1176
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.0,
-            "norm_pass_success_pct": 0.0833,
-            "norm_field_tilt_pct": 0.0,
-            "norm_opp_box_touches_per_match": 0.1961,
-            "norm_build_up_profile": 0.0053
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.7817,
-            "norm_shots_conceded_per_game": 0.6847,
-            "norm_defense_profile": 0.3225,
-            "inverse_defense_profile": 0.6775,
-            "norm_goals_conceded_per_match": 0.5,
-            "norm_field_tilt_pct": 0.1433,
-            "inverse_field_tilt_pct": 0.8567
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-04-25T13:00:00Z",
       "stadium": "Ennio Tardini",
       "city": "Parma",
@@ -191,6 +103,32 @@
     },
     "vxm_000033": {
       "vectra_match_id": "vxm_000033",
+      "prediction_stage": "referee_ready",
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000013",
+        "reason_flags": [
+          "home_bias_positive"
+        ]
+      },
+      "lambda_before": {
+        "home": 1.0148,
+        "away": 1.3998
+      },
+      "lambda_after": {
+        "home": 1.0148,
+        "away": 1.3998
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -199,76 +137,6 @@
       "home_team_name": "Bologna",
       "away_team_name": "Roma",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 1.0148,
-      "lambda_away_core": 1.3998,
-      "components": {
-        "home": {
-          "offense_factor": 0.3448,
-          "defense_weakness_opponent": 0.1777,
-          "build_up_factor": 0.6118,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.3445,
-            "norm_shots_on_target_per_game": 0.375,
-            "norm_shots_per_game": 0.483,
-            "norm_xg_per_shot": 0.2866,
-            "norm_goals_per_match": 0.3778,
-            "norm_big_chances_per_match": 0.0612,
-            "norm_box_entries_per_match": 0.3295,
-            "norm_attack_profile": 0.3703
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.7143,
-            "norm_pass_success_pct": 0.5833,
-            "norm_field_tilt_pct": 0.7015,
-            "norm_opp_box_touches_per_match": 0.3761,
-            "norm_build_up_profile": 0.6534
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.225,
-            "norm_shots_conceded_per_game": 0.195,
-            "norm_defense_profile": 0.8185,
-            "inverse_defense_profile": 0.1815,
-            "norm_goals_conceded_per_match": 0.0313,
-            "norm_field_tilt_pct": 0.8731,
-            "inverse_field_tilt_pct": 0.1269
-          }
-        },
-        "away": {
-          "offense_factor": 0.4938,
-          "defense_weakness_opponent": 0.3572,
-          "build_up_factor": 0.7607,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.4906,
-            "norm_shots_on_target_per_game": 0.5357,
-            "norm_shots_per_game": 0.4566,
-            "norm_xg_per_shot": 0.603,
-            "norm_goals_per_match": 0.4222,
-            "norm_big_chances_per_match": 0.3673,
-            "norm_box_entries_per_match": 0.6553,
-            "norm_attack_profile": 0.4315
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.8095,
-            "norm_pass_success_pct": 0.75,
-            "norm_field_tilt_pct": 0.8731,
-            "norm_opp_box_touches_per_match": 0.6061,
-            "norm_build_up_profile": 0.7205
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5039,
-            "norm_shots_conceded_per_game": 0.2407,
-            "norm_defense_profile": 0.766,
-            "inverse_defense_profile": 0.234,
-            "norm_goals_conceded_per_match": 0.4375,
-            "norm_field_tilt_pct": 0.7015,
-            "inverse_field_tilt_pct": 0.2985
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-04-25T16:00:00Z",
       "stadium": "Renato Dall'Ara",
       "city": "Bologna",
@@ -279,6 +147,32 @@
     },
     "vxm_000034": {
       "vectra_match_id": "vxm_000034",
+      "prediction_stage": "referee_ready",
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000018",
+        "reason_flags": [
+          "home_bias_positive"
+        ]
+      },
+      "lambda_before": {
+        "home": 0.8575,
+        "away": 0.65
+      },
+      "lambda_after": {
+        "home": 0.8575,
+        "away": 0.65
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -287,76 +181,6 @@
       "home_team_name": "Verona",
       "away_team_name": "Lecce",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 0.8575,
-      "lambda_away_core": 0.65,
-      "components": {
-        "home": {
-          "offense_factor": 0.1932,
-          "defense_weakness_opponent": 0.6977,
-          "build_up_factor": 0.0784,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.1895,
-            "norm_shots_on_target_per_game": 0.3125,
-            "norm_shots_per_game": 0.2221,
-            "norm_xg_per_shot": 0.1614,
-            "norm_goals_per_match": 0.0222,
-            "norm_big_chances_per_match": 0.2041,
-            "norm_box_entries_per_match": 0.1401,
-            "norm_attack_profile": 0.1464
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.0476,
-            "norm_pass_success_pct": 0.0,
-            "norm_field_tilt_pct": 0.2296,
-            "norm_opp_box_touches_per_match": 0.0909,
-            "norm_build_up_profile": 0.0
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.9185,
-            "norm_shots_conceded_per_game": 0.5768,
-            "norm_defense_profile": 0.4435,
-            "inverse_defense_profile": 0.5565,
-            "norm_goals_conceded_per_match": 0.5625,
-            "norm_field_tilt_pct": 0.2969,
-            "inverse_field_tilt_pct": 0.7031
-          }
-        },
-        "away": {
-          "offense_factor": 0.0205,
-          "defense_weakness_opponent": 0.5703,
-          "build_up_factor": 0.1123,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.0,
-            "norm_shots_on_target_per_game": 0.0,
-            "norm_shots_per_game": 0.0755,
-            "norm_xg_per_shot": 0.0786,
-            "norm_goals_per_match": 0.0,
-            "norm_big_chances_per_match": 0.0,
-            "norm_box_entries_per_match": 0.0417,
-            "norm_attack_profile": 0.0
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.0952,
-            "norm_pass_success_pct": 0.0833,
-            "norm_field_tilt_pct": 0.2969,
-            "norm_opp_box_touches_per_match": 0.0196,
-            "norm_build_up_profile": 0.038
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.3408,
-            "norm_shots_conceded_per_game": 0.6307,
-            "norm_defense_profile": 0.4239,
-            "inverse_defense_profile": 0.5761,
-            "norm_goals_conceded_per_match": 0.9375,
-            "norm_field_tilt_pct": 0.2296,
-            "inverse_field_tilt_pct": 0.7704
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-04-25T18:45:00Z",
       "stadium": "Marcantonio Bentegodi",
       "city": "Verona",
@@ -367,6 +191,32 @@
     },
     "vxm_000035": {
       "vectra_match_id": "vxm_000035",
+      "prediction_stage": "referee_ready",
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000023",
+        "reason_flags": [
+          "home_bias_positive"
+        ]
+      },
+      "lambda_before": {
+        "home": 1.9472,
+        "away": 0.99
+      },
+      "lambda_after": {
+        "home": 1.9472,
+        "away": 0.99
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -375,76 +225,6 @@
       "home_team_name": "Fiorentina",
       "away_team_name": "Sassuolo",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 1.9472,
-      "lambda_away_core": 0.99,
-      "components": {
-        "home": {
-          "offense_factor": 0.4637,
-          "defense_weakness_opponent": 0.7166,
-          "build_up_factor": 0.5766,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.5335,
-            "norm_shots_on_target_per_game": 0.3304,
-            "norm_shots_per_game": 0.4814,
-            "norm_xg_per_shot": 0.6624,
-            "norm_goals_per_match": 0.3333,
-            "norm_big_chances_per_match": 0.4286,
-            "norm_box_entries_per_match": 0.3674,
-            "norm_attack_profile": 0.4909
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.619,
-            "norm_pass_success_pct": 0.8333,
-            "norm_field_tilt_pct": 0.4893,
-            "norm_opp_box_touches_per_match": 0.3119,
-            "norm_build_up_profile": 0.6404
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.7115,
-            "norm_shots_conceded_per_game": 0.7552,
-            "norm_defense_profile": 0.2678,
-            "inverse_defense_profile": 0.7322,
-            "norm_goals_conceded_per_match": 0.5625,
-            "norm_field_tilt_pct": 0.2014,
-            "inverse_field_tilt_pct": 0.7986
-          }
-        },
-        "away": {
-          "offense_factor": 0.2766,
-          "defense_weakness_opponent": 0.6322,
-          "build_up_factor": 0.3011,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.2177,
-            "norm_shots_on_target_per_game": 0.3393,
-            "norm_shots_per_game": 0.1345,
-            "norm_xg_per_shot": 0.6008,
-            "norm_goals_per_match": 0.3778,
-            "norm_big_chances_per_match": 0.1021,
-            "norm_box_entries_per_match": 0.3371,
-            "norm_attack_profile": 0.1698
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.2381,
-            "norm_pass_success_pct": 0.5833,
-            "norm_field_tilt_pct": 0.2014,
-            "norm_opp_box_touches_per_match": 0.1925,
-            "norm_build_up_profile": 0.3418
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.7346,
-            "norm_shots_conceded_per_game": 0.5602,
-            "norm_defense_profile": 0.4319,
-            "inverse_defense_profile": 0.5681,
-            "norm_goals_conceded_per_match": 0.6875,
-            "norm_field_tilt_pct": 0.4893,
-            "inverse_field_tilt_pct": 0.5107
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-04-26T10:30:00Z",
       "stadium": "Artemio Franchi",
       "city": "Firenze",
@@ -455,6 +235,32 @@
     },
     "vxm_000036": {
       "vectra_match_id": "vxm_000036",
+      "prediction_stage": "referee_ready",
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000029",
+        "reason_flags": [
+          "home_bias_positive"
+        ]
+      },
+      "lambda_before": {
+        "home": 0.7232,
+        "away": 2.2104
+      },
+      "lambda_after": {
+        "home": 0.7232,
+        "away": 2.2104
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -463,76 +269,6 @@
       "home_team_name": "Genoa",
       "away_team_name": "Como",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 0.7232,
-      "lambda_away_core": 2.2104,
-      "components": {
-        "home": {
-          "offense_factor": 0.3737,
-          "defense_weakness_opponent": 0.091,
-          "build_up_factor": 0.3282,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.3752,
-            "norm_shots_on_target_per_game": 0.3839,
-            "norm_shots_per_game": 0.2906,
-            "norm_xg_per_shot": 0.569,
-            "norm_goals_per_match": 0.3333,
-            "norm_big_chances_per_match": 0.5102,
-            "norm_box_entries_per_match": 0.125,
-            "norm_attack_profile": 0.2803
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.4286,
-            "norm_pass_success_pct": 0.4167,
-            "norm_field_tilt_pct": 0.252,
-            "norm_opp_box_touches_per_match": 0.1408,
-            "norm_build_up_profile": 0.3769
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.1234,
-            "norm_shots_conceded_per_game": 0.083,
-            "norm_defense_profile": 0.9153,
-            "inverse_defense_profile": 0.0847,
-            "norm_goals_conceded_per_match": 0.0,
-            "norm_field_tilt_pct": 0.8675,
-            "inverse_field_tilt_pct": 0.1325
-          }
-        },
-        "away": {
-          "offense_factor": 0.6589,
-          "defense_weakness_opponent": 0.5981,
-          "build_up_factor": 0.8737,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.676,
-            "norm_shots_on_target_per_game": 0.7232,
-            "norm_shots_per_game": 0.5774,
-            "norm_xg_per_shot": 0.7155,
-            "norm_goals_per_match": 0.7111,
-            "norm_big_chances_per_match": 0.6531,
-            "norm_box_entries_per_match": 0.4356,
-            "norm_attack_profile": 0.5679
-          },
-          "build_up_components": {
-            "norm_possession_pct": 1.0,
-            "norm_pass_success_pct": 1.0,
-            "norm_field_tilt_pct": 0.8675,
-            "norm_opp_box_touches_per_match": 0.5009,
-            "norm_build_up_profile": 1.0
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.6228,
-            "norm_shots_conceded_per_game": 0.556,
-            "norm_defense_profile": 0.4677,
-            "inverse_defense_profile": 0.5323,
-            "norm_goals_conceded_per_match": 0.625,
-            "norm_field_tilt_pct": 0.252,
-            "inverse_field_tilt_pct": 0.748
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-04-26T13:00:00Z",
       "stadium": "Luigi Ferraris",
       "city": "Genova",
@@ -543,6 +279,32 @@
     },
     "vxm_000037": {
       "vectra_match_id": "vxm_000037",
+      "prediction_stage": "referee_ready",
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000033",
+        "reason_flags": [
+          "home_bias_positive"
+        ]
+      },
+      "lambda_before": {
+        "home": 0.65,
+        "away": 2.45
+      },
+      "lambda_after": {
+        "home": 0.65,
+        "away": 2.45
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -551,76 +313,6 @@
       "home_team_name": "Torino",
       "away_team_name": "Inter",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 0.65,
-      "lambda_away_core": 2.45,
-      "components": {
-        "home": {
-          "offense_factor": 0.3379,
-          "defense_weakness_opponent": 0.0075,
-          "build_up_factor": 0.2427,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.2659,
-            "norm_shots_on_target_per_game": 0.5,
-            "norm_shots_per_game": 0.3132,
-            "norm_xg_per_shot": 0.5414,
-            "norm_goals_per_match": 0.2889,
-            "norm_big_chances_per_match": 0.1837,
-            "norm_box_entries_per_match": 0.2386,
-            "norm_attack_profile": 0.2929
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.1905,
-            "norm_pass_success_pct": 0.4167,
-            "norm_field_tilt_pct": 0.1906,
-            "norm_opp_box_touches_per_match": 0.2068,
-            "norm_build_up_profile": 0.2273
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.0,
-            "norm_shots_conceded_per_game": 0.0,
-            "norm_defense_profile": 1.0,
-            "inverse_defense_profile": 0.0,
-            "norm_goals_conceded_per_match": 0.0625,
-            "norm_field_tilt_pct": 1.0,
-            "inverse_field_tilt_pct": 0.0
-          }
-        },
-        "away": {
-          "offense_factor": 0.9863,
-          "defense_weakness_opponent": 0.7076,
-          "build_up_factor": 0.9808,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 1.0,
-            "norm_shots_on_target_per_game": 0.9911,
-            "norm_shots_per_game": 1.0,
-            "norm_xg_per_shot": 0.879,
-            "norm_goals_per_match": 1.0,
-            "norm_big_chances_per_match": 1.0,
-            "norm_box_entries_per_match": 1.0,
-            "norm_attack_profile": 1.0
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.9524,
-            "norm_pass_success_pct": 1.0,
-            "norm_field_tilt_pct": 1.0,
-            "norm_opp_box_touches_per_match": 1.0,
-            "norm_build_up_profile": 0.9507
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.698,
-            "norm_shots_conceded_per_game": 0.6183,
-            "norm_defense_profile": 0.3547,
-            "inverse_defense_profile": 0.6453,
-            "norm_goals_conceded_per_match": 0.9688,
-            "norm_field_tilt_pct": 0.1906,
-            "inverse_field_tilt_pct": 0.8094
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-04-26T16:00:00Z",
       "stadium": "Olimpico - Grande Torino",
       "city": "Torino",
@@ -631,6 +323,32 @@
     },
     "vxm_000038": {
       "vectra_match_id": "vxm_000038",
+      "prediction_stage": "referee_ready",
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000039",
+        "reason_flags": [
+          "home_bias_positive"
+        ]
+      },
+      "lambda_before": {
+        "home": 1.4821,
+        "away": 1.9257
+      },
+      "lambda_after": {
+        "home": 1.4821,
+        "away": 1.9257
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -639,76 +357,6 @@
       "home_team_name": "Milan",
       "away_team_name": "Juventus",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 1.4821,
-      "lambda_away_core": 1.9257,
-      "components": {
-        "home": {
-          "offense_factor": 0.6816,
-          "defense_weakness_opponent": 0.1829,
-          "build_up_factor": 0.6821,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.7602,
-            "norm_shots_on_target_per_game": 0.5893,
-            "norm_shots_per_game": 0.5132,
-            "norm_xg_per_shot": 1.0,
-            "norm_goals_per_match": 0.5778,
-            "norm_big_chances_per_match": 0.7143,
-            "norm_box_entries_per_match": 0.625,
-            "norm_attack_profile": 0.5879
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.619,
-            "norm_pass_success_pct": 1.0,
-            "norm_field_tilt_pct": 0.5125,
-            "norm_opp_box_touches_per_match": 0.6025,
-            "norm_build_up_profile": 0.7341
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.136,
-            "norm_shots_conceded_per_game": 0.2116,
-            "norm_defense_profile": 0.7985,
-            "inverse_defense_profile": 0.2015,
-            "norm_goals_conceded_per_match": 0.2188,
-            "norm_field_tilt_pct": 0.8137,
-            "inverse_field_tilt_pct": 0.1863
-          }
-        },
-        "away": {
-          "offense_factor": 0.8257,
-          "defense_weakness_opponent": 0.3254,
-          "build_up_factor": 0.8801,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.8197,
-            "norm_shots_on_target_per_game": 1.0,
-            "norm_shots_per_game": 0.8679,
-            "norm_xg_per_shot": 0.5945,
-            "norm_goals_per_match": 0.6889,
-            "norm_big_chances_per_match": 0.8163,
-            "norm_box_entries_per_match": 0.9091,
-            "norm_attack_profile": 0.7846
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.8095,
-            "norm_pass_success_pct": 1.0,
-            "norm_field_tilt_pct": 0.8137,
-            "norm_opp_box_touches_per_match": 0.9537,
-            "norm_build_up_profile": 0.838
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.3774,
-            "norm_shots_conceded_per_game": 0.3361,
-            "norm_defense_profile": 0.6654,
-            "inverse_defense_profile": 0.3346,
-            "norm_goals_conceded_per_match": 0.0313,
-            "norm_field_tilt_pct": 0.5125,
-            "inverse_field_tilt_pct": 0.4875
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-04-26T18:45:00Z",
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
@@ -719,6 +367,32 @@
     },
     "vxm_000039": {
       "vectra_match_id": "vxm_000039",
+      "prediction_stage": "referee_ready",
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000043",
+        "reason_flags": [
+          "home_bias_positive"
+        ]
+      },
+      "lambda_before": {
+        "home": 0.7751,
+        "away": 2.089
+      },
+      "lambda_after": {
+        "home": 0.7751,
+        "away": 2.089
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -727,76 +401,6 @@
       "home_team_name": "Cagliari",
       "away_team_name": "Atalanta",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 0.7751,
-      "lambda_away_core": 2.089,
-      "components": {
-        "home": {
-          "offense_factor": 0.1668,
-          "defense_weakness_opponent": 0.419,
-          "build_up_factor": 0.2393,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.1192,
-            "norm_shots_on_target_per_game": 0.2232,
-            "norm_shots_per_game": 0.098,
-            "norm_xg_per_shot": 0.3737,
-            "norm_goals_per_match": 0.2445,
-            "norm_big_chances_per_match": 0.1224,
-            "norm_box_entries_per_match": 0.0189,
-            "norm_attack_profile": 0.091
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.2857,
-            "norm_pass_success_pct": 0.5,
-            "norm_field_tilt_pct": 0.0538,
-            "norm_opp_box_touches_per_match": 0.0392,
-            "norm_build_up_profile": 0.3501
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5505,
-            "norm_shots_conceded_per_game": 0.4149,
-            "norm_defense_profile": 0.5928,
-            "inverse_defense_profile": 0.4072,
-            "norm_goals_conceded_per_match": 0.1563,
-            "norm_field_tilt_pct": 0.7047,
-            "inverse_field_tilt_pct": 0.2953
-          }
-        },
-        "away": {
-          "offense_factor": 0.6453,
-          "defense_weakness_opponent": 0.6753,
-          "build_up_factor": 0.7094,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.7294,
-            "norm_shots_on_target_per_game": 0.6072,
-            "norm_shots_per_game": 0.634,
-            "norm_xg_per_shot": 0.724,
-            "norm_goals_per_match": 0.4445,
-            "norm_big_chances_per_match": 0.5714,
-            "norm_box_entries_per_match": 0.697,
-            "norm_attack_profile": 0.6203
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.7143,
-            "norm_pass_success_pct": 0.75,
-            "norm_field_tilt_pct": 0.7047,
-            "norm_opp_box_touches_per_match": 0.6595,
-            "norm_build_up_profile": 0.7228
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.7357,
-            "norm_shots_conceded_per_game": 0.61,
-            "norm_defense_profile": 0.4239,
-            "inverse_defense_profile": 0.5761,
-            "norm_goals_conceded_per_match": 0.625,
-            "norm_field_tilt_pct": 0.0538,
-            "inverse_field_tilt_pct": 0.9462
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-04-27T16:30:00Z",
       "stadium": "Unipol Domus",
       "city": "Cagliari",
@@ -807,6 +411,32 @@
     },
     "vxm_000040": {
       "vectra_match_id": "vxm_000040",
+      "prediction_stage": "referee_ready",
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000049",
+        "reason_flags": [
+          "home_bias_positive"
+        ]
+      },
+      "lambda_before": {
+        "home": 1.4007,
+        "away": 0.8937
+      },
+      "lambda_after": {
+        "home": 1.4007,
+        "away": 0.8937
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -815,76 +445,6 @@
       "home_team_name": "Lazio",
       "away_team_name": "Udinese",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 1.4007,
-      "lambda_away_core": 0.8937,
-      "components": {
-        "home": {
-          "offense_factor": 0.2507,
-          "defense_weakness_opponent": 0.6303,
-          "build_up_factor": 0.5476,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.205,
-            "norm_shots_on_target_per_game": 0.3482,
-            "norm_shots_per_game": 0.2002,
-            "norm_xg_per_shot": 0.4565,
-            "norm_goals_per_match": 0.2445,
-            "norm_big_chances_per_match": 0.0817,
-            "norm_box_entries_per_match": 0.2424,
-            "norm_attack_profile": 0.1953
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.5238,
-            "norm_pass_success_pct": 0.9167,
-            "norm_field_tilt_pct": 0.4888,
-            "norm_opp_box_touches_per_match": 0.2299,
-            "norm_build_up_profile": 0.6338
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.6848,
-            "norm_shots_conceded_per_game": 0.5726,
-            "norm_defense_profile": 0.4234,
-            "inverse_defense_profile": 0.5766,
-            "norm_goals_conceded_per_match": 0.625,
-            "norm_field_tilt_pct": 0.2703,
-            "inverse_field_tilt_pct": 0.7297
-          }
-        },
-        "away": {
-          "offense_factor": 0.2416,
-          "defense_weakness_opponent": 0.5699,
-          "build_up_factor": 0.2961,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.1642,
-            "norm_shots_on_target_per_game": 0.3036,
-            "norm_shots_per_game": 0.2189,
-            "norm_xg_per_shot": 0.5117,
-            "norm_goals_per_match": 0.3111,
-            "norm_big_chances_per_match": 0.0204,
-            "norm_box_entries_per_match": 0.2576,
-            "norm_attack_profile": 0.2058
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.2857,
-            "norm_pass_success_pct": 0.4167,
-            "norm_field_tilt_pct": 0.2703,
-            "norm_opp_box_touches_per_match": 0.2317,
-            "norm_build_up_profile": 0.2665
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.629,
-            "norm_shots_conceded_per_game": 0.6473,
-            "norm_defense_profile": 0.3811,
-            "inverse_defense_profile": 0.6189,
-            "norm_goals_conceded_per_match": 0.1875,
-            "norm_field_tilt_pct": 0.4888,
-            "inverse_field_tilt_pct": 0.5112
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-04-27T18:45:00Z",
       "stadium": "Olimpico",
       "city": "Roma",

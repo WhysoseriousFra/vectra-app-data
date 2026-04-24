@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T21:05:30.648820Z",
+  "generated_at": "2026-04-24T08:00:49.152727Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_034",
   "matchday": 34,
@@ -22,8 +22,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "active_stage_source": "match_lambdas.json"
+        "prediction_stage": "referee_ready",
+        "active_stage_source": "match_lambdas_referee.json"
       },
       "prediction": {
         "lambda": {
@@ -144,9 +144,9 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-23T21:05:30.648820Z",
+          "generated_at": "2026-04-24T08:00:49.152727Z",
           "has_lineups": false,
-          "has_referee": false
+          "has_referee": true
         }
       }
     },
@@ -167,8 +167,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "active_stage_source": "match_lambdas.json"
+        "prediction_stage": "referee_ready",
+        "active_stage_source": "match_lambdas_referee.json"
       },
       "prediction": {
         "lambda": {
@@ -289,9 +289,9 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-23T21:05:30.648820Z",
+          "generated_at": "2026-04-24T08:00:49.152727Z",
           "has_lineups": false,
-          "has_referee": false
+          "has_referee": true
         }
       }
     },
@@ -312,8 +312,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "active_stage_source": "match_lambdas.json"
+        "prediction_stage": "referee_ready",
+        "active_stage_source": "match_lambdas_referee.json"
       },
       "prediction": {
         "lambda": {
@@ -434,9 +434,9 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-23T21:05:30.648820Z",
+          "generated_at": "2026-04-24T08:00:49.152727Z",
           "has_lineups": false,
-          "has_referee": false
+          "has_referee": true
         }
       }
     },
@@ -457,8 +457,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "active_stage_source": "match_lambdas.json"
+        "prediction_stage": "referee_ready",
+        "active_stage_source": "match_lambdas_referee.json"
       },
       "prediction": {
         "lambda": {
@@ -579,9 +579,9 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-23T21:05:30.648820Z",
+          "generated_at": "2026-04-24T08:00:49.152727Z",
           "has_lineups": false,
-          "has_referee": false
+          "has_referee": true
         }
       }
     },
@@ -602,8 +602,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "active_stage_source": "match_lambdas.json"
+        "prediction_stage": "referee_ready",
+        "active_stage_source": "match_lambdas_referee.json"
       },
       "prediction": {
         "lambda": {
@@ -625,11 +625,11 @@
         },
         "top_scorelines": [
           {
-            "score": "1-1",
+            "score": "1-0",
             "probability": 0.1029
           },
           {
-            "score": "1-0",
+            "score": "1-1",
             "probability": 0.1029
           },
           {
@@ -649,7 +649,7 @@
           "outcome": "home_win",
           "probability": 0.5946,
           "confidence": 0.3774,
-          "scoreline": "1-1",
+          "scoreline": "1-0",
           "scoreline_probability": 0.1029,
           "over_under": "over_2_5",
           "over_under_probability": 0.5633,
@@ -724,9 +724,9 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-23T21:05:30.648820Z",
+          "generated_at": "2026-04-24T08:00:49.152727Z",
           "has_lineups": false,
-          "has_referee": false
+          "has_referee": true
         }
       }
     },
@@ -747,8 +747,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "active_stage_source": "match_lambdas.json"
+        "prediction_stage": "referee_ready",
+        "active_stage_source": "match_lambdas_referee.json"
       },
       "prediction": {
         "lambda": {
@@ -869,9 +869,9 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-23T21:05:30.648820Z",
+          "generated_at": "2026-04-24T08:00:49.152727Z",
           "has_lineups": false,
-          "has_referee": false
+          "has_referee": true
         }
       }
     },
@@ -892,8 +892,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "active_stage_source": "match_lambdas.json"
+        "prediction_stage": "referee_ready",
+        "active_stage_source": "match_lambdas_referee.json"
       },
       "prediction": {
         "lambda": {
@@ -1014,9 +1014,9 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-23T21:05:30.648820Z",
+          "generated_at": "2026-04-24T08:00:49.152727Z",
           "has_lineups": false,
-          "has_referee": false
+          "has_referee": true
         }
       }
     },
@@ -1037,8 +1037,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "active_stage_source": "match_lambdas.json"
+        "prediction_stage": "referee_ready",
+        "active_stage_source": "match_lambdas_referee.json"
       },
       "prediction": {
         "lambda": {
@@ -1159,9 +1159,9 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-23T21:05:30.648820Z",
+          "generated_at": "2026-04-24T08:00:49.152727Z",
           "has_lineups": false,
-          "has_referee": false
+          "has_referee": true
         }
       }
     },
@@ -1182,8 +1182,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "active_stage_source": "match_lambdas.json"
+        "prediction_stage": "referee_ready",
+        "active_stage_source": "match_lambdas_referee.json"
       },
       "prediction": {
         "lambda": {
@@ -1304,9 +1304,9 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-23T21:05:30.648820Z",
+          "generated_at": "2026-04-24T08:00:49.152727Z",
           "has_lineups": false,
-          "has_referee": false
+          "has_referee": true
         }
       }
     },
@@ -1327,8 +1327,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "active_stage_source": "match_lambdas.json"
+        "prediction_stage": "referee_ready",
+        "active_stage_source": "match_lambdas_referee.json"
       },
       "prediction": {
         "lambda": {
@@ -1449,9 +1449,9 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-23T21:05:30.648820Z",
+          "generated_at": "2026-04-24T08:00:49.152727Z",
           "has_lineups": false,
-          "has_referee": false
+          "has_referee": true
         }
       }
     }

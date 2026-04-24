@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T21:05:30.644283Z",
+  "generated_at": "2026-04-24T08:00:49.148210Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_034",
   "matchday": 34,
@@ -28,23 +28,23 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000001",
+        "referee_name": "Daniele Doveri"
       },
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -80,23 +80,23 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000007",
+        "referee_name": "Andrea Calzavara"
       },
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -132,23 +132,23 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000013",
+        "referee_name": "Marco Di Bello"
       },
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -184,23 +184,23 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000018",
+        "referee_name": "Davide Massa"
       },
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -236,23 +236,23 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000023",
+        "referee_name": "Livio Marinelli"
       },
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -288,23 +288,23 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000029",
+        "referee_name": "Federico La Penna"
       },
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -340,23 +340,23 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000033",
+        "referee_name": "Maurizio Mariani"
       },
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -392,23 +392,23 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000039",
+        "referee_name": "Simone Sozza"
       },
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -444,23 +444,23 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000043",
+        "referee_name": "Juan Luca Sacchi"
       },
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -496,23 +496,23 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000049",
+        "referee_name": "Kevin Bonacina"
       },
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
