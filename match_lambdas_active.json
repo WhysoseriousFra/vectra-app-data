@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T12:05:21.782238Z",
+  "generated_at": "2026-04-25T12:35:21.748642Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -358,8 +358,8 @@
         "away": 0.7138
       },
       "lambda_after": {
-        "home": 1.1457,
-        "away": 0.6489
+        "home": 1.1476,
+        "away": 0.647
       },
       "lineups_impact": {
         "applied": true,
@@ -370,30 +370,30 @@
         "away_defense_raw": 3.170282,
         "home_build_raw": 4.568573,
         "away_build_raw": 3.814557,
-        "home_attack_strength": 1.54872,
-        "away_attack_strength": 1.182022,
-        "home_defense_strength": 3.316373,
-        "away_defense_strength": 3.170282,
-        "home_build_strength": 4.568573,
-        "away_build_strength": 3.814557,
-        "attack_delta_raw": 0.366698,
-        "defense_delta_raw": 0.146091,
-        "build_delta_raw": 0.754016,
-        "attack_delta_applied": 0.295799,
-        "defense_delta_applied": 0.117845,
-        "build_delta_applied": 0.60823,
+        "home_attack_strength": 1.579694,
+        "away_attack_strength": 1.205662,
+        "home_defense_strength": 3.415864,
+        "away_defense_strength": 3.26539,
+        "home_build_strength": 4.751316,
+        "away_build_strength": 3.967139,
+        "attack_delta_raw": 0.374032,
+        "defense_delta_raw": 0.150474,
+        "build_delta_raw": 0.784177,
+        "attack_delta_applied": 0.301715,
+        "defense_delta_applied": 0.12138,
+        "build_delta_applied": 0.63256,
         "reliability_factor": 0.806655,
-        "home_formation": "Unknown",
-        "away_formation": "Unknown",
+        "home_formation": "3-5-2",
+        "away_formation": "3-5-2",
         "home_formation_modifiers": {
-          "attack": 1.0,
-          "defense": 1.0,
-          "build": 1.0
+          "attack": 1.02,
+          "defense": 1.03,
+          "build": 1.04
         },
         "away_formation_modifiers": {
-          "attack": 1.0,
-          "defense": 1.0,
-          "build": 1.0
+          "attack": 1.02,
+          "defense": 1.03,
+          "build": 1.04
         },
         "home_avg_player_reliability": 0.862118,
         "away_avg_player_reliability": 0.806655,
@@ -418,7 +418,7 @@
       },
       "starting_players_impact": {
         "home": {
-          "formation": "Unknown",
+          "formation": "3-5-2",
           "players": [
             {
               "vectra_player_id": "vxp_000233",
@@ -432,15 +432,26 @@
               "impact_delta": 0.076108
             },
             {
-              "vectra_player_id": "vxp_000118",
-              "display_name": "Circati",
+              "vectra_player_id": "vxp_000279",
+              "display_name": "Delprato",
               "role": "Defender",
               "resolved": true,
               "availability_reliability": 1.0,
-              "attack_score": 0.08476,
-              "defense_score": 0.538013,
-              "build_score": 0.537552,
-              "impact_delta": 0.103301
+              "attack_score": 0.087709,
+              "defense_score": 0.339785,
+              "build_score": 0.446586,
+              "impact_delta": 0.076451
+            },
+            {
+              "vectra_player_id": "vxp_000355",
+              "display_name": "Ndiaye",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 0.4767,
+              "attack_score": 0.035478,
+              "defense_score": 0.254322,
+              "build_score": 0.217759,
+              "impact_delta": 0.021932
             },
             {
               "vectra_player_id": "vxp_000199",
@@ -454,15 +465,15 @@
               "impact_delta": 0.08788
             },
             {
-              "vectra_player_id": "vxp_000279",
-              "display_name": "Delprato",
+              "vectra_player_id": "vxp_000118",
+              "display_name": "Circati",
               "role": "Defender",
               "resolved": true,
               "availability_reliability": 1.0,
-              "attack_score": 0.087709,
-              "defense_score": 0.339785,
-              "build_score": 0.446586,
-              "impact_delta": 0.076451
+              "attack_score": 0.08476,
+              "defense_score": 0.538013,
+              "build_score": 0.537552,
+              "impact_delta": 0.103301
             },
             {
               "vectra_player_id": "vxp_000181",
@@ -474,17 +485,6 @@
               "defense_score": 0.461293,
               "build_score": 0.479872,
               "impact_delta": 0.091287
-            },
-            {
-              "vectra_player_id": "vxp_000355",
-              "display_name": "Ndiaye",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 0.4767,
-              "attack_score": 0.035478,
-              "defense_score": 0.254322,
-              "build_score": 0.217759,
-              "impact_delta": 0.021932
             },
             {
               "vectra_player_id": "vxp_000344",
@@ -544,7 +544,7 @@
           ]
         },
         "away": {
-          "formation": "Unknown",
+          "formation": "3-5-2",
           "players": [
             {
               "vectra_player_id": "vxp_000111",
@@ -558,15 +558,15 @@
               "impact_delta": 0.073961
             },
             {
-              "vectra_player_id": "vxp_000268",
-              "display_name": "Angori",
+              "vectra_player_id": "vxp_000263",
+              "display_name": "Božhinov",
               "role": "Defender",
               "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.201004,
-              "defense_score": 0.262111,
-              "build_score": 0.387571,
-              "impact_delta": 0.080227
+              "availability_reliability": 0.2833,
+              "attack_score": 0.022744,
+              "defense_score": 0.1275,
+              "build_score": 0.138955,
+              "impact_delta": 0.007237
             },
             {
               "vectra_player_id": "vxp_000291",
@@ -591,15 +591,15 @@
               "impact_delta": 0.106563
             },
             {
-              "vectra_player_id": "vxp_000263",
-              "display_name": "Božhinov",
+              "vectra_player_id": "vxp_000268",
+              "display_name": "Angori",
               "role": "Defender",
               "resolved": true,
-              "availability_reliability": 0.2833,
-              "attack_score": 0.022744,
-              "defense_score": 0.1275,
-              "build_score": 0.138955,
-              "impact_delta": 0.007237
+              "availability_reliability": 1.0,
+              "attack_score": 0.201004,
+              "defense_score": 0.262111,
+              "build_score": 0.387571,
+              "impact_delta": 0.080227
             },
             {
               "vectra_player_id": "vxp_000184",
@@ -611,17 +611,6 @@
               "defense_score": 0.3259,
               "build_score": 0.398847,
               "impact_delta": 0.076789
-            },
-            {
-              "vectra_player_id": "vxp_000270",
-              "display_name": "Aebischer",
-              "role": "Midfielder",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.150203,
-              "defense_score": 0.367137,
-              "build_score": 0.538535,
-              "impact_delta": 0.093726
             },
             {
               "vectra_player_id": "vxp_000444",
@@ -646,15 +635,15 @@
               "impact_delta": 0.089153
             },
             {
-              "vectra_player_id": "vxp_000213",
-              "display_name": "Moreo",
-              "role": "Forward",
+              "vectra_player_id": "vxp_000270",
+              "display_name": "Aebischer",
+              "role": "Midfielder",
               "resolved": true,
               "availability_reliability": 1.0,
-              "attack_score": 0.219456,
-              "defense_score": 0.25625,
-              "build_score": 0.324615,
-              "impact_delta": 0.078388
+              "attack_score": 0.150203,
+              "defense_score": 0.367137,
+              "build_score": 0.538535,
+              "impact_delta": 0.093726
             },
             {
               "vectra_player_id": "vxp_000551",
@@ -666,6 +655,17 @@
               "defense_score": 0.0,
               "build_score": 0.0,
               "impact_delta": 0.000696
+            },
+            {
+              "vectra_player_id": "vxp_000213",
+              "display_name": "Moreo",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.219456,
+              "defense_score": 0.25625,
+              "build_score": 0.324615,
+              "impact_delta": 0.078388
             }
           ]
         }
@@ -683,8 +683,8 @@
       "stadium": "Ennio Tardini",
       "city": "Parma",
       "active_lambda": {
-        "home": 1.1457,
-        "away": 0.6489
+        "home": 1.1476,
+        "away": 0.647
       }
     },
     "vxm_000033": {
