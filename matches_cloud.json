@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T18:35:31.269689Z",
+  "generated_at": "2026-04-25T19:05:30.106298Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_034",
   "matchday": 34,
@@ -183,7 +183,7 @@
         "city": "Verona"
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
