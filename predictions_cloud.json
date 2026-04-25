@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T11:35:24.301531Z",
+  "generated_at": "2026-04-25T12:05:24.492027Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_034",
   "matchday": 34,
@@ -144,7 +144,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-25T11:35:24.301531Z",
+          "generated_at": "2026-04-25T12:05:24.492027Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -167,79 +167,79 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "referee_ready",
-        "active_stage_source": "match_lambdas_referee.json"
+        "prediction_stage": "lineups_ready",
+        "active_stage_source": "match_lambdas_lineups.json"
       },
       "prediction": {
         "lambda": {
-          "home": 1.0808,
-          "away": 0.7138
+          "home": 1.1457,
+          "away": 0.6489
         },
         "outcomes": {
-          "home_win": 0.4405,
-          "draw": 0.3193,
-          "away_win": 0.2402
+          "home_win": 0.4763,
+          "draw": 0.3129,
+          "away_win": 0.2109
         },
         "over_under": {
-          "over_2_5": 0.2685,
-          "under_2_5": 0.7314
+          "over_2_5": 0.269,
+          "under_2_5": 0.731
         },
         "btts": {
-          "yes": 0.3365,
-          "no": 0.6636
+          "yes": 0.3263,
+          "no": 0.6738
         },
         "top_scorelines": [
           {
             "score": "1-0",
-            "probability": 0.1786
+            "probability": 0.1888
           },
           {
             "score": "0-0",
-            "probability": 0.1653
+            "probability": 0.1656
           },
           {
             "score": "1-1",
-            "probability": 0.1273
+            "probability": 0.1225
           },
           {
             "score": "0-1",
-            "probability": 0.12
+            "probability": 0.1099
           },
           {
             "score": "2-0",
-            "probability": 0.0978
+            "probability": 0.1083
           }
         ],
         "primary": {
           "outcome": "home_win",
-          "probability": 0.4405,
-          "confidence": 0.1212,
+          "probability": 0.4763,
+          "confidence": 0.1634,
           "scoreline": "1-0",
-          "scoreline_probability": 0.1786,
+          "scoreline_probability": 0.1888,
           "over_under": "under_2_5",
-          "over_under_probability": 0.7314,
+          "over_under_probability": 0.731,
           "btts": "no",
-          "btts_probability": 0.6636
+          "btts_probability": 0.6738
         },
         "engines": {
           "poisson": {
             "outcomes": {
-              "home_win": 0.439,
-              "draw": 0.3214,
-              "away_win": 0.2396
+              "home_win": 0.4768,
+              "draw": 0.3148,
+              "away_win": 0.2085
             },
             "over_under": {
               "over_2_5": 0.2678,
               "under_2_5": 0.7322
             },
             "btts": {
-              "yes": 0.3371,
-              "no": 0.6629
+              "yes": 0.3255,
+              "no": 0.6745
             },
             "top_scorelines": [
               {
                 "score": "1-0",
-                "probability": 0.1796
+                "probability": 0.1904
               },
               {
                 "score": "0-0",
@@ -247,41 +247,41 @@
               },
               {
                 "score": "1-1",
-                "probability": 0.1282
+                "probability": 0.1236
               }
             ]
           },
           "montecarlo": {
             "outcomes": {
-              "home_win": 0.4421,
-              "draw": 0.3171,
-              "away_win": 0.2407
+              "home_win": 0.4758,
+              "draw": 0.3109,
+              "away_win": 0.2134
             },
             "over_under": {
-              "over_2_5": 0.2693,
-              "under_2_5": 0.7307
+              "over_2_5": 0.2702,
+              "under_2_5": 0.7298
             },
             "btts": {
-              "yes": 0.3358,
-              "no": 0.6642
+              "yes": 0.327,
+              "no": 0.673
             },
             "goal_means": {
-              "home_goals_mean": 1.0885,
-              "away_goals_mean": 0.714,
-              "total_goals_mean": 1.8025
+              "home_goals_mean": 1.1476,
+              "away_goals_mean": 0.6543,
+              "total_goals_mean": 1.8019
             },
             "top_scorelines": [
               {
                 "score": "1-0",
-                "probability": 0.1776
+                "probability": 0.1872
               },
               {
                 "score": "0-0",
-                "probability": 0.1645
+                "probability": 0.1651
               },
               {
                 "score": "1-1",
-                "probability": 0.1263
+                "probability": 0.1213
               }
             ],
             "simulations": 20000
@@ -289,8 +289,8 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-25T11:35:24.301531Z",
-          "has_lineups": false,
+          "generated_at": "2026-04-25T12:05:24.492027Z",
+          "has_lineups": true,
           "has_referee": true
         }
       }
@@ -321,7 +321,7 @@
           "away": 1.3998
         },
         "outcomes": {
-          "home_win": 0.2725,
+          "home_win": 0.2724,
           "draw": 0.2698,
           "away_win": 0.4577
         },
@@ -336,7 +336,7 @@
         "top_scorelines": [
           {
             "score": "1-1",
-            "probability": 0.1291
+            "probability": 0.1292
           },
           {
             "score": "0-1",
@@ -348,7 +348,7 @@
           },
           {
             "score": "1-2",
-            "probability": 0.0888
+            "probability": 0.0889
           },
           {
             "score": "0-0",
@@ -358,9 +358,9 @@
         "primary": {
           "outcome": "away_win",
           "probability": 0.4577,
-          "confidence": 0.1852,
+          "confidence": 0.1853,
           "scoreline": "1-1",
-          "scoreline_probability": 0.1291,
+          "scoreline_probability": 0.1292,
           "over_under": "under_2_5",
           "over_under_probability": 0.5631,
           "btts": "no",
@@ -398,9 +398,9 @@
           },
           "montecarlo": {
             "outcomes": {
-              "home_win": 0.2722,
+              "home_win": 0.272,
               "draw": 0.2701,
-              "away_win": 0.4577
+              "away_win": 0.4579
             },
             "over_under": {
               "over_2_5": 0.4401,
@@ -411,14 +411,14 @@
               "no": 0.5101
             },
             "goal_means": {
-              "home_goals_mean": 1.0224,
-              "away_goals_mean": 1.4115,
+              "home_goals_mean": 1.0221,
+              "away_goals_mean": 1.4118,
               "total_goals_mean": 2.4339
             },
             "top_scorelines": [
               {
                 "score": "1-1",
-                "probability": 0.1312
+                "probability": 0.1313
               },
               {
                 "score": "0-1",
@@ -434,7 +434,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-25T11:35:24.301531Z",
+          "generated_at": "2026-04-25T12:05:24.492027Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -471,7 +471,7 @@
           "away_win": 0.258
         },
         "over_under": {
-          "over_2_5": 0.1926,
+          "over_2_5": 0.1927,
           "under_2_5": 0.8073
         },
         "btts": {
@@ -544,11 +544,11 @@
           "montecarlo": {
             "outcomes": {
               "home_win": 0.3859,
-              "draw": 0.356,
-              "away_win": 0.2581
+              "draw": 0.3559,
+              "away_win": 0.2582
             },
             "over_under": {
-              "over_2_5": 0.1923,
+              "over_2_5": 0.1924,
               "under_2_5": 0.8076
             },
             "btts": {
@@ -556,9 +556,9 @@
               "no": 0.7243
             },
             "goal_means": {
-              "home_goals_mean": 0.8656,
-              "away_goals_mean": 0.6481,
-              "total_goals_mean": 1.5136
+              "home_goals_mean": 0.8657,
+              "away_goals_mean": 0.6482,
+              "total_goals_mean": 1.5138
             },
             "top_scorelines": [
               {
@@ -579,7 +579,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-25T11:35:24.301531Z",
+          "generated_at": "2026-04-25T12:05:24.492027Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -611,7 +611,7 @@
           "away": 0.99
         },
         "outcomes": {
-          "home_win": 0.5947,
+          "home_win": 0.5946,
           "draw": 0.2172,
           "away_win": 0.1883
         },
@@ -625,12 +625,12 @@
         },
         "top_scorelines": [
           {
-            "score": "1-0",
+            "score": "1-1",
             "probability": 0.1029
           },
           {
-            "score": "1-1",
-            "probability": 0.1029
+            "score": "1-0",
+            "probability": 0.1028
           },
           {
             "score": "2-0",
@@ -647,9 +647,9 @@
         ],
         "primary": {
           "outcome": "home_win",
-          "probability": 0.5947,
-          "confidence": 0.3775,
-          "scoreline": "1-0",
+          "probability": 0.5946,
+          "confidence": 0.3774,
+          "scoreline": "1-1",
           "scoreline_probability": 0.1029,
           "over_under": "over_2_5",
           "over_under_probability": 0.5633,
@@ -688,7 +688,7 @@
           },
           "montecarlo": {
             "outcomes": {
-              "home_win": 0.594,
+              "home_win": 0.5939,
               "draw": 0.217,
               "away_win": 0.189
             },
@@ -697,13 +697,13 @@
               "under_2_5": 0.4343
             },
             "btts": {
-              "yes": 0.5437,
+              "yes": 0.5438,
               "no": 0.4562
             },
             "goal_means": {
-              "home_goals_mean": 1.945,
+              "home_goals_mean": 1.9451,
               "away_goals_mean": 0.9986,
-              "total_goals_mean": 2.9436
+              "total_goals_mean": 2.9437
             },
             "top_scorelines": [
               {
@@ -712,7 +712,7 @@
               },
               {
                 "score": "1-0",
-                "probability": 0.1022
+                "probability": 0.1021
               },
               {
                 "score": "2-1",
@@ -724,7 +724,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-25T11:35:24.301531Z",
+          "generated_at": "2026-04-25T12:05:24.492027Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -762,7 +762,7 @@
         },
         "over_under": {
           "over_2_5": 0.5624,
-          "under_2_5": 0.4376
+          "under_2_5": 0.4377
         },
         "btts": {
           "yes": 0.4588,
@@ -833,22 +833,22 @@
           },
           "montecarlo": {
             "outcomes": {
-              "home_win": 0.1092,
+              "home_win": 0.1091,
               "draw": 0.1772,
               "away_win": 0.7137
             },
             "over_under": {
               "over_2_5": 0.5663,
-              "under_2_5": 0.4337
+              "under_2_5": 0.4338
             },
             "btts": {
               "yes": 0.4598,
               "no": 0.5402
             },
             "goal_means": {
-              "home_goals_mean": 0.7359,
+              "home_goals_mean": 0.7357,
               "away_goals_mean": 2.2157,
-              "total_goals_mean": 2.9516
+              "total_goals_mean": 2.9514
             },
             "top_scorelines": [
               {
@@ -857,7 +857,7 @@
               },
               {
                 "score": "0-1",
-                "probability": 0.1169
+                "probability": 0.117
               },
               {
                 "score": "0-3",
@@ -869,7 +869,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-25T11:35:24.301531Z",
+          "generated_at": "2026-04-25T12:05:24.492027Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -901,13 +901,13 @@
           "away": 2.45
         },
         "outcomes": {
-          "home_win": 0.08,
-          "draw": 0.1526,
+          "home_win": 0.0801,
+          "draw": 0.1525,
           "away_win": 0.7674
         },
         "over_under": {
           "over_2_5": 0.5951,
-          "under_2_5": 0.405
+          "under_2_5": 0.4049
         },
         "btts": {
           "yes": 0.434,
@@ -938,7 +938,7 @@
         "primary": {
           "outcome": "away_win",
           "probability": 0.7674,
-          "confidence": 0.6148,
+          "confidence": 0.6149,
           "scoreline": "0-2",
           "scoreline_probability": 0.1361,
           "over_under": "over_2_5",
@@ -978,27 +978,27 @@
           },
           "montecarlo": {
             "outcomes": {
-              "home_win": 0.0802,
-              "draw": 0.1522,
+              "home_win": 0.0803,
+              "draw": 0.1521,
               "away_win": 0.7677
             },
             "over_under": {
-              "over_2_5": 0.5965,
-              "under_2_5": 0.4035
+              "over_2_5": 0.5966,
+              "under_2_5": 0.4034
             },
             "btts": {
               "yes": 0.4319,
               "no": 0.5681
             },
             "goal_means": {
-              "home_goals_mean": 0.6458,
+              "home_goals_mean": 0.6459,
               "away_goals_mean": 2.448,
-              "total_goals_mean": 3.0938
+              "total_goals_mean": 3.0939
             },
             "top_scorelines": [
               {
                 "score": "0-2",
-                "probability": 0.1352
+                "probability": 0.1351
               },
               {
                 "score": "0-3",
@@ -1006,7 +1006,7 @@
               },
               {
                 "score": "0-1",
-                "probability": 0.1102
+                "probability": 0.1103
               }
             ],
             "simulations": 20000
@@ -1014,7 +1014,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-25T11:35:24.301531Z",
+          "generated_at": "2026-04-25T12:05:24.492027Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -1047,7 +1047,7 @@
         },
         "outcomes": {
           "home_win": 0.2973,
-          "draw": 0.2239,
+          "draw": 0.2238,
           "away_win": 0.4789
         },
         "over_under": {
@@ -1124,8 +1124,8 @@
           "montecarlo": {
             "outcomes": {
               "home_win": 0.2958,
-              "draw": 0.2261,
-              "away_win": 0.4782
+              "draw": 0.226,
+              "away_win": 0.4783
             },
             "over_under": {
               "over_2_5": 0.6615,
@@ -1133,7 +1133,7 @@
             },
             "btts": {
               "yes": 0.6657,
-              "no": 0.3342
+              "no": 0.3343
             },
             "goal_means": {
               "home_goals_mean": 1.4823,
@@ -1159,7 +1159,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-25T11:35:24.301531Z",
+          "generated_at": "2026-04-25T12:05:24.492027Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -1192,12 +1192,12 @@
         },
         "outcomes": {
           "home_win": 0.1274,
-          "draw": 0.1952,
+          "draw": 0.1953,
           "away_win": 0.6774
         },
         "over_under": {
           "over_2_5": 0.5433,
-          "under_2_5": 0.4566
+          "under_2_5": 0.4567
         },
         "btts": {
           "yes": 0.4712,
@@ -1228,7 +1228,7 @@
         "primary": {
           "outcome": "away_win",
           "probability": 0.6774,
-          "confidence": 0.4822,
+          "confidence": 0.4821,
           "scoreline": "0-2",
           "scoreline_probability": 0.1247,
           "over_under": "over_2_5",
@@ -1269,12 +1269,12 @@
           "montecarlo": {
             "outcomes": {
               "home_win": 0.1265,
-              "draw": 0.1951,
-              "away_win": 0.6784
+              "draw": 0.1952,
+              "away_win": 0.6783
             },
             "over_under": {
               "over_2_5": 0.5436,
-              "under_2_5": 0.4563
+              "under_2_5": 0.4564
             },
             "btts": {
               "yes": 0.4702,
@@ -1282,8 +1282,8 @@
             },
             "goal_means": {
               "home_goals_mean": 0.7715,
-              "away_goals_mean": 2.0859,
-              "total_goals_mean": 2.8575
+              "away_goals_mean": 2.0858,
+              "total_goals_mean": 2.8573
             },
             "top_scorelines": [
               {
@@ -1304,7 +1304,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-25T11:35:24.301531Z",
+          "generated_at": "2026-04-25T12:05:24.492027Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -1337,11 +1337,11 @@
         },
         "outcomes": {
           "home_win": 0.4843,
-          "draw": 0.273,
+          "draw": 0.2729,
           "away_win": 0.2429
         },
         "over_under": {
-          "over_2_5": 0.3999,
+          "over_2_5": 0.4,
           "under_2_5": 0.6
         },
         "btts": {
@@ -1359,7 +1359,7 @@
           },
           {
             "score": "0-0",
-            "probability": 0.1008
+            "probability": 0.1007
           },
           {
             "score": "2-0",
@@ -1373,7 +1373,7 @@
         "primary": {
           "outcome": "home_win",
           "probability": 0.4843,
-          "confidence": 0.2113,
+          "confidence": 0.2114,
           "scoreline": "1-0",
           "scoreline_probability": 0.142,
           "over_under": "under_2_5",
@@ -1414,11 +1414,11 @@
           "montecarlo": {
             "outcomes": {
               "home_win": 0.4812,
-              "draw": 0.2732,
+              "draw": 0.2731,
               "away_win": 0.2457
             },
             "over_under": {
-              "over_2_5": 0.3977,
+              "over_2_5": 0.3978,
               "under_2_5": 0.6022
             },
             "btts": {
@@ -1426,9 +1426,9 @@
               "no": 0.5544
             },
             "goal_means": {
-              "home_goals_mean": 1.383,
-              "away_goals_mean": 0.8992,
-              "total_goals_mean": 2.2822
+              "home_goals_mean": 1.3829,
+              "away_goals_mean": 0.8994,
+              "total_goals_mean": 2.2824
             },
             "top_scorelines": [
               {
@@ -1441,7 +1441,7 @@
               },
               {
                 "score": "0-0",
-                "probability": 0.1006
+                "probability": 0.1005
               }
             ],
             "simulations": 20000
@@ -1449,7 +1449,7 @@
         },
         "meta": {
           "model": "vectra_v1_core",
-          "generated_at": "2026-04-25T11:35:24.301531Z",
+          "generated_at": "2026-04-25T12:05:24.492027Z",
           "has_lineups": false,
           "has_referee": true
         }
