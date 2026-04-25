@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T14:35:21.566427Z",
+  "generated_at": "2026-04-25T15:05:25.890954Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -8,8 +8,8 @@
   "matches_count": 10,
   "stage_counts": {
     "base_ready": 0,
-    "referee_ready": 8,
-    "lineups_ready": 2,
+    "referee_ready": 7,
+    "lineups_ready": 3,
     "missing": 0
   },
   "data": {
@@ -678,7 +678,7 @@
       "away_team_id": "vxt_000016",
       "home_team_name": "Parma",
       "away_team_name": "Pisa",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-04-25T13:00:00Z",
       "stadium": "Ennio Tardini",
       "city": "Parma",
@@ -689,32 +689,325 @@
     },
     "vxm_000033": {
       "vectra_match_id": "vxm_000033",
-      "prediction_stage": "referee_ready",
-      "referee_modifier": {
-        "applied": true,
-        "vectra_referee_id": "vxr_000013",
-        "reason_flags": [
-          "home_bias_positive"
-        ]
-      },
+      "prediction_stage": "lineups_ready",
       "lambda_before": {
         "home": 1.0148,
         "away": 1.3998
       },
       "lambda_after": {
-        "home": 1.0148,
-        "away": 1.3998
+        "home": 0.9981,
+        "away": 1.4165
       },
-      "referee_factors": {
-        "goal_environment_factor": 1.0,
-        "home_shift_factor": 1.0,
-        "away_shift_factor": 1.0,
-        "penalty_tendency": 0.0,
-        "strictness": 0.0,
-        "home_bias_signal": 0.5,
-        "sample_reliability": 0.0
+      "lineups_impact": {
+        "applied": true,
+        "reason": "lineups_confirmed",
+        "home_attack_raw": 1.711572,
+        "away_attack_raw": 2.027936,
+        "home_defense_raw": 2.718652,
+        "away_defense_raw": 3.372301,
+        "home_build_raw": 4.900262,
+        "away_build_raw": 5.113943,
+        "home_attack_strength": 1.711572,
+        "away_attack_strength": 2.109053,
+        "home_defense_strength": 2.718652,
+        "away_defense_strength": 3.304855,
+        "home_build_strength": 4.900262,
+        "away_build_strength": 5.36964,
+        "attack_delta_raw": -0.397481,
+        "defense_delta_raw": -0.586203,
+        "build_delta_raw": -0.469378,
+        "attack_delta_applied": -0.34298,
+        "defense_delta_applied": -0.505824,
+        "build_delta_applied": -0.405018,
+        "reliability_factor": 0.862882,
+        "home_formation": "Unknown",
+        "away_formation": "3-4-2-1",
+        "home_formation_modifiers": {
+          "attack": 1.0,
+          "defense": 1.0,
+          "build": 1.0
+        },
+        "away_formation_modifiers": {
+          "attack": 1.04,
+          "defense": 0.98,
+          "build": 1.05
+        },
+        "home_avg_player_reliability": 0.862882,
+        "away_avg_player_reliability": 0.937955,
+        "home_role_counts": {
+          "Goalkeeper": 1,
+          "Defender": 5,
+          "Midfielder": 2,
+          "Forward": 3,
+          "Unknown": 0
+        },
+        "away_role_counts": {
+          "Goalkeeper": 1,
+          "Defender": 5,
+          "Midfielder": 3,
+          "Forward": 2,
+          "Unknown": 0
+        },
+        "home_resolved_starters": 11,
+        "away_resolved_starters": 11,
+        "home_ignored_players": 0,
+        "away_ignored_players": 0
       },
-      "active_stage_source": "match_lambdas_referee.json",
+      "starting_players_impact": {
+        "home": {
+          "formation": "Unknown",
+          "players": [
+            {
+              "vectra_player_id": "vxp_000174",
+              "display_name": "Ravaglia",
+              "role": "Goalkeeper",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.0,
+              "defense_score": 0.325822,
+              "build_score": 0.688943,
+              "impact_delta": 0.077177
+            },
+            {
+              "vectra_player_id": "vxp_000057",
+              "display_name": "Miranda",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.284915,
+              "defense_score": 0.353951,
+              "build_score": 0.610828,
+              "impact_delta": 0.115472
+            },
+            {
+              "vectra_player_id": "vxp_000166",
+              "display_name": "Lucumí",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.0775,
+              "defense_score": 0.462267,
+              "build_score": 0.595966,
+              "impact_delta": 0.097457
+            },
+            {
+              "vectra_player_id": "vxp_000167",
+              "display_name": "João Mário",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 0.435,
+              "attack_score": 0.051626,
+              "defense_score": 0.097461,
+              "build_score": 0.203207,
+              "impact_delta": 0.013111
+            },
+            {
+              "vectra_player_id": "vxp_000280",
+              "display_name": "Heggem",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.067285,
+              "defense_score": 0.410072,
+              "build_score": 0.559857,
+              "impact_delta": 0.088119
+            },
+            {
+              "vectra_player_id": "vxp_000555",
+              "display_name": "Helland",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 0.0567,
+              "attack_score": 0.000884,
+              "defense_score": 0.026917,
+              "build_score": 0.02703,
+              "impact_delta": 0.000267
+            },
+            {
+              "vectra_player_id": "vxp_000326",
+              "display_name": "L. Ferguson",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.106924,
+              "defense_score": 0.240625,
+              "build_score": 0.495341,
+              "impact_delta": 0.071159
+            },
+            {
+              "vectra_player_id": "vxp_000308",
+              "display_name": "Freuler",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.11732,
+              "defense_score": 0.355208,
+              "build_score": 0.519779,
+              "impact_delta": 0.086684
+            },
+            {
+              "vectra_player_id": "vxp_000139",
+              "display_name": "Castro",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.335262,
+              "defense_score": 0.120417,
+              "build_score": 0.392396,
+              "impact_delta": 0.083726
+            },
+            {
+              "vectra_player_id": "vxp_000170",
+              "display_name": "Rowe",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.327791,
+              "defense_score": 0.178533,
+              "build_score": 0.419812,
+              "impact_delta": 0.090718
+            },
+            {
+              "vectra_player_id": "vxp_000143",
+              "display_name": "Orsolini",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.342065,
+              "defense_score": 0.147379,
+              "build_score": 0.387103,
+              "impact_delta": 0.087327
+            }
+          ]
+        },
+        "away": {
+          "formation": "3-4-2-1",
+          "players": [
+            {
+              "vectra_player_id": "vxp_000063",
+              "display_name": "Svilar",
+              "role": "Goalkeeper",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.0,
+              "defense_score": 0.320677,
+              "build_score": 0.574582,
+              "impact_delta": 0.069749
+            },
+            {
+              "vectra_player_id": "vxp_000025",
+              "display_name": "Mancini",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.155701,
+              "defense_score": 0.531344,
+              "build_score": 0.515865,
+              "impact_delta": 0.111198
+            },
+            {
+              "vectra_player_id": "vxp_000039",
+              "display_name": "Wesley",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.197624,
+              "defense_score": 0.307885,
+              "build_score": 0.439441,
+              "impact_delta": 0.087901
+            },
+            {
+              "vectra_player_id": "vxp_000062",
+              "display_name": "Hermoso",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.133506,
+              "defense_score": 0.447955,
+              "build_score": 0.539455,
+              "impact_delta": 0.100333
+            },
+            {
+              "vectra_player_id": "vxp_000051",
+              "display_name": "Ndicka",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.120089,
+              "defense_score": 0.505247,
+              "build_score": 0.575621,
+              "impact_delta": 0.106927
+            },
+            {
+              "vectra_player_id": "vxp_000140",
+              "display_name": "Çelik",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.173882,
+              "defense_score": 0.297241,
+              "build_score": 0.47717,
+              "impact_delta": 0.08567
+            },
+            {
+              "vectra_player_id": "vxp_000044",
+              "display_name": "Cristante",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.211408,
+              "defense_score": 0.457813,
+              "build_score": 0.562247,
+              "impact_delta": 0.113691
+            },
+            {
+              "vectra_player_id": "vxp_000397",
+              "display_name": "El  Aynaoui",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 0.6133,
+              "attack_score": 0.047933,
+              "defense_score": 0.112262,
+              "build_score": 0.250477,
+              "impact_delta": 0.020906
+            },
+            {
+              "vectra_player_id": "vxp_000296",
+              "display_name": "Pisilli",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 0.82,
+              "attack_score": 0.125537,
+              "defense_score": 0.203206,
+              "build_score": 0.356348,
+              "impact_delta": 0.050273
+            },
+            {
+              "vectra_player_id": "vxp_000054",
+              "display_name": "Soulé",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.348619,
+              "defense_score": 0.145313,
+              "build_score": 0.480527,
+              "impact_delta": 0.093623
+            },
+            {
+              "vectra_player_id": "vxp_000056",
+              "display_name": "Malen",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 0.8842,
+              "attack_score": 0.513637,
+              "defense_score": 0.043358,
+              "build_score": 0.34221,
+              "impact_delta": 0.085954
+            }
+          ]
+        }
+      },
+      "active_stage_source": "match_lambdas_lineups.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -727,8 +1020,8 @@
       "stadium": "Renato Dall'Ara",
       "city": "Bologna",
       "active_lambda": {
-        "home": 1.0148,
-        "away": 1.3998
+        "home": 0.9981,
+        "away": 1.4165
       }
     },
     "vxm_000034": {
