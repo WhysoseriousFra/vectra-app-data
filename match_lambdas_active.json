@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T12:35:21.748642Z",
+  "generated_at": "2026-04-25T13:05:22.232898Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -678,7 +678,7 @@
       "away_team_id": "vxt_000016",
       "home_team_name": "Parma",
       "away_team_name": "Pisa",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-04-25T13:00:00Z",
       "stadium": "Ennio Tardini",
       "city": "Parma",

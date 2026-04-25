@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T12:35:24.489201Z",
+  "generated_at": "2026-04-25T13:05:24.926579Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_034",
   "matchday": 34,
@@ -79,7 +79,7 @@
         "city": "Parma"
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true

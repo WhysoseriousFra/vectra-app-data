@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T12:35:23.665274Z",
+  "generated_at": "2026-04-25T13:05:24.122705Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -35,7 +35,7 @@
       "vectra_match_id": "vxm_000032",
       "home_team_name": "Parma",
       "away_team_name": "Pisa",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "closed_match",
         "balance_edge_label": "slight_home_edge",
