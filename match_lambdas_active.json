@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T13:35:22.883559Z",
+  "generated_at": "2026-04-25T14:05:22.673317Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -558,6 +558,17 @@
               "impact_delta": 0.073961
             },
             {
+              "vectra_player_id": "vxp_000263",
+              "display_name": "Božhinov",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 0.2833,
+              "attack_score": 0.022744,
+              "defense_score": 0.1275,
+              "build_score": 0.138955,
+              "impact_delta": 0.007237
+            },
+            {
               "vectra_player_id": "vxp_000291",
               "display_name": "Canestrelli",
               "role": "Defender",
@@ -589,17 +600,6 @@
               "defense_score": 0.262111,
               "build_score": 0.387571,
               "impact_delta": 0.080227
-            },
-            {
-              "vectra_player_id": "vxp_000263",
-              "display_name": "Božhinov",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 0.2833,
-              "attack_score": 0.022744,
-              "defense_score": 0.1275,
-              "build_score": 0.138955,
-              "impact_delta": 0.007237
             },
             {
               "vectra_player_id": "vxp_000184",
