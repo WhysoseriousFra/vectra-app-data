@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T20:05:25.710379Z",
+  "generated_at": "2026-04-25T20:35:25.870959Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -769,17 +769,6 @@
               "impact_delta": 0.077177
             },
             {
-              "vectra_player_id": "vxp_000166",
-              "display_name": "Lucumí",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.0775,
-              "defense_score": 0.462267,
-              "build_score": 0.595966,
-              "impact_delta": 0.097457
-            },
-            {
               "vectra_player_id": "vxp_000280",
               "display_name": "Heggem",
               "role": "Defender",
@@ -789,6 +778,17 @@
               "defense_score": 0.410072,
               "build_score": 0.559857,
               "impact_delta": 0.088119
+            },
+            {
+              "vectra_player_id": "vxp_000166",
+              "display_name": "Lucumí",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.0775,
+              "defense_score": 0.462267,
+              "build_score": 0.595966,
+              "impact_delta": 0.097457
             },
             {
               "vectra_player_id": "vxp_000555",
@@ -950,17 +950,6 @@
               "impact_delta": 0.08567
             },
             {
-              "vectra_player_id": "vxp_000296",
-              "display_name": "Pisilli",
-              "role": "Midfielder",
-              "resolved": true,
-              "availability_reliability": 0.82,
-              "attack_score": 0.125537,
-              "defense_score": 0.203206,
-              "build_score": 0.356348,
-              "impact_delta": 0.050273
-            },
-            {
               "vectra_player_id": "vxp_000044",
               "display_name": "Cristante",
               "role": "Midfielder",
@@ -981,6 +970,17 @@
               "defense_score": 0.112262,
               "build_score": 0.250477,
               "impact_delta": 0.020906
+            },
+            {
+              "vectra_player_id": "vxp_000296",
+              "display_name": "Pisilli",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 0.82,
+              "attack_score": 0.125537,
+              "defense_score": 0.203206,
+              "build_score": 0.356348,
+              "impact_delta": 0.050273
             },
             {
               "vectra_player_id": "vxp_000054",
@@ -1254,17 +1254,6 @@
               "impact_delta": 0.091304
             },
             {
-              "vectra_player_id": "vxp_000223",
-              "display_name": "Siebert",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.068896,
-              "defense_score": 0.572083,
-              "build_score": 0.419329,
-              "impact_delta": 0.097734
-            },
-            {
               "vectra_player_id": "vxp_000491",
               "display_name": "Jean",
               "role": "Defender",
@@ -1274,6 +1263,17 @@
               "defense_score": 0.001063,
               "build_score": 0.005357,
               "impact_delta": 7e-06
+            },
+            {
+              "vectra_player_id": "vxp_000223",
+              "display_name": "Siebert",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.068896,
+              "defense_score": 0.572083,
+              "build_score": 0.419329,
+              "impact_delta": 0.097734
             },
             {
               "vectra_player_id": "vxp_000310",
@@ -1298,17 +1298,6 @@
               "impact_delta": 0.031413
             },
             {
-              "vectra_player_id": "vxp_000220",
-              "display_name": "L. Coulibaly",
-              "role": "Midfielder",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.175665,
-              "defense_score": 0.25625,
-              "build_score": 0.414856,
-              "impact_delta": 0.077672
-            },
-            {
               "vectra_player_id": "vxp_000180",
               "display_name": "Ramadani",
               "role": "Midfielder",
@@ -1318,6 +1307,17 @@
               "defense_score": 0.492383,
               "build_score": 0.479428,
               "impact_delta": 0.101412
+            },
+            {
+              "vectra_player_id": "vxp_000220",
+              "display_name": "L. Coulibaly",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.175665,
+              "defense_score": 0.25625,
+              "build_score": 0.414856,
+              "impact_delta": 0.077672
             },
             {
               "vectra_player_id": "vxp_000381",
