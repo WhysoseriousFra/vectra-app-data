@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T15:35:21.895407Z",
+  "generated_at": "2026-04-25T16:05:21.177939Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -1015,7 +1015,7 @@
       "away_team_id": "vxt_000010",
       "home_team_name": "Bologna",
       "away_team_name": "Roma",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-04-25T16:00:00Z",
       "stadium": "Renato Dall'Ara",
       "city": "Bologna",
