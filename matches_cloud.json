@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T13:35:29.291175Z",
+  "generated_at": "2026-04-26T14:05:27.561657Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_034",
   "matchday": 34,
@@ -12,11 +12,11 @@
       "matchday": 34,
       "teams": {
         "home": {
-          "team_id": "vxt_000013",
+          "team_id": "vxt_000039",
           "name": "Napoli"
         },
         "away": {
-          "team_id": "vxt_000018",
+          "team_id": "vxt_000031",
           "name": "Cremonese"
         }
       },
@@ -44,7 +44,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "partial",
+        "resolution_status": "failed",
         "home": {
           "formation": "3-4-2-1",
           "starting_count": 11,
@@ -64,11 +64,11 @@
       "matchday": 34,
       "teams": {
         "home": {
-          "team_id": "vxt_000020",
+          "team_id": "vxt_000023",
           "name": "Parma"
         },
         "away": {
-          "team_id": "vxt_000016",
+          "team_id": "vxt_000026",
           "name": "Pisa"
         }
       },
@@ -96,7 +96,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "partial",
+        "resolution_status": "failed",
         "home": {
           "formation": "3-5-2",
           "starting_count": 11,
@@ -116,11 +116,11 @@
       "matchday": 34,
       "teams": {
         "home": {
-          "team_id": "vxt_000001",
+          "team_id": "vxt_000025",
           "name": "Bologna"
         },
         "away": {
-          "team_id": "vxt_000010",
+          "team_id": "vxt_000030",
           "name": "Roma"
         }
       },
@@ -148,7 +148,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "partial",
+        "resolution_status": "failed",
         "home": {
           "formation": "3-4-3",
           "starting_count": 11,
@@ -168,11 +168,11 @@
       "matchday": 34,
       "teams": {
         "home": {
-          "team_id": "vxt_000005",
-          "name": "Verona"
+          "team_id": "vxt_000036",
+          "name": "Hellas Verona"
         },
         "away": {
-          "team_id": "vxt_000008",
+          "team_id": "vxt_000037",
           "name": "Lecce"
         }
       },
@@ -200,7 +200,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "partial",
+        "resolution_status": "failed",
         "home": {
           "formation": "3-5-2",
           "starting_count": 11,
@@ -220,11 +220,11 @@
       "matchday": 34,
       "teams": {
         "home": {
-          "team_id": "vxt_000003",
+          "team_id": "vxt_000027",
           "name": "Fiorentina"
         },
         "away": {
-          "team_id": "vxt_000019",
+          "team_id": "vxt_000034",
           "name": "Sassuolo"
         }
       },
@@ -252,7 +252,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "partial",
+        "resolution_status": "failed",
         "home": {
           "formation": "4-3-3",
           "starting_count": 11,
@@ -272,11 +272,11 @@
       "matchday": 34,
       "teams": {
         "home": {
-          "team_id": "vxt_000014",
+          "team_id": "vxt_000029",
           "name": "Genoa"
         },
         "away": {
-          "team_id": "vxt_000017",
+          "team_id": "vxt_000024",
           "name": "Como"
         }
       },
@@ -304,7 +304,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "partial",
+        "resolution_status": "failed",
         "home": {
           "formation": "4-4-2",
           "starting_count": 11,
@@ -324,11 +324,11 @@
       "matchday": 34,
       "teams": {
         "home": {
-          "team_id": "vxt_000002",
+          "team_id": "vxt_000032",
           "name": "Torino"
         },
         "away": {
-          "team_id": "vxt_000004",
+          "team_id": "vxt_000035",
           "name": "Inter"
         }
       },
@@ -376,11 +376,11 @@
       "matchday": 34,
       "teams": {
         "home": {
-          "team_id": "vxt_000009",
+          "team_id": "vxt_000038",
           "name": "Milan"
         },
         "away": {
-          "team_id": "vxt_000012",
+          "team_id": "vxt_000021",
           "name": "Juventus"
         }
       },
@@ -428,11 +428,11 @@
       "matchday": 34,
       "teams": {
         "home": {
-          "team_id": "vxt_000007",
+          "team_id": "vxt_000022",
           "name": "Cagliari"
         },
         "away": {
-          "team_id": "vxt_000015",
+          "team_id": "vxt_000033",
           "name": "Atalanta"
         }
       },
@@ -480,11 +480,11 @@
       "matchday": 34,
       "teams": {
         "home": {
-          "team_id": "vxt_000006",
+          "team_id": "vxt_000040",
           "name": "Lazio"
         },
         "away": {
-          "team_id": "vxt_000011",
+          "team_id": "vxt_000028",
           "name": "Udinese"
         }
       },
