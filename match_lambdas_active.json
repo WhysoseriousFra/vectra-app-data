@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T12:35:29.892050Z",
+  "generated_at": "2026-04-26T13:05:25.296160Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -1646,17 +1646,6 @@
               "impact_delta": 0.07583
             },
             {
-              "vectra_player_id": "vxp_000246",
-              "display_name": "Pinamonti",
-              "role": "Forward",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.327077,
-              "defense_score": 0.114718,
-              "build_score": 0.363327,
-              "impact_delta": 0.080209
-            },
-            {
               "vectra_player_id": "vxp_000138",
               "display_name": "Volpato",
               "role": "Midfielder",
@@ -1666,6 +1655,17 @@
               "defense_score": 0.081535,
               "build_score": 0.292508,
               "impact_delta": 0.038599
+            },
+            {
+              "vectra_player_id": "vxp_000246",
+              "display_name": "Pinamonti",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.327077,
+              "defense_score": 0.114718,
+              "build_score": 0.363327,
+              "impact_delta": 0.080209
             },
             {
               "vectra_player_id": "vxp_000151",
@@ -2026,7 +2026,7 @@
       "away_team_id": "vxt_000017",
       "home_team_name": "Genoa",
       "away_team_name": "Como",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-04-26T13:00:00Z",
       "stadium": "Luigi Ferraris",
       "city": "Genova",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T12:35:32.083340Z",
+  "generated_at": "2026-04-26T13:05:27.645617Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -139,7 +139,7 @@
       "vectra_match_id": "vxm_000036",
       "home_team_name": "Genoa",
       "away_team_name": "Como",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_away_edge",
