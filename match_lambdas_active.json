@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T15:35:23.243738Z",
+  "generated_at": "2026-04-26T16:05:27.664514Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -1647,7 +1647,7 @@
             },
             {
               "vectra_player_id": "",
-              "display_name": "Pinamonti",
+              "display_name": "Volpato",
               "role": "Unknown",
               "resolved": false,
               "availability_reliability": 0.0,
@@ -1658,7 +1658,7 @@
             },
             {
               "vectra_player_id": "",
-              "display_name": "Volpato",
+              "display_name": "Pinamonti",
               "role": "Unknown",
               "resolved": false,
               "availability_reliability": 0.0,
@@ -2363,7 +2363,7 @@
       "away_team_id": "vxt_000035",
       "home_team_name": "Torino",
       "away_team_name": "Inter",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-04-26T16:00:00Z",
       "stadium": "Olimpico - Grande Torino",
       "city": "Torino",
