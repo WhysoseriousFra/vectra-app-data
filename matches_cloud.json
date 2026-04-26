@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T16:35:55.360098Z",
+  "generated_at": "2026-04-26T17:05:42.207570Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_034",
   "matchday": 34,
@@ -44,7 +44,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "failed",
+        "resolution_status": "full",
         "home": {
           "formation": "3-4-2-1",
           "starting_count": 11,
@@ -96,7 +96,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "failed",
+        "resolution_status": "full",
         "home": {
           "formation": "3-5-2",
           "starting_count": 11,
@@ -148,7 +148,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "failed",
+        "resolution_status": "full",
         "home": {
           "formation": "3-4-3",
           "starting_count": 11,
@@ -200,7 +200,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "failed",
+        "resolution_status": "full",
         "home": {
           "formation": "3-5-2",
           "starting_count": 11,
@@ -252,7 +252,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "failed",
+        "resolution_status": "full",
         "home": {
           "formation": "4-3-3",
           "starting_count": 11,
@@ -304,7 +304,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "failed",
+        "resolution_status": "partial",
         "home": {
           "formation": "4-4-2",
           "starting_count": 11,
@@ -356,7 +356,7 @@
       "lineups": {
         "available": true,
         "confirmed": true,
-        "resolution_status": "failed",
+        "resolution_status": "full",
         "home": {
           "formation": "3-4-1-2",
           "starting_count": 11,

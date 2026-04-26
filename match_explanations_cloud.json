@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T16:35:54.405753Z",
+  "generated_at": "2026-04-26T17:05:41.200322Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -64,22 +64,22 @@
       "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
-        "balance_edge_label": "slight_away_edge",
-        "match_script_label": "away_edge_open"
+        "balance_edge_label": "balanced_match",
+        "match_script_label": "balanced_open"
       },
       "free_explanation": {
-        "match_reading_verdict": "Vantaggio ospite in gara aperta",
-        "short_reading": "Il quadro favorisce Roma, ma senza chiudere davvero il match: Bologna conserva abbastanza presenza per restare dentro una gara ancora aperta."
+        "match_reading_verdict": "Equilibrio in gara aperta",
+        "short_reading": "Bologna e Roma si presentano in un quadro equilibrato, con una gara che resta viva sul piano offensivo per entrambe."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un lieve vantaggio per la squadra ospite e un profilo di gara aperta. La lettura attuale porta il match verso Roma, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Roma conserva un margine reale ma contenuto, mentre Bologna resta comunque abbastanza presente da non uscire dal quadro del match.",
+        "extended_explanation": "Il match presenta un quadro molto equilibrato e un profilo di gara aperta. Il modello non individua un margine strutturale forte tra Bologna e Roma, ma legge soprattutto il tipo di ambiente offensivo in cui la gara potrebbe svilupparsi. Il quadro complessivo della partita resta leggibile soprattutto attraverso l’equilibrio tra margine strutturale e ambiente offensivo atteso, anche in assenza di dettagli causali completi.",
         "key_insights": [
-          "Margine strutturale: un lieve vantaggio per la squadra ospite.",
+          "Margine strutturale: un quadro molto equilibrato.",
           "Ambiente partita: un profilo di gara aperta.",
           "Minaccia offensiva Bologna: presente ma contenuta.",
           "Minaccia offensiva Roma: alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un lieve vantaggio per la squadra ospite dentro un profilo di gara aperta. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un quadro molto equilibrato dentro un profilo di gara aperta. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
@@ -154,7 +154,7 @@
         "key_insights": [
           "Margine strutturale: un vantaggio netto per la squadra ospite.",
           "Ambiente partita: un profilo di gara aperta.",
-          "Minaccia offensiva Genoa: presente ma contenuta.",
+          "Minaccia offensiva Genoa: bassa.",
           "Minaccia offensiva Como: molto alta."
         ],
         "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un profilo di gara aperta. Como emerge con un vantaggio strutturale più netto, mentre Genoa appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
