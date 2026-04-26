@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T18:05:42.077916Z",
+  "generated_at": "2026-04-26T18:35:41.952463Z",
   "season_id": "",
   "matchday_id": "",
   "matchday": null,
@@ -7222,6 +7222,44 @@
             "btts": {
               "yes": 0.6964,
               "no": 0.3035
+            }
+          }
+        },
+        {
+          "snapshot_id": "vxm_000038_snap_0009",
+          "captured_at": "2026-04-26T18:35:40.004054Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "lineups_ready"
+          },
+          "lambda": {
+            "home": 1.639,
+            "away": 1.9738
+          },
+          "primary": {
+            "outcome": "away_win",
+            "probability": 0.4603,
+            "confidence": 0.1381,
+            "scoreline": "1-2",
+            "scoreline_probability": 0.0882,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.6997,
+            "btts": "yes",
+            "btts_probability": 0.6948
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.3222,
+              "draw": 0.2174,
+              "away_win": 0.4603
+            },
+            "over_under": {
+              "over_2_5": 0.6997,
+              "under_2_5": 0.3003
+            },
+            "btts": {
+              "yes": 0.6948,
+              "no": 0.3052
             }
           }
         }
