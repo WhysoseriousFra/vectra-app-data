@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T17:35:46.630513Z",
+  "generated_at": "2026-04-26T18:05:41.132328Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -165,7 +165,7 @@
       "vectra_match_id": "vxm_000037",
       "home_team_name": "Torino",
       "away_team_name": "Inter",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_away_edge",
@@ -194,22 +194,22 @@
       "match_status": "UPCOMING",
       "semantic_tags": {
         "goal_environment_label": "very_open_match",
-        "balance_edge_label": "balanced_match",
-        "match_script_label": "volatile_both_teams_live"
+        "balance_edge_label": "slight_away_edge",
+        "match_script_label": "away_edge_open"
       },
       "free_explanation": {
-        "match_reading_verdict": "Gara aperta con entrambe molto vive",
-        "short_reading": "Milan e Juventus entrano in una partita che il modello legge molto viva, con entrambe capaci di restare realmente dentro il profilo offensivo del match."
+        "match_reading_verdict": "Vantaggio ospite in gara aperta",
+        "short_reading": "Juventus parte leggermente avanti, ma il margine resta contenuto in una partita in cui anche Milan conserva un profilo offensivo pienamente credibile."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un quadro molto equilibrato e un ambiente offensivo molto vivo. La lettura attuale porta il match verso nessuna delle due, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Il quadro complessivo della partita resta leggibile soprattutto attraverso l’equilibrio tra margine strutturale e ambiente offensivo atteso, anche in assenza di dettagli causali completi.",
+        "extended_explanation": "Il match presenta un lieve vantaggio per la squadra ospite e un ambiente offensivo molto vivo. La lettura attuale porta il match verso Juventus, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Juventus parte con segnali leggermente migliori, ma anche Milan mantiene un profilo offensivo credibile e resta pienamente dentro la partita.",
         "key_insights": [
-          "Margine strutturale: un quadro molto equilibrato.",
+          "Margine strutturale: un lieve vantaggio per la squadra ospite.",
           "Ambiente partita: un ambiente offensivo molto vivo.",
           "Minaccia offensiva Milan: alta.",
           "Minaccia offensiva Juventus: molto alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un quadro molto equilibrato dentro un ambiente offensivo molto vivo. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un lieve vantaggio per la squadra ospite dentro un ambiente offensivo molto vivo. Juventus mantiene un vantaggio leggero sul piano strutturale, ma anche Milan conserva un profilo offensivo credibile; per questo il margine resta contenuto e la gara resta contendibile. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
