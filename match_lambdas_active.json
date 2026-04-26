@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T17:05:38.953281Z",
+  "generated_at": "2026-04-26T17:35:44.191652Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -1382,7 +1382,7 @@
         "home_build_raw": 4.485662,
         "away_build_raw": 4.591331,
         "home_attack_strength": 1.405797,
-        "away_attack_strength": 1.594478,
+        "away_attack_strength": 1.594477,
         "home_defense_strength": 3.273169,
         "away_defense_strength": 3.697975,
         "home_build_strength": 4.620232,
@@ -1646,17 +1646,6 @@
               "impact_delta": 0.095696
             },
             {
-              "vectra_player_id": "vxp_000621",
-              "display_name": "Volpato",
-              "role": "Forward",
-              "resolved": true,
-              "availability_reliability": 0.8058,
-              "attack_score": 0.1761,
-              "defense_score": 0.142876,
-              "build_score": 0.343412,
-              "impact_delta": 0.049134
-            },
-            {
               "vectra_player_id": "vxp_000609",
               "display_name": "Pinamonti",
               "role": "Forward",
@@ -1666,6 +1655,17 @@
               "defense_score": 0.172581,
               "build_score": 0.378427,
               "impact_delta": 0.084694
+            },
+            {
+              "vectra_player_id": "vxp_000621",
+              "display_name": "Volpato",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 0.8058,
+              "attack_score": 0.1761,
+              "defense_score": 0.142876,
+              "build_score": 0.343412,
+              "impact_delta": 0.049134
             },
             {
               "vectra_player_id": "vxp_000607",
