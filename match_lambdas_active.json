@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T19:38:59.561270Z",
+  "generated_at": "2026-04-26T19:49:57.719181Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -692,11 +692,11 @@
       "prediction_stage": "lineups_ready",
       "lambda_before": {
         "home": 1.1154,
-        "away": 1.4099
+        "away": 1.4097
       },
       "lambda_after": {
         "home": 1.1613,
-        "away": 1.364
+        "away": 1.3638
       },
       "lineups_impact": {
         "applied": true,
@@ -1021,7 +1021,7 @@
       "city": "Bologna",
       "active_lambda": {
         "home": 1.1613,
-        "away": 1.364
+        "away": 1.3638
       }
     },
     "vxm_000034": {
@@ -1703,11 +1703,11 @@
       "prediction_stage": "lineups_ready",
       "lambda_before": {
         "home": 0.9461,
-        "away": 2.1479
+        "away": 2.1477
       },
       "lambda_after": {
         "home": 0.7408,
-        "away": 2.3532
+        "away": 2.353
       },
       "lineups_impact": {
         "applied": true,
@@ -2032,18 +2032,18 @@
       "city": "Genova",
       "active_lambda": {
         "home": 0.7408,
-        "away": 2.3532
+        "away": 2.353
       }
     },
     "vxm_000037": {
       "vectra_match_id": "vxm_000037",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 0.7327,
+        "home": 0.7326,
         "away": 2.45
       },
       "lambda_after": {
-        "home": 0.6197,
+        "home": 0.6196,
         "away": 2.563
       },
       "lineups_impact": {
@@ -2368,7 +2368,7 @@
       "stadium": "Olimpico - Grande Torino",
       "city": "Torino",
       "active_lambda": {
-        "home": 0.6197,
+        "home": 0.6196,
         "away": 2.563
       }
     },
@@ -2376,12 +2376,12 @@
       "vectra_match_id": "vxm_000038",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 1.5929,
-        "away": 1.8085
+        "home": 1.5934,
+        "away": 1.8137
       },
       "lambda_after": {
-        "home": 1.5406,
-        "away": 1.8608
+        "home": 1.5411,
+        "away": 1.866
       },
       "lineups_impact": {
         "applied": true,
@@ -2705,8 +2705,8 @@
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
       "active_lambda": {
-        "home": 1.5406,
-        "away": 1.8608
+        "home": 1.5411,
+        "away": 1.866
       }
     },
     "vxm_000039": {
