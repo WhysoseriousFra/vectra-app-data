@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T10:05:39.234457Z",
+  "generated_at": "2026-04-26T11:06:14.654565Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -1689,7 +1689,7 @@
       "away_team_id": "vxt_000019",
       "home_team_name": "Fiorentina",
       "away_team_name": "Sassuolo",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-04-26T10:30:00Z",
       "stadium": "Artemio Franchi",
       "city": "Firenze",
