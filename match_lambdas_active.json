@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T14:35:22.837576Z",
+  "generated_at": "2026-04-26T15:05:22.733283Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -8,8 +8,8 @@
   "matches_count": 10,
   "stage_counts": {
     "base_ready": 0,
-    "referee_ready": 4,
-    "lineups_ready": 6,
+    "referee_ready": 3,
+    "lineups_ready": 7,
     "missing": 0
   },
   "data": {
@@ -354,12 +354,12 @@
       "vectra_match_id": "vxm_000032",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 1.113,
-        "away": 0.7161
+        "home": 1.1079,
+        "away": 0.7399
       },
       "lambda_after": {
-        "home": 1.113,
-        "away": 0.7161
+        "home": 1.1079,
+        "away": 0.7399
       },
       "lineups_impact": {
         "applied": true,
@@ -683,20 +683,20 @@
       "stadium": "Ennio Tardini",
       "city": "Parma",
       "active_lambda": {
-        "home": 1.113,
-        "away": 0.7161
+        "home": 1.1079,
+        "away": 0.7399
       }
     },
     "vxm_000033": {
       "vectra_match_id": "vxm_000033",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 1.0574,
-        "away": 1.5147
+        "home": 0.9371,
+        "away": 1.4501
       },
       "lambda_after": {
-        "home": 1.0574,
-        "away": 1.5147
+        "home": 0.9371,
+        "away": 1.4501
       },
       "lineups_impact": {
         "applied": true,
@@ -1020,19 +1020,19 @@
       "stadium": "Renato Dall'Ara",
       "city": "Bologna",
       "active_lambda": {
-        "home": 1.0574,
-        "away": 1.5147
+        "home": 0.9371,
+        "away": 1.4501
       }
     },
     "vxm_000034": {
       "vectra_match_id": "vxm_000034",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 0.9463,
+        "home": 0.8667,
         "away": 0.65
       },
       "lambda_after": {
-        "home": 0.9463,
+        "home": 0.8667,
         "away": 0.65
       },
       "lineups_impact": {
@@ -1357,7 +1357,7 @@
       "stadium": "Marcantonio Bentegodi",
       "city": "Verona",
       "active_lambda": {
-        "home": 0.9463,
+        "home": 0.8667,
         "away": 0.65
       }
     },
@@ -1365,12 +1365,12 @@
       "vectra_match_id": "vxm_000035",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 1.8535,
-        "away": 1.0198
+        "home": 1.7634,
+        "away": 0.9605
       },
       "lambda_after": {
-        "home": 1.8535,
-        "away": 1.0198
+        "home": 1.7634,
+        "away": 0.9605
       },
       "lineups_impact": {
         "applied": true,
@@ -1647,7 +1647,7 @@
             },
             {
               "vectra_player_id": "",
-              "display_name": "Volpato",
+              "display_name": "Pinamonti",
               "role": "Unknown",
               "resolved": false,
               "availability_reliability": 0.0,
@@ -1658,7 +1658,7 @@
             },
             {
               "vectra_player_id": "",
-              "display_name": "Pinamonti",
+              "display_name": "Volpato",
               "role": "Unknown",
               "resolved": false,
               "availability_reliability": 0.0,
@@ -1694,20 +1694,20 @@
       "stadium": "Artemio Franchi",
       "city": "Firenze",
       "active_lambda": {
-        "home": 1.8535,
-        "away": 1.0198
+        "home": 1.7634,
+        "away": 0.9605
       }
     },
     "vxm_000036": {
       "vectra_match_id": "vxm_000036",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 0.7342,
-        "away": 2.2595
+        "home": 0.6768,
+        "away": 2.1533
       },
       "lambda_after": {
-        "home": 0.7342,
-        "away": 2.2595
+        "home": 0.6768,
+        "away": 2.1533
       },
       "lineups_impact": {
         "applied": true,
@@ -2026,25 +2026,18 @@
       "away_team_id": "vxt_000024",
       "home_team_name": "Genoa",
       "away_team_name": "Como",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-04-26T13:00:00Z",
       "stadium": "Luigi Ferraris",
       "city": "Genova",
       "active_lambda": {
-        "home": 0.7342,
-        "away": 2.2595
+        "home": 0.6768,
+        "away": 2.1533
       }
     },
     "vxm_000037": {
       "vectra_match_id": "vxm_000037",
-      "prediction_stage": "referee_ready",
-      "referee_modifier": {
-        "applied": true,
-        "vectra_referee_id": "vxr_000033",
-        "reason_flags": [
-          "home_bias_positive"
-        ]
-      },
+      "prediction_stage": "lineups_ready",
       "lambda_before": {
         "home": 0.65,
         "away": 2.45
@@ -2053,16 +2046,316 @@
         "home": 0.65,
         "away": 2.45
       },
-      "referee_factors": {
-        "goal_environment_factor": 1.0,
-        "home_shift_factor": 1.0,
-        "away_shift_factor": 1.0,
-        "penalty_tendency": 0.0,
-        "strictness": 0.0,
-        "home_bias_signal": 0.5,
-        "sample_reliability": 0.0
+      "lineups_impact": {
+        "applied": true,
+        "reason": "lineups_confirmed",
+        "home_attack_raw": 0.0,
+        "away_attack_raw": 0.0,
+        "home_defense_raw": 0.0,
+        "away_defense_raw": 0.0,
+        "home_build_raw": 0.0,
+        "away_build_raw": 0.0,
+        "home_attack_strength": 0.0,
+        "away_attack_strength": 0.0,
+        "home_defense_strength": 0.0,
+        "away_defense_strength": 0.0,
+        "home_build_strength": 0.0,
+        "away_build_strength": 0.0,
+        "attack_delta_raw": 0.0,
+        "defense_delta_raw": 0.0,
+        "build_delta_raw": 0.0,
+        "attack_delta_applied": 0.0,
+        "defense_delta_applied": 0.0,
+        "build_delta_applied": 0.0,
+        "reliability_factor": 0.0,
+        "home_formation": "Unknown",
+        "away_formation": "3-5-2",
+        "home_formation_modifiers": {
+          "attack": 1.0,
+          "defense": 1.0,
+          "build": 1.0
+        },
+        "away_formation_modifiers": {
+          "attack": 1.02,
+          "defense": 1.03,
+          "build": 1.04
+        },
+        "home_avg_player_reliability": 0.0,
+        "away_avg_player_reliability": 0.0,
+        "home_role_counts": {
+          "Goalkeeper": 0,
+          "Defender": 0,
+          "Midfielder": 0,
+          "Forward": 0,
+          "Unknown": 0
+        },
+        "away_role_counts": {
+          "Goalkeeper": 0,
+          "Defender": 0,
+          "Midfielder": 0,
+          "Forward": 0,
+          "Unknown": 0
+        },
+        "home_resolved_starters": 0,
+        "away_resolved_starters": 0,
+        "home_ignored_players": 11,
+        "away_ignored_players": 11
       },
-      "active_stage_source": "match_lambdas_referee.json",
+      "starting_players_impact": {
+        "home": {
+          "formation": "Unknown",
+          "players": [
+            {
+              "vectra_player_id": "",
+              "display_name": "Paleari",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Coco",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Ismajli",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Ebosse",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Lazaro",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Obrador",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Vlašić",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "İlkhan",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Gineitis",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Adams",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Simeone",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            }
+          ]
+        },
+        "away": {
+          "formation": "3-5-2",
+          "players": [
+            {
+              "vectra_player_id": "",
+              "display_name": "Sommer",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Akanji",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Carlos Augusto",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Bisseck",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Darmian",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Zieliński",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Dimarco",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Barella",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Sučić",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "Bonny",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            },
+            {
+              "vectra_player_id": "",
+              "display_name": "M. Thuram",
+              "role": "Unknown",
+              "resolved": false,
+              "availability_reliability": 0.0,
+              "attack_score": 0.0,
+              "defense_score": 0.0,
+              "build_score": 0.0,
+              "impact_delta": 0.0
+            }
+          ]
+        }
+      },
+      "active_stage_source": "match_lambdas_lineups.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_034",
       "matchday": 34,
@@ -2090,12 +2383,12 @@
         ]
       },
       "lambda_before": {
-        "home": 1.5515,
-        "away": 1.905
+        "home": 1.4233,
+        "away": 1.798
       },
       "lambda_after": {
-        "home": 1.5515,
-        "away": 1.905
+        "home": 1.4233,
+        "away": 1.798
       },
       "referee_factors": {
         "goal_environment_factor": 1.0,
@@ -2119,8 +2412,8 @@
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
       "active_lambda": {
-        "home": 1.5515,
-        "away": 1.905
+        "home": 1.4233,
+        "away": 1.798
       }
     },
     "vxm_000039": {
@@ -2134,12 +2427,12 @@
         ]
       },
       "lambda_before": {
-        "home": 0.7575,
-        "away": 2.1901
+        "home": 0.7208,
+        "away": 2.2077
       },
       "lambda_after": {
-        "home": 0.7575,
-        "away": 2.1901
+        "home": 0.7208,
+        "away": 2.2077
       },
       "referee_factors": {
         "goal_environment_factor": 1.0,
@@ -2163,8 +2456,8 @@
       "stadium": "Unipol Domus",
       "city": "Cagliari",
       "active_lambda": {
-        "home": 0.7575,
-        "away": 2.1901
+        "home": 0.7208,
+        "away": 2.2077
       }
     },
     "vxm_000040": {
@@ -2178,12 +2471,12 @@
         ]
       },
       "lambda_before": {
-        "home": 1.4557,
-        "away": 0.8846
+        "home": 1.4931,
+        "away": 0.8614
       },
       "lambda_after": {
-        "home": 1.4557,
-        "away": 0.8846
+        "home": 1.4931,
+        "away": 0.8614
       },
       "referee_factors": {
         "goal_environment_factor": 1.0,
@@ -2207,8 +2500,8 @@
       "stadium": "Olimpico",
       "city": "Roma",
       "active_lambda": {
-        "home": 1.4557,
-        "away": 0.8846
+        "home": 1.4931,
+        "away": 0.8614
       }
     }
   }
