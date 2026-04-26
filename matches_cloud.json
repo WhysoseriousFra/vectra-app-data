@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T12:05:27.461810Z",
+  "generated_at": "2026-04-26T12:35:33.006475Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_034",
   "matchday": 34,
@@ -235,7 +235,7 @@
         "city": "Firenze"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
@@ -306,12 +306,12 @@
         "confirmed": true,
         "resolution_status": "partial",
         "home": {
-          "formation": "Unknown",
+          "formation": "4-4-2",
           "starting_count": 11,
           "bench_count": 14
         },
         "away": {
-          "formation": "Unknown",
+          "formation": "4-2-3-1",
           "starting_count": 11,
           "bench_count": 12
         }
