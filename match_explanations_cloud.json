@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T20:35:38.474349Z",
+  "generated_at": "2026-04-26T21:05:39.536758Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -191,7 +191,7 @@
       "vectra_match_id": "vxm_000038",
       "home_team_name": "Milan",
       "away_team_name": "Juventus",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "very_open_match",
         "balance_edge_label": "slight_away_edge",

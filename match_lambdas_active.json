@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T20:35:36.971476Z",
+  "generated_at": "2026-04-26T21:05:38.335731Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -2580,6 +2580,17 @@
               "impact_delta": 0.055048
             },
             {
+              "vectra_player_id": "vxp_000317",
+              "display_name": "Kelly",
+              "role": "Defender",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.048672,
+              "defense_score": 0.521167,
+              "build_score": 0.670319,
+              "impact_delta": 0.104362
+            },
+            {
               "vectra_player_id": "vxp_000322",
               "display_name": "Bremer",
               "role": "Defender",
@@ -2611,17 +2622,6 @@
               "defense_score": 0.344516,
               "build_score": 0.60646,
               "impact_delta": 0.104993
-            },
-            {
-              "vectra_player_id": "vxp_000317",
-              "display_name": "Kelly",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.048672,
-              "defense_score": 0.521167,
-              "build_score": 0.670319,
-              "impact_delta": 0.104362
             },
             {
               "vectra_player_id": "vxp_000316",
@@ -2700,7 +2700,7 @@
       "away_team_id": "vxt_000021",
       "home_team_name": "Milan",
       "away_team_name": "Juventus",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-04-26T18:45:00Z",
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
