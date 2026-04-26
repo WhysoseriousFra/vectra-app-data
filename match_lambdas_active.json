@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T19:32:53.200772Z",
+  "generated_at": "2026-04-26T19:35:44.128764Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -354,12 +354,12 @@
       "vectra_match_id": "vxm_000032",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 1.1069,
-        "away": 0.7866
+        "home": 1.0997,
+        "away": 0.7834
       },
       "lambda_after": {
-        "home": 1.1594,
-        "away": 0.7341
+        "home": 1.1522,
+        "away": 0.7309
       },
       "lineups_impact": {
         "applied": true,
@@ -683,20 +683,20 @@
       "stadium": "Ennio Tardini",
       "city": "Parma",
       "active_lambda": {
-        "home": 1.1594,
-        "away": 0.7341
+        "home": 1.1522,
+        "away": 0.7309
       }
     },
     "vxm_000033": {
       "vectra_match_id": "vxm_000033",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 1.1399,
-        "away": 1.4397
+        "home": 1.1154,
+        "away": 1.4099
       },
       "lambda_after": {
-        "home": 1.1858,
-        "away": 1.3938
+        "home": 1.1613,
+        "away": 1.364
       },
       "lineups_impact": {
         "applied": true,
@@ -1020,20 +1020,20 @@
       "stadium": "Renato Dall'Ara",
       "city": "Bologna",
       "active_lambda": {
-        "home": 1.1858,
-        "away": 1.3938
+        "home": 1.1613,
+        "away": 1.364
       }
     },
     "vxm_000034": {
       "vectra_match_id": "vxm_000034",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 0.8711,
-        "away": 0.7004
+        "home": 0.8617,
+        "away": 0.6964
       },
       "lambda_after": {
-        "home": 0.8139,
-        "away": 0.7576
+        "home": 0.8045,
+        "away": 0.7536
       },
       "lineups_impact": {
         "applied": true,
@@ -1357,20 +1357,20 @@
       "stadium": "Marcantonio Bentegodi",
       "city": "Verona",
       "active_lambda": {
-        "home": 0.8139,
-        "away": 0.7576
+        "home": 0.8045,
+        "away": 0.7536
       }
     },
     "vxm_000035": {
       "vectra_match_id": "vxm_000035",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 1.7713,
-        "away": 0.9695
+        "home": 1.7528,
+        "away": 0.9595
       },
       "lambda_after": {
-        "home": 1.7821,
-        "away": 0.9587
+        "home": 1.7636,
+        "away": 0.9487
       },
       "lineups_impact": {
         "applied": true,
@@ -1694,20 +1694,20 @@
       "stadium": "Artemio Franchi",
       "city": "Firenze",
       "active_lambda": {
-        "home": 1.7821,
-        "away": 0.9587
+        "home": 1.7636,
+        "away": 0.9487
       }
     },
     "vxm_000036": {
       "vectra_match_id": "vxm_000036",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 0.9681,
-        "away": 2.1828
+        "home": 0.9461,
+        "away": 2.1479
       },
       "lambda_after": {
-        "home": 0.7628,
-        "away": 2.3881
+        "home": 0.7408,
+        "away": 2.3532
       },
       "lineups_impact": {
         "applied": true,
@@ -2031,19 +2031,19 @@
       "stadium": "Luigi Ferraris",
       "city": "Genova",
       "active_lambda": {
-        "home": 0.7628,
-        "away": 2.3881
+        "home": 0.7408,
+        "away": 2.3532
       }
     },
     "vxm_000037": {
       "vectra_match_id": "vxm_000037",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 0.6997,
+        "home": 0.7327,
         "away": 2.45
       },
       "lambda_after": {
-        "home": 0.5867,
+        "home": 0.6197,
         "away": 2.563
       },
       "lineups_impact": {
@@ -2368,7 +2368,7 @@
       "stadium": "Olimpico - Grande Torino",
       "city": "Torino",
       "active_lambda": {
-        "home": 0.5867,
+        "home": 0.6197,
         "away": 2.563
       }
     },
@@ -2376,12 +2376,12 @@
       "vectra_match_id": "vxm_000038",
       "prediction_stage": "lineups_ready",
       "lambda_before": {
-        "home": 1.6913,
-        "away": 1.9215
+        "home": 1.5929,
+        "away": 1.8085
       },
       "lambda_after": {
-        "home": 1.639,
-        "away": 1.9738
+        "home": 1.5406,
+        "away": 1.8608
       },
       "lineups_impact": {
         "applied": true,
@@ -2657,17 +2657,6 @@
               "impact_delta": 0.116422
             },
             {
-              "vectra_player_id": "vxp_000319",
-              "display_name": "Conceição",
-              "role": "Forward",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.431737,
-              "defense_score": 0.376442,
-              "build_score": 0.495548,
-              "impact_delta": 0.131585
-            },
-            {
               "vectra_player_id": "vxp_000331",
               "display_name": "Boga",
               "role": "Forward",
@@ -2688,6 +2677,17 @@
               "defense_score": 0.239919,
               "build_score": 0.394484,
               "impact_delta": 0.10013
+            },
+            {
+              "vectra_player_id": "vxp_000319",
+              "display_name": "Conceição",
+              "role": "Forward",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.431737,
+              "defense_score": 0.376442,
+              "build_score": 0.495548,
+              "impact_delta": 0.131585
             }
           ]
         }
@@ -2705,8 +2705,8 @@
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
       "active_lambda": {
-        "home": 1.639,
-        "away": 1.9738
+        "home": 1.5406,
+        "away": 1.8608
       }
     },
     "vxm_000039": {
@@ -2720,12 +2720,12 @@
         ]
       },
       "lambda_before": {
-        "home": 0.8252,
-        "away": 2.1392
+        "home": 0.8151,
+        "away": 2.1074
       },
       "lambda_after": {
-        "home": 0.8252,
-        "away": 2.1392
+        "home": 0.8151,
+        "away": 2.1074
       },
       "referee_factors": {
         "goal_environment_factor": 1.0,
@@ -2749,8 +2749,8 @@
       "stadium": "Unipol Domus",
       "city": "Cagliari",
       "active_lambda": {
-        "home": 0.8252,
-        "away": 2.1392
+        "home": 0.8151,
+        "away": 2.1074
       }
     },
     "vxm_000040": {
@@ -2764,12 +2764,12 @@
         ]
       },
       "lambda_before": {
-        "home": 1.542,
-        "away": 0.9129
+        "home": 1.5258,
+        "away": 0.9028
       },
       "lambda_after": {
-        "home": 1.542,
-        "away": 0.9129
+        "home": 1.5258,
+        "away": 0.9028
       },
       "referee_factors": {
         "goal_environment_factor": 1.0,
@@ -2793,8 +2793,8 @@
       "stadium": "Olimpico",
       "city": "Roma",
       "active_lambda": {
-        "home": 1.542,
-        "away": 0.9129
+        "home": 1.5258,
+        "away": 0.9028
       }
     }
   }
