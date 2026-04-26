@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T19:05:45.725422Z",
+  "generated_at": "2026-04-26T19:32:53.200772Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -2657,15 +2657,15 @@
               "impact_delta": 0.116422
             },
             {
-              "vectra_player_id": "vxp_000312",
-              "display_name": "J. David",
+              "vectra_player_id": "vxp_000319",
+              "display_name": "Conceição",
               "role": "Forward",
               "resolved": true,
               "availability_reliability": 1.0,
-              "attack_score": 0.357639,
-              "defense_score": 0.239919,
-              "build_score": 0.394484,
-              "impact_delta": 0.10013
+              "attack_score": 0.431737,
+              "defense_score": 0.376442,
+              "build_score": 0.495548,
+              "impact_delta": 0.131585
             },
             {
               "vectra_player_id": "vxp_000331",
@@ -2679,15 +2679,15 @@
               "impact_delta": 0.018235
             },
             {
-              "vectra_player_id": "vxp_000319",
-              "display_name": "Conceição",
+              "vectra_player_id": "vxp_000312",
+              "display_name": "J. David",
               "role": "Forward",
               "resolved": true,
               "availability_reliability": 1.0,
-              "attack_score": 0.431737,
-              "defense_score": 0.376442,
-              "build_score": 0.495548,
-              "impact_delta": 0.131585
+              "attack_score": 0.357639,
+              "defense_score": 0.239919,
+              "build_score": 0.394484,
+              "impact_delta": 0.10013
             }
           ]
         }
