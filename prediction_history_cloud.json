@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T21:30:35.243628Z",
+  "generated_at": "2026-04-30T02:23:17.424120Z",
   "season_id": "",
   "matchday_id": "",
   "matchday": null,
@@ -8181,6 +8181,44 @@
               "no": 0.6985
             }
           }
+        },
+        {
+          "snapshot_id": "vxm_000041_snap_0003",
+          "captured_at": "2026-04-30T02:23:17.322254Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "referee_ready"
+          },
+          "lambda": {
+            "home": 0.815,
+            "away": 0.7784
+          },
+          "primary": {
+            "outcome": "draw",
+            "probability": 0.3558,
+            "confidence": 0.0238,
+            "scoreline": "0-0",
+            "scoreline_probability": 0.2044,
+            "over_under": "under_2_5",
+            "over_under_probability": 0.7843,
+            "btts": "no",
+            "btts_probability": 0.6984
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.332,
+              "draw": 0.3558,
+              "away_win": 0.3122
+            },
+            "over_under": {
+              "over_2_5": 0.2156,
+              "under_2_5": 0.7843
+            },
+            "btts": {
+              "yes": 0.3016,
+              "no": 0.6984
+            }
+          }
         }
       ]
     },
@@ -8232,6 +8270,44 @@
             "btts": {
               "yes": 0.4544,
               "no": 0.5456
+            }
+          }
+        },
+        {
+          "snapshot_id": "vxm_000042_snap_0002",
+          "captured_at": "2026-04-30T02:23:17.322314Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "referee_ready"
+          },
+          "lambda": {
+            "home": 1.3388,
+            "away": 0.9395
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.4587,
+            "confidence": 0.1814,
+            "scoreline": "1-0",
+            "scoreline_probability": 0.1353,
+            "over_under": "under_2_5",
+            "over_under_probability": 0.5999,
+            "btts": "no",
+            "btts_probability": 0.5491
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.4587,
+              "draw": 0.2773,
+              "away_win": 0.264
+            },
+            "over_under": {
+              "over_2_5": 0.4001,
+              "under_2_5": 0.5999
+            },
+            "btts": {
+              "yes": 0.451,
+              "no": 0.5491
             }
           }
         }
@@ -8287,6 +8363,44 @@
               "no": 0.3863
             }
           }
+        },
+        {
+          "snapshot_id": "vxm_000043_snap_0002",
+          "captured_at": "2026-04-30T02:23:17.322344Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "referee_ready"
+          },
+          "lambda": {
+            "home": 1.881,
+            "away": 1.2991
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.5093,
+            "confidence": 0.2441,
+            "scoreline": "1-1",
+            "scoreline_probability": 0.1016,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.6161,
+            "btts": "yes",
+            "btts_probability": 0.6149
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.5093,
+              "draw": 0.2254,
+              "away_win": 0.2652
+            },
+            "over_under": {
+              "over_2_5": 0.6161,
+              "under_2_5": 0.3839
+            },
+            "btts": {
+              "yes": 0.6149,
+              "no": 0.3851
+            }
+          }
         }
       ]
     },
@@ -8338,6 +8452,44 @@
             "btts": {
               "yes": 0.559,
               "no": 0.441
+            }
+          }
+        },
+        {
+          "snapshot_id": "vxm_000044_snap_0002",
+          "captured_at": "2026-04-30T02:23:17.322395Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "referee_ready"
+          },
+          "lambda": {
+            "home": 2.3571,
+            "away": 0.9353
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.6885,
+            "confidence": 0.5102,
+            "scoreline": "2-0",
+            "scoreline_probability": 0.1026,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.6359,
+            "btts": "yes",
+            "btts_probability": 0.5496
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.6885,
+              "draw": 0.1783,
+              "away_win": 0.1333
+            },
+            "over_under": {
+              "over_2_5": 0.6359,
+              "under_2_5": 0.3641
+            },
+            "btts": {
+              "yes": 0.5496,
+              "no": 0.4504
             }
           }
         }
@@ -8393,6 +8545,44 @@
               "no": 0.5904
             }
           }
+        },
+        {
+          "snapshot_id": "vxm_000045_snap_0002",
+          "captured_at": "2026-04-30T02:23:17.322423Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "referee_ready"
+          },
+          "lambda": {
+            "home": 1.6616,
+            "away": 0.6779
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.612,
+            "confidence": 0.3735,
+            "scoreline": "1-0",
+            "scoreline_probability": 0.1593,
+            "over_under": "under_2_5",
+            "over_under_probability": 0.5862,
+            "btts": "no",
+            "btts_probability": 0.6022
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.612,
+              "draw": 0.2385,
+              "away_win": 0.1494
+            },
+            "over_under": {
+              "over_2_5": 0.4138,
+              "under_2_5": 0.5862
+            },
+            "btts": {
+              "yes": 0.3977,
+              "no": 0.6022
+            }
+          }
         }
       ]
     },
@@ -8444,6 +8634,44 @@
             "btts": {
               "yes": 0.529,
               "no": 0.471
+            }
+          }
+        },
+        {
+          "snapshot_id": "vxm_000046_snap_0002",
+          "captured_at": "2026-04-30T02:23:17.338339Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "referee_ready"
+          },
+          "lambda": {
+            "home": 0.9267,
+            "away": 2.016
+          },
+          "primary": {
+            "outcome": "away_win",
+            "probability": 0.6254,
+            "confidence": 0.4176,
+            "scoreline": "0-1",
+            "scoreline_probability": 0.1086,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.5646,
+            "btts": "yes",
+            "btts_probability": 0.5239
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.1668,
+              "draw": 0.2078,
+              "away_win": 0.6254
+            },
+            "over_under": {
+              "over_2_5": 0.5646,
+              "under_2_5": 0.4354
+            },
+            "btts": {
+              "yes": 0.5239,
+              "no": 0.476
             }
           }
         }
@@ -8499,6 +8727,44 @@
               "no": 0.5662
             }
           }
+        },
+        {
+          "snapshot_id": "vxm_000047_snap_0002",
+          "captured_at": "2026-04-30T02:23:17.338406Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "referee_ready"
+          },
+          "lambda": {
+            "home": 2.4494,
+            "away": 0.6502
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.7666,
+            "confidence": 0.6134,
+            "scoreline": "2-0",
+            "scoreline_probability": 0.1363,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.5959,
+            "btts": "no",
+            "btts_probability": 0.5659
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.7666,
+              "draw": 0.1532,
+              "away_win": 0.0802
+            },
+            "over_under": {
+              "over_2_5": 0.5959,
+              "under_2_5": 0.4041
+            },
+            "btts": {
+              "yes": 0.434,
+              "no": 0.5659
+            }
+          }
         }
       ]
     },
@@ -8550,6 +8816,44 @@
             "btts": {
               "yes": 0.4372,
               "no": 0.5627
+            }
+          }
+        },
+        {
+          "snapshot_id": "vxm_000048_snap_0002",
+          "captured_at": "2026-04-30T02:23:17.338434Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "referee_ready"
+          },
+          "lambda": {
+            "home": 2.445,
+            "away": 0.6513
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.7678,
+            "confidence": 0.6148,
+            "scoreline": "2-0",
+            "scoreline_probability": 0.1361,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.5967,
+            "btts": "no",
+            "btts_probability": 0.5628
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.7678,
+              "draw": 0.153,
+              "away_win": 0.0791
+            },
+            "over_under": {
+              "over_2_5": 0.5967,
+              "under_2_5": 0.4034
+            },
+            "btts": {
+              "yes": 0.4373,
+              "no": 0.5628
             }
           }
         }
@@ -8643,6 +8947,44 @@
               "no": 0.5635
             }
           }
+        },
+        {
+          "snapshot_id": "vxm_000049_snap_0003",
+          "captured_at": "2026-04-30T02:23:17.338458Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "referee_ready"
+          },
+          "lambda": {
+            "home": 0.8126,
+            "away": 1.5305
+          },
+          "primary": {
+            "outcome": "away_win",
+            "probability": 0.5419,
+            "confidence": 0.2834,
+            "scoreline": "0-1",
+            "scoreline_probability": 0.1467,
+            "over_under": "under_2_5",
+            "over_under_probability": 0.5841,
+            "btts": "no",
+            "btts_probability": 0.5632
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.1996,
+              "draw": 0.2585,
+              "away_win": 0.5419
+            },
+            "over_under": {
+              "over_2_5": 0.4159,
+              "under_2_5": 0.5841
+            },
+            "btts": {
+              "yes": 0.4369,
+              "no": 0.5632
+            }
+          }
         }
       ]
     },
@@ -8694,6 +9036,44 @@
             "btts": {
               "yes": 0.5429,
               "no": 0.4571
+            }
+          }
+        },
+        {
+          "snapshot_id": "vxm_000050_snap_0002",
+          "captured_at": "2026-04-30T02:23:17.338483Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "referee_ready"
+          },
+          "lambda": {
+            "home": 2.0169,
+            "away": 0.968
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.6185,
+            "confidence": 0.4105,
+            "scoreline": "1-0",
+            "scoreline_probability": 0.1036,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.5735,
+            "btts": "yes",
+            "btts_probability": 0.5376
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.6185,
+              "draw": 0.208,
+              "away_win": 0.1734
+            },
+            "over_under": {
+              "over_2_5": 0.5735,
+              "under_2_5": 0.4265
+            },
+            "btts": {
+              "yes": 0.5376,
+              "no": 0.4623
             }
           }
         }

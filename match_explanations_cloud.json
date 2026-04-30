@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T21:30:35.215155Z",
+  "generated_at": "2026-04-30T02:23:17.395852Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -20,15 +20,15 @@
         "short_reading": "Pisa e Lecce arrivano in un quadro molto equilibrato, con una partita che il modello legge più prudente che ricca di episodi offensivi."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un quadro molto equilibrato e un profilo piuttosto chiuso. Il modello non individua un margine strutturale forte tra Pisa e Lecce, ma legge soprattutto il tipo di ambiente offensivo in cui la gara potrebbe svilupparsi. Entrambe le squadre mostrano indicatori che non spingono verso un vero sbilanciamento, per cui la chiave della lettura resta soprattutto nel profilo complessivo della gara.",
+        "extended_explanation": "Il match presenta un quadro molto equilibrato e un profilo piuttosto chiuso. Il modello non individua un margine strutturale forte tra Pisa e Lecce, ma legge soprattutto il tipo di ambiente offensivo in cui la gara potrebbe svilupparsi. Il quadro complessivo della partita resta leggibile soprattutto attraverso l’equilibrio tra margine strutturale e ambiente offensivo atteso, anche in assenza di dettagli causali completi.",
         "key_insights": [
           "Margine strutturale: un quadro molto equilibrato.",
           "Ambiente partita: un profilo piuttosto chiuso.",
           "Minaccia offensiva Pisa: presente ma contenuta.",
           "Minaccia offensiva Lecce: bassa."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un quadro molto equilibrato dentro un profilo piuttosto chiuso. Nessuna delle due squadre costruisce un vantaggio abbastanza netto da trasformare il match in una lettura unidirezionale, quindi il quadro resta soprattutto relazionale e legato al tono complessivo della gara. Lo stato attuale arriva dal layer `core_only`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
-        "layer_evolution_summary": "Al momento la lettura è ancora ancorata al layer base/core. Quando entreranno designazioni arbitrali e lineups ufficiali, il bot potrà spiegare se il quadro si è rafforzato, riequilibrato o è rimasto sostanzialmente stabile."
+        "premium_deep_explanation": "La lettura profonda del modello parte da un quadro molto equilibrato dentro un profilo piuttosto chiuso. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
     "vxm_000042": {
@@ -46,15 +46,15 @@
         "short_reading": "Udinese parte avanti, ma in un contesto più misurato sul piano del volume offensivo, senza una lettura da dominio assoluto."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un lieve vantaggio per la squadra di casa e un ambiente offensivo intermedio. La lettura attuale porta il match verso Udinese, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Udinese mostra una qualità di costruzione media e una spinta offensiva media, mentre Torino conserva un profilo più contenuto o comunque inferiore sul piano della produzione.",
+        "extended_explanation": "Il match presenta un lieve vantaggio per la squadra di casa e un ambiente offensivo intermedio. La lettura attuale porta il match verso Udinese, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Udinese conserva un margine reale ma contenuto, mentre Torino resta comunque abbastanza presente da non uscire dal quadro del match.",
         "key_insights": [
           "Margine strutturale: un lieve vantaggio per la squadra di casa.",
           "Ambiente partita: un ambiente offensivo intermedio.",
           "Minaccia offensiva Udinese: alta.",
           "Minaccia offensiva Torino: presente ma contenuta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un lieve vantaggio per la squadra di casa dentro un ambiente offensivo intermedio. Udinese regge meglio il match per una combinazione più favorevole di spinta offensiva (0.295) e qualità di costruzione (0.415); inoltre il contesto difensivo avversario offre un livello di concedibilità pari a 0.654, che aiuta a sostenere il profilo home. Lo stato attuale arriva dal layer `core_only`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
-        "layer_evolution_summary": "Al momento la lettura è ancora ancorata al layer base/core. Quando entreranno designazioni arbitrali e lineups ufficiali, il bot potrà spiegare se il quadro si è rafforzato, riequilibrato o è rimasto sostanzialmente stabile."
+        "premium_deep_explanation": "La lettura profonda del modello parte da un lieve vantaggio per la squadra di casa dentro un ambiente offensivo intermedio. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
     "vxm_000043": {
@@ -72,15 +72,15 @@
         "short_reading": "Como parte leggermente avanti, ma il margine resta contenuto in una partita in cui anche Napoli mantiene un profilo offensivo pienamente credibile."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un lieve vantaggio per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Como, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Como ha segnali leggermente migliori in termini di costruzione e peso offensivo, ma anche Napoli mantiene una struttura offensiva credibile e resta pienamente dentro il profilo della partita.",
+        "extended_explanation": "Il match presenta un lieve vantaggio per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Como, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Como parte con segnali leggermente migliori, ma anche Napoli mantiene un profilo offensivo credibile e resta pienamente dentro la partita.",
         "key_insights": [
           "Margine strutturale: un lieve vantaggio per la squadra di casa.",
           "Ambiente partita: un profilo di gara aperta.",
           "Minaccia offensiva Como: molto alta.",
           "Minaccia offensiva Napoli: alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un lieve vantaggio per la squadra di casa dentro un profilo di gara aperta. Como mantiene un vantaggio leggero grazie a una combinazione un po' migliore di spinta offensiva (0.651) e qualità di costruzione (0.859); tuttavia anche Napoli conserva un profilo offensivo credibile, quindi il margine resta contenuto e la gara resta contendibile. Lo stato attuale arriva dal layer `core_only`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
-        "layer_evolution_summary": "Al momento la lettura è ancora ancorata al layer base/core. Quando entreranno designazioni arbitrali e lineups ufficiali, il bot potrà spiegare se il quadro si è rafforzato, riequilibrato o è rimasto sostanzialmente stabile."
+        "premium_deep_explanation": "La lettura profonda del modello parte da un lieve vantaggio per la squadra di casa dentro un profilo di gara aperta. Como mantiene un vantaggio leggero sul piano strutturale, ma anche Napoli conserva un profilo offensivo credibile; per questo il margine resta contenuto e la gara resta contendibile. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
     "vxm_000044": {
@@ -98,15 +98,15 @@
         "short_reading": "Atalanta parte chiaramente avanti: il match resta leggibile sul piano offensivo, ma Genoa arriva con un peso più limitato e senza lo stesso margine strutturale."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un vantaggio netto per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Atalanta, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Atalanta mostra una qualità di costruzione molto alta e una spinta offensiva alta, mentre Genoa conserva un profilo più contenuto o comunque inferiore sul piano della produzione.",
+        "extended_explanation": "Il match presenta un vantaggio netto per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Atalanta, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Atalanta mostra un profilo complessivamente più forte, mentre Genoa arriva con un peso offensivo più limitato e con meno margine strutturale.",
         "key_insights": [
           "Margine strutturale: un vantaggio netto per la squadra di casa.",
           "Ambiente partita: un profilo di gara aperta.",
           "Minaccia offensiva Atalanta: molto alta.",
           "Minaccia offensiva Genoa: presente ma contenuta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Atalanta regge meglio il match per una combinazione più favorevole di spinta offensiva (0.638) e qualità di costruzione (0.765); inoltre il contesto difensivo avversario offre un livello di concedibilità pari a 0.579, che aiuta a sostenere il profilo home. Lo stato attuale arriva dal layer `core_only`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
-        "layer_evolution_summary": "Al momento la lettura è ancora ancorata al layer base/core. Quando entreranno designazioni arbitrali e lineups ufficiali, il bot potrà spiegare se il quadro si è rafforzato, riequilibrato o è rimasto sostanzialmente stabile."
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Atalanta emerge con un vantaggio strutturale più netto, mentre Genoa appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
     "vxm_000045": {
@@ -124,15 +124,15 @@
         "short_reading": "Bologna parte avanti, ma in un contesto più misurato sul piano del volume offensivo, senza una lettura da dominio assoluto."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un vantaggio reale per la squadra di casa e un ambiente offensivo intermedio. La lettura attuale porta il match verso Bologna, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Bologna mostra una qualità di costruzione alta e una spinta offensiva media, mentre Cagliari conserva un profilo più contenuto o comunque inferiore sul piano della produzione.",
+        "extended_explanation": "Il match presenta un vantaggio reale per la squadra di casa e un ambiente offensivo intermedio. La lettura attuale porta il match verso Bologna, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Bologna conserva un margine reale ma contenuto, mentre Cagliari resta comunque abbastanza presente da non uscire dal quadro del match.",
         "key_insights": [
           "Margine strutturale: un vantaggio reale per la squadra di casa.",
           "Ambiente partita: un ambiente offensivo intermedio.",
           "Minaccia offensiva Bologna: alta.",
           "Minaccia offensiva Cagliari: bassa."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra di casa dentro un ambiente offensivo intermedio. Bologna regge meglio il match per una combinazione più favorevole di spinta offensiva (0.349) e qualità di costruzione (0.616); inoltre il contesto difensivo avversario offre un livello di concedibilità pari a 0.642, che aiuta a sostenere il profilo home. Lo stato attuale arriva dal layer `core_only`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
-        "layer_evolution_summary": "Al momento la lettura è ancora ancorata al layer base/core. Quando entreranno designazioni arbitrali e lineups ufficiali, il bot potrà spiegare se il quadro si è rafforzato, riequilibrato o è rimasto sostanzialmente stabile."
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra di casa dentro un ambiente offensivo intermedio. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
     "vxm_000046": {
@@ -150,15 +150,15 @@
         "short_reading": "Il quadro favorisce Milan, ma senza chiudere davvero il match: Sassuolo conserva abbastanza presenza per restare dentro una gara ancora aperta."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un vantaggio reale per la squadra ospite e un profilo di gara aperta. La lettura attuale porta il match verso Milan, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Milan arriva con una combinazione più forte tra peso offensivo e sostenibilità della manovra (forza offensiva alta, costruzione alta), mentre Sassuolo resta più limitata o meno continua sul piano della produzione.",
+        "extended_explanation": "Il match presenta un vantaggio reale per la squadra ospite e un profilo di gara aperta. La lettura attuale porta il match verso Milan, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Milan conserva un margine reale ma contenuto, mentre Sassuolo resta comunque abbastanza presente da non uscire dal quadro del match.",
         "key_insights": [
           "Margine strutturale: un vantaggio reale per la squadra ospite.",
           "Ambiente partita: un profilo di gara aperta.",
           "Minaccia offensiva Sassuolo: presente ma contenuta.",
           "Minaccia offensiva Milan: molto alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un profilo di gara aperta. Milan emerge per una combinazione più forte tra peso offensivo (0.624) e sostenibilità della manovra (0.714); in più trova un contesto difensivo avversario con concedibilità pari a 0.643, coerente con un vantaggio strutturale ospite. Lo stato attuale arriva dal layer `core_only`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
-        "layer_evolution_summary": "Al momento la lettura è ancora ancorata al layer base/core. Quando entreranno designazioni arbitrali e lineups ufficiali, il bot potrà spiegare se il quadro si è rafforzato, riequilibrato o è rimasto sostanzialmente stabile."
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un profilo di gara aperta. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
     "vxm_000047": {
@@ -176,15 +176,15 @@
         "short_reading": "Juventus parte chiaramente avanti: il match resta leggibile sul piano offensivo, ma Hellas Verona arriva con un peso più limitato e senza lo stesso margine strutturale."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un vantaggio netto per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Juventus, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Juventus mostra una qualità di costruzione molto alta e una spinta offensiva molto alta, mentre Hellas Verona conserva un profilo più contenuto o comunque inferiore sul piano della produzione.",
+        "extended_explanation": "Il match presenta un vantaggio netto per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Juventus, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Juventus mostra un profilo complessivamente più forte, mentre Hellas Verona arriva con un peso offensivo più limitato e con meno margine strutturale.",
         "key_insights": [
           "Margine strutturale: un vantaggio netto per la squadra di casa.",
           "Ambiente partita: un profilo di gara aperta.",
           "Minaccia offensiva Juventus: molto alta.",
           "Minaccia offensiva Hellas Verona: bassa."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Juventus regge meglio il match per una combinazione più favorevole di spinta offensiva (0.766) e qualità di costruzione (0.816); inoltre il contesto difensivo avversario offre un livello di concedibilità pari a 0.614, che aiuta a sostenere il profilo home. Lo stato attuale arriva dal layer `core_only`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
-        "layer_evolution_summary": "Al momento la lettura è ancora ancorata al layer base/core. Quando entreranno designazioni arbitrali e lineups ufficiali, il bot potrà spiegare se il quadro si è rafforzato, riequilibrato o è rimasto sostanzialmente stabile."
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Juventus emerge con un vantaggio strutturale più netto, mentre Hellas Verona appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
     "vxm_000048": {
@@ -202,15 +202,15 @@
         "short_reading": "Inter parte chiaramente avanti: il match resta leggibile sul piano offensivo, ma Parma arriva con un peso più limitato e senza lo stesso margine strutturale."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un vantaggio netto per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Inter, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Inter mostra una qualità di costruzione molto alta e una spinta offensiva molto alta, mentre Parma conserva un profilo più contenuto o comunque inferiore sul piano della produzione.",
+        "extended_explanation": "Il match presenta un vantaggio netto per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Inter, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Inter mostra un profilo complessivamente più forte, mentre Parma arriva con un peso offensivo più limitato e con meno margine strutturale.",
         "key_insights": [
           "Margine strutturale: un vantaggio netto per la squadra di casa.",
           "Ambiente partita: un profilo di gara aperta.",
           "Minaccia offensiva Inter: molto alta.",
           "Minaccia offensiva Parma: bassa."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Inter regge meglio il match per una combinazione più favorevole di spinta offensiva (0.951) e qualità di costruzione (0.900); inoltre il contesto difensivo avversario offre un livello di concedibilità pari a 0.634, che aiuta a sostenere il profilo home. Lo stato attuale arriva dal layer `core_only`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
-        "layer_evolution_summary": "Al momento la lettura è ancora ancorata al layer base/core. Quando entreranno designazioni arbitrali e lineups ufficiali, il bot potrà spiegare se il quadro si è rafforzato, riequilibrato o è rimasto sostanzialmente stabile."
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Inter emerge con un vantaggio strutturale più netto, mentre Parma appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
     "vxm_000049": {
@@ -228,15 +228,15 @@
         "short_reading": "Lazio parte avanti, ma in un contesto più misurato sul piano del volume offensivo, senza una lettura da dominio assoluto."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un vantaggio reale per la squadra ospite e un ambiente offensivo intermedio. La lettura attuale porta il match verso Lazio, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Lazio arriva con una combinazione più forte tra peso offensivo e sostenibilità della manovra (forza offensiva media, costruzione alta), mentre Cremonese resta più limitata o meno continua sul piano della produzione.",
+        "extended_explanation": "Il match presenta un vantaggio reale per la squadra ospite e un ambiente offensivo intermedio. La lettura attuale porta il match verso Lazio, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Lazio conserva un margine reale ma contenuto, mentre Cremonese resta comunque abbastanza presente da non uscire dal quadro del match.",
         "key_insights": [
           "Margine strutturale: un vantaggio reale per la squadra ospite.",
           "Ambiente partita: un ambiente offensivo intermedio.",
           "Minaccia offensiva Cremonese: presente ma contenuta.",
           "Minaccia offensiva Lazio: alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un ambiente offensivo intermedio. Lazio emerge per una combinazione più forte tra peso offensivo (0.306) e sostenibilità della manovra (0.665); in più trova un contesto difensivo avversario con concedibilità pari a 0.766, coerente con un vantaggio strutturale ospite. Lo stato attuale arriva dal layer `core_only`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
-        "layer_evolution_summary": "Al momento la lettura è ancora ancorata al layer base/core. Quando entreranno designazioni arbitrali e lineups ufficiali, il bot potrà spiegare se il quadro si è rafforzato, riequilibrato o è rimasto sostanzialmente stabile."
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un ambiente offensivo intermedio. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
     "vxm_000050": {
@@ -254,15 +254,15 @@
         "short_reading": "Il quadro favorisce Roma, ma senza chiudere davvero il match: Fiorentina mantiene segnali sufficienti per restare dentro una gara ancora aperta."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un vantaggio reale per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Roma, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Roma mostra una qualità di costruzione molto alta e una spinta offensiva media, mentre Fiorentina conserva un profilo più contenuto o comunque inferiore sul piano della produzione.",
+        "extended_explanation": "Il match presenta un vantaggio reale per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Roma, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Roma conserva un margine reale ma contenuto, mentre Fiorentina resta comunque abbastanza presente da non uscire dal quadro del match.",
         "key_insights": [
           "Margine strutturale: un vantaggio reale per la squadra di casa.",
           "Ambiente partita: un profilo di gara aperta.",
           "Minaccia offensiva Roma: molto alta.",
           "Minaccia offensiva Fiorentina: presente ma contenuta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra di casa dentro un profilo di gara aperta. Roma regge meglio il match per una combinazione più favorevole di spinta offensiva (0.490) e qualità di costruzione (0.808); inoltre il contesto difensivo avversario offre un livello di concedibilità pari a 0.532, che aiuta a sostenere il profilo home. Lo stato attuale arriva dal layer `core_only`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
-        "layer_evolution_summary": "Al momento la lettura è ancora ancorata al layer base/core. Quando entreranno designazioni arbitrali e lineups ufficiali, il bot potrà spiegare se il quadro si è rafforzato, riequilibrato o è rimasto sostanzialmente stabile."
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra di casa dentro un profilo di gara aperta. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     }
   }

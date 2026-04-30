@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T21:30:34.004194Z",
+  "generated_at": "2026-04-30T02:23:16.166102Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -8,13 +8,146 @@
   "matches_count": 10,
   "stage_counts": {
     "base_ready": 0,
-    "referee_ready": 0,
+    "referee_ready": 10,
     "lineups_ready": 0,
-    "missing": 10
+    "missing": 0
   },
   "data": {
     "vxm_000041": {
       "vectra_match_id": "vxm_000041",
+      "prediction_stage": "referee_ready",
+      "lambda_home_core": 0.815,
+      "lambda_away_core": 0.7784,
+      "lambda_before_referee": {
+        "home": 0.8155,
+        "away": 0.7779
+      },
+      "lambda_referee": {
+        "home": 0.815,
+        "away": 0.7784
+      },
+      "lambda_before": {
+        "home": 0.8155,
+        "away": 0.7779
+      },
+      "lambda_after": {
+        "home": 0.815,
+        "away": 0.7784
+      },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000002",
+        "reason_flags": [
+          "balanced_referee_interaction"
+        ]
+      },
+      "referee_impact": {
+        "applied": true,
+        "referee": {
+          "vectra_referee_id": "vxr_000002",
+          "name": "Marco Guida",
+          "identity_status": "resolved",
+          "reliability": 1.0,
+          "metrics": {
+            "matches_officiated": 15.0,
+            "fouls_per_game": 24.8,
+            "fouls_per_tackle": 0.8285,
+            "penalties_per_game": 0.4667,
+            "yellow_cards_per_game": 3.9333,
+            "red_cards_per_game": 0.2,
+            "home_win_ratio": 0.4,
+            "away_win_ratio": 0.3333,
+            "draw_ratio": 0.2667,
+            "strictness": 0.4857,
+            "card_tendency": 0.4944,
+            "penalty_tendency": 0.5833,
+            "home_bias_signal": 0.5333
+          }
+        },
+        "home": {
+          "team_id": "vxt_000026",
+          "referee_attack_boost": 0.0088,
+          "referee_edge": -0.0066,
+          "lambda_before_referee": 0.8155,
+          "lambda_raw_unbounded": 0.815,
+          "lambda_after_referee": 0.815,
+          "lambda_delta_raw": -0.0005,
+          "lambda_delta_applied": -0.0005,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000037",
+          "referee_attack_boost": 0.0154,
+          "referee_edge": 0.0066,
+          "lambda_before_referee": 0.7779,
+          "lambda_raw_unbounded": 0.7784,
+          "lambda_after_referee": 0.7784,
+          "lambda_delta_raw": 0.0005,
+          "lambda_delta_applied": 0.0005,
+          "lambda_cap_reached": false
+        },
+        "components": {
+          "home": {
+            "foul_gain_advantage": 0.0953,
+            "penalty_volatility_advantage": 0.0328,
+            "contact_strictness_positive": 0.0953,
+            "contact_strictness_negative": 0.143,
+            "contact_strictness_interaction": -0.0476,
+            "card_exposure_penalty": 0.1018,
+            "rhythm_interruption_penalty": 0.0773,
+            "home_away_sensitivity": 0.0666
+          },
+          "away": {
+            "foul_gain_advantage": 0.1192,
+            "penalty_volatility_advantage": 0.0404,
+            "contact_strictness_positive": 0.1192,
+            "contact_strictness_negative": 0.1476,
+            "contact_strictness_interaction": -0.0284,
+            "card_exposure_penalty": 0.1022,
+            "rhythm_interruption_penalty": 0.0748,
+            "home_away_sensitivity": -0.0666
+          },
+          "team_inputs": {
+            "home": {
+              "discipline_risk": 0.4537,
+              "discipline_stability": 0.5463,
+              "foul_gain": 0.3592,
+              "box_presence": 0.3445,
+              "physical": 0.6487,
+              "creator_supply": 0.2832
+            },
+            "away": {
+              "discipline_risk": 0.4547,
+              "discipline_stability": 0.5453,
+              "foul_gain": 0.45,
+              "box_presence": 0.3389,
+              "physical": 0.6686,
+              "creator_supply": 0.3169
+            }
+          }
+        },
+        "parameters": {
+          "referee_stage_multiplier": 0.1,
+          "referee_impact_cap": 0.12,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "bot_summary_key": "referee_balanced_low_impact",
+        "evidence": [
+          "balanced_referee_interaction"
+        ]
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 0.9934,
+        "away_shift_factor": 1.0066,
+        "penalty_tendency": 0.5833,
+        "strictness": 0.4857,
+        "card_tendency": 0.4944,
+        "home_bias_signal": 0.5333,
+        "sample_reliability": 1.0
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -23,162 +156,153 @@
       "home_team_name": "Pisa",
       "away_team_name": "Lecce",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 0.8155,
-      "lambda_away_core": 0.7779,
-      "lambda_core_base": {
-        "home": 0.8476,
-        "away": 0.7884
-      },
-      "lambda_core_enhanced": {
-        "home": 0.8155,
-        "away": 0.7779
-      },
-      "advanced_core": {
-        "applied": true,
-        "home": {
-          "attacking_latent_force": 0.3777,
-          "chance_quality_force": 0.3205,
-          "goal_conversion_force": 0.2503,
-          "defensive_latent_resistance": 0.4166,
-          "goalkeeper_security_force": 0.4373,
-          "goal_pressure": 0.3223,
-          "goal_resistance": 0.4249,
-          "source_core_profiles": {
-            "team_finishing_core": 0.2138,
-            "team_creator_supply_core": 0.2832,
-            "team_box_presence_core": 0.3445,
-            "team_goalkeeping_core": 0.4661,
-            "team_defensive_duel_core": 0.4252,
-            "team_aerial_attack_core": 0.309,
-            "team_aerial_defense_core": 0.3151,
-            "team_discipline_risk_core": 0.4537,
-            "team_discipline_stability_core": 0.5463,
-            "team_foul_gain_core": 0.3592,
-            "team_physical_core": 0.6487
-          },
-          "goal_force_edge": -0.2278
-        },
-        "away": {
-          "attacking_latent_force": 0.395,
-          "chance_quality_force": 0.3455,
-          "goal_conversion_force": 0.2786,
-          "defensive_latent_resistance": 0.4301,
-          "goalkeeper_security_force": 0.7301,
-          "goal_pressure": 0.3452,
-          "goal_resistance": 0.5501,
-          "source_core_profiles": {
-            "team_finishing_core": 0.2511,
-            "team_creator_supply_core": 0.3169,
-            "team_box_presence_core": 0.3389,
-            "team_goalkeeping_core": 0.8752,
-            "team_defensive_duel_core": 0.4162,
-            "team_aerial_attack_core": 0.3493,
-            "team_aerial_defense_core": 0.3666,
-            "team_discipline_risk_core": 0.4547,
-            "team_discipline_stability_core": 0.5453,
-            "team_foul_gain_core": 0.45,
-            "team_physical_core": 0.6686
-          },
-          "goal_force_edge": -0.0797
-        },
-        "impact": {
-          "home_multiplier": -0.0379,
-          "away_multiplier": -0.0133,
-          "home_lambda_raw_unbounded": 0.8155,
-          "away_lambda_raw_unbounded": 0.7779,
-          "home_lambda_delta_raw": -0.0321,
-          "away_lambda_delta_raw": -0.0105,
-          "home_lambda_delta_applied": -0.0321,
-          "away_lambda_delta_applied": -0.0105,
-          "home_cap_reached": false,
-          "away_cap_reached": false,
-          "core_stage_multiplier": 0.18,
-          "core_impact_cap": 0.22,
-          "reliability": 0.9249
-        },
-        "bot_summary_key": "core_balanced_low_edge",
-        "evidence": [
-          "balanced_structural_goal_edge"
-        ]
-      },
-      "components": {
-        "home": {
-          "offense_factor": 0.2072,
-          "defense_weakness_opponent": 0.5478,
-          "build_up_factor": 0.1583,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.2122,
-            "norm_shots_on_target_per_game": 0.124,
-            "norm_shots_per_game": 0.0557,
-            "norm_xg_per_shot": 0.6962,
-            "norm_goals_per_match": 0.0345,
-            "norm_big_chances_per_match": 0.1525,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.0624
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.0833,
-            "norm_pass_success_pct": 0.1667,
-            "norm_field_tilt_pct": 0.0,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.0
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.5021,
-            "norm_defense_profile": 0.3529,
-            "inverse_defense_profile": 0.6471,
-            "norm_goals_conceded_per_match": 0.5588,
-            "norm_field_tilt_pct": 0.3285,
-            "inverse_field_tilt_pct": 0.6715
-          }
-        },
-        "away": {
-          "offense_factor": 0.0362,
-          "defense_weakness_opponent": 0.7689,
-          "build_up_factor": 0.3076,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.0,
-            "norm_shots_on_target_per_game": 0.0,
-            "norm_shots_per_game": 0.0801,
-            "norm_xg_per_shot": 0.0,
-            "norm_goals_per_match": 0.0,
-            "norm_big_chances_per_match": 0.0,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.0
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.3438,
-            "norm_pass_success_pct": 0.0833,
-            "norm_field_tilt_pct": 0.3285,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.2213
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.7819,
-            "norm_defense_profile": 0.0,
-            "inverse_defense_profile": 1.0,
-            "norm_goals_conceded_per_match": 1.0,
-            "norm_field_tilt_pct": 0.0,
-            "inverse_field_tilt_pct": 1.0
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-05-01T18:45:00Z",
       "stadium": "Cetilar Arena",
       "city": "Pisa",
       "active_lambda": {
-        "home": 0.8155,
-        "away": 0.7779
+        "home": 0.815,
+        "away": 0.7784
       }
     },
     "vxm_000042": {
       "vectra_match_id": "vxm_000042",
+      "prediction_stage": "referee_ready",
+      "lambda_home_core": 1.3388,
+      "lambda_away_core": 0.9395,
+      "lambda_before_referee": {
+        "home": 1.3386,
+        "away": 0.9397
+      },
+      "lambda_referee": {
+        "home": 1.3388,
+        "away": 0.9395
+      },
+      "lambda_before": {
+        "home": 1.3386,
+        "away": 0.9397
+      },
+      "lambda_after": {
+        "home": 1.3388,
+        "away": 0.9395
+      },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000036",
+        "reason_flags": [
+          "high_penalty_tendency",
+          "balanced_referee_interaction",
+          "referee_sample_low_reliability"
+        ]
+      },
+      "referee_impact": {
+        "applied": true,
+        "referee": {
+          "vectra_referee_id": "vxr_000036",
+          "name": "Giuseppe Mucera",
+          "identity_status": "resolved",
+          "reliability": 0.1333,
+          "metrics": {
+            "matches_officiated": 2.0,
+            "fouls_per_game": 26.0,
+            "fouls_per_tackle": 0.6933,
+            "penalties_per_game": 0.5,
+            "yellow_cards_per_game": 3.0,
+            "red_cards_per_game": 0.0,
+            "home_win_ratio": 0.5,
+            "away_win_ratio": 0.5,
+            "draw_ratio": 0.0,
+            "strictness": 0.5714,
+            "card_tendency": 0.25,
+            "penalty_tendency": 0.625,
+            "home_bias_signal": 0.5
+          }
+        },
+        "home": {
+          "team_id": "vxt_000028",
+          "referee_attack_boost": 0.0168,
+          "referee_edge": 0.0135,
+          "lambda_before_referee": 1.3386,
+          "lambda_raw_unbounded": 1.3388,
+          "lambda_after_referee": 1.3388,
+          "lambda_delta_raw": 0.0002,
+          "lambda_delta_applied": 0.0002,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000032",
+          "referee_attack_boost": 0.0033,
+          "referee_edge": -0.0135,
+          "lambda_before_referee": 0.9397,
+          "lambda_raw_unbounded": 0.9395,
+          "lambda_after_referee": 0.9395,
+          "lambda_delta_raw": -0.0002,
+          "lambda_delta_applied": -0.0002,
+          "lambda_cap_reached": false
+        },
+        "components": {
+          "home": {
+            "foul_gain_advantage": 0.1295,
+            "penalty_volatility_advantage": 0.0675,
+            "contact_strictness_positive": 0.1295,
+            "contact_strictness_negative": 0.2075,
+            "contact_strictness_interaction": -0.078,
+            "card_exposure_penalty": 0.0657,
+            "rhythm_interruption_penalty": 0.112,
+            "home_away_sensitivity": 0.0
+          },
+          "away": {
+            "foul_gain_advantage": 0.106,
+            "penalty_volatility_advantage": 0.0465,
+            "contact_strictness_positive": 0.106,
+            "contact_strictness_negative": 0.1903,
+            "contact_strictness_interaction": -0.0844,
+            "card_exposure_penalty": 0.0609,
+            "rhythm_interruption_penalty": 0.1142,
+            "home_away_sensitivity": -0.0
+          },
+          "team_inputs": {
+            "home": {
+              "discipline_risk": 0.5126,
+              "discipline_stability": 0.4874,
+              "foul_gain": 0.4651,
+              "box_presence": 0.4707,
+              "physical": 0.7086,
+              "creator_supply": 0.4082
+            },
+            "away": {
+              "discipline_risk": 0.4935,
+              "discipline_stability": 0.5065,
+              "foul_gain": 0.3661,
+              "box_presence": 0.3964,
+              "physical": 0.6749,
+              "creator_supply": 0.3558
+            }
+          }
+        },
+        "parameters": {
+          "referee_stage_multiplier": 0.1,
+          "referee_impact_cap": 0.12,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "bot_summary_key": "referee_low_reliability_caution",
+        "evidence": [
+          "high_penalty_tendency",
+          "balanced_referee_interaction",
+          "referee_sample_low_reliability"
+        ]
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0135,
+        "away_shift_factor": 0.9865,
+        "penalty_tendency": 0.625,
+        "strictness": 0.5714,
+        "card_tendency": 0.25,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.1333
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -187,162 +311,151 @@
       "home_team_name": "Udinese",
       "away_team_name": "Torino",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 1.3445,
-      "lambda_away_core": 0.9392,
-      "lambda_core_base": {
-        "home": 1.3488,
-        "away": 0.9498
-      },
-      "lambda_core_enhanced": {
-        "home": 1.3445,
-        "away": 0.9392
-      },
-      "advanced_core": {
-        "applied": true,
-        "home": {
-          "attacking_latent_force": 0.4901,
-          "chance_quality_force": 0.4255,
-          "goal_conversion_force": 0.4108,
-          "defensive_latent_resistance": 0.4224,
-          "goalkeeper_security_force": 0.4798,
-          "goal_pressure": 0.447,
-          "goal_resistance": 0.4453,
-          "source_core_profiles": {
-            "team_finishing_core": 0.393,
-            "team_creator_supply_core": 0.4082,
-            "team_box_presence_core": 0.4707,
-            "team_goalkeeping_core": 0.521,
-            "team_defensive_duel_core": 0.4144,
-            "team_aerial_attack_core": 0.3415,
-            "team_aerial_defense_core": 0.3526,
-            "team_discipline_risk_core": 0.5126,
-            "team_discipline_stability_core": 0.4874,
-            "team_foul_gain_core": 0.4651,
-            "team_physical_core": 0.7086
-          },
-          "goal_force_edge": -0.0188
-        },
-        "away": {
-          "attacking_latent_force": 0.4338,
-          "chance_quality_force": 0.3671,
-          "goal_conversion_force": 0.3181,
-          "defensive_latent_resistance": 0.4138,
-          "goalkeeper_security_force": 0.5438,
-          "goal_pressure": 0.3791,
-          "goal_resistance": 0.4658,
-          "source_core_profiles": {
-            "team_finishing_core": 0.2853,
-            "team_creator_supply_core": 0.3558,
-            "team_box_presence_core": 0.3964,
-            "team_goalkeeping_core": 0.6159,
-            "team_defensive_duel_core": 0.398,
-            "team_aerial_attack_core": 0.3257,
-            "team_aerial_defense_core": 0.353,
-            "team_discipline_risk_core": 0.4935,
-            "team_discipline_stability_core": 0.5065,
-            "team_foul_gain_core": 0.3661,
-            "team_physical_core": 0.6749
-          },
-          "goal_force_edge": -0.0662
-        },
-        "impact": {
-          "home_multiplier": -0.0032,
-          "away_multiplier": -0.0111,
-          "home_lambda_raw_unbounded": 1.3445,
-          "away_lambda_raw_unbounded": 0.9392,
-          "home_lambda_delta_raw": -0.0043,
-          "away_lambda_delta_raw": -0.0106,
-          "home_lambda_delta_applied": -0.0043,
-          "away_lambda_delta_applied": -0.0106,
-          "home_cap_reached": false,
-          "away_cap_reached": false,
-          "core_stage_multiplier": 0.18,
-          "core_impact_cap": 0.22,
-          "reliability": 0.9328
-        },
-        "bot_summary_key": "core_balanced_low_edge",
-        "evidence": [
-          "balanced_structural_goal_edge"
-        ]
-      },
-      "components": {
-        "home": {
-          "offense_factor": 0.2955,
-          "defense_weakness_opponent": 0.6541,
-          "build_up_factor": 0.4152,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.2425,
-            "norm_shots_on_target_per_game": 0.3798,
-            "norm_shots_per_game": 0.3066,
-            "norm_xg_per_shot": 0.2736,
-            "norm_goals_per_match": 0.3276,
-            "norm_big_chances_per_match": 0.1525,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.2833
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.4062,
-            "norm_pass_success_pct": 0.5,
-            "norm_field_tilt_pct": 0.3058,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.3214
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.5967,
-            "norm_defense_profile": 0.1758,
-            "inverse_defense_profile": 0.8242,
-            "norm_goals_conceded_per_match": 0.8529,
-            "norm_field_tilt_pct": 0.1714,
-            "inverse_field_tilt_pct": 0.8286
-          }
-        },
-        "away": {
-          "offense_factor": 0.3273,
-          "defense_weakness_opponent": 0.5694,
-          "build_up_factor": 0.2557,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.274,
-            "norm_shots_on_target_per_game": 0.4419,
-            "norm_shots_per_game": 0.2962,
-            "norm_xg_per_shot": 0.3708,
-            "norm_goals_per_match": 0.2931,
-            "norm_big_chances_per_match": 0.2203,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.302
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.0833,
-            "norm_pass_success_pct": 0.4167,
-            "norm_field_tilt_pct": 0.1714,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.1309
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.5556,
-            "norm_defense_profile": 0.3263,
-            "inverse_defense_profile": 0.6737,
-            "norm_goals_conceded_per_match": 0.5588,
-            "norm_field_tilt_pct": 0.3058,
-            "inverse_field_tilt_pct": 0.6942
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-05-02T13:00:00Z",
       "stadium": "Friuli/Bluenergy stadium",
       "city": "Udine",
       "active_lambda": {
-        "home": 1.3445,
-        "away": 0.9392
+        "home": 1.3388,
+        "away": 0.9395
       }
     },
     "vxm_000043": {
       "vectra_match_id": "vxm_000043",
+      "prediction_stage": "referee_ready",
+      "lambda_home_core": 1.881,
+      "lambda_away_core": 1.2991,
+      "lambda_before_referee": {
+        "home": 1.8798,
+        "away": 1.2999
+      },
+      "lambda_referee": {
+        "home": 1.881,
+        "away": 1.2991
+      },
+      "lambda_before": {
+        "home": 1.8798,
+        "away": 1.2999
+      },
+      "lambda_after": {
+        "home": 1.881,
+        "away": 1.2991
+      },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000003",
+        "reason_flags": [
+          "balanced_referee_interaction",
+          "home_card_exposure_penalty"
+        ]
+      },
+      "referee_impact": {
+        "applied": true,
+        "referee": {
+          "vectra_referee_id": "vxr_000003",
+          "name": "Michael Fabbri",
+          "identity_status": "resolved",
+          "reliability": 0.9333,
+          "metrics": {
+            "matches_officiated": 14.0,
+            "fouls_per_game": 25.1429,
+            "fouls_per_tackle": 0.7928,
+            "penalties_per_game": 0.2857,
+            "yellow_cards_per_game": 4.1429,
+            "red_cards_per_game": 0.1429,
+            "home_win_ratio": 0.5,
+            "away_win_ratio": 0.2143,
+            "draw_ratio": 0.2857,
+            "strictness": 0.5102,
+            "card_tendency": 0.4643,
+            "penalty_tendency": 0.3571,
+            "home_bias_signal": 0.6429
+          }
+        },
+        "home": {
+          "team_id": "vxt_000024",
+          "referee_attack_boost": 0.0091,
+          "referee_edge": 0.0068,
+          "lambda_before_referee": 1.8798,
+          "lambda_raw_unbounded": 1.881,
+          "lambda_after_referee": 1.881,
+          "lambda_delta_raw": 0.0012,
+          "lambda_delta_applied": 0.0012,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000039",
+          "referee_attack_boost": 0.0023,
+          "referee_edge": -0.0068,
+          "lambda_before_referee": 1.2999,
+          "lambda_raw_unbounded": 1.2991,
+          "lambda_after_referee": 1.2991,
+          "lambda_delta_raw": -0.0008,
+          "lambda_delta_applied": -0.0008,
+          "lambda_cap_reached": false
+        },
+        "components": {
+          "home": {
+            "foul_gain_advantage": 0.1155,
+            "penalty_volatility_advantage": 0.0458,
+            "contact_strictness_positive": 0.1155,
+            "contact_strictness_negative": 0.2063,
+            "contact_strictness_interaction": -0.0908,
+            "card_exposure_penalty": 0.1442,
+            "rhythm_interruption_penalty": 0.1246,
+            "home_away_sensitivity": 0.2858
+          },
+          "away": {
+            "foul_gain_advantage": 0.1338,
+            "penalty_volatility_advantage": 0.0487,
+            "contact_strictness_positive": 0.1338,
+            "contact_strictness_negative": 0.1714,
+            "contact_strictness_interaction": -0.0376,
+            "card_exposure_penalty": 0.0934,
+            "rhythm_interruption_penalty": 0.1259,
+            "home_away_sensitivity": -0.2858
+          },
+          "team_inputs": {
+            "home": {
+              "discipline_risk": 0.5573,
+              "discipline_stability": 0.4427,
+              "foul_gain": 0.5113,
+              "box_presence": 0.5588,
+              "physical": 0.7255,
+              "creator_supply": 0.5529
+            },
+            "away": {
+              "discipline_risk": 0.4486,
+              "discipline_stability": 0.5514,
+              "foul_gain": 0.4755,
+              "box_presence": 0.515,
+              "physical": 0.7488,
+              "creator_supply": 0.516
+            }
+          }
+        },
+        "parameters": {
+          "referee_stage_multiplier": 0.1,
+          "referee_impact_cap": 0.12,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "bot_summary_key": "referee_balanced_low_impact",
+        "evidence": [
+          "balanced_referee_interaction",
+          "home_card_exposure_penalty"
+        ]
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.0068,
+        "away_shift_factor": 0.9932,
+        "penalty_tendency": 0.3571,
+        "strictness": 0.5102,
+        "card_tendency": 0.4643,
+        "home_bias_signal": 0.6429,
+        "sample_reliability": 0.9333
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -351,162 +464,153 @@
       "home_team_name": "Como",
       "away_team_name": "Napoli",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 1.8798,
-      "lambda_away_core": 1.2999,
-      "lambda_core_base": {
-        "home": 1.8629,
-        "away": 1.3016
-      },
-      "lambda_core_enhanced": {
-        "home": 1.8798,
-        "away": 1.2999
-      },
-      "advanced_core": {
-        "applied": true,
-        "home": {
-          "attacking_latent_force": 0.5895,
-          "chance_quality_force": 0.5164,
-          "goal_conversion_force": 0.4673,
-          "defensive_latent_resistance": 0.4069,
-          "goalkeeper_security_force": 0.6483,
-          "goal_pressure": 0.5309,
-          "goal_resistance": 0.5035,
-          "source_core_profiles": {
-            "team_finishing_core": 0.4194,
-            "team_creator_supply_core": 0.5529,
-            "team_box_presence_core": 0.5588,
-            "team_goalkeeping_core": 0.7695,
-            "team_defensive_duel_core": 0.4044,
-            "team_aerial_attack_core": 0.3793,
-            "team_aerial_defense_core": 0.3269,
-            "team_discipline_risk_core": 0.5573,
-            "team_discipline_stability_core": 0.4427,
-            "team_foul_gain_core": 0.5113,
-            "team_physical_core": 0.7255
-          },
-          "goal_force_edge": 0.0545
-        },
-        "away": {
-          "attacking_latent_force": 0.5622,
-          "chance_quality_force": 0.4815,
-          "goal_conversion_force": 0.4215,
-          "defensive_latent_resistance": 0.4411,
-          "goalkeeper_security_force": 0.5294,
-          "goal_pressure": 0.4958,
-          "goal_resistance": 0.4764,
-          "source_core_profiles": {
-            "team_finishing_core": 0.3709,
-            "team_creator_supply_core": 0.516,
-            "team_box_presence_core": 0.515,
-            "team_goalkeeping_core": 0.5948,
-            "team_defensive_duel_core": 0.4258,
-            "team_aerial_attack_core": 0.3656,
-            "team_aerial_defense_core": 0.3279,
-            "team_discipline_risk_core": 0.4486,
-            "team_discipline_stability_core": 0.5514,
-            "team_foul_gain_core": 0.4755,
-            "team_physical_core": 0.7488
-          },
-          "goal_force_edge": -0.0077
-        },
-        "impact": {
-          "home_multiplier": 0.0091,
-          "away_multiplier": -0.0013,
-          "home_lambda_raw_unbounded": 1.8798,
-          "away_lambda_raw_unbounded": 1.2999,
-          "home_lambda_delta_raw": 0.0169,
-          "away_lambda_delta_raw": -0.0017,
-          "home_lambda_delta_applied": 0.0169,
-          "away_lambda_delta_applied": -0.0017,
-          "home_cap_reached": false,
-          "away_cap_reached": false,
-          "core_stage_multiplier": 0.18,
-          "core_impact_cap": 0.22,
-          "reliability": 0.9249
-        },
-        "bot_summary_key": "core_balanced_low_edge",
-        "evidence": [
-          "balanced_structural_goal_edge"
-        ]
-      },
-      "components": {
-        "home": {
-          "offense_factor": 0.6506,
-          "defense_weakness_opponent": 0.2876,
-          "build_up_factor": 0.8593,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.6566,
-            "norm_shots_on_target_per_game": 0.7132,
-            "norm_shots_per_game": 0.5958,
-            "norm_xg_per_shot": 0.7302,
-            "norm_goals_per_match": 0.6379,
-            "norm_big_chances_per_match": 0.6102,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.6243
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.9479,
-            "norm_pass_success_pct": 1.0,
-            "norm_field_tilt_pct": 0.9084,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.9328
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.1564,
-            "norm_defense_profile": 0.8019,
-            "inverse_defense_profile": 0.1981,
-            "norm_goals_conceded_per_match": 0.1765,
-            "norm_field_tilt_pct": 0.7873,
-            "inverse_field_tilt_pct": 0.2127
-          }
-        },
-        "away": {
-          "offense_factor": 0.5655,
-          "defense_weakness_opponent": 0.1994,
-          "build_up_factor": 0.8385,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.5806,
-            "norm_shots_on_target_per_game": 0.5969,
-            "norm_shots_per_game": 0.4913,
-            "norm_xg_per_shot": 0.7477,
-            "norm_goals_per_match": 0.5172,
-            "norm_big_chances_per_match": 0.4746,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.5136
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.9688,
-            "norm_pass_success_pct": 1.0,
-            "norm_field_tilt_pct": 0.7873,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.9042
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.0247,
-            "norm_defense_profile": 0.9355,
-            "inverse_defense_profile": 0.0645,
-            "norm_goals_conceded_per_match": 0.0294,
-            "norm_field_tilt_pct": 0.9084,
-            "inverse_field_tilt_pct": 0.0916
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-05-02T16:00:00Z",
       "stadium": "Giuseppe Sinigaglia",
       "city": "Como",
       "active_lambda": {
-        "home": 1.8798,
-        "away": 1.2999
+        "home": 1.881,
+        "away": 1.2991
       }
     },
     "vxm_000044": {
       "vectra_match_id": "vxm_000044",
+      "prediction_stage": "referee_ready",
+      "lambda_home_core": 2.3571,
+      "lambda_away_core": 0.9353,
+      "lambda_before_referee": {
+        "home": 2.3572,
+        "away": 0.9352
+      },
+      "lambda_referee": {
+        "home": 2.3571,
+        "away": 0.9353
+      },
+      "lambda_before": {
+        "home": 2.3572,
+        "away": 0.9352
+      },
+      "lambda_after": {
+        "home": 2.3571,
+        "away": 0.9353
+      },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000013",
+        "reason_flags": [
+          "high_referee_strictness",
+          "balanced_referee_interaction",
+          "referee_sample_low_reliability"
+        ]
+      },
+      "referee_impact": {
+        "applied": true,
+        "referee": {
+          "vectra_referee_id": "vxr_000013",
+          "name": "Ivano Pezzuto",
+          "identity_status": "resolved",
+          "reliability": 0.0667,
+          "metrics": {
+            "matches_officiated": 1.0,
+            "fouls_per_game": 36.0,
+            "fouls_per_tackle": 1.3846,
+            "penalties_per_game": 0.0,
+            "yellow_cards_per_game": 4.0,
+            "red_cards_per_game": 0.0,
+            "home_win_ratio": 0.0,
+            "away_win_ratio": 0.0,
+            "draw_ratio": 1.0,
+            "strictness": 1.0,
+            "card_tendency": 0.3333,
+            "penalty_tendency": 0.0,
+            "home_bias_signal": 0.5
+          }
+        },
+        "home": {
+          "team_id": "vxt_000033",
+          "referee_attack_boost": 0.0075,
+          "referee_edge": -0.0089,
+          "lambda_before_referee": 2.3572,
+          "lambda_raw_unbounded": 2.3571,
+          "lambda_after_referee": 2.3571,
+          "lambda_delta_raw": -0.0001,
+          "lambda_delta_applied": -0.0001,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000029",
+          "referee_attack_boost": 0.0164,
+          "referee_edge": 0.0089,
+          "lambda_before_referee": 0.9352,
+          "lambda_raw_unbounded": 0.9353,
+          "lambda_after_referee": 0.9353,
+          "lambda_delta_raw": 0.0001,
+          "lambda_delta_applied": 0.0001,
+          "lambda_cap_reached": false
+        },
+        "components": {
+          "home": {
+            "foul_gain_advantage": 0.2449,
+            "penalty_volatility_advantage": 0.0,
+            "contact_strictness_positive": 0.2449,
+            "contact_strictness_negative": 0.3375,
+            "contact_strictness_interaction": -0.0926,
+            "card_exposure_penalty": 0.0731,
+            "rhythm_interruption_penalty": 0.2679,
+            "home_away_sensitivity": 0.0
+          },
+          "away": {
+            "foul_gain_advantage": 0.2365,
+            "penalty_volatility_advantage": 0.0,
+            "contact_strictness_positive": 0.2365,
+            "contact_strictness_negative": 0.3455,
+            "contact_strictness_interaction": -0.109,
+            "card_exposure_penalty": 0.0847,
+            "rhythm_interruption_penalty": 0.162,
+            "home_away_sensitivity": -0.0
+          },
+          "team_inputs": {
+            "home": {
+              "discipline_risk": 0.4683,
+              "discipline_stability": 0.5317,
+              "foul_gain": 0.4606,
+              "box_presence": 0.5535,
+              "physical": 0.7207,
+              "creator_supply": 0.5504
+            },
+            "away": {
+              "discipline_risk": 0.5041,
+              "discipline_stability": 0.4959,
+              "foul_gain": 0.4769,
+              "box_presence": 0.408,
+              "physical": 0.6854,
+              "creator_supply": 0.3481
+            }
+          }
+        },
+        "parameters": {
+          "referee_stage_multiplier": 0.1,
+          "referee_impact_cap": 0.12,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "bot_summary_key": "referee_low_reliability_caution",
+        "evidence": [
+          "high_referee_strictness",
+          "balanced_referee_interaction",
+          "referee_sample_low_reliability"
+        ]
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 0.9911,
+        "away_shift_factor": 1.0089,
+        "penalty_tendency": 0.0,
+        "strictness": 1.0,
+        "card_tendency": 0.3333,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.0667
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -515,162 +619,149 @@
       "home_team_name": "Atalanta",
       "away_team_name": "Genoa",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 2.3548,
-      "lambda_away_core": 0.937,
-      "lambda_core_base": {
-        "home": 2.3351,
-        "away": 0.9647
-      },
-      "lambda_core_enhanced": {
-        "home": 2.3548,
-        "away": 0.937
-      },
-      "advanced_core": {
-        "applied": true,
-        "home": {
-          "attacking_latent_force": 0.5855,
-          "chance_quality_force": 0.5151,
-          "goal_conversion_force": 0.4155,
-          "defensive_latent_resistance": 0.4482,
-          "goalkeeper_security_force": 0.7277,
-          "goal_pressure": 0.5134,
-          "goal_resistance": 0.56,
-          "source_core_profiles": {
-            "team_finishing_core": 0.3419,
-            "team_creator_supply_core": 0.5504,
-            "team_box_presence_core": 0.5535,
-            "team_goalkeeping_core": 0.8661,
-            "team_defensive_duel_core": 0.4535,
-            "team_aerial_attack_core": 0.4126,
-            "team_aerial_defense_core": 0.356,
-            "team_discipline_risk_core": 0.4683,
-            "team_discipline_stability_core": 0.5317,
-            "team_foul_gain_core": 0.4606,
-            "team_physical_core": 0.7207
-          },
-          "goal_force_edge": 0.0507
-        },
-        "away": {
-          "attacking_latent_force": 0.4365,
-          "chance_quality_force": 0.3733,
-          "goal_conversion_force": 0.3366,
-          "defensive_latent_resistance": 0.4313,
-          "goalkeeper_security_force": 0.5097,
-          "goal_pressure": 0.3875,
-          "goal_resistance": 0.4627,
-          "source_core_profiles": {
-            "team_finishing_core": 0.3119,
-            "team_creator_supply_core": 0.3481,
-            "team_box_presence_core": 0.408,
-            "team_goalkeeping_core": 0.5549,
-            "team_defensive_duel_core": 0.4294,
-            "team_aerial_attack_core": 0.2898,
-            "team_aerial_defense_core": 0.379,
-            "team_discipline_risk_core": 0.5041,
-            "team_discipline_stability_core": 0.4959,
-            "team_foul_gain_core": 0.4769,
-            "team_physical_core": 0.6854
-          },
-          "goal_force_edge": -0.1725
-        },
-        "impact": {
-          "home_multiplier": 0.0084,
-          "away_multiplier": -0.0287,
-          "home_lambda_raw_unbounded": 2.3548,
-          "away_lambda_raw_unbounded": 0.937,
-          "home_lambda_delta_raw": 0.0197,
-          "away_lambda_delta_raw": -0.0277,
-          "home_lambda_delta_applied": 0.0197,
-          "away_lambda_delta_applied": -0.0277,
-          "home_cap_reached": false,
-          "away_cap_reached": false,
-          "core_stage_multiplier": 0.18,
-          "core_impact_cap": 0.22,
-          "reliability": 0.9249
-        },
-        "bot_summary_key": "core_balanced_low_edge",
-        "evidence": [
-          "balanced_structural_goal_edge"
-        ]
-      },
-      "components": {
-        "home": {
-          "offense_factor": 0.6382,
-          "defense_weakness_opponent": 0.5788,
-          "build_up_factor": 0.7655,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.7232,
-            "norm_shots_on_target_per_game": 0.6047,
-            "norm_shots_per_game": 0.6516,
-            "norm_xg_per_shot": 0.7742,
-            "norm_goals_per_match": 0.431,
-            "norm_big_chances_per_match": 0.5593,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.6175
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.9583,
-            "norm_pass_success_pct": 0.75,
-            "norm_field_tilt_pct": 0.7336,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.8129
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.5185,
-            "norm_defense_profile": 0.2784,
-            "inverse_defense_profile": 0.7216,
-            "norm_goals_conceded_per_match": 0.6176,
-            "norm_field_tilt_pct": 0.2552,
-            "inverse_field_tilt_pct": 0.7448
-          }
-        },
-        "away": {
-          "offense_factor": 0.4019,
-          "defense_weakness_opponent": 0.3545,
-          "build_up_factor": 0.4072,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.3769,
-            "norm_shots_on_target_per_game": 0.4109,
-            "norm_shots_per_game": 0.2892,
-            "norm_xg_per_shot": 0.6447,
-            "norm_goals_per_match": 0.3103,
-            "norm_big_chances_per_match": 0.4746,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.318
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.4688,
-            "norm_pass_success_pct": 0.4167,
-            "norm_field_tilt_pct": 0.2552,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.3215
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.3663,
-            "norm_defense_profile": 0.7612,
-            "inverse_defense_profile": 0.2388,
-            "norm_goals_conceded_per_match": 0.1471,
-            "norm_field_tilt_pct": 0.7336,
-            "inverse_field_tilt_pct": 0.2664
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-05-02T18:45:00Z",
       "stadium": "New Balance Arena",
       "city": "Bergamo",
       "active_lambda": {
-        "home": 2.3548,
-        "away": 0.937
+        "home": 2.3571,
+        "away": 0.9353
       }
     },
     "vxm_000045": {
       "vectra_match_id": "vxm_000045",
+      "prediction_stage": "referee_ready",
+      "lambda_home_core": 1.6616,
+      "lambda_away_core": 0.6779,
+      "lambda_before_referee": {
+        "home": 1.66,
+        "away": 0.6786
+      },
+      "lambda_referee": {
+        "home": 1.6616,
+        "away": 0.6779
+      },
+      "lambda_before": {
+        "home": 1.66,
+        "away": 0.6786
+      },
+      "lambda_after": {
+        "home": 1.6616,
+        "away": 0.6779
+      },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000034",
+        "reason_flags": [
+          "balanced_referee_interaction"
+        ]
+      },
+      "referee_impact": {
+        "applied": true,
+        "referee": {
+          "vectra_referee_id": "vxr_000034",
+          "name": "Valerio Crezzini",
+          "identity_status": "resolved",
+          "reliability": 0.5333,
+          "metrics": {
+            "matches_officiated": 8.0,
+            "fouls_per_game": 26.5,
+            "fouls_per_tackle": 0.8689,
+            "penalties_per_game": 0.375,
+            "yellow_cards_per_game": 3.375,
+            "red_cards_per_game": 0.0,
+            "home_win_ratio": 0.5,
+            "away_win_ratio": 0.25,
+            "draw_ratio": 0.25,
+            "strictness": 0.6071,
+            "card_tendency": 0.2812,
+            "penalty_tendency": 0.4688,
+            "home_bias_signal": 0.625
+          }
+        },
+        "home": {
+          "team_id": "vxt_000025",
+          "referee_attack_boost": 0.0169,
+          "referee_edge": 0.018,
+          "lambda_before_referee": 1.66,
+          "lambda_raw_unbounded": 1.6616,
+          "lambda_after_referee": 1.6616,
+          "lambda_delta_raw": 0.0016,
+          "lambda_delta_applied": 0.0016,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000022",
+          "referee_attack_boost": -0.0011,
+          "referee_edge": -0.018,
+          "lambda_before_referee": 0.6786,
+          "lambda_raw_unbounded": 0.6779,
+          "lambda_after_referee": 0.6779,
+          "lambda_delta_raw": -0.0007,
+          "lambda_delta_applied": -0.0007,
+          "lambda_cap_reached": false
+        },
+        "components": {
+          "home": {
+            "foul_gain_advantage": 0.1315,
+            "penalty_volatility_advantage": 0.0407,
+            "contact_strictness_positive": 0.1315,
+            "contact_strictness_negative": 0.223,
+            "contact_strictness_interaction": -0.0915,
+            "card_exposure_penalty": 0.08,
+            "rhythm_interruption_penalty": 0.1262,
+            "home_away_sensitivity": 0.25
+          },
+          "away": {
+            "foul_gain_advantage": 0.1295,
+            "penalty_volatility_advantage": 0.0376,
+            "contact_strictness_positive": 0.1295,
+            "contact_strictness_negative": 0.1923,
+            "contact_strictness_interaction": -0.0628,
+            "card_exposure_penalty": 0.07,
+            "rhythm_interruption_penalty": 0.1153,
+            "home_away_sensitivity": -0.25
+          },
+          "team_inputs": {
+            "home": {
+              "discipline_risk": 0.5335,
+              "discipline_stability": 0.4665,
+              "foul_gain": 0.4642,
+              "box_presence": 0.3751,
+              "physical": 0.6884,
+              "creator_supply": 0.4355
+            },
+            "away": {
+              "discipline_risk": 0.4988,
+              "discipline_stability": 0.5012,
+              "foul_gain": 0.4257,
+              "box_presence": 0.3527,
+              "physical": 0.6351,
+              "creator_supply": 0.3792
+            }
+          }
+        },
+        "parameters": {
+          "referee_stage_multiplier": 0.1,
+          "referee_impact_cap": 0.12,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "bot_summary_key": "referee_balanced_low_impact",
+        "evidence": [
+          "balanced_referee_interaction"
+        ]
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 1.018,
+        "away_shift_factor": 0.982,
+        "penalty_tendency": 0.4688,
+        "strictness": 0.6071,
+        "card_tendency": 0.2812,
+        "home_bias_signal": 0.625,
+        "sample_reliability": 0.5333
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -679,162 +770,149 @@
       "home_team_name": "Bologna",
       "away_team_name": "Cagliari",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 1.656,
-      "lambda_away_core": 0.6893,
-      "lambda_core_base": {
-        "home": 1.6762,
-        "away": 0.7003
-      },
-      "lambda_core_enhanced": {
-        "home": 1.656,
-        "away": 0.6893
-      },
-      "advanced_core": {
-        "applied": true,
-        "home": {
-          "attacking_latent_force": 0.465,
-          "chance_quality_force": 0.384,
-          "goal_conversion_force": 0.3447,
-          "defensive_latent_resistance": 0.4176,
-          "goalkeeper_security_force": 0.5258,
-          "goal_pressure": 0.4046,
-          "goal_resistance": 0.4609,
-          "source_core_profiles": {
-            "team_finishing_core": 0.3143,
-            "team_creator_supply_core": 0.4355,
-            "team_box_presence_core": 0.3751,
-            "team_goalkeeping_core": 0.5849,
-            "team_defensive_duel_core": 0.4273,
-            "team_aerial_attack_core": 0.2847,
-            "team_aerial_defense_core": 0.3483,
-            "team_discipline_risk_core": 0.5335,
-            "team_discipline_stability_core": 0.4665,
-            "team_foul_gain_core": 0.4642,
-            "team_physical_core": 0.6884
-          },
-          "goal_force_edge": -0.0725
-        },
-        "away": {
-          "attacking_latent_force": 0.4211,
-          "chance_quality_force": 0.3557,
-          "goal_conversion_force": 0.3036,
-          "defensive_latent_resistance": 0.3869,
-          "goalkeeper_security_force": 0.6124,
-          "goal_pressure": 0.3662,
-          "goal_resistance": 0.4771,
-          "source_core_profiles": {
-            "team_finishing_core": 0.2711,
-            "team_creator_supply_core": 0.3792,
-            "team_box_presence_core": 0.3527,
-            "team_goalkeeping_core": 0.7272,
-            "team_defensive_duel_core": 0.3748,
-            "team_aerial_attack_core": 0.2915,
-            "team_aerial_defense_core": 0.3141,
-            "team_discipline_risk_core": 0.4988,
-            "team_discipline_stability_core": 0.5012,
-            "team_foul_gain_core": 0.4257,
-            "team_physical_core": 0.6351
-          },
-          "goal_force_edge": -0.0947
-        },
-        "impact": {
-          "home_multiplier": -0.0121,
-          "away_multiplier": -0.0158,
-          "home_lambda_raw_unbounded": 1.656,
-          "away_lambda_raw_unbounded": 0.6893,
-          "home_lambda_delta_raw": -0.0202,
-          "away_lambda_delta_raw": -0.011,
-          "home_lambda_delta_applied": -0.0202,
-          "away_lambda_delta_applied": -0.011,
-          "home_cap_reached": false,
-          "away_cap_reached": false,
-          "core_stage_multiplier": 0.18,
-          "core_impact_cap": 0.22,
-          "reliability": 0.9249
-        },
-        "bot_summary_key": "core_balanced_low_edge",
-        "evidence": [
-          "balanced_structural_goal_edge"
-        ]
-      },
-      "components": {
-        "home": {
-          "offense_factor": 0.3493,
-          "defense_weakness_opponent": 0.6424,
-          "build_up_factor": 0.6158,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.3469,
-            "norm_shots_on_target_per_game": 0.3798,
-            "norm_shots_per_game": 0.4355,
-            "norm_xg_per_shot": 0.3154,
-            "norm_goals_per_match": 0.3448,
-            "norm_big_chances_per_match": 0.0847,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.361
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.5938,
-            "norm_pass_success_pct": 0.6667,
-            "norm_field_tilt_pct": 0.7103,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.6228
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.5432,
-            "norm_defense_profile": 0.0878,
-            "inverse_defense_profile": 0.9122,
-            "norm_goals_conceded_per_match": 0.6471,
-            "norm_field_tilt_pct": 0.0198,
-            "inverse_field_tilt_pct": 0.9802
-          }
-        },
-        "away": {
-          "offense_factor": 0.2112,
-          "defense_weakness_opponent": 0.3386,
-          "build_up_factor": 0.323,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.148,
-            "norm_shots_on_target_per_game": 0.2481,
-            "norm_shots_per_game": 0.1254,
-            "norm_xg_per_shot": 0.3509,
-            "norm_goals_per_match": 0.2414,
-            "norm_big_chances_per_match": 0.1695,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.1363
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.3333,
-            "norm_pass_success_pct": 0.5,
-            "norm_field_tilt_pct": 0.0198,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.1901
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.1564,
-            "norm_defense_profile": 0.7097,
-            "inverse_defense_profile": 0.2903,
-            "norm_goals_conceded_per_match": 0.4118,
-            "norm_field_tilt_pct": 0.7103,
-            "inverse_field_tilt_pct": 0.2897
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-05-03T10:30:00Z",
       "stadium": "Renato Dall'Ara",
       "city": "Bologna",
       "active_lambda": {
-        "home": 1.656,
-        "away": 0.6893
+        "home": 1.6616,
+        "away": 0.6779
       }
     },
     "vxm_000046": {
       "vectra_match_id": "vxm_000046",
+      "prediction_stage": "referee_ready",
+      "lambda_home_core": 0.9267,
+      "lambda_away_core": 2.016,
+      "lambda_before_referee": {
+        "home": 0.9283,
+        "away": 2.0126
+      },
+      "lambda_referee": {
+        "home": 0.9267,
+        "away": 2.016
+      },
+      "lambda_before": {
+        "home": 0.9283,
+        "away": 2.0126
+      },
+      "lambda_after": {
+        "home": 0.9267,
+        "away": 2.016
+      },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000009",
+        "reason_flags": [
+          "balanced_referee_interaction"
+        ]
+      },
+      "referee_impact": {
+        "applied": true,
+        "referee": {
+          "vectra_referee_id": "vxr_000009",
+          "name": "Fabio Maresca",
+          "identity_status": "resolved",
+          "reliability": 0.6,
+          "metrics": {
+            "matches_officiated": 9.0,
+            "fouls_per_game": 24.5556,
+            "fouls_per_tackle": 0.7674,
+            "penalties_per_game": 0.1111,
+            "yellow_cards_per_game": 3.7778,
+            "red_cards_per_game": 0.1111,
+            "home_win_ratio": 0.3333,
+            "away_win_ratio": 0.4444,
+            "draw_ratio": 0.2222,
+            "strictness": 0.4683,
+            "card_tendency": 0.4074,
+            "penalty_tendency": 0.1389,
+            "home_bias_signal": 0.4444
+          }
+        },
+        "home": {
+          "team_id": "vxt_000034",
+          "referee_attack_boost": -0.0136,
+          "referee_edge": -0.0283,
+          "lambda_before_referee": 0.9283,
+          "lambda_raw_unbounded": 0.9267,
+          "lambda_after_referee": 0.9267,
+          "lambda_delta_raw": -0.0016,
+          "lambda_delta_applied": -0.0016,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000038",
+          "referee_attack_boost": 0.0147,
+          "referee_edge": 0.0283,
+          "lambda_before_referee": 2.0126,
+          "lambda_raw_unbounded": 2.016,
+          "lambda_after_referee": 2.016,
+          "lambda_delta_raw": 0.0034,
+          "lambda_delta_applied": 0.0034,
+          "lambda_cap_reached": false
+        },
+        "components": {
+          "home": {
+            "foul_gain_advantage": 0.0982,
+            "penalty_volatility_advantage": 0.0097,
+            "contact_strictness_positive": 0.0982,
+            "contact_strictness_negative": 0.1709,
+            "contact_strictness_interaction": -0.0726,
+            "card_exposure_penalty": 0.1104,
+            "rhythm_interruption_penalty": 0.0957,
+            "home_away_sensitivity": -0.1112
+          },
+          "away": {
+            "foul_gain_advantage": 0.1227,
+            "penalty_volatility_advantage": 0.0189,
+            "contact_strictness_positive": 0.1227,
+            "contact_strictness_negative": 0.1568,
+            "contact_strictness_interaction": -0.0341,
+            "card_exposure_penalty": 0.0854,
+            "rhythm_interruption_penalty": 0.1135,
+            "home_away_sensitivity": 0.1112
+          },
+          "team_inputs": {
+            "home": {
+              "discipline_risk": 0.5205,
+              "discipline_stability": 0.4795,
+              "foul_gain": 0.4375,
+              "box_presence": 0.3471,
+              "physical": 0.7009,
+              "creator_supply": 0.4058
+            },
+            "away": {
+              "discipline_risk": 0.4578,
+              "discipline_stability": 0.5422,
+              "foul_gain": 0.4833,
+              "box_presence": 0.5417,
+              "physical": 0.7315,
+              "creator_supply": 0.5179
+            }
+          }
+        },
+        "parameters": {
+          "referee_stage_multiplier": 0.1,
+          "referee_impact_cap": 0.12,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "bot_summary_key": "referee_balanced_low_impact",
+        "evidence": [
+          "balanced_referee_interaction"
+        ]
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 0.9717,
+        "away_shift_factor": 1.0283,
+        "penalty_tendency": 0.1389,
+        "strictness": 0.4683,
+        "card_tendency": 0.4074,
+        "home_bias_signal": 0.4444,
+        "sample_reliability": 0.6
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -843,162 +921,153 @@
       "home_team_name": "Sassuolo",
       "away_team_name": "Milan",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 0.9283,
-      "lambda_away_core": 2.0126,
-      "lambda_core_base": {
-        "home": 0.947,
-        "away": 2.0033
-      },
-      "lambda_core_enhanced": {
-        "home": 0.9283,
-        "away": 2.0126
-      },
-      "advanced_core": {
-        "applied": true,
-        "home": {
-          "attacking_latent_force": 0.4443,
-          "chance_quality_force": 0.3625,
-          "goal_conversion_force": 0.338,
-          "defensive_latent_resistance": 0.4042,
-          "goalkeeper_security_force": 0.5947,
-          "goal_pressure": 0.3879,
-          "goal_resistance": 0.4804,
-          "source_core_profiles": {
-            "team_finishing_core": 0.3196,
-            "team_creator_supply_core": 0.4058,
-            "team_box_presence_core": 0.3471,
-            "team_goalkeeping_core": 0.698,
-            "team_defensive_duel_core": 0.4135,
-            "team_aerial_attack_core": 0.291,
-            "team_aerial_defense_core": 0.2938,
-            "team_discipline_risk_core": 0.5205,
-            "team_discipline_stability_core": 0.4795,
-            "team_foul_gain_core": 0.4375,
-            "team_physical_core": 0.7009
-          },
-          "goal_force_edge": -0.1178
-        },
-        "away": {
-          "attacking_latent_force": 0.5689,
-          "chance_quality_force": 0.4914,
-          "goal_conversion_force": 0.4436,
-          "defensive_latent_resistance": 0.4375,
-          "goalkeeper_security_force": 0.6081,
-          "goal_pressure": 0.5081,
-          "goal_resistance": 0.5057,
-          "source_core_profiles": {
-            "team_finishing_core": 0.3962,
-            "team_creator_supply_core": 0.5179,
-            "team_box_presence_core": 0.5417,
-            "team_goalkeeping_core": 0.7081,
-            "team_defensive_duel_core": 0.4544,
-            "team_aerial_attack_core": 0.3553,
-            "team_aerial_defense_core": 0.2949,
-            "team_discipline_risk_core": 0.4578,
-            "team_discipline_stability_core": 0.5422,
-            "team_foul_gain_core": 0.4833,
-            "team_physical_core": 0.7315
-          },
-          "goal_force_edge": 0.0277
-        },
-        "impact": {
-          "home_multiplier": -0.0198,
-          "away_multiplier": 0.0046,
-          "home_lambda_raw_unbounded": 0.9283,
-          "away_lambda_raw_unbounded": 2.0126,
-          "home_lambda_delta_raw": -0.0187,
-          "away_lambda_delta_raw": 0.0093,
-          "home_lambda_delta_applied": -0.0187,
-          "away_lambda_delta_applied": 0.0093,
-          "home_cap_reached": false,
-          "away_cap_reached": false,
-          "core_stage_multiplier": 0.18,
-          "core_impact_cap": 0.22,
-          "reliability": 0.932
-        },
-        "bot_summary_key": "core_balanced_low_edge",
-        "evidence": [
-          "balanced_structural_goal_edge"
-        ]
-      },
-      "components": {
-        "home": {
-          "offense_factor": 0.2606,
-          "defense_weakness_opponent": 0.3619,
-          "build_up_factor": 0.3784,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.1966,
-            "norm_shots_on_target_per_game": 0.3488,
-            "norm_shots_per_game": 0.1498,
-            "norm_xg_per_shot": 0.4408,
-            "norm_goals_per_match": 0.3276,
-            "norm_big_chances_per_match": 0.0847,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.1844
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.3229,
-            "norm_pass_success_pct": 0.5833,
-            "norm_field_tilt_pct": 0.1909,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.2669
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.2881,
-            "norm_defense_profile": 0.5973,
-            "inverse_defense_profile": 0.4027,
-            "norm_goals_conceded_per_match": 0.0,
-            "norm_field_tilt_pct": 0.5156,
-            "inverse_field_tilt_pct": 0.4844
-          }
-        },
-        "away": {
-          "offense_factor": 0.6236,
-          "defense_weakness_opponent": 0.6429,
-          "build_up_factor": 0.714,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.704,
-            "norm_shots_on_target_per_game": 0.5194,
-            "norm_shots_per_game": 0.5017,
-            "norm_xg_per_shot": 1.0,
-            "norm_goals_per_match": 0.4483,
-            "norm_big_chances_per_match": 0.661,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.52
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.8021,
-            "norm_pass_success_pct": 1.0,
-            "norm_field_tilt_pct": 0.5156,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.7023
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.749,
-            "norm_defense_profile": 0.2307,
-            "inverse_defense_profile": 0.7693,
-            "norm_goals_conceded_per_match": 0.5,
-            "norm_field_tilt_pct": 0.1909,
-            "inverse_field_tilt_pct": 0.8091
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-05-03T13:00:00Z",
       "stadium": "Mapei Stadium",
       "city": "Reggio Emilia",
       "active_lambda": {
-        "home": 0.9283,
-        "away": 2.0126
+        "home": 0.9267,
+        "away": 2.016
       }
     },
     "vxm_000047": {
       "vectra_match_id": "vxm_000047",
+      "prediction_stage": "referee_ready",
+      "lambda_home_core": 2.4494,
+      "lambda_away_core": 0.6502,
+      "lambda_before_referee": {
+        "home": 2.45,
+        "away": 0.65
+      },
+      "lambda_referee": {
+        "home": 2.4494,
+        "away": 0.6502
+      },
+      "lambda_before": {
+        "home": 2.45,
+        "away": 0.65
+      },
+      "lambda_after": {
+        "home": 2.4494,
+        "away": 0.6502
+      },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000022",
+        "reason_flags": [
+          "high_referee_strictness",
+          "balanced_referee_interaction",
+          "away_card_exposure_penalty"
+        ]
+      },
+      "referee_impact": {
+        "applied": true,
+        "referee": {
+          "vectra_referee_id": "vxr_000022",
+          "name": "Giovanni Ayroldi",
+          "identity_status": "resolved",
+          "reliability": 0.5333,
+          "metrics": {
+            "matches_officiated": 8.0,
+            "fouls_per_game": 30.5,
+            "fouls_per_tackle": 1.0252,
+            "penalties_per_game": 0.125,
+            "yellow_cards_per_game": 4.375,
+            "red_cards_per_game": 0.125,
+            "home_win_ratio": 0.25,
+            "away_win_ratio": 0.5,
+            "draw_ratio": 0.25,
+            "strictness": 0.8929,
+            "card_tendency": 0.4688,
+            "penalty_tendency": 0.1562,
+            "home_bias_signal": 0.375
+          }
+        },
+        "home": {
+          "team_id": "vxt_000021",
+          "referee_attack_boost": -0.0102,
+          "referee_edge": -0.0049,
+          "lambda_before_referee": 2.45,
+          "lambda_raw_unbounded": 2.4494,
+          "lambda_after_referee": 2.4494,
+          "lambda_delta_raw": -0.0006,
+          "lambda_delta_applied": -0.0006,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000036",
+          "referee_attack_boost": -0.0053,
+          "referee_edge": 0.0049,
+          "lambda_before_referee": 0.65,
+          "lambda_raw_unbounded": 0.6502,
+          "lambda_after_referee": 0.6502,
+          "lambda_delta_raw": 0.0002,
+          "lambda_delta_applied": 0.0002,
+          "lambda_cap_reached": false
+        },
+        "components": {
+          "home": {
+            "foul_gain_advantage": 0.2171,
+            "penalty_volatility_advantage": 0.0224,
+            "contact_strictness_positive": 0.2171,
+            "contact_strictness_negative": 0.3163,
+            "contact_strictness_interaction": -0.0992,
+            "card_exposure_penalty": 0.1093,
+            "rhythm_interruption_penalty": 0.2508,
+            "home_away_sensitivity": -0.25
+          },
+          "away": {
+            "foul_gain_advantage": 0.1501,
+            "penalty_volatility_advantage": 0.0084,
+            "contact_strictness_positive": 0.1501,
+            "contact_strictness_negative": 0.2892,
+            "contact_strictness_interaction": -0.139,
+            "card_exposure_penalty": 0.1204,
+            "rhythm_interruption_penalty": 0.1672,
+            "home_away_sensitivity": 0.25
+          },
+          "team_inputs": {
+            "home": {
+              "discipline_risk": 0.483,
+              "discipline_stability": 0.517,
+              "foul_gain": 0.4702,
+              "box_presence": 0.6006,
+              "physical": 0.7335,
+              "creator_supply": 0.5847
+            },
+            "away": {
+              "discipline_risk": 0.5069,
+              "discipline_stability": 0.4931,
+              "foul_gain": 0.341,
+              "box_presence": 0.3254,
+              "physical": 0.6389,
+              "creator_supply": 0.3253
+            }
+          }
+        },
+        "parameters": {
+          "referee_stage_multiplier": 0.1,
+          "referee_impact_cap": 0.12,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "bot_summary_key": "referee_balanced_low_impact",
+        "evidence": [
+          "high_referee_strictness",
+          "balanced_referee_interaction",
+          "away_card_exposure_penalty"
+        ]
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 0.9951,
+        "away_shift_factor": 1.0049,
+        "penalty_tendency": 0.1562,
+        "strictness": 0.8929,
+        "card_tendency": 0.4688,
+        "home_bias_signal": 0.375,
+        "sample_reliability": 0.5333
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -1007,164 +1076,153 @@
       "home_team_name": "Juventus",
       "away_team_name": "Hellas Verona",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 2.45,
-      "lambda_away_core": 0.65,
-      "lambda_core_base": {
-        "home": 2.45,
-        "away": 0.65
-      },
-      "lambda_core_enhanced": {
-        "home": 2.45,
-        "away": 0.65
-      },
-      "advanced_core": {
-        "applied": true,
-        "home": {
-          "attacking_latent_force": 0.62,
-          "chance_quality_force": 0.5468,
-          "goal_conversion_force": 0.484,
-          "defensive_latent_resistance": 0.4418,
-          "goalkeeper_security_force": 0.4817,
-          "goal_pressure": 0.5573,
-          "goal_resistance": 0.4577,
-          "source_core_profiles": {
-            "team_finishing_core": 0.4249,
-            "team_creator_supply_core": 0.5847,
-            "team_box_presence_core": 0.6006,
-            "team_goalkeeping_core": 0.5197,
-            "team_defensive_duel_core": 0.4519,
-            "team_aerial_attack_core": 0.4208,
-            "team_aerial_defense_core": 0.3339,
-            "team_discipline_risk_core": 0.483,
-            "team_discipline_stability_core": 0.517,
-            "team_foul_gain_core": 0.4702,
-            "team_physical_core": 0.7335
-          },
-          "goal_force_edge": 0.1129
-        },
-        "away": {
-          "attacking_latent_force": 0.3881,
-          "chance_quality_force": 0.322,
-          "goal_conversion_force": 0.2397,
-          "defensive_latent_resistance": 0.3942,
-          "goalkeeper_security_force": 0.5198,
-          "goal_pressure": 0.3237,
-          "goal_resistance": 0.4444,
-          "source_core_profiles": {
-            "team_finishing_core": 0.1935,
-            "team_creator_supply_core": 0.3253,
-            "team_box_presence_core": 0.3254,
-            "team_goalkeeping_core": 0.5906,
-            "team_defensive_duel_core": 0.4049,
-            "team_aerial_attack_core": 0.3007,
-            "team_aerial_defense_core": 0.3043,
-            "team_discipline_risk_core": 0.5069,
-            "team_discipline_stability_core": 0.4931,
-            "team_foul_gain_core": 0.341,
-            "team_physical_core": 0.6389
-          },
-          "goal_force_edge": -0.134
-        },
-        "impact": {
-          "home_multiplier": 0.0189,
-          "away_multiplier": -0.0225,
-          "home_lambda_raw_unbounded": 2.4964,
-          "away_lambda_raw_unbounded": 0.6354,
-          "home_lambda_delta_raw": 0.0464,
-          "away_lambda_delta_raw": -0.0146,
-          "home_lambda_delta_applied": 0.0,
-          "away_lambda_delta_applied": 0.0,
-          "home_cap_reached": true,
-          "away_cap_reached": true,
-          "core_stage_multiplier": 0.18,
-          "core_impact_cap": 0.22,
-          "reliability": 0.932
-        },
-        "bot_summary_key": "core_home_structural_edge_cap_limited",
-        "evidence": [
-          "home_structural_goal_edge",
-          "home_lambda_cap_reached",
-          "away_lambda_cap_reached"
-        ]
-      },
-      "components": {
-        "home": {
-          "offense_factor": 0.766,
-          "defense_weakness_opponent": 0.6135,
-          "build_up_factor": 0.8156,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.7816,
-            "norm_shots_on_target_per_game": 0.938,
-            "norm_shots_per_game": 0.8188,
-            "norm_xg_per_shot": 0.632,
-            "norm_goals_per_match": 0.6034,
-            "norm_big_chances_per_match": 0.7288,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.8246
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.9167,
-            "norm_pass_success_pct": 0.9167,
-            "norm_field_tilt_pct": 0.8458,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.8808
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.5267,
-            "norm_defense_profile": 0.2546,
-            "inverse_defense_profile": 0.7454,
-            "norm_goals_conceded_per_match": 0.8529,
-            "norm_field_tilt_pct": 0.2561,
-            "inverse_field_tilt_pct": 0.7439
-          }
-        },
-        "away": {
-          "offense_factor": 0.221,
-          "defense_weakness_opponent": 0.261,
-          "build_up_factor": 0.1561,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.1671,
-            "norm_shots_on_target_per_game": 0.3566,
-            "norm_shots_per_game": 0.2509,
-            "norm_xg_per_shot": 0.1739,
-            "norm_goals_per_match": 0.0172,
-            "norm_big_chances_per_match": 0.2034,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.2244
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.0,
-            "norm_pass_success_pct": 0.0,
-            "norm_field_tilt_pct": 0.2561,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.0489
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.177,
-            "norm_defense_profile": 0.8777,
-            "inverse_defense_profile": 0.1223,
-            "norm_goals_conceded_per_match": 0.0588,
-            "norm_field_tilt_pct": 0.8458,
-            "inverse_field_tilt_pct": 0.1542
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-05-03T16:00:00Z",
       "stadium": "Allianz Stadium",
       "city": "Torino",
       "active_lambda": {
-        "home": 2.45,
-        "away": 0.65
+        "home": 2.4494,
+        "away": 0.6502
       }
     },
     "vxm_000048": {
       "vectra_match_id": "vxm_000048",
+      "prediction_stage": "referee_ready",
+      "lambda_home_core": 2.445,
+      "lambda_away_core": 0.6513,
+      "lambda_before_referee": {
+        "home": 2.45,
+        "away": 0.65
+      },
+      "lambda_referee": {
+        "home": 2.445,
+        "away": 0.6513
+      },
+      "lambda_before": {
+        "home": 2.45,
+        "away": 0.65
+      },
+      "lambda_after": {
+        "home": 2.445,
+        "away": 0.6513
+      },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000032",
+        "reason_flags": [
+          "high_referee_strictness",
+          "away_referee_interaction_edge",
+          "home_card_exposure_penalty"
+        ]
+      },
+      "referee_impact": {
+        "applied": true,
+        "referee": {
+          "vectra_referee_id": "vxr_000032",
+          "name": "Kevin Bonacina",
+          "identity_status": "resolved",
+          "reliability": 0.6667,
+          "metrics": {
+            "matches_officiated": 10.0,
+            "fouls_per_game": 27.1,
+            "fouls_per_tackle": 0.941,
+            "penalties_per_game": 0.1,
+            "yellow_cards_per_game": 3.5,
+            "red_cards_per_game": 0.2,
+            "home_win_ratio": 0.4,
+            "away_win_ratio": 0.4,
+            "draw_ratio": 0.2,
+            "strictness": 0.65,
+            "card_tendency": 0.4583,
+            "penalty_tendency": 0.125,
+            "home_bias_signal": 0.5
+          }
+        },
+        "home": {
+          "team_id": "vxt_000035",
+          "referee_attack_boost": -0.0071,
+          "referee_edge": -0.0306,
+          "lambda_before_referee": 2.45,
+          "lambda_raw_unbounded": 2.445,
+          "lambda_after_referee": 2.445,
+          "lambda_delta_raw": -0.005,
+          "lambda_delta_applied": -0.005,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000023",
+          "referee_attack_boost": 0.0235,
+          "referee_edge": 0.0306,
+          "lambda_before_referee": 0.65,
+          "lambda_raw_unbounded": 0.6513,
+          "lambda_after_referee": 0.6513,
+          "lambda_delta_raw": 0.0013,
+          "lambda_delta_applied": 0.0013,
+          "lambda_cap_reached": false
+        },
+        "components": {
+          "home": {
+            "foul_gain_advantage": 0.1544,
+            "penalty_volatility_advantage": 0.0174,
+            "contact_strictness_positive": 0.1544,
+            "contact_strictness_negative": 0.2432,
+            "contact_strictness_interaction": -0.0888,
+            "card_exposure_penalty": 0.1212,
+            "rhythm_interruption_penalty": 0.1862,
+            "home_away_sensitivity": 0.0
+          },
+          "away": {
+            "foul_gain_advantage": 0.1632,
+            "penalty_volatility_advantage": 0.0095,
+            "contact_strictness_positive": 0.1632,
+            "contact_strictness_negative": 0.1807,
+            "contact_strictness_interaction": -0.0174,
+            "card_exposure_penalty": 0.0801,
+            "rhythm_interruption_penalty": 0.1087,
+            "home_away_sensitivity": -0.0
+          },
+          "team_inputs": {
+            "home": {
+              "discipline_risk": 0.5143,
+              "discipline_stability": 0.4857,
+              "foul_gain": 0.4892,
+              "box_presence": 0.6813,
+              "physical": 0.7275,
+              "creator_supply": 0.62
+            },
+            "away": {
+              "discipline_risk": 0.418,
+              "discipline_stability": 0.582,
+              "foul_gain": 0.4315,
+              "box_presence": 0.342,
+              "physical": 0.6649,
+              "creator_supply": 0.3332
+            }
+          }
+        },
+        "parameters": {
+          "referee_stage_multiplier": 0.1,
+          "referee_impact_cap": 0.12,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "bot_summary_key": "referee_balanced_low_impact",
+        "evidence": [
+          "high_referee_strictness",
+          "away_referee_interaction_edge",
+          "home_card_exposure_penalty"
+        ]
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 0.9694,
+        "away_shift_factor": 1.0306,
+        "penalty_tendency": 0.125,
+        "strictness": 0.65,
+        "card_tendency": 0.4583,
+        "home_bias_signal": 0.5,
+        "sample_reliability": 0.6667
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -1173,164 +1231,151 @@
       "home_team_name": "Inter",
       "away_team_name": "Parma",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 2.45,
-      "lambda_away_core": 0.65,
-      "lambda_core_base": {
-        "home": 2.45,
-        "away": 0.65
-      },
-      "lambda_core_enhanced": {
-        "home": 2.45,
-        "away": 0.65
-      },
-      "advanced_core": {
-        "applied": true,
-        "home": {
-          "attacking_latent_force": 0.6629,
-          "chance_quality_force": 0.6041,
-          "goal_conversion_force": 0.5421,
-          "defensive_latent_resistance": 0.4248,
-          "goalkeeper_security_force": 0.4528,
-          "goal_pressure": 0.609,
-          "goal_resistance": 0.436,
-          "source_core_profiles": {
-            "team_finishing_core": 0.4813,
-            "team_creator_supply_core": 0.62,
-            "team_box_presence_core": 0.6813,
-            "team_goalkeeping_core": 0.4855,
-            "team_defensive_duel_core": 0.4394,
-            "team_aerial_attack_core": 0.4834,
-            "team_aerial_defense_core": 0.3137,
-            "team_discipline_risk_core": 0.5143,
-            "team_discipline_stability_core": 0.4857,
-            "team_foul_gain_core": 0.4892,
-            "team_physical_core": 0.7275
-          },
-          "goal_force_edge": 0.1256
-        },
-        "away": {
-          "attacking_latent_force": 0.4026,
-          "chance_quality_force": 0.3354,
-          "goal_conversion_force": 0.2581,
-          "defensive_latent_resistance": 0.4301,
-          "goalkeeper_security_force": 0.5634,
-          "goal_pressure": 0.3391,
-          "goal_resistance": 0.4834,
-          "source_core_profiles": {
-            "team_finishing_core": 0.2149,
-            "team_creator_supply_core": 0.3332,
-            "team_box_presence_core": 0.342,
-            "team_goalkeeping_core": 0.6437,
-            "team_defensive_duel_core": 0.4279,
-            "team_aerial_attack_core": 0.2773,
-            "team_aerial_defense_core": 0.3238,
-            "team_discipline_risk_core": 0.418,
-            "team_discipline_stability_core": 0.582,
-            "team_foul_gain_core": 0.4315,
-            "team_physical_core": 0.6649
-          },
-          "goal_force_edge": -0.0969
-        },
-        "impact": {
-          "home_multiplier": 0.0211,
-          "away_multiplier": -0.0163,
-          "home_lambda_raw_unbounded": 2.5016,
-          "away_lambda_raw_unbounded": 0.6394,
-          "home_lambda_delta_raw": 0.0516,
-          "away_lambda_delta_raw": -0.0106,
-          "home_lambda_delta_applied": 0.0,
-          "away_lambda_delta_applied": 0.0,
-          "home_cap_reached": true,
-          "away_cap_reached": true,
-          "core_stage_multiplier": 0.18,
-          "core_impact_cap": 0.22,
-          "reliability": 0.9325
-        },
-        "bot_summary_key": "core_home_structural_edge_cap_limited",
-        "evidence": [
-          "home_structural_goal_edge",
-          "home_lambda_cap_reached",
-          "away_lambda_cap_reached"
-        ]
-      },
-      "components": {
-        "home": {
-          "offense_factor": 0.9512,
-          "defense_weakness_opponent": 0.6339,
-          "build_up_factor": 0.9,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 1.0,
-            "norm_shots_on_target_per_game": 1.0,
-            "norm_shots_per_game": 1.0,
-            "norm_xg_per_shot": 0.7622,
-            "norm_goals_per_match": 1.0,
-            "norm_big_chances_per_match": 1.0,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 1.0
-          },
-          "build_up_components": {
-            "norm_possession_pct": 1.0,
-            "norm_pass_success_pct": 1.0,
-            "norm_field_tilt_pct": 1.0,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 1.0
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.6667,
-            "norm_defense_profile": 0.1376,
-            "inverse_defense_profile": 0.8624,
-            "norm_goals_conceded_per_match": 0.3824,
-            "norm_field_tilt_pct": 0.0491,
-            "inverse_field_tilt_pct": 0.9509
-          }
-        },
-        "away": {
-          "offense_factor": 0.1328,
-          "defense_weakness_opponent": 0.1841,
-          "build_up_factor": 0.3109,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.0876,
-            "norm_shots_on_target_per_game": 0.1473,
-            "norm_shots_per_game": 0.223,
-            "norm_xg_per_shot": 0.0091,
-            "norm_goals_per_match": 0.0517,
-            "norm_big_chances_per_match": 0.1356,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.1372
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.3333,
-            "norm_pass_success_pct": 0.4167,
-            "norm_field_tilt_pct": 0.0491,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.1774
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.0,
-            "norm_defense_profile": 1.0,
-            "inverse_defense_profile": 0.0,
-            "norm_goals_conceded_per_match": 0.1176,
-            "norm_field_tilt_pct": 1.0,
-            "inverse_field_tilt_pct": 0.0
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-05-03T18:45:00Z",
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
       "active_lambda": {
-        "home": 2.45,
-        "away": 0.65
+        "home": 2.445,
+        "away": 0.6513
       }
     },
     "vxm_000049": {
       "vectra_match_id": "vxm_000049",
+      "prediction_stage": "referee_ready",
+      "lambda_home_core": 0.8126,
+      "lambda_away_core": 1.5305,
+      "lambda_before_referee": {
+        "home": 0.814,
+        "away": 1.5279
+      },
+      "lambda_referee": {
+        "home": 0.8126,
+        "away": 1.5305
+      },
+      "lambda_before": {
+        "home": 0.814,
+        "away": 1.5279
+      },
+      "lambda_after": {
+        "home": 0.8126,
+        "away": 1.5305
+      },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000010",
+        "reason_flags": [
+          "low_referee_strictness",
+          "balanced_referee_interaction"
+        ]
+      },
+      "referee_impact": {
+        "applied": true,
+        "referee": {
+          "vectra_referee_id": "vxr_000010",
+          "name": "Daniele Chiffi",
+          "identity_status": "resolved",
+          "reliability": 0.8667,
+          "metrics": {
+            "matches_officiated": 13.0,
+            "fouls_per_game": 22.2308,
+            "fouls_per_tackle": 0.6947,
+            "penalties_per_game": 0.2308,
+            "yellow_cards_per_game": 2.3846,
+            "red_cards_per_game": 0.1538,
+            "home_win_ratio": 0.3077,
+            "away_win_ratio": 0.4615,
+            "draw_ratio": 0.2308,
+            "strictness": 0.3022,
+            "card_tendency": 0.3269,
+            "penalty_tendency": 0.2885,
+            "home_bias_signal": 0.4231
+          }
+        },
+        "home": {
+          "team_id": "vxt_000031",
+          "referee_attack_boost": -0.0099,
+          "referee_edge": -0.02,
+          "lambda_before_referee": 0.814,
+          "lambda_raw_unbounded": 0.8126,
+          "lambda_after_referee": 0.8126,
+          "lambda_delta_raw": -0.0014,
+          "lambda_delta_applied": -0.0014,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000040",
+          "referee_attack_boost": 0.0101,
+          "referee_edge": 0.02,
+          "lambda_before_referee": 1.5279,
+          "lambda_raw_unbounded": 1.5305,
+          "lambda_after_referee": 1.5305,
+          "lambda_delta_raw": 0.0026,
+          "lambda_delta_applied": 0.0026,
+          "lambda_cap_reached": false
+        },
+        "components": {
+          "home": {
+            "foul_gain_advantage": 0.0594,
+            "penalty_volatility_advantage": 0.0173,
+            "contact_strictness_positive": 0.0594,
+            "contact_strictness_negative": 0.1028,
+            "contact_strictness_interaction": -0.0435,
+            "card_exposure_penalty": 0.0815,
+            "rhythm_interruption_penalty": 0.0501,
+            "home_away_sensitivity": -0.1538
+          },
+          "away": {
+            "foul_gain_advantage": 0.0673,
+            "penalty_volatility_advantage": 0.0239,
+            "contact_strictness_positive": 0.0673,
+            "contact_strictness_negative": 0.1019,
+            "contact_strictness_interaction": -0.0346,
+            "card_exposure_penalty": 0.0778,
+            "rhythm_interruption_penalty": 0.0601,
+            "home_away_sensitivity": 0.1538
+          },
+          "team_inputs": {
+            "home": {
+              "discipline_risk": 0.4992,
+              "discipline_stability": 0.5008,
+              "foul_gain": 0.3922,
+              "box_presence": 0.3137,
+              "physical": 0.6816,
+              "creator_supply": 0.3072
+            },
+            "away": {
+              "discipline_risk": 0.4877,
+              "discipline_stability": 0.5123,
+              "foul_gain": 0.4348,
+              "box_presence": 0.3824,
+              "physical": 0.6912,
+              "creator_supply": 0.3944
+            }
+          }
+        },
+        "parameters": {
+          "referee_stage_multiplier": 0.1,
+          "referee_impact_cap": 0.12,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "bot_summary_key": "referee_balanced_low_impact",
+        "evidence": [
+          "low_referee_strictness",
+          "balanced_referee_interaction"
+        ]
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 0.98,
+        "away_shift_factor": 1.02,
+        "penalty_tendency": 0.2885,
+        "strictness": 0.3022,
+        "card_tendency": 0.3269,
+        "home_bias_signal": 0.4231,
+        "sample_reliability": 0.8667
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -1339,162 +1384,151 @@
       "home_team_name": "Cremonese",
       "away_team_name": "Lazio",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 0.8144,
-      "lambda_away_core": 1.5243,
-      "lambda_core_base": {
-        "home": 0.8344,
-        "away": 1.556
-      },
-      "lambda_core_enhanced": {
-        "home": 0.8144,
-        "away": 1.5243
-      },
-      "advanced_core": {
-        "applied": true,
-        "home": {
-          "attacking_latent_force": 0.3843,
-          "chance_quality_force": 0.3196,
-          "goal_conversion_force": 0.2731,
-          "defensive_latent_resistance": 0.4245,
-          "goalkeeper_security_force": 0.6284,
-          "goal_pressure": 0.3315,
-          "goal_resistance": 0.506,
-          "source_core_profiles": {
-            "team_finishing_core": 0.2527,
-            "team_creator_supply_core": 0.3072,
-            "team_box_presence_core": 0.3137,
-            "team_goalkeeping_core": 0.7299,
-            "team_defensive_duel_core": 0.4225,
-            "team_aerial_attack_core": 0.3137,
-            "team_aerial_defense_core": 0.3605,
-            "team_discipline_risk_core": 0.4992,
-            "team_discipline_stability_core": 0.5008,
-            "team_foul_gain_core": 0.3922,
-            "team_physical_core": 0.6816
-          },
-          "goal_force_edge": -0.1429
-        },
-        "away": {
-          "attacking_latent_force": 0.4496,
-          "chance_quality_force": 0.359,
-          "goal_conversion_force": 0.3238,
-          "defensive_latent_resistance": 0.408,
-          "goalkeeper_security_force": 0.5742,
-          "goal_pressure": 0.3846,
-          "goal_resistance": 0.4744,
-          "source_core_profiles": {
-            "team_finishing_core": 0.2895,
-            "team_creator_supply_core": 0.3944,
-            "team_box_presence_core": 0.3824,
-            "team_goalkeeping_core": 0.6705,
-            "team_defensive_duel_core": 0.4255,
-            "team_aerial_attack_core": 0.2211,
-            "team_aerial_defense_core": 0.2733,
-            "team_discipline_risk_core": 0.4877,
-            "team_discipline_stability_core": 0.5123,
-            "team_foul_gain_core": 0.4348,
-            "team_physical_core": 0.6912
-          },
-          "goal_force_edge": -0.1214
-        },
-        "impact": {
-          "home_multiplier": -0.024,
-          "away_multiplier": -0.0204,
-          "home_lambda_raw_unbounded": 0.8144,
-          "away_lambda_raw_unbounded": 1.5243,
-          "home_lambda_delta_raw": -0.02,
-          "away_lambda_delta_raw": -0.0317,
-          "home_lambda_delta_applied": -0.02,
-          "away_lambda_delta_applied": -0.0317,
-          "home_cap_reached": false,
-          "away_cap_reached": false,
-          "core_stage_multiplier": 0.18,
-          "core_impact_cap": 0.22,
-          "reliability": 0.9328
-        },
-        "bot_summary_key": "core_balanced_low_edge",
-        "evidence": [
-          "balanced_structural_goal_edge"
-        ]
-      },
-      "components": {
-        "home": {
-          "offense_factor": 0.1272,
-          "defense_weakness_opponent": 0.4702,
-          "build_up_factor": 0.3166,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.0519,
-            "norm_shots_on_target_per_game": 0.2171,
-            "norm_shots_per_game": 0.0,
-            "norm_xg_per_shot": 0.3206,
-            "norm_goals_per_match": 0.069,
-            "norm_big_chances_per_match": 0.0847,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.0366
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.3646,
-            "norm_pass_success_pct": 0.3333,
-            "norm_field_tilt_pct": 0.1008,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.2044
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.5926,
-            "norm_defense_profile": 0.5772,
-            "inverse_defense_profile": 0.4228,
-            "norm_goals_conceded_per_match": 0.1765,
-            "norm_field_tilt_pct": 0.5378,
-            "inverse_field_tilt_pct": 0.4622
-          }
-        },
-        "away": {
-          "offense_factor": 0.3059,
-          "defense_weakness_opponent": 0.7656,
-          "build_up_factor": 0.6655,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.2559,
-            "norm_shots_on_target_per_game": 0.4186,
-            "norm_shots_per_game": 0.2334,
-            "norm_xg_per_shot": 0.4387,
-            "norm_goals_per_match": 0.2586,
-            "norm_big_chances_per_match": 0.1695,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.2563
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.6979,
-            "norm_pass_success_pct": 0.9167,
-            "norm_field_tilt_pct": 0.5378,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.6528
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 1.0,
-            "norm_defense_profile": 0.1169,
-            "inverse_defense_profile": 0.8831,
-            "norm_goals_conceded_per_match": 0.7059,
-            "norm_field_tilt_pct": 0.1008,
-            "inverse_field_tilt_pct": 0.8992
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-05-04T16:30:00Z",
       "stadium": "Giovanni Zini",
       "city": "Cremona",
       "active_lambda": {
-        "home": 0.8144,
-        "away": 1.5243
+        "home": 0.8126,
+        "away": 1.5305
       }
     },
     "vxm_000050": {
       "vectra_match_id": "vxm_000050",
+      "prediction_stage": "referee_ready",
+      "lambda_home_core": 2.0169,
+      "lambda_away_core": 0.968,
+      "lambda_before_referee": {
+        "home": 2.018,
+        "away": 0.9675
+      },
+      "lambda_referee": {
+        "home": 2.0169,
+        "away": 0.968
+      },
+      "lambda_before": {
+        "home": 2.018,
+        "away": 0.9675
+      },
+      "lambda_after": {
+        "home": 2.0169,
+        "away": 0.968
+      },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000024",
+        "reason_flags": [
+          "high_penalty_tendency",
+          "balanced_referee_interaction"
+        ]
+      },
+      "referee_impact": {
+        "applied": true,
+        "referee": {
+          "vectra_referee_id": "vxr_000024",
+          "name": "Luca Zufferli",
+          "identity_status": "resolved",
+          "reliability": 0.9333,
+          "metrics": {
+            "matches_officiated": 14.0,
+            "fouls_per_game": 25.0,
+            "fouls_per_tackle": 0.7955,
+            "penalties_per_game": 0.5714,
+            "yellow_cards_per_game": 2.7143,
+            "red_cards_per_game": 0.0714,
+            "home_win_ratio": 0.2857,
+            "away_win_ratio": 0.3571,
+            "draw_ratio": 0.3571,
+            "strictness": 0.5,
+            "card_tendency": 0.2857,
+            "penalty_tendency": 0.7143,
+            "home_bias_signal": 0.4643
+          }
+        },
+        "home": {
+          "team_id": "vxt_000030",
+          "referee_attack_boost": 0.0319,
+          "referee_edge": -0.0056,
+          "lambda_before_referee": 2.018,
+          "lambda_raw_unbounded": 2.0169,
+          "lambda_after_referee": 2.0169,
+          "lambda_delta_raw": -0.0011,
+          "lambda_delta_applied": -0.0011,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000027",
+          "referee_attack_boost": 0.0375,
+          "referee_edge": 0.0056,
+          "lambda_before_referee": 0.9675,
+          "lambda_raw_unbounded": 0.968,
+          "lambda_after_referee": 0.968,
+          "lambda_delta_raw": 0.0005,
+          "lambda_delta_applied": 0.0005,
+          "lambda_cap_reached": false
+        },
+        "components": {
+          "home": {
+            "foul_gain_advantage": 0.1371,
+            "penalty_volatility_advantage": 0.0897,
+            "contact_strictness_positive": 0.1371,
+            "contact_strictness_negative": 0.1632,
+            "contact_strictness_interaction": -0.0261,
+            "card_exposure_penalty": 0.0614,
+            "rhythm_interruption_penalty": 0.1116,
+            "home_away_sensitivity": -0.0714
+          },
+          "away": {
+            "foul_gain_advantage": 0.1309,
+            "penalty_volatility_advantage": 0.0771,
+            "contact_strictness_positive": 0.1309,
+            "contact_strictness_negative": 0.1549,
+            "contact_strictness_interaction": -0.024,
+            "card_exposure_penalty": 0.0637,
+            "rhythm_interruption_penalty": 0.0894,
+            "home_away_sensitivity": 0.0714
+          },
+          "team_inputs": {
+            "home": {
+              "discipline_risk": 0.4637,
+              "discipline_stability": 0.5363,
+              "foul_gain": 0.5112,
+              "box_presence": 0.5199,
+              "physical": 0.7038,
+              "creator_supply": 0.5092
+            },
+            "away": {
+              "discipline_risk": 0.4723,
+              "discipline_stability": 0.5277,
+              "foul_gain": 0.4963,
+              "box_presence": 0.4692,
+              "physical": 0.6561,
+              "creator_supply": 0.4036
+            }
+          }
+        },
+        "parameters": {
+          "referee_stage_multiplier": 0.1,
+          "referee_impact_cap": 0.12,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "bot_summary_key": "referee_balanced_low_impact",
+        "evidence": [
+          "high_penalty_tendency",
+          "balanced_referee_interaction"
+        ]
+      },
+      "referee_factors": {
+        "goal_environment_factor": 1.0,
+        "home_shift_factor": 0.9944,
+        "away_shift_factor": 1.0056,
+        "penalty_tendency": 0.7143,
+        "strictness": 0.5,
+        "card_tendency": 0.2857,
+        "home_bias_signal": 0.4643,
+        "sample_reliability": 0.9333
+      },
+      "active_stage_source": "match_lambdas_referee.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -1503,158 +1537,12 @@
       "home_team_name": "Roma",
       "away_team_name": "Fiorentina",
       "match_status": "UPCOMING",
-      "prediction_stage": "core_only",
-      "lambda_home_core": 2.018,
-      "lambda_away_core": 0.9675,
-      "lambda_core_base": {
-        "home": 2.0165,
-        "away": 0.9827
-      },
-      "lambda_core_enhanced": {
-        "home": 2.018,
-        "away": 0.9675
-      },
-      "advanced_core": {
-        "applied": true,
-        "home": {
-          "attacking_latent_force": 0.5519,
-          "chance_quality_force": 0.4933,
-          "goal_conversion_force": 0.4235,
-          "defensive_latent_resistance": 0.441,
-          "goalkeeper_security_force": 0.6479,
-          "goal_pressure": 0.4958,
-          "goal_resistance": 0.5238,
-          "source_core_profiles": {
-            "team_finishing_core": 0.3741,
-            "team_creator_supply_core": 0.5092,
-            "team_box_presence_core": 0.5199,
-            "team_goalkeeping_core": 0.7536,
-            "team_defensive_duel_core": 0.4244,
-            "team_aerial_attack_core": 0.4071,
-            "team_aerial_defense_core": 0.3778,
-            "team_discipline_risk_core": 0.4637,
-            "team_discipline_stability_core": 0.5363,
-            "team_foul_gain_core": 0.5112,
-            "team_physical_core": 0.7038
-          },
-          "goal_force_edge": 0.0045
-        },
-        "away": {
-          "attacking_latent_force": 0.477,
-          "chance_quality_force": 0.4258,
-          "goal_conversion_force": 0.375,
-          "defensive_latent_resistance": 0.405,
-          "goalkeeper_security_force": 0.6209,
-          "goal_pressure": 0.431,
-          "goal_resistance": 0.4913,
-          "source_core_profiles": {
-            "team_finishing_core": 0.3394,
-            "team_creator_supply_core": 0.4036,
-            "team_box_presence_core": 0.4692,
-            "team_goalkeeping_core": 0.7342,
-            "team_defensive_duel_core": 0.3992,
-            "team_aerial_attack_core": 0.3369,
-            "team_aerial_defense_core": 0.3139,
-            "team_discipline_risk_core": 0.4723,
-            "team_discipline_stability_core": 0.5277,
-            "team_foul_gain_core": 0.4963,
-            "team_physical_core": 0.6561
-          },
-          "goal_force_edge": -0.0928
-        },
-        "impact": {
-          "home_multiplier": 0.0007,
-          "away_multiplier": -0.0154,
-          "home_lambda_raw_unbounded": 2.018,
-          "away_lambda_raw_unbounded": 0.9675,
-          "home_lambda_delta_raw": 0.0015,
-          "away_lambda_delta_raw": -0.0152,
-          "home_lambda_delta_applied": 0.0015,
-          "away_lambda_delta_applied": -0.0152,
-          "home_cap_reached": false,
-          "away_cap_reached": false,
-          "core_stage_multiplier": 0.18,
-          "core_impact_cap": 0.22,
-          "reliability": 0.9249
-        },
-        "bot_summary_key": "core_balanced_low_edge",
-        "evidence": [
-          "balanced_structural_goal_edge"
-        ]
-      },
-      "components": {
-        "home": {
-          "offense_factor": 0.4899,
-          "defense_weakness_opponent": 0.5324,
-          "build_up_factor": 0.808,
-          "venue_factor": 1.08,
-          "offense_components": {
-            "norm_xg_per_match": 0.4853,
-            "norm_shots_on_target_per_game": 0.5504,
-            "norm_shots_per_game": 0.4181,
-            "norm_xg_per_shot": 0.6637,
-            "norm_goals_per_match": 0.4483,
-            "norm_big_chances_per_match": 0.3559,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.4399
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.9792,
-            "norm_pass_success_pct": 0.75,
-            "norm_field_tilt_pct": 0.8837,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.8752
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.5597,
-            "norm_defense_profile": 0.4535,
-            "inverse_defense_profile": 0.5465,
-            "norm_goals_conceded_per_match": 0.5294,
-            "norm_field_tilt_pct": 0.4522,
-            "inverse_field_tilt_pct": 0.5478
-          }
-        },
-        "away": {
-          "offense_factor": 0.4261,
-          "defense_weakness_opponent": 0.2415,
-          "build_up_factor": 0.5569,
-          "venue_factor": 0.92,
-          "offense_components": {
-            "norm_xg_per_match": 0.4817,
-            "norm_shots_on_target_per_game": 0.3256,
-            "norm_shots_per_game": 0.4739,
-            "norm_xg_per_shot": 0.5581,
-            "norm_goals_per_match": 0.2759,
-            "norm_big_chances_per_match": 0.3559,
-            "norm_box_entries_per_match": 0.5,
-            "norm_attack_profile": 0.3944
-          },
-          "build_up_components": {
-            "norm_possession_pct": 0.5521,
-            "norm_pass_success_pct": 0.75,
-            "norm_field_tilt_pct": 0.4522,
-            "norm_opp_box_touches_per_match": 0.5,
-            "norm_build_up_profile": 0.5082
-          },
-          "opponent_defense_components": {
-            "norm_xga_per_match": 0.5,
-            "norm_shots_conceded_per_game": 0.1399,
-            "norm_defense_profile": 0.9112,
-            "inverse_defense_profile": 0.0888,
-            "norm_goals_conceded_per_match": 0.0588,
-            "norm_field_tilt_pct": 0.8837,
-            "inverse_field_tilt_pct": 0.1163
-          }
-        }
-      },
-      "active_stage_source": "match_lambdas.json",
       "kickoff_utc": "2026-05-04T18:45:00Z",
       "stadium": "Olimpico",
       "city": "Roma",
       "active_lambda": {
-        "home": 2.018,
-        "away": 0.9675
+        "home": 2.0169,
+        "away": 0.968
       }
     }
   }
