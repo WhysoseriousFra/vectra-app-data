@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T18:35:23.879721Z",
+  "generated_at": "2026-05-01T19:05:22.867008Z",
   "schema": "vectra.match_lambdas_active.v2_stage_aware",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
@@ -113,17 +113,6 @@
               "impact_delta": 0.063573
             },
             {
-              "vectra_player_id": "vxp_000532",
-              "display_name": "Caracciolo",
-              "role": "Defender",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.058991,
-              "defense_score": 0.587917,
-              "build_score": 0.483307,
-              "impact_delta": 0.101928
-            },
-            {
               "vectra_player_id": "vxp_000533",
               "display_name": "Angori",
               "role": "Defender",
@@ -157,26 +146,15 @@
               "impact_delta": 0.097992
             },
             {
-              "vectra_player_id": "vxp_000546",
-              "display_name": "Vural",
-              "role": "Midfielder",
-              "resolved": true,
-              "availability_reliability": 0.4608,
-              "attack_score": 0.046686,
-              "defense_score": 0.13825,
-              "build_score": 0.164987,
-              "impact_delta": 0.014581
-            },
-            {
-              "vectra_player_id": "vxp_000531",
-              "display_name": "Aebischer",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000532",
+              "display_name": "Caracciolo",
+              "role": "Defender",
               "resolved": true,
               "availability_reliability": 1.0,
-              "attack_score": 0.112745,
-              "defense_score": 0.570117,
-              "build_score": 0.542163,
-              "impact_delta": 0.111027
+              "attack_score": 0.058991,
+              "defense_score": 0.587917,
+              "build_score": 0.483307,
+              "impact_delta": 0.101928
             },
             {
               "vectra_player_id": "vxp_000534",
@@ -190,6 +168,17 @@
               "impact_delta": 0.109886
             },
             {
+              "vectra_player_id": "vxp_000546",
+              "display_name": "Vural",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 0.4608,
+              "attack_score": 0.046686,
+              "defense_score": 0.13825,
+              "build_score": 0.164987,
+              "impact_delta": 0.014581
+            },
+            {
               "vectra_player_id": "vxp_000542",
               "display_name": "Akinsanmiro",
               "role": "Midfielder",
@@ -199,6 +188,17 @@
               "defense_score": 0.560625,
               "build_score": 0.434229,
               "impact_delta": 0.111671
+            },
+            {
+              "vectra_player_id": "vxp_000531",
+              "display_name": "Aebischer",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.112745,
+              "defense_score": 0.570117,
+              "build_score": 0.542163,
+              "impact_delta": 0.111027
             },
             {
               "vectra_player_id": "vxp_000529",
@@ -283,6 +283,17 @@
               "impact_delta": 0.099085
             },
             {
+              "vectra_player_id": "vxp_000385",
+              "display_name": "Pierotti",
+              "role": "Midfielder",
+              "resolved": true,
+              "availability_reliability": 1.0,
+              "attack_score": 0.155402,
+              "defense_score": 0.649621,
+              "build_score": 0.366999,
+              "impact_delta": 0.115235
+            },
+            {
               "vectra_player_id": "vxp_000403",
               "display_name": "Ngom",
               "role": "Midfielder",
@@ -314,17 +325,6 @@
               "defense_score": 0.545259,
               "build_score": 0.415233,
               "impact_delta": 0.103956
-            },
-            {
-              "vectra_player_id": "vxp_000385",
-              "display_name": "Pierotti",
-              "role": "Midfielder",
-              "resolved": true,
-              "availability_reliability": 1.0,
-              "attack_score": 0.155402,
-              "defense_score": 0.649621,
-              "build_score": 0.366999,
-              "impact_delta": 0.115235
             },
             {
               "vectra_player_id": "vxp_000390",
@@ -359,7 +359,7 @@
       "away_team_id": "vxt_000037",
       "home_team_name": "Pisa",
       "away_team_name": "Lecce",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-01T18:45:00Z",
       "kickoff_local": "2026-05-01T20:45:00",
       "stadium": "Cetilar Arena",
