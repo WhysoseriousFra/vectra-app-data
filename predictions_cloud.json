@@ -1,8 +1,10 @@
 {
-  "generated_at": "2026-05-01T15:35:31.597109Z",
-  "schema": "vectra.predictions_cloud.v4",
+  "generated_at": "2026-05-01T16:05:26.733509Z",
+  "schema": "vectra.predictions_cloud.v5",
   "source_schema": "vectra.match_predictions.v4",
   "model_layer_status": "baseline_plus_goal_pressure_defensive_resistance_active_refinement",
+  "volatility_layer_status": "available",
+  "volatility_source_schema": "vectra.volatility_model.v1",
   "model_layer_summary": {
     "probability_engines": [
       "poisson",
@@ -897,10 +899,126 @@
           "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
         },
         "volatility": {
-          "score": null,
-          "label": "not_available",
-          "source": "pending_model",
-          "note": "Volatility avanzata non ancora calcolata dal Volatility Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.3199,
+          "volatility_score": 0.3199,
+          "label": "moderate",
+          "prediction_stability": "moderate",
+          "source": "volatility_model_v1",
+          "upset_risk": "medium",
+          "upset_signal": 0.5495,
+          "wide_scoreline_risk": "low",
+          "wide_scoreline_signal": 0.0731,
+          "confidence_penalty": 0.112,
+          "model_disagreement_signal": 0.05,
+          "data_quality_volatility": 0.256,
+          "consensus_movement_signal": 0.2587,
+          "outcome_fragility_signal": 0.8633,
+          "goal_environment_volatility": 0.146,
+          "movement": {
+            "baseline_to_goal_pressure": {
+              "probabilities": {
+                "home_win": -0.0108,
+                "draw": -0.0019,
+                "away_win": 0.0128
+              },
+              "max_abs_delta": 0.0128,
+              "mean_abs_delta": 0.0085
+            },
+            "goal_pressure_to_final": {
+              "probabilities": {
+                "home_win": -0.0021,
+                "draw": -0.0046,
+                "away_win": 0.0066
+              },
+              "max_abs_delta": 0.0066,
+              "mean_abs_delta": 0.0044
+            },
+            "baseline_to_final": {
+              "probabilities": {
+                "home_win": -0.0129,
+                "draw": -0.0065,
+                "away_win": 0.0194
+              },
+              "max_abs_delta": 0.0194,
+              "mean_abs_delta": 0.0129
+            }
+          },
+          "outcome_fragility": {
+            "signal": 0.8633,
+            "favored_outcome": "draw",
+            "favored_probability": 0.3492,
+            "second_outcome": "away_win",
+            "second_probability": 0.3328,
+            "margin": 0.0164,
+            "margin_label": "very_thin_margin"
+          },
+          "model_disagreement": {
+            "signal": 0.05,
+            "outcome_max_abs_delta": 0.003,
+            "goal_environment_max_abs_delta": 0.0007,
+            "label": "low"
+          },
+          "goal_environment": {
+            "signal": 0.146,
+            "wide_scoreline_signal": 0.0731,
+            "wide_scoreline_risk": "low",
+            "movement": {
+              "over_under_baseline_to_final": {
+                "max_abs_delta": 0.0113,
+                "over_1_5_delta": -0.0113,
+                "over_2_5_delta": -0.0113,
+                "over_3_5_delta": -0.0113
+              },
+              "over_under_baseline_to_goal_pressure": {
+                "max_abs_delta": 0.015
+              },
+              "btts_baseline_to_final": {
+                "max_abs_delta": 0.0146,
+                "yes_delta": -0.0146
+              },
+              "goal_range_baseline_to_final": {
+                "max_abs_delta": 0.0112,
+                "goals_0_1_delta": 0.0112,
+                "goals_2_3_delta": -0.0039,
+                "goals_4_plus_delta": -0.0073
+              }
+            }
+          },
+          "data_quality": {
+            "signal": 0.256,
+            "quality_flags": [
+              "opponent_goalkeeping_low_sample",
+              "team_goalkeeping_low_sample"
+            ],
+            "average_structural_reliability": 0.6982,
+            "goal_pressure_reliability": 0.6824,
+            "defensive_resistance_reliability": 0.7139,
+            "prediction_stage": "referee_ready",
+            "stage_signal": 0.12,
+            "label": "low"
+          },
+          "premium": {
+            "summary": "Volatility moderate: score 0.3199. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "key_factors": [
+              {
+                "type": "outcome_margin",
+                "label": "very_thin_margin",
+                "value": 0.0164,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              }
+            ]
+          },
+          "bot": {
+            "semantic_tags": [
+              "volatility::moderate",
+              "upset_risk::medium",
+              "wide_scoreline_risk::low"
+            ]
+          },
+          "note": "Volatility calcolata dal modello post-aggregator."
         },
         "bot": {
           "short_reading": "",
@@ -910,7 +1028,10 @@
             "goal_pressure::away_pressure_edge",
             "goal_pressure::active_refinement_applied",
             "defensive_resistance::away_resistance_edge",
-            "defensive_resistance::active_refinement_applied"
+            "defensive_resistance::active_refinement_applied",
+            "volatility::moderate",
+            "upset_risk::medium",
+            "wide_scoreline_risk::low"
           ]
         },
         "premium": {
@@ -933,6 +1054,17 @@
               "resistance_edge": -0.118,
               "reliability": 0.7139,
               "note": "Defensive Resistance ha raffinato la previsione finale con cap matematico."
+            },
+            {
+              "type": "stability_model",
+              "model": "volatility",
+              "status": "post_aggregator_analysis",
+              "label": "moderate",
+              "volatility_score": 0.3199,
+              "upset_risk": "medium",
+              "wide_scoreline_risk": "low",
+              "confidence_penalty": 0.112,
+              "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             }
           ],
           "model_details": [
@@ -1039,14 +1171,161 @@
                   "goals_4_plus_delta": 0.0024
                 }
               }
+            },
+            {
+              "model": "volatility",
+              "policy": "post_aggregator_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000041",
+                "computed": true,
+                "fallback_used": false,
+                "source": "volatility_model_v1",
+                "score": 0.3199,
+                "label": "moderate",
+                "volatility_score": 0.3199,
+                "prediction_stability": "moderate",
+                "upset_risk": "medium",
+                "upset_signal": 0.5495,
+                "wide_scoreline_risk": "low",
+                "wide_scoreline_signal": 0.0731,
+                "confidence_penalty": 0.112,
+                "model_disagreement_signal": 0.05,
+                "data_quality_volatility": 0.256,
+                "consensus_movement_signal": 0.2587,
+                "outcome_fragility_signal": 0.8633,
+                "goal_environment_volatility": 0.146,
+                "movement": {
+                  "baseline_to_goal_pressure": {
+                    "probabilities": {
+                      "home_win": -0.0108,
+                      "draw": -0.0019,
+                      "away_win": 0.0128
+                    },
+                    "max_abs_delta": 0.0128,
+                    "mean_abs_delta": 0.0085
+                  },
+                  "goal_pressure_to_final": {
+                    "probabilities": {
+                      "home_win": -0.0021,
+                      "draw": -0.0046,
+                      "away_win": 0.0066
+                    },
+                    "max_abs_delta": 0.0066,
+                    "mean_abs_delta": 0.0044
+                  },
+                  "baseline_to_final": {
+                    "probabilities": {
+                      "home_win": -0.0129,
+                      "draw": -0.0065,
+                      "away_win": 0.0194
+                    },
+                    "max_abs_delta": 0.0194,
+                    "mean_abs_delta": 0.0129
+                  }
+                },
+                "outcome_fragility": {
+                  "signal": 0.8633,
+                  "favored_outcome": "draw",
+                  "favored_probability": 0.3492,
+                  "second_outcome": "away_win",
+                  "second_probability": 0.3328,
+                  "margin": 0.0164,
+                  "margin_label": "very_thin_margin"
+                },
+                "model_disagreement": {
+                  "signal": 0.05,
+                  "outcome_max_abs_delta": 0.003,
+                  "goal_environment_max_abs_delta": 0.0007,
+                  "label": "low"
+                },
+                "goal_environment": {
+                  "signal": 0.146,
+                  "wide_scoreline_signal": 0.0731,
+                  "wide_scoreline_risk": "low",
+                  "movement": {
+                    "over_under_baseline_to_final": {
+                      "max_abs_delta": 0.0113,
+                      "over_1_5_delta": -0.0113,
+                      "over_2_5_delta": -0.0113,
+                      "over_3_5_delta": -0.0113
+                    },
+                    "over_under_baseline_to_goal_pressure": {
+                      "max_abs_delta": 0.015
+                    },
+                    "btts_baseline_to_final": {
+                      "max_abs_delta": 0.0146,
+                      "yes_delta": -0.0146
+                    },
+                    "goal_range_baseline_to_final": {
+                      "max_abs_delta": 0.0112,
+                      "goals_0_1_delta": 0.0112,
+                      "goals_2_3_delta": -0.0039,
+                      "goals_4_plus_delta": -0.0073
+                    }
+                  }
+                },
+                "data_quality": {
+                  "signal": 0.256,
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "average_structural_reliability": 0.6982,
+                  "goal_pressure_reliability": 0.6824,
+                  "defensive_resistance_reliability": 0.7139,
+                  "prediction_stage": "referee_ready",
+                  "stage_signal": 0.12,
+                  "label": "low"
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_baseline_consensus": true,
+                  "has_consensus_after_goal_pressure": true,
+                  "has_final_consensus": true,
+                  "weights": {
+                    "consensus_movement": 0.34,
+                    "model_disagreement": 0.22,
+                    "outcome_fragility": 0.2,
+                    "goal_environment_volatility": 0.12,
+                    "data_quality_volatility": 0.12
+                  },
+                  "scales": {
+                    "consensus_movement_scale": 0.075,
+                    "model_disagreement_scale": 0.06,
+                    "outcome_margin_scale": 0.12,
+                    "goal_environment_scale": 0.1
+                  }
+                },
+                "premium": {
+                  "summary": "Volatility moderate: score 0.3199. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_margin",
+                      "label": "very_thin_margin",
+                      "value": 0.0164,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    }
+                  ]
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "volatility::moderate",
+                    "upset_risk::medium",
+                    "wide_scoreline_risk::low"
+                  ]
+                }
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v4_goal_pressure_defensive_resistance_refined",
-          "generated_at": "2026-05-01T15:35:31.597109Z",
+          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
+          "generated_at": "2026-05-01T16:05:26.733509Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -1907,10 +2186,127 @@
           "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
         },
         "volatility": {
-          "score": null,
-          "label": "not_available",
-          "source": "pending_model",
-          "note": "Volatility avanzata non ancora calcolata dal Volatility Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.1115,
+          "volatility_score": 0.1115,
+          "label": "stable",
+          "prediction_stability": "stable",
+          "source": "volatility_model_v1",
+          "upset_risk": "low",
+          "upset_signal": 0.056,
+          "wide_scoreline_risk": "low",
+          "wide_scoreline_signal": 0.1781,
+          "confidence_penalty": 0.039,
+          "model_disagreement_signal": 0.0883,
+          "data_quality_volatility": 0.2501,
+          "consensus_movement_signal": 0.1533,
+          "outcome_fragility_signal": 0.0,
+          "goal_environment_volatility": 0.083,
+          "movement": {
+            "baseline_to_goal_pressure": {
+              "probabilities": {
+                "home_win": 0.011,
+                "draw": -0.0018,
+                "away_win": -0.0093
+              },
+              "max_abs_delta": 0.011,
+              "mean_abs_delta": 0.0074
+            },
+            "goal_pressure_to_final": {
+              "probabilities": {
+                "home_win": 0.0005,
+                "draw": -0.0048,
+                "away_win": 0.0043
+              },
+              "max_abs_delta": 0.0048,
+              "mean_abs_delta": 0.0032
+            },
+            "baseline_to_final": {
+              "probabilities": {
+                "home_win": 0.0115,
+                "draw": -0.0066,
+                "away_win": -0.005
+              },
+              "max_abs_delta": 0.0115,
+              "mean_abs_delta": 0.0077
+            }
+          },
+          "outcome_fragility": {
+            "signal": 0.0,
+            "favored_outcome": "home_win",
+            "favored_probability": 0.4702,
+            "second_outcome": "draw",
+            "second_probability": 0.2708,
+            "margin": 0.1994,
+            "margin_label": "clear_margin"
+          },
+          "model_disagreement": {
+            "signal": 0.0883,
+            "outcome_max_abs_delta": 0.0023,
+            "goal_environment_max_abs_delta": 0.0053,
+            "label": "low"
+          },
+          "goal_environment": {
+            "signal": 0.083,
+            "wide_scoreline_signal": 0.1781,
+            "wide_scoreline_risk": "low",
+            "movement": {
+              "over_under_baseline_to_final": {
+                "max_abs_delta": 0.006,
+                "over_1_5_delta": -0.006,
+                "over_2_5_delta": -0.006,
+                "over_3_5_delta": -0.006
+              },
+              "over_under_baseline_to_goal_pressure": {
+                "max_abs_delta": 0.0126
+              },
+              "btts_baseline_to_final": {
+                "max_abs_delta": 0.0083,
+                "yes_delta": -0.0083
+              },
+              "goal_range_baseline_to_final": {
+                "max_abs_delta": 0.006,
+                "goals_0_1_delta": 0.006,
+                "goals_2_3_delta": -0.0021,
+                "goals_4_plus_delta": -0.0039
+              }
+            }
+          },
+          "data_quality": {
+            "signal": 0.2501,
+            "quality_flags": [
+              "opponent_goalkeeping_low_sample",
+              "team_goalkeeping_low_sample"
+            ],
+            "average_structural_reliability": 0.7089,
+            "goal_pressure_reliability": 0.694,
+            "defensive_resistance_reliability": 0.7238,
+            "prediction_stage": "referee_ready",
+            "stage_signal": 0.12,
+            "label": "low"
+          },
+          "premium": {
+            "summary": "Volatility stable: score 0.1115. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "key_factors": [
+              {
+                "type": "outcome_margin",
+                "label": "clear_margin",
+                "value": 0.1994,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              }
+            ]
+          },
+          "bot": {
+            "semantic_tags": [
+              "volatility::stable",
+              "upset_risk::low",
+              "wide_scoreline_risk::low",
+              "volatility::low_consensus_movement"
+            ]
+          },
+          "note": "Volatility calcolata dal modello post-aggregator."
         },
         "bot": {
           "short_reading": "",
@@ -1920,7 +2316,11 @@
             "goal_pressure::home_pressure_edge",
             "goal_pressure::active_refinement_applied",
             "defensive_resistance::balanced_resistance",
-            "defensive_resistance::active_refinement_applied"
+            "defensive_resistance::active_refinement_applied",
+            "volatility::stable",
+            "upset_risk::low",
+            "wide_scoreline_risk::low",
+            "volatility::low_consensus_movement"
           ]
         },
         "premium": {
@@ -1943,6 +2343,17 @@
               "resistance_edge": 0.0042,
               "reliability": 0.7238,
               "note": "Defensive Resistance ha raffinato la previsione finale con cap matematico."
+            },
+            {
+              "type": "stability_model",
+              "model": "volatility",
+              "status": "post_aggregator_analysis",
+              "label": "stable",
+              "volatility_score": 0.1115,
+              "upset_risk": "low",
+              "wide_scoreline_risk": "low",
+              "confidence_penalty": 0.039,
+              "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             }
           ],
           "model_details": [
@@ -2049,14 +2460,162 @@
                   "goals_4_plus_delta": 0.0043
                 }
               }
+            },
+            {
+              "model": "volatility",
+              "policy": "post_aggregator_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000042",
+                "computed": true,
+                "fallback_used": false,
+                "source": "volatility_model_v1",
+                "score": 0.1115,
+                "label": "stable",
+                "volatility_score": 0.1115,
+                "prediction_stability": "stable",
+                "upset_risk": "low",
+                "upset_signal": 0.056,
+                "wide_scoreline_risk": "low",
+                "wide_scoreline_signal": 0.1781,
+                "confidence_penalty": 0.039,
+                "model_disagreement_signal": 0.0883,
+                "data_quality_volatility": 0.2501,
+                "consensus_movement_signal": 0.1533,
+                "outcome_fragility_signal": 0.0,
+                "goal_environment_volatility": 0.083,
+                "movement": {
+                  "baseline_to_goal_pressure": {
+                    "probabilities": {
+                      "home_win": 0.011,
+                      "draw": -0.0018,
+                      "away_win": -0.0093
+                    },
+                    "max_abs_delta": 0.011,
+                    "mean_abs_delta": 0.0074
+                  },
+                  "goal_pressure_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0005,
+                      "draw": -0.0048,
+                      "away_win": 0.0043
+                    },
+                    "max_abs_delta": 0.0048,
+                    "mean_abs_delta": 0.0032
+                  },
+                  "baseline_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0115,
+                      "draw": -0.0066,
+                      "away_win": -0.005
+                    },
+                    "max_abs_delta": 0.0115,
+                    "mean_abs_delta": 0.0077
+                  }
+                },
+                "outcome_fragility": {
+                  "signal": 0.0,
+                  "favored_outcome": "home_win",
+                  "favored_probability": 0.4702,
+                  "second_outcome": "draw",
+                  "second_probability": 0.2708,
+                  "margin": 0.1994,
+                  "margin_label": "clear_margin"
+                },
+                "model_disagreement": {
+                  "signal": 0.0883,
+                  "outcome_max_abs_delta": 0.0023,
+                  "goal_environment_max_abs_delta": 0.0053,
+                  "label": "low"
+                },
+                "goal_environment": {
+                  "signal": 0.083,
+                  "wide_scoreline_signal": 0.1781,
+                  "wide_scoreline_risk": "low",
+                  "movement": {
+                    "over_under_baseline_to_final": {
+                      "max_abs_delta": 0.006,
+                      "over_1_5_delta": -0.006,
+                      "over_2_5_delta": -0.006,
+                      "over_3_5_delta": -0.006
+                    },
+                    "over_under_baseline_to_goal_pressure": {
+                      "max_abs_delta": 0.0126
+                    },
+                    "btts_baseline_to_final": {
+                      "max_abs_delta": 0.0083,
+                      "yes_delta": -0.0083
+                    },
+                    "goal_range_baseline_to_final": {
+                      "max_abs_delta": 0.006,
+                      "goals_0_1_delta": 0.006,
+                      "goals_2_3_delta": -0.0021,
+                      "goals_4_plus_delta": -0.0039
+                    }
+                  }
+                },
+                "data_quality": {
+                  "signal": 0.2501,
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "average_structural_reliability": 0.7089,
+                  "goal_pressure_reliability": 0.694,
+                  "defensive_resistance_reliability": 0.7238,
+                  "prediction_stage": "referee_ready",
+                  "stage_signal": 0.12,
+                  "label": "low"
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_baseline_consensus": true,
+                  "has_consensus_after_goal_pressure": true,
+                  "has_final_consensus": true,
+                  "weights": {
+                    "consensus_movement": 0.34,
+                    "model_disagreement": 0.22,
+                    "outcome_fragility": 0.2,
+                    "goal_environment_volatility": 0.12,
+                    "data_quality_volatility": 0.12
+                  },
+                  "scales": {
+                    "consensus_movement_scale": 0.075,
+                    "model_disagreement_scale": 0.06,
+                    "outcome_margin_scale": 0.12,
+                    "goal_environment_scale": 0.1
+                  }
+                },
+                "premium": {
+                  "summary": "Volatility stable: score 0.1115. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_margin",
+                      "label": "clear_margin",
+                      "value": 0.1994,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    }
+                  ]
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "volatility::stable",
+                    "upset_risk::low",
+                    "wide_scoreline_risk::low",
+                    "volatility::low_consensus_movement"
+                  ]
+                }
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v4_goal_pressure_defensive_resistance_refined",
-          "generated_at": "2026-05-01T15:35:31.597109Z",
+          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
+          "generated_at": "2026-05-01T16:05:26.733509Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -2917,10 +3476,127 @@
           "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
         },
         "volatility": {
-          "score": null,
-          "label": "not_available",
-          "source": "pending_model",
-          "note": "Volatility avanzata non ancora calcolata dal Volatility Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.0903,
+          "volatility_score": 0.0903,
+          "label": "stable",
+          "prediction_stability": "stable",
+          "source": "volatility_model_v1",
+          "upset_risk": "low",
+          "upset_signal": 0.0433,
+          "wide_scoreline_risk": "medium",
+          "wide_scoreline_signal": 0.3546,
+          "confidence_penalty": 0.0316,
+          "model_disagreement_signal": 0.0883,
+          "data_quality_volatility": 0.2604,
+          "consensus_movement_signal": 0.1027,
+          "outcome_fragility_signal": 0.0,
+          "goal_environment_volatility": 0.039,
+          "movement": {
+            "baseline_to_goal_pressure": {
+              "probabilities": {
+                "home_win": 0.0068,
+                "draw": -0.0012,
+                "away_win": -0.0056
+              },
+              "max_abs_delta": 0.0068,
+              "mean_abs_delta": 0.0045
+            },
+            "goal_pressure_to_final": {
+              "probabilities": {
+                "home_win": 0.0009,
+                "draw": -0.0041,
+                "away_win": 0.0032
+              },
+              "max_abs_delta": 0.0041,
+              "mean_abs_delta": 0.0027
+            },
+            "baseline_to_final": {
+              "probabilities": {
+                "home_win": 0.0077,
+                "draw": -0.0053,
+                "away_win": -0.0024
+              },
+              "max_abs_delta": 0.0077,
+              "mean_abs_delta": 0.0051
+            }
+          },
+          "outcome_fragility": {
+            "signal": 0.0,
+            "favored_outcome": "home_win",
+            "favored_probability": 0.517,
+            "second_outcome": "away_win",
+            "second_probability": 0.2629,
+            "margin": 0.2541,
+            "margin_label": "clear_margin"
+          },
+          "model_disagreement": {
+            "signal": 0.0883,
+            "outcome_max_abs_delta": 0.0008,
+            "goal_environment_max_abs_delta": 0.0053,
+            "label": "low"
+          },
+          "goal_environment": {
+            "signal": 0.039,
+            "wide_scoreline_signal": 0.3546,
+            "wide_scoreline_risk": "medium",
+            "movement": {
+              "over_under_baseline_to_final": {
+                "max_abs_delta": 0.0017,
+                "over_1_5_delta": -0.0017,
+                "over_2_5_delta": -0.0017,
+                "over_3_5_delta": -0.0017
+              },
+              "over_under_baseline_to_goal_pressure": {
+                "max_abs_delta": 0.008
+              },
+              "btts_baseline_to_final": {
+                "max_abs_delta": 0.0039,
+                "yes_delta": -0.0039
+              },
+              "goal_range_baseline_to_final": {
+                "max_abs_delta": 0.0017,
+                "goals_0_1_delta": 0.0017,
+                "goals_2_3_delta": -0.0006,
+                "goals_4_plus_delta": -0.0011
+              }
+            }
+          },
+          "data_quality": {
+            "signal": 0.2604,
+            "quality_flags": [
+              "opponent_goalkeeping_low_sample",
+              "team_goalkeeping_low_sample"
+            ],
+            "average_structural_reliability": 0.6901,
+            "goal_pressure_reliability": 0.6738,
+            "defensive_resistance_reliability": 0.7064,
+            "prediction_stage": "referee_ready",
+            "stage_signal": 0.12,
+            "label": "low"
+          },
+          "premium": {
+            "summary": "Volatility stable: score 0.0903. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "key_factors": [
+              {
+                "type": "outcome_margin",
+                "label": "clear_margin",
+                "value": 0.2541,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              }
+            ]
+          },
+          "bot": {
+            "semantic_tags": [
+              "volatility::stable",
+              "upset_risk::low",
+              "wide_scoreline_risk::medium",
+              "volatility::low_consensus_movement"
+            ]
+          },
+          "note": "Volatility calcolata dal modello post-aggregator."
         },
         "bot": {
           "short_reading": "",
@@ -2930,7 +3606,11 @@
             "goal_pressure::home_pressure_edge",
             "goal_pressure::active_refinement_applied",
             "defensive_resistance::balanced_resistance",
-            "defensive_resistance::active_refinement_applied"
+            "defensive_resistance::active_refinement_applied",
+            "volatility::stable",
+            "upset_risk::low",
+            "wide_scoreline_risk::medium",
+            "volatility::low_consensus_movement"
           ]
         },
         "premium": {
@@ -2953,6 +3633,17 @@
               "resistance_edge": 0.0226,
               "reliability": 0.7064,
               "note": "Defensive Resistance ha raffinato la previsione finale con cap matematico."
+            },
+            {
+              "type": "stability_model",
+              "model": "volatility",
+              "status": "post_aggregator_analysis",
+              "label": "stable",
+              "volatility_score": 0.0903,
+              "upset_risk": "low",
+              "wide_scoreline_risk": "medium",
+              "confidence_penalty": 0.0316,
+              "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             }
           ],
           "model_details": [
@@ -3059,14 +3750,162 @@
                   "goals_4_plus_delta": 0.0041
                 }
               }
+            },
+            {
+              "model": "volatility",
+              "policy": "post_aggregator_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000043",
+                "computed": true,
+                "fallback_used": false,
+                "source": "volatility_model_v1",
+                "score": 0.0903,
+                "label": "stable",
+                "volatility_score": 0.0903,
+                "prediction_stability": "stable",
+                "upset_risk": "low",
+                "upset_signal": 0.0433,
+                "wide_scoreline_risk": "medium",
+                "wide_scoreline_signal": 0.3546,
+                "confidence_penalty": 0.0316,
+                "model_disagreement_signal": 0.0883,
+                "data_quality_volatility": 0.2604,
+                "consensus_movement_signal": 0.1027,
+                "outcome_fragility_signal": 0.0,
+                "goal_environment_volatility": 0.039,
+                "movement": {
+                  "baseline_to_goal_pressure": {
+                    "probabilities": {
+                      "home_win": 0.0068,
+                      "draw": -0.0012,
+                      "away_win": -0.0056
+                    },
+                    "max_abs_delta": 0.0068,
+                    "mean_abs_delta": 0.0045
+                  },
+                  "goal_pressure_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0009,
+                      "draw": -0.0041,
+                      "away_win": 0.0032
+                    },
+                    "max_abs_delta": 0.0041,
+                    "mean_abs_delta": 0.0027
+                  },
+                  "baseline_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0077,
+                      "draw": -0.0053,
+                      "away_win": -0.0024
+                    },
+                    "max_abs_delta": 0.0077,
+                    "mean_abs_delta": 0.0051
+                  }
+                },
+                "outcome_fragility": {
+                  "signal": 0.0,
+                  "favored_outcome": "home_win",
+                  "favored_probability": 0.517,
+                  "second_outcome": "away_win",
+                  "second_probability": 0.2629,
+                  "margin": 0.2541,
+                  "margin_label": "clear_margin"
+                },
+                "model_disagreement": {
+                  "signal": 0.0883,
+                  "outcome_max_abs_delta": 0.0008,
+                  "goal_environment_max_abs_delta": 0.0053,
+                  "label": "low"
+                },
+                "goal_environment": {
+                  "signal": 0.039,
+                  "wide_scoreline_signal": 0.3546,
+                  "wide_scoreline_risk": "medium",
+                  "movement": {
+                    "over_under_baseline_to_final": {
+                      "max_abs_delta": 0.0017,
+                      "over_1_5_delta": -0.0017,
+                      "over_2_5_delta": -0.0017,
+                      "over_3_5_delta": -0.0017
+                    },
+                    "over_under_baseline_to_goal_pressure": {
+                      "max_abs_delta": 0.008
+                    },
+                    "btts_baseline_to_final": {
+                      "max_abs_delta": 0.0039,
+                      "yes_delta": -0.0039
+                    },
+                    "goal_range_baseline_to_final": {
+                      "max_abs_delta": 0.0017,
+                      "goals_0_1_delta": 0.0017,
+                      "goals_2_3_delta": -0.0006,
+                      "goals_4_plus_delta": -0.0011
+                    }
+                  }
+                },
+                "data_quality": {
+                  "signal": 0.2604,
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "average_structural_reliability": 0.6901,
+                  "goal_pressure_reliability": 0.6738,
+                  "defensive_resistance_reliability": 0.7064,
+                  "prediction_stage": "referee_ready",
+                  "stage_signal": 0.12,
+                  "label": "low"
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_baseline_consensus": true,
+                  "has_consensus_after_goal_pressure": true,
+                  "has_final_consensus": true,
+                  "weights": {
+                    "consensus_movement": 0.34,
+                    "model_disagreement": 0.22,
+                    "outcome_fragility": 0.2,
+                    "goal_environment_volatility": 0.12,
+                    "data_quality_volatility": 0.12
+                  },
+                  "scales": {
+                    "consensus_movement_scale": 0.075,
+                    "model_disagreement_scale": 0.06,
+                    "outcome_margin_scale": 0.12,
+                    "goal_environment_scale": 0.1
+                  }
+                },
+                "premium": {
+                  "summary": "Volatility stable: score 0.0903. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_margin",
+                      "label": "clear_margin",
+                      "value": 0.2541,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    }
+                  ]
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "volatility::stable",
+                    "upset_risk::low",
+                    "wide_scoreline_risk::medium",
+                    "volatility::low_consensus_movement"
+                  ]
+                }
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v4_goal_pressure_defensive_resistance_refined",
-          "generated_at": "2026-05-01T15:35:31.597109Z",
+          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
+          "generated_at": "2026-05-01T16:05:26.733509Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -3927,10 +4766,126 @@
           "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
         },
         "volatility": {
-          "score": null,
-          "label": "not_available",
-          "source": "pending_model",
-          "note": "Volatility avanzata non ancora calcolata dal Volatility Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.1876,
+          "volatility_score": 0.1876,
+          "label": "stable",
+          "prediction_stability": "stable",
+          "source": "volatility_model_v1",
+          "upset_risk": "low",
+          "upset_signal": 0.106,
+          "wide_scoreline_risk": "medium",
+          "wide_scoreline_signal": 0.3704,
+          "confidence_penalty": 0.0657,
+          "model_disagreement_signal": 0.0817,
+          "data_quality_volatility": 0.2563,
+          "consensus_movement_signal": 0.3587,
+          "outcome_fragility_signal": 0.0,
+          "goal_environment_volatility": 0.141,
+          "movement": {
+            "baseline_to_goal_pressure": {
+              "probabilities": {
+                "home_win": 0.0235,
+                "draw": -0.0041,
+                "away_win": -0.0194
+              },
+              "max_abs_delta": 0.0235,
+              "mean_abs_delta": 0.0157
+            },
+            "goal_pressure_to_final": {
+              "probabilities": {
+                "home_win": 0.0034,
+                "draw": -0.0037,
+                "away_win": 0.0002
+              },
+              "max_abs_delta": 0.0037,
+              "mean_abs_delta": 0.0024
+            },
+            "baseline_to_final": {
+              "probabilities": {
+                "home_win": 0.0269,
+                "draw": -0.0078,
+                "away_win": -0.0192
+              },
+              "max_abs_delta": 0.0269,
+              "mean_abs_delta": 0.018
+            }
+          },
+          "outcome_fragility": {
+            "signal": 0.0,
+            "favored_outcome": "home_win",
+            "favored_probability": 0.7154,
+            "second_outcome": "draw",
+            "second_probability": 0.1705,
+            "margin": 0.5449,
+            "margin_label": "clear_margin"
+          },
+          "model_disagreement": {
+            "signal": 0.0817,
+            "outcome_max_abs_delta": 0.0031,
+            "goal_environment_max_abs_delta": 0.0049,
+            "label": "low"
+          },
+          "goal_environment": {
+            "signal": 0.141,
+            "wide_scoreline_signal": 0.3704,
+            "wide_scoreline_risk": "medium",
+            "movement": {
+              "over_under_baseline_to_final": {
+                "max_abs_delta": 0.007,
+                "over_1_5_delta": -0.007,
+                "over_2_5_delta": -0.007,
+                "over_3_5_delta": -0.007
+              },
+              "over_under_baseline_to_goal_pressure": {
+                "max_abs_delta": 0.0116
+              },
+              "btts_baseline_to_final": {
+                "max_abs_delta": 0.0141,
+                "yes_delta": -0.0141
+              },
+              "goal_range_baseline_to_final": {
+                "max_abs_delta": 0.007,
+                "goals_0_1_delta": 0.007,
+                "goals_2_3_delta": -0.0025,
+                "goals_4_plus_delta": -0.0045
+              }
+            }
+          },
+          "data_quality": {
+            "signal": 0.2563,
+            "quality_flags": [
+              "opponent_goalkeeping_low_sample",
+              "team_goalkeeping_low_sample"
+            ],
+            "average_structural_reliability": 0.6977,
+            "goal_pressure_reliability": 0.6819,
+            "defensive_resistance_reliability": 0.7135,
+            "prediction_stage": "referee_ready",
+            "stage_signal": 0.12,
+            "label": "low"
+          },
+          "premium": {
+            "summary": "Volatility stable: score 0.1876. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "key_factors": [
+              {
+                "type": "outcome_margin",
+                "label": "clear_margin",
+                "value": 0.5449,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              }
+            ]
+          },
+          "bot": {
+            "semantic_tags": [
+              "volatility::stable",
+              "upset_risk::low",
+              "wide_scoreline_risk::medium"
+            ]
+          },
+          "note": "Volatility calcolata dal modello post-aggregator."
         },
         "bot": {
           "short_reading": "",
@@ -3940,7 +4895,10 @@
             "goal_pressure::home_pressure_edge",
             "goal_pressure::active_refinement_applied",
             "defensive_resistance::home_resistance_edge",
-            "defensive_resistance::active_refinement_applied"
+            "defensive_resistance::active_refinement_applied",
+            "volatility::stable",
+            "upset_risk::low",
+            "wide_scoreline_risk::medium"
           ]
         },
         "premium": {
@@ -3963,6 +4921,17 @@
               "resistance_edge": 0.1278,
               "reliability": 0.7135,
               "note": "Defensive Resistance ha raffinato la previsione finale con cap matematico."
+            },
+            {
+              "type": "stability_model",
+              "model": "volatility",
+              "status": "post_aggregator_analysis",
+              "label": "stable",
+              "volatility_score": 0.1876,
+              "upset_risk": "low",
+              "wide_scoreline_risk": "medium",
+              "confidence_penalty": 0.0657,
+              "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             }
           ],
           "model_details": [
@@ -4069,14 +5038,161 @@
                   "goals_4_plus_delta": 0.003
                 }
               }
+            },
+            {
+              "model": "volatility",
+              "policy": "post_aggregator_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000044",
+                "computed": true,
+                "fallback_used": false,
+                "source": "volatility_model_v1",
+                "score": 0.1876,
+                "label": "stable",
+                "volatility_score": 0.1876,
+                "prediction_stability": "stable",
+                "upset_risk": "low",
+                "upset_signal": 0.106,
+                "wide_scoreline_risk": "medium",
+                "wide_scoreline_signal": 0.3704,
+                "confidence_penalty": 0.0657,
+                "model_disagreement_signal": 0.0817,
+                "data_quality_volatility": 0.2563,
+                "consensus_movement_signal": 0.3587,
+                "outcome_fragility_signal": 0.0,
+                "goal_environment_volatility": 0.141,
+                "movement": {
+                  "baseline_to_goal_pressure": {
+                    "probabilities": {
+                      "home_win": 0.0235,
+                      "draw": -0.0041,
+                      "away_win": -0.0194
+                    },
+                    "max_abs_delta": 0.0235,
+                    "mean_abs_delta": 0.0157
+                  },
+                  "goal_pressure_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0034,
+                      "draw": -0.0037,
+                      "away_win": 0.0002
+                    },
+                    "max_abs_delta": 0.0037,
+                    "mean_abs_delta": 0.0024
+                  },
+                  "baseline_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0269,
+                      "draw": -0.0078,
+                      "away_win": -0.0192
+                    },
+                    "max_abs_delta": 0.0269,
+                    "mean_abs_delta": 0.018
+                  }
+                },
+                "outcome_fragility": {
+                  "signal": 0.0,
+                  "favored_outcome": "home_win",
+                  "favored_probability": 0.7154,
+                  "second_outcome": "draw",
+                  "second_probability": 0.1705,
+                  "margin": 0.5449,
+                  "margin_label": "clear_margin"
+                },
+                "model_disagreement": {
+                  "signal": 0.0817,
+                  "outcome_max_abs_delta": 0.0031,
+                  "goal_environment_max_abs_delta": 0.0049,
+                  "label": "low"
+                },
+                "goal_environment": {
+                  "signal": 0.141,
+                  "wide_scoreline_signal": 0.3704,
+                  "wide_scoreline_risk": "medium",
+                  "movement": {
+                    "over_under_baseline_to_final": {
+                      "max_abs_delta": 0.007,
+                      "over_1_5_delta": -0.007,
+                      "over_2_5_delta": -0.007,
+                      "over_3_5_delta": -0.007
+                    },
+                    "over_under_baseline_to_goal_pressure": {
+                      "max_abs_delta": 0.0116
+                    },
+                    "btts_baseline_to_final": {
+                      "max_abs_delta": 0.0141,
+                      "yes_delta": -0.0141
+                    },
+                    "goal_range_baseline_to_final": {
+                      "max_abs_delta": 0.007,
+                      "goals_0_1_delta": 0.007,
+                      "goals_2_3_delta": -0.0025,
+                      "goals_4_plus_delta": -0.0045
+                    }
+                  }
+                },
+                "data_quality": {
+                  "signal": 0.2563,
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "average_structural_reliability": 0.6977,
+                  "goal_pressure_reliability": 0.6819,
+                  "defensive_resistance_reliability": 0.7135,
+                  "prediction_stage": "referee_ready",
+                  "stage_signal": 0.12,
+                  "label": "low"
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_baseline_consensus": true,
+                  "has_consensus_after_goal_pressure": true,
+                  "has_final_consensus": true,
+                  "weights": {
+                    "consensus_movement": 0.34,
+                    "model_disagreement": 0.22,
+                    "outcome_fragility": 0.2,
+                    "goal_environment_volatility": 0.12,
+                    "data_quality_volatility": 0.12
+                  },
+                  "scales": {
+                    "consensus_movement_scale": 0.075,
+                    "model_disagreement_scale": 0.06,
+                    "outcome_margin_scale": 0.12,
+                    "goal_environment_scale": 0.1
+                  }
+                },
+                "premium": {
+                  "summary": "Volatility stable: score 0.1876. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_margin",
+                      "label": "clear_margin",
+                      "value": 0.5449,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    }
+                  ]
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "volatility::stable",
+                    "upset_risk::low",
+                    "wide_scoreline_risk::medium"
+                  ]
+                }
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v4_goal_pressure_defensive_resistance_refined",
-          "generated_at": "2026-05-01T15:35:31.597109Z",
+          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
+          "generated_at": "2026-05-01T16:05:26.733509Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -4937,10 +6053,127 @@
           "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
         },
         "volatility": {
-          "score": null,
-          "label": "not_available",
-          "source": "pending_model",
-          "note": "Volatility avanzata non ancora calcolata dal Volatility Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.0863,
+          "volatility_score": 0.0863,
+          "label": "stable",
+          "prediction_stability": "stable",
+          "source": "volatility_model_v1",
+          "upset_risk": "low",
+          "upset_signal": 0.0347,
+          "wide_scoreline_risk": "low",
+          "wide_scoreline_signal": 0.1898,
+          "confidence_penalty": 0.0302,
+          "model_disagreement_signal": 0.0667,
+          "data_quality_volatility": 0.2542,
+          "consensus_movement_signal": 0.0853,
+          "outcome_fragility_signal": 0.0,
+          "goal_environment_volatility": 0.101,
+          "movement": {
+            "baseline_to_goal_pressure": {
+              "probabilities": {
+                "home_win": 0.0064,
+                "draw": -0.001,
+                "away_win": -0.0053
+              },
+              "max_abs_delta": 0.0064,
+              "mean_abs_delta": 0.0042
+            },
+            "goal_pressure_to_final": {
+              "probabilities": {
+                "home_win": -0.002,
+                "draw": -0.0037,
+                "away_win": 0.0058
+              },
+              "max_abs_delta": 0.0058,
+              "mean_abs_delta": 0.0038
+            },
+            "baseline_to_final": {
+              "probabilities": {
+                "home_win": 0.0044,
+                "draw": -0.0047,
+                "away_win": 0.0005
+              },
+              "max_abs_delta": 0.0047,
+              "mean_abs_delta": 0.0032
+            }
+          },
+          "outcome_fragility": {
+            "signal": 0.0,
+            "favored_outcome": "home_win",
+            "favored_probability": 0.6164,
+            "second_outcome": "draw",
+            "second_probability": 0.2338,
+            "margin": 0.3826,
+            "margin_label": "clear_margin"
+          },
+          "model_disagreement": {
+            "signal": 0.0667,
+            "outcome_max_abs_delta": 0.0031,
+            "goal_environment_max_abs_delta": 0.004,
+            "label": "low"
+          },
+          "goal_environment": {
+            "signal": 0.101,
+            "wide_scoreline_signal": 0.1898,
+            "wide_scoreline_risk": "low",
+            "movement": {
+              "over_under_baseline_to_final": {
+                "max_abs_delta": 0.0084,
+                "over_1_5_delta": -0.0084,
+                "over_2_5_delta": -0.0084,
+                "over_3_5_delta": -0.0084
+              },
+              "over_under_baseline_to_goal_pressure": {
+                "max_abs_delta": 0.014
+              },
+              "btts_baseline_to_final": {
+                "max_abs_delta": 0.0101,
+                "yes_delta": -0.0101
+              },
+              "goal_range_baseline_to_final": {
+                "max_abs_delta": 0.0084,
+                "goals_0_1_delta": 0.0084,
+                "goals_2_3_delta": -0.0029,
+                "goals_4_plus_delta": -0.0055
+              }
+            }
+          },
+          "data_quality": {
+            "signal": 0.2542,
+            "quality_flags": [
+              "opponent_goalkeeping_low_sample",
+              "team_goalkeeping_low_sample"
+            ],
+            "average_structural_reliability": 0.7014,
+            "goal_pressure_reliability": 0.6859,
+            "defensive_resistance_reliability": 0.7169,
+            "prediction_stage": "referee_ready",
+            "stage_signal": 0.12,
+            "label": "low"
+          },
+          "premium": {
+            "summary": "Volatility stable: score 0.0863. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "key_factors": [
+              {
+                "type": "outcome_margin",
+                "label": "clear_margin",
+                "value": 0.3826,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              }
+            ]
+          },
+          "bot": {
+            "semantic_tags": [
+              "volatility::stable",
+              "upset_risk::low",
+              "wide_scoreline_risk::low",
+              "volatility::low_consensus_movement"
+            ]
+          },
+          "note": "Volatility calcolata dal modello post-aggregator."
         },
         "bot": {
           "short_reading": "",
@@ -4950,7 +6183,11 @@
             "goal_pressure::home_pressure_edge",
             "goal_pressure::active_refinement_applied",
             "defensive_resistance::balanced_resistance",
-            "defensive_resistance::active_refinement_applied"
+            "defensive_resistance::active_refinement_applied",
+            "volatility::stable",
+            "upset_risk::low",
+            "wide_scoreline_risk::low",
+            "volatility::low_consensus_movement"
           ]
         },
         "premium": {
@@ -4973,6 +6210,17 @@
               "resistance_edge": -0.0051,
               "reliability": 0.7169,
               "note": "Defensive Resistance ha raffinato la previsione finale con cap matematico."
+            },
+            {
+              "type": "stability_model",
+              "model": "volatility",
+              "status": "post_aggregator_analysis",
+              "label": "stable",
+              "volatility_score": 0.0863,
+              "upset_risk": "low",
+              "wide_scoreline_risk": "low",
+              "confidence_penalty": 0.0302,
+              "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             }
           ],
           "model_details": [
@@ -5079,14 +6327,162 @@
                   "goals_4_plus_delta": 0.0036
                 }
               }
+            },
+            {
+              "model": "volatility",
+              "policy": "post_aggregator_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000045",
+                "computed": true,
+                "fallback_used": false,
+                "source": "volatility_model_v1",
+                "score": 0.0863,
+                "label": "stable",
+                "volatility_score": 0.0863,
+                "prediction_stability": "stable",
+                "upset_risk": "low",
+                "upset_signal": 0.0347,
+                "wide_scoreline_risk": "low",
+                "wide_scoreline_signal": 0.1898,
+                "confidence_penalty": 0.0302,
+                "model_disagreement_signal": 0.0667,
+                "data_quality_volatility": 0.2542,
+                "consensus_movement_signal": 0.0853,
+                "outcome_fragility_signal": 0.0,
+                "goal_environment_volatility": 0.101,
+                "movement": {
+                  "baseline_to_goal_pressure": {
+                    "probabilities": {
+                      "home_win": 0.0064,
+                      "draw": -0.001,
+                      "away_win": -0.0053
+                    },
+                    "max_abs_delta": 0.0064,
+                    "mean_abs_delta": 0.0042
+                  },
+                  "goal_pressure_to_final": {
+                    "probabilities": {
+                      "home_win": -0.002,
+                      "draw": -0.0037,
+                      "away_win": 0.0058
+                    },
+                    "max_abs_delta": 0.0058,
+                    "mean_abs_delta": 0.0038
+                  },
+                  "baseline_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0044,
+                      "draw": -0.0047,
+                      "away_win": 0.0005
+                    },
+                    "max_abs_delta": 0.0047,
+                    "mean_abs_delta": 0.0032
+                  }
+                },
+                "outcome_fragility": {
+                  "signal": 0.0,
+                  "favored_outcome": "home_win",
+                  "favored_probability": 0.6164,
+                  "second_outcome": "draw",
+                  "second_probability": 0.2338,
+                  "margin": 0.3826,
+                  "margin_label": "clear_margin"
+                },
+                "model_disagreement": {
+                  "signal": 0.0667,
+                  "outcome_max_abs_delta": 0.0031,
+                  "goal_environment_max_abs_delta": 0.004,
+                  "label": "low"
+                },
+                "goal_environment": {
+                  "signal": 0.101,
+                  "wide_scoreline_signal": 0.1898,
+                  "wide_scoreline_risk": "low",
+                  "movement": {
+                    "over_under_baseline_to_final": {
+                      "max_abs_delta": 0.0084,
+                      "over_1_5_delta": -0.0084,
+                      "over_2_5_delta": -0.0084,
+                      "over_3_5_delta": -0.0084
+                    },
+                    "over_under_baseline_to_goal_pressure": {
+                      "max_abs_delta": 0.014
+                    },
+                    "btts_baseline_to_final": {
+                      "max_abs_delta": 0.0101,
+                      "yes_delta": -0.0101
+                    },
+                    "goal_range_baseline_to_final": {
+                      "max_abs_delta": 0.0084,
+                      "goals_0_1_delta": 0.0084,
+                      "goals_2_3_delta": -0.0029,
+                      "goals_4_plus_delta": -0.0055
+                    }
+                  }
+                },
+                "data_quality": {
+                  "signal": 0.2542,
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "average_structural_reliability": 0.7014,
+                  "goal_pressure_reliability": 0.6859,
+                  "defensive_resistance_reliability": 0.7169,
+                  "prediction_stage": "referee_ready",
+                  "stage_signal": 0.12,
+                  "label": "low"
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_baseline_consensus": true,
+                  "has_consensus_after_goal_pressure": true,
+                  "has_final_consensus": true,
+                  "weights": {
+                    "consensus_movement": 0.34,
+                    "model_disagreement": 0.22,
+                    "outcome_fragility": 0.2,
+                    "goal_environment_volatility": 0.12,
+                    "data_quality_volatility": 0.12
+                  },
+                  "scales": {
+                    "consensus_movement_scale": 0.075,
+                    "model_disagreement_scale": 0.06,
+                    "outcome_margin_scale": 0.12,
+                    "goal_environment_scale": 0.1
+                  }
+                },
+                "premium": {
+                  "summary": "Volatility stable: score 0.0863. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_margin",
+                      "label": "clear_margin",
+                      "value": 0.3826,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    }
+                  ]
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "volatility::stable",
+                    "upset_risk::low",
+                    "wide_scoreline_risk::low",
+                    "volatility::low_consensus_movement"
+                  ]
+                }
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v4_goal_pressure_defensive_resistance_refined",
-          "generated_at": "2026-05-01T15:35:31.597109Z",
+          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
+          "generated_at": "2026-05-01T16:05:26.733509Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -5947,10 +7343,126 @@
           "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
         },
         "volatility": {
-          "score": null,
-          "label": "not_available",
-          "source": "pending_model",
-          "note": "Volatility avanzata non ancora calcolata dal Volatility Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.1685,
+          "volatility_score": 0.1685,
+          "label": "stable",
+          "prediction_stability": "stable",
+          "source": "volatility_model_v1",
+          "upset_risk": "low",
+          "upset_signal": 0.095,
+          "wide_scoreline_risk": "low",
+          "wide_scoreline_signal": 0.3072,
+          "confidence_penalty": 0.059,
+          "model_disagreement_signal": 0.0967,
+          "data_quality_volatility": 0.2563,
+          "consensus_movement_signal": 0.3027,
+          "outcome_fragility_signal": 0.0,
+          "goal_environment_volatility": 0.113,
+          "movement": {
+            "baseline_to_goal_pressure": {
+              "probabilities": {
+                "home_win": -0.0179,
+                "draw": -0.0037,
+                "away_win": 0.0217
+              },
+              "max_abs_delta": 0.0217,
+              "mean_abs_delta": 0.0144
+            },
+            "goal_pressure_to_final": {
+              "probabilities": {
+                "home_win": 0.0026,
+                "draw": -0.0036,
+                "away_win": 0.001
+              },
+              "max_abs_delta": 0.0036,
+              "mean_abs_delta": 0.0024
+            },
+            "baseline_to_final": {
+              "probabilities": {
+                "home_win": -0.0153,
+                "draw": -0.0073,
+                "away_win": 0.0227
+              },
+              "max_abs_delta": 0.0227,
+              "mean_abs_delta": 0.0151
+            }
+          },
+          "outcome_fragility": {
+            "signal": 0.0,
+            "favored_outcome": "away_win",
+            "favored_probability": 0.6481,
+            "second_outcome": "draw",
+            "second_probability": 0.2005,
+            "margin": 0.4476,
+            "margin_label": "clear_margin"
+          },
+          "model_disagreement": {
+            "signal": 0.0967,
+            "outcome_max_abs_delta": 0.0023,
+            "goal_environment_max_abs_delta": 0.0058,
+            "label": "low"
+          },
+          "goal_environment": {
+            "signal": 0.113,
+            "wide_scoreline_signal": 0.3072,
+            "wide_scoreline_risk": "low",
+            "movement": {
+              "over_under_baseline_to_final": {
+                "max_abs_delta": 0.0062,
+                "over_1_5_delta": -0.0062,
+                "over_2_5_delta": -0.0062,
+                "over_3_5_delta": -0.0062
+              },
+              "over_under_baseline_to_goal_pressure": {
+                "max_abs_delta": 0.0113
+              },
+              "btts_baseline_to_final": {
+                "max_abs_delta": 0.0113,
+                "yes_delta": -0.0113
+              },
+              "goal_range_baseline_to_final": {
+                "max_abs_delta": 0.0062,
+                "goals_0_1_delta": 0.0062,
+                "goals_2_3_delta": -0.0022,
+                "goals_4_plus_delta": -0.0041
+              }
+            }
+          },
+          "data_quality": {
+            "signal": 0.2563,
+            "quality_flags": [
+              "opponent_goalkeeping_low_sample",
+              "team_goalkeeping_low_sample"
+            ],
+            "average_structural_reliability": 0.6975,
+            "goal_pressure_reliability": 0.6819,
+            "defensive_resistance_reliability": 0.7132,
+            "prediction_stage": "referee_ready",
+            "stage_signal": 0.12,
+            "label": "low"
+          },
+          "premium": {
+            "summary": "Volatility stable: score 0.1685. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "key_factors": [
+              {
+                "type": "outcome_margin",
+                "label": "clear_margin",
+                "value": 0.4476,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              }
+            ]
+          },
+          "bot": {
+            "semantic_tags": [
+              "volatility::stable",
+              "upset_risk::low",
+              "wide_scoreline_risk::low"
+            ]
+          },
+          "note": "Volatility calcolata dal modello post-aggregator."
         },
         "bot": {
           "short_reading": "",
@@ -5960,7 +7472,10 @@
             "goal_pressure::away_pressure_edge",
             "goal_pressure::active_refinement_applied",
             "defensive_resistance::away_resistance_edge",
-            "defensive_resistance::active_refinement_applied"
+            "defensive_resistance::active_refinement_applied",
+            "volatility::stable",
+            "upset_risk::low",
+            "wide_scoreline_risk::low"
           ]
         },
         "premium": {
@@ -5983,6 +7498,17 @@
               "resistance_edge": -0.0662,
               "reliability": 0.7132,
               "note": "Defensive Resistance ha raffinato la previsione finale con cap matematico."
+            },
+            {
+              "type": "stability_model",
+              "model": "volatility",
+              "status": "post_aggregator_analysis",
+              "label": "stable",
+              "volatility_score": 0.1685,
+              "upset_risk": "low",
+              "wide_scoreline_risk": "low",
+              "confidence_penalty": 0.059,
+              "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             }
           ],
           "model_details": [
@@ -6089,14 +7615,161 @@
                   "goals_4_plus_delta": 0.0033
                 }
               }
+            },
+            {
+              "model": "volatility",
+              "policy": "post_aggregator_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000046",
+                "computed": true,
+                "fallback_used": false,
+                "source": "volatility_model_v1",
+                "score": 0.1685,
+                "label": "stable",
+                "volatility_score": 0.1685,
+                "prediction_stability": "stable",
+                "upset_risk": "low",
+                "upset_signal": 0.095,
+                "wide_scoreline_risk": "low",
+                "wide_scoreline_signal": 0.3072,
+                "confidence_penalty": 0.059,
+                "model_disagreement_signal": 0.0967,
+                "data_quality_volatility": 0.2563,
+                "consensus_movement_signal": 0.3027,
+                "outcome_fragility_signal": 0.0,
+                "goal_environment_volatility": 0.113,
+                "movement": {
+                  "baseline_to_goal_pressure": {
+                    "probabilities": {
+                      "home_win": -0.0179,
+                      "draw": -0.0037,
+                      "away_win": 0.0217
+                    },
+                    "max_abs_delta": 0.0217,
+                    "mean_abs_delta": 0.0144
+                  },
+                  "goal_pressure_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0026,
+                      "draw": -0.0036,
+                      "away_win": 0.001
+                    },
+                    "max_abs_delta": 0.0036,
+                    "mean_abs_delta": 0.0024
+                  },
+                  "baseline_to_final": {
+                    "probabilities": {
+                      "home_win": -0.0153,
+                      "draw": -0.0073,
+                      "away_win": 0.0227
+                    },
+                    "max_abs_delta": 0.0227,
+                    "mean_abs_delta": 0.0151
+                  }
+                },
+                "outcome_fragility": {
+                  "signal": 0.0,
+                  "favored_outcome": "away_win",
+                  "favored_probability": 0.6481,
+                  "second_outcome": "draw",
+                  "second_probability": 0.2005,
+                  "margin": 0.4476,
+                  "margin_label": "clear_margin"
+                },
+                "model_disagreement": {
+                  "signal": 0.0967,
+                  "outcome_max_abs_delta": 0.0023,
+                  "goal_environment_max_abs_delta": 0.0058,
+                  "label": "low"
+                },
+                "goal_environment": {
+                  "signal": 0.113,
+                  "wide_scoreline_signal": 0.3072,
+                  "wide_scoreline_risk": "low",
+                  "movement": {
+                    "over_under_baseline_to_final": {
+                      "max_abs_delta": 0.0062,
+                      "over_1_5_delta": -0.0062,
+                      "over_2_5_delta": -0.0062,
+                      "over_3_5_delta": -0.0062
+                    },
+                    "over_under_baseline_to_goal_pressure": {
+                      "max_abs_delta": 0.0113
+                    },
+                    "btts_baseline_to_final": {
+                      "max_abs_delta": 0.0113,
+                      "yes_delta": -0.0113
+                    },
+                    "goal_range_baseline_to_final": {
+                      "max_abs_delta": 0.0062,
+                      "goals_0_1_delta": 0.0062,
+                      "goals_2_3_delta": -0.0022,
+                      "goals_4_plus_delta": -0.0041
+                    }
+                  }
+                },
+                "data_quality": {
+                  "signal": 0.2563,
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "average_structural_reliability": 0.6975,
+                  "goal_pressure_reliability": 0.6819,
+                  "defensive_resistance_reliability": 0.7132,
+                  "prediction_stage": "referee_ready",
+                  "stage_signal": 0.12,
+                  "label": "low"
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_baseline_consensus": true,
+                  "has_consensus_after_goal_pressure": true,
+                  "has_final_consensus": true,
+                  "weights": {
+                    "consensus_movement": 0.34,
+                    "model_disagreement": 0.22,
+                    "outcome_fragility": 0.2,
+                    "goal_environment_volatility": 0.12,
+                    "data_quality_volatility": 0.12
+                  },
+                  "scales": {
+                    "consensus_movement_scale": 0.075,
+                    "model_disagreement_scale": 0.06,
+                    "outcome_margin_scale": 0.12,
+                    "goal_environment_scale": 0.1
+                  }
+                },
+                "premium": {
+                  "summary": "Volatility stable: score 0.1685. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_margin",
+                      "label": "clear_margin",
+                      "value": 0.4476,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    }
+                  ]
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "volatility::stable",
+                    "upset_risk::low",
+                    "wide_scoreline_risk::low"
+                  ]
+                }
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v4_goal_pressure_defensive_resistance_refined",
-          "generated_at": "2026-05-01T15:35:31.597109Z",
+          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
+          "generated_at": "2026-05-01T16:05:26.733509Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -6957,10 +8630,126 @@
           "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
         },
         "volatility": {
-          "score": null,
-          "label": "not_available",
-          "source": "pending_model",
-          "note": "Volatility avanzata non ancora calcolata dal Volatility Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.1876,
+          "volatility_score": 0.1876,
+          "label": "stable",
+          "prediction_stability": "stable",
+          "source": "volatility_model_v1",
+          "upset_risk": "low",
+          "upset_signal": 0.1117,
+          "wide_scoreline_risk": "low",
+          "wide_scoreline_signal": 0.3358,
+          "confidence_penalty": 0.0657,
+          "model_disagreement_signal": 0.1583,
+          "data_quality_volatility": 0.2561,
+          "consensus_movement_signal": 0.32,
+          "outcome_fragility_signal": 0.0,
+          "goal_environment_volatility": 0.11,
+          "movement": {
+            "baseline_to_goal_pressure": {
+              "probabilities": {
+                "home_win": 0.024,
+                "draw": -0.0043,
+                "away_win": -0.0197
+              },
+              "max_abs_delta": 0.024,
+              "mean_abs_delta": 0.016
+            },
+            "goal_pressure_to_final": {
+              "probabilities": {
+                "home_win": -0.0012,
+                "draw": -0.0039,
+                "away_win": 0.005
+              },
+              "max_abs_delta": 0.005,
+              "mean_abs_delta": 0.0034
+            },
+            "baseline_to_final": {
+              "probabilities": {
+                "home_win": 0.0228,
+                "draw": -0.0082,
+                "away_win": -0.0147
+              },
+              "max_abs_delta": 0.0228,
+              "mean_abs_delta": 0.0152
+            }
+          },
+          "outcome_fragility": {
+            "signal": 0.0,
+            "favored_outcome": "home_win",
+            "favored_probability": 0.7894,
+            "second_outcome": "draw",
+            "second_probability": 0.145,
+            "margin": 0.6444,
+            "margin_label": "clear_margin"
+          },
+          "model_disagreement": {
+            "signal": 0.1583,
+            "outcome_max_abs_delta": 0.0008,
+            "goal_environment_max_abs_delta": 0.0095,
+            "label": "low"
+          },
+          "goal_environment": {
+            "signal": 0.11,
+            "wide_scoreline_signal": 0.3358,
+            "wide_scoreline_risk": "low",
+            "movement": {
+              "over_under_baseline_to_final": {
+                "max_abs_delta": 0.0043,
+                "over_1_5_delta": -0.0043,
+                "over_2_5_delta": -0.0043,
+                "over_3_5_delta": -0.0043
+              },
+              "over_under_baseline_to_goal_pressure": {
+                "max_abs_delta": 0.0113
+              },
+              "btts_baseline_to_final": {
+                "max_abs_delta": 0.011,
+                "yes_delta": -0.0109
+              },
+              "goal_range_baseline_to_final": {
+                "max_abs_delta": 0.0043,
+                "goals_0_1_delta": 0.0043,
+                "goals_2_3_delta": -0.0015,
+                "goals_4_plus_delta": -0.0028
+              }
+            }
+          },
+          "data_quality": {
+            "signal": 0.2561,
+            "quality_flags": [
+              "opponent_goalkeeping_low_sample",
+              "team_goalkeeping_low_sample"
+            ],
+            "average_structural_reliability": 0.6981,
+            "goal_pressure_reliability": 0.6824,
+            "defensive_resistance_reliability": 0.7137,
+            "prediction_stage": "referee_ready",
+            "stage_signal": 0.12,
+            "label": "low"
+          },
+          "premium": {
+            "summary": "Volatility stable: score 0.1876. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "key_factors": [
+              {
+                "type": "outcome_margin",
+                "label": "clear_margin",
+                "value": 0.6444,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              }
+            ]
+          },
+          "bot": {
+            "semantic_tags": [
+              "volatility::stable",
+              "upset_risk::low",
+              "wide_scoreline_risk::low"
+            ]
+          },
+          "note": "Volatility calcolata dal modello post-aggregator."
         },
         "bot": {
           "short_reading": "",
@@ -6970,7 +8759,10 @@
             "goal_pressure::home_pressure_edge",
             "goal_pressure::active_refinement_applied",
             "defensive_resistance::home_resistance_edge",
-            "defensive_resistance::active_refinement_applied"
+            "defensive_resistance::active_refinement_applied",
+            "volatility::stable",
+            "upset_risk::low",
+            "wide_scoreline_risk::low"
           ]
         },
         "premium": {
@@ -6993,6 +8785,17 @@
               "resistance_edge": 0.0901,
               "reliability": 0.7137,
               "note": "Defensive Resistance ha raffinato la previsione finale con cap matematico."
+            },
+            {
+              "type": "stability_model",
+              "model": "volatility",
+              "status": "post_aggregator_analysis",
+              "label": "stable",
+              "volatility_score": 0.1876,
+              "upset_risk": "low",
+              "wide_scoreline_risk": "low",
+              "confidence_penalty": 0.0657,
+              "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             }
           ],
           "model_details": [
@@ -7099,14 +8902,161 @@
                   "goals_4_plus_delta": 0.0046
                 }
               }
+            },
+            {
+              "model": "volatility",
+              "policy": "post_aggregator_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000047",
+                "computed": true,
+                "fallback_used": false,
+                "source": "volatility_model_v1",
+                "score": 0.1876,
+                "label": "stable",
+                "volatility_score": 0.1876,
+                "prediction_stability": "stable",
+                "upset_risk": "low",
+                "upset_signal": 0.1117,
+                "wide_scoreline_risk": "low",
+                "wide_scoreline_signal": 0.3358,
+                "confidence_penalty": 0.0657,
+                "model_disagreement_signal": 0.1583,
+                "data_quality_volatility": 0.2561,
+                "consensus_movement_signal": 0.32,
+                "outcome_fragility_signal": 0.0,
+                "goal_environment_volatility": 0.11,
+                "movement": {
+                  "baseline_to_goal_pressure": {
+                    "probabilities": {
+                      "home_win": 0.024,
+                      "draw": -0.0043,
+                      "away_win": -0.0197
+                    },
+                    "max_abs_delta": 0.024,
+                    "mean_abs_delta": 0.016
+                  },
+                  "goal_pressure_to_final": {
+                    "probabilities": {
+                      "home_win": -0.0012,
+                      "draw": -0.0039,
+                      "away_win": 0.005
+                    },
+                    "max_abs_delta": 0.005,
+                    "mean_abs_delta": 0.0034
+                  },
+                  "baseline_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0228,
+                      "draw": -0.0082,
+                      "away_win": -0.0147
+                    },
+                    "max_abs_delta": 0.0228,
+                    "mean_abs_delta": 0.0152
+                  }
+                },
+                "outcome_fragility": {
+                  "signal": 0.0,
+                  "favored_outcome": "home_win",
+                  "favored_probability": 0.7894,
+                  "second_outcome": "draw",
+                  "second_probability": 0.145,
+                  "margin": 0.6444,
+                  "margin_label": "clear_margin"
+                },
+                "model_disagreement": {
+                  "signal": 0.1583,
+                  "outcome_max_abs_delta": 0.0008,
+                  "goal_environment_max_abs_delta": 0.0095,
+                  "label": "low"
+                },
+                "goal_environment": {
+                  "signal": 0.11,
+                  "wide_scoreline_signal": 0.3358,
+                  "wide_scoreline_risk": "low",
+                  "movement": {
+                    "over_under_baseline_to_final": {
+                      "max_abs_delta": 0.0043,
+                      "over_1_5_delta": -0.0043,
+                      "over_2_5_delta": -0.0043,
+                      "over_3_5_delta": -0.0043
+                    },
+                    "over_under_baseline_to_goal_pressure": {
+                      "max_abs_delta": 0.0113
+                    },
+                    "btts_baseline_to_final": {
+                      "max_abs_delta": 0.011,
+                      "yes_delta": -0.0109
+                    },
+                    "goal_range_baseline_to_final": {
+                      "max_abs_delta": 0.0043,
+                      "goals_0_1_delta": 0.0043,
+                      "goals_2_3_delta": -0.0015,
+                      "goals_4_plus_delta": -0.0028
+                    }
+                  }
+                },
+                "data_quality": {
+                  "signal": 0.2561,
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "average_structural_reliability": 0.6981,
+                  "goal_pressure_reliability": 0.6824,
+                  "defensive_resistance_reliability": 0.7137,
+                  "prediction_stage": "referee_ready",
+                  "stage_signal": 0.12,
+                  "label": "low"
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_baseline_consensus": true,
+                  "has_consensus_after_goal_pressure": true,
+                  "has_final_consensus": true,
+                  "weights": {
+                    "consensus_movement": 0.34,
+                    "model_disagreement": 0.22,
+                    "outcome_fragility": 0.2,
+                    "goal_environment_volatility": 0.12,
+                    "data_quality_volatility": 0.12
+                  },
+                  "scales": {
+                    "consensus_movement_scale": 0.075,
+                    "model_disagreement_scale": 0.06,
+                    "outcome_margin_scale": 0.12,
+                    "goal_environment_scale": 0.1
+                  }
+                },
+                "premium": {
+                  "summary": "Volatility stable: score 0.1876. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_margin",
+                      "label": "clear_margin",
+                      "value": 0.6444,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    }
+                  ]
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "volatility::stable",
+                    "upset_risk::low",
+                    "wide_scoreline_risk::low"
+                  ]
+                }
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v4_goal_pressure_defensive_resistance_refined",
-          "generated_at": "2026-05-01T15:35:31.597109Z",
+          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
+          "generated_at": "2026-05-01T16:05:26.733509Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -7967,10 +9917,126 @@
           "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
         },
         "volatility": {
-          "score": null,
-          "label": "not_available",
-          "source": "pending_model",
-          "note": "Volatility avanzata non ancora calcolata dal Volatility Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.1782,
+          "volatility_score": 0.1782,
+          "label": "stable",
+          "prediction_stability": "stable",
+          "source": "volatility_model_v1",
+          "upset_risk": "low",
+          "upset_signal": 0.1053,
+          "wide_scoreline_risk": "low",
+          "wide_scoreline_signal": 0.3319,
+          "confidence_penalty": 0.0624,
+          "model_disagreement_signal": 0.1267,
+          "data_quality_volatility": 0.2498,
+          "consensus_movement_signal": 0.32,
+          "outcome_fragility_signal": 0.0,
+          "goal_environment_volatility": 0.096,
+          "movement": {
+            "baseline_to_goal_pressure": {
+              "probabilities": {
+                "home_win": 0.024,
+                "draw": -0.0042,
+                "away_win": -0.0197
+              },
+              "max_abs_delta": 0.024,
+              "mean_abs_delta": 0.016
+            },
+            "goal_pressure_to_final": {
+              "probabilities": {
+                "home_win": -0.0036,
+                "draw": -0.0033,
+                "away_win": 0.007
+              },
+              "max_abs_delta": 0.007,
+              "mean_abs_delta": 0.0046
+            },
+            "baseline_to_final": {
+              "probabilities": {
+                "home_win": 0.0204,
+                "draw": -0.0075,
+                "away_win": -0.0127
+              },
+              "max_abs_delta": 0.0204,
+              "mean_abs_delta": 0.0135
+            }
+          },
+          "outcome_fragility": {
+            "signal": 0.0,
+            "favored_outcome": "home_win",
+            "favored_probability": 0.7882,
+            "second_outcome": "draw",
+            "second_probability": 0.1455,
+            "margin": 0.6427,
+            "margin_label": "clear_margin"
+          },
+          "model_disagreement": {
+            "signal": 0.1267,
+            "outcome_max_abs_delta": 0.0035,
+            "goal_environment_max_abs_delta": 0.0076,
+            "label": "low"
+          },
+          "goal_environment": {
+            "signal": 0.096,
+            "wide_scoreline_signal": 0.3319,
+            "wide_scoreline_risk": "low",
+            "movement": {
+              "over_under_baseline_to_final": {
+                "max_abs_delta": 0.0026,
+                "over_1_5_delta": -0.0025,
+                "over_2_5_delta": -0.0026,
+                "over_3_5_delta": -0.0026
+              },
+              "over_under_baseline_to_goal_pressure": {
+                "max_abs_delta": 0.0098
+              },
+              "btts_baseline_to_final": {
+                "max_abs_delta": 0.0096,
+                "yes_delta": -0.0095
+              },
+              "goal_range_baseline_to_final": {
+                "max_abs_delta": 0.0026,
+                "goals_0_1_delta": 0.0026,
+                "goals_2_3_delta": -0.0009,
+                "goals_4_plus_delta": -0.0017
+              }
+            }
+          },
+          "data_quality": {
+            "signal": 0.2498,
+            "quality_flags": [
+              "opponent_goalkeeping_low_sample",
+              "team_goalkeeping_low_sample"
+            ],
+            "average_structural_reliability": 0.7095,
+            "goal_pressure_reliability": 0.6946,
+            "defensive_resistance_reliability": 0.7243,
+            "prediction_stage": "referee_ready",
+            "stage_signal": 0.12,
+            "label": "low"
+          },
+          "premium": {
+            "summary": "Volatility stable: score 0.1782. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "key_factors": [
+              {
+                "type": "outcome_margin",
+                "label": "clear_margin",
+                "value": 0.6427,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              }
+            ]
+          },
+          "bot": {
+            "semantic_tags": [
+              "volatility::stable",
+              "upset_risk::low",
+              "wide_scoreline_risk::low"
+            ]
+          },
+          "note": "Volatility calcolata dal modello post-aggregator."
         },
         "bot": {
           "short_reading": "",
@@ -7980,7 +10046,10 @@
             "goal_pressure::home_pressure_edge",
             "goal_pressure::active_refinement_applied",
             "defensive_resistance::home_resistance_edge",
-            "defensive_resistance::active_refinement_applied"
+            "defensive_resistance::active_refinement_applied",
+            "volatility::stable",
+            "upset_risk::low",
+            "wide_scoreline_risk::low"
           ]
         },
         "premium": {
@@ -8003,6 +10072,17 @@
               "resistance_edge": 0.0357,
               "reliability": 0.7243,
               "note": "Defensive Resistance ha raffinato la previsione finale con cap matematico."
+            },
+            {
+              "type": "stability_model",
+              "model": "volatility",
+              "status": "post_aggregator_analysis",
+              "label": "stable",
+              "volatility_score": 0.1782,
+              "upset_risk": "low",
+              "wide_scoreline_risk": "low",
+              "confidence_penalty": 0.0624,
+              "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             }
           ],
           "model_details": [
@@ -8109,14 +10189,161 @@
                   "goals_4_plus_delta": 0.0047
                 }
               }
+            },
+            {
+              "model": "volatility",
+              "policy": "post_aggregator_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000048",
+                "computed": true,
+                "fallback_used": false,
+                "source": "volatility_model_v1",
+                "score": 0.1782,
+                "label": "stable",
+                "volatility_score": 0.1782,
+                "prediction_stability": "stable",
+                "upset_risk": "low",
+                "upset_signal": 0.1053,
+                "wide_scoreline_risk": "low",
+                "wide_scoreline_signal": 0.3319,
+                "confidence_penalty": 0.0624,
+                "model_disagreement_signal": 0.1267,
+                "data_quality_volatility": 0.2498,
+                "consensus_movement_signal": 0.32,
+                "outcome_fragility_signal": 0.0,
+                "goal_environment_volatility": 0.096,
+                "movement": {
+                  "baseline_to_goal_pressure": {
+                    "probabilities": {
+                      "home_win": 0.024,
+                      "draw": -0.0042,
+                      "away_win": -0.0197
+                    },
+                    "max_abs_delta": 0.024,
+                    "mean_abs_delta": 0.016
+                  },
+                  "goal_pressure_to_final": {
+                    "probabilities": {
+                      "home_win": -0.0036,
+                      "draw": -0.0033,
+                      "away_win": 0.007
+                    },
+                    "max_abs_delta": 0.007,
+                    "mean_abs_delta": 0.0046
+                  },
+                  "baseline_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0204,
+                      "draw": -0.0075,
+                      "away_win": -0.0127
+                    },
+                    "max_abs_delta": 0.0204,
+                    "mean_abs_delta": 0.0135
+                  }
+                },
+                "outcome_fragility": {
+                  "signal": 0.0,
+                  "favored_outcome": "home_win",
+                  "favored_probability": 0.7882,
+                  "second_outcome": "draw",
+                  "second_probability": 0.1455,
+                  "margin": 0.6427,
+                  "margin_label": "clear_margin"
+                },
+                "model_disagreement": {
+                  "signal": 0.1267,
+                  "outcome_max_abs_delta": 0.0035,
+                  "goal_environment_max_abs_delta": 0.0076,
+                  "label": "low"
+                },
+                "goal_environment": {
+                  "signal": 0.096,
+                  "wide_scoreline_signal": 0.3319,
+                  "wide_scoreline_risk": "low",
+                  "movement": {
+                    "over_under_baseline_to_final": {
+                      "max_abs_delta": 0.0026,
+                      "over_1_5_delta": -0.0025,
+                      "over_2_5_delta": -0.0026,
+                      "over_3_5_delta": -0.0026
+                    },
+                    "over_under_baseline_to_goal_pressure": {
+                      "max_abs_delta": 0.0098
+                    },
+                    "btts_baseline_to_final": {
+                      "max_abs_delta": 0.0096,
+                      "yes_delta": -0.0095
+                    },
+                    "goal_range_baseline_to_final": {
+                      "max_abs_delta": 0.0026,
+                      "goals_0_1_delta": 0.0026,
+                      "goals_2_3_delta": -0.0009,
+                      "goals_4_plus_delta": -0.0017
+                    }
+                  }
+                },
+                "data_quality": {
+                  "signal": 0.2498,
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "average_structural_reliability": 0.7095,
+                  "goal_pressure_reliability": 0.6946,
+                  "defensive_resistance_reliability": 0.7243,
+                  "prediction_stage": "referee_ready",
+                  "stage_signal": 0.12,
+                  "label": "low"
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_baseline_consensus": true,
+                  "has_consensus_after_goal_pressure": true,
+                  "has_final_consensus": true,
+                  "weights": {
+                    "consensus_movement": 0.34,
+                    "model_disagreement": 0.22,
+                    "outcome_fragility": 0.2,
+                    "goal_environment_volatility": 0.12,
+                    "data_quality_volatility": 0.12
+                  },
+                  "scales": {
+                    "consensus_movement_scale": 0.075,
+                    "model_disagreement_scale": 0.06,
+                    "outcome_margin_scale": 0.12,
+                    "goal_environment_scale": 0.1
+                  }
+                },
+                "premium": {
+                  "summary": "Volatility stable: score 0.1782. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_margin",
+                      "label": "clear_margin",
+                      "value": 0.6427,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    }
+                  ]
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "volatility::stable",
+                    "upset_risk::low",
+                    "wide_scoreline_risk::low"
+                  ]
+                }
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v4_goal_pressure_defensive_resistance_refined",
-          "generated_at": "2026-05-01T15:35:31.597109Z",
+          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
+          "generated_at": "2026-05-01T16:05:26.733509Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -8977,10 +11204,127 @@
           "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
         },
         "volatility": {
-          "score": null,
-          "label": "not_available",
-          "source": "pending_model",
-          "note": "Volatility avanzata non ancora calcolata dal Volatility Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.0819,
+          "volatility_score": 0.0819,
+          "label": "stable",
+          "prediction_stability": "stable",
+          "source": "volatility_model_v1",
+          "upset_risk": "low",
+          "upset_signal": 0.03,
+          "wide_scoreline_risk": "low",
+          "wide_scoreline_signal": 0.1913,
+          "confidence_penalty": 0.0287,
+          "model_disagreement_signal": 0.0683,
+          "data_quality_volatility": 0.2543,
+          "consensus_movement_signal": 0.0653,
+          "outcome_fragility_signal": 0.0,
+          "goal_environment_volatility": 0.118,
+          "movement": {
+            "baseline_to_goal_pressure": {
+              "probabilities": {
+                "home_win": -0.0041,
+                "draw": -0.0008,
+                "away_win": 0.0049
+              },
+              "max_abs_delta": 0.0049,
+              "mean_abs_delta": 0.0033
+            },
+            "goal_pressure_to_final": {
+              "probabilities": {
+                "home_win": 0.0036,
+                "draw": -0.0029,
+                "away_win": -0.0008
+              },
+              "max_abs_delta": 0.0036,
+              "mean_abs_delta": 0.0024
+            },
+            "baseline_to_final": {
+              "probabilities": {
+                "home_win": -0.0005,
+                "draw": -0.0037,
+                "away_win": 0.0041
+              },
+              "max_abs_delta": 0.0041,
+              "mean_abs_delta": 0.0028
+            }
+          },
+          "outcome_fragility": {
+            "signal": 0.0,
+            "favored_outcome": "away_win",
+            "favored_probability": 0.5459,
+            "second_outcome": "draw",
+            "second_probability": 0.2549,
+            "margin": 0.291,
+            "margin_label": "clear_margin"
+          },
+          "model_disagreement": {
+            "signal": 0.0683,
+            "outcome_max_abs_delta": 0.0011,
+            "goal_environment_max_abs_delta": 0.0041,
+            "label": "low"
+          },
+          "goal_environment": {
+            "signal": 0.118,
+            "wide_scoreline_signal": 0.1913,
+            "wide_scoreline_risk": "low",
+            "movement": {
+              "over_under_baseline_to_final": {
+                "max_abs_delta": 0.0111,
+                "over_1_5_delta": -0.0111,
+                "over_2_5_delta": -0.0111,
+                "over_3_5_delta": -0.0111
+              },
+              "over_under_baseline_to_goal_pressure": {
+                "max_abs_delta": 0.015
+              },
+              "btts_baseline_to_final": {
+                "max_abs_delta": 0.0118,
+                "yes_delta": -0.0118
+              },
+              "goal_range_baseline_to_final": {
+                "max_abs_delta": 0.011,
+                "goals_0_1_delta": 0.011,
+                "goals_2_3_delta": -0.0039,
+                "goals_4_plus_delta": -0.0072
+              }
+            }
+          },
+          "data_quality": {
+            "signal": 0.2543,
+            "quality_flags": [
+              "opponent_goalkeeping_low_sample",
+              "team_goalkeeping_low_sample"
+            ],
+            "average_structural_reliability": 0.7012,
+            "goal_pressure_reliability": 0.6858,
+            "defensive_resistance_reliability": 0.7167,
+            "prediction_stage": "referee_ready",
+            "stage_signal": 0.12,
+            "label": "low"
+          },
+          "premium": {
+            "summary": "Volatility stable: score 0.0819. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "key_factors": [
+              {
+                "type": "outcome_margin",
+                "label": "clear_margin",
+                "value": 0.291,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              }
+            ]
+          },
+          "bot": {
+            "semantic_tags": [
+              "volatility::stable",
+              "upset_risk::low",
+              "wide_scoreline_risk::low",
+              "volatility::low_consensus_movement"
+            ]
+          },
+          "note": "Volatility calcolata dal modello post-aggregator."
         },
         "bot": {
           "short_reading": "",
@@ -8990,7 +11334,11 @@
             "goal_pressure::balanced_pressure",
             "goal_pressure::active_refinement_applied",
             "defensive_resistance::balanced_resistance",
-            "defensive_resistance::active_refinement_applied"
+            "defensive_resistance::active_refinement_applied",
+            "volatility::stable",
+            "upset_risk::low",
+            "wide_scoreline_risk::low",
+            "volatility::low_consensus_movement"
           ]
         },
         "premium": {
@@ -9013,6 +11361,17 @@
               "resistance_edge": 0.0102,
               "reliability": 0.7167,
               "note": "Defensive Resistance ha raffinato la previsione finale con cap matematico."
+            },
+            {
+              "type": "stability_model",
+              "model": "volatility",
+              "status": "post_aggregator_analysis",
+              "label": "stable",
+              "volatility_score": 0.0819,
+              "upset_risk": "low",
+              "wide_scoreline_risk": "low",
+              "confidence_penalty": 0.0287,
+              "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             }
           ],
           "model_details": [
@@ -9119,14 +11478,162 @@
                   "goals_4_plus_delta": 0.0025
                 }
               }
+            },
+            {
+              "model": "volatility",
+              "policy": "post_aggregator_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000049",
+                "computed": true,
+                "fallback_used": false,
+                "source": "volatility_model_v1",
+                "score": 0.0819,
+                "label": "stable",
+                "volatility_score": 0.0819,
+                "prediction_stability": "stable",
+                "upset_risk": "low",
+                "upset_signal": 0.03,
+                "wide_scoreline_risk": "low",
+                "wide_scoreline_signal": 0.1913,
+                "confidence_penalty": 0.0287,
+                "model_disagreement_signal": 0.0683,
+                "data_quality_volatility": 0.2543,
+                "consensus_movement_signal": 0.0653,
+                "outcome_fragility_signal": 0.0,
+                "goal_environment_volatility": 0.118,
+                "movement": {
+                  "baseline_to_goal_pressure": {
+                    "probabilities": {
+                      "home_win": -0.0041,
+                      "draw": -0.0008,
+                      "away_win": 0.0049
+                    },
+                    "max_abs_delta": 0.0049,
+                    "mean_abs_delta": 0.0033
+                  },
+                  "goal_pressure_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0036,
+                      "draw": -0.0029,
+                      "away_win": -0.0008
+                    },
+                    "max_abs_delta": 0.0036,
+                    "mean_abs_delta": 0.0024
+                  },
+                  "baseline_to_final": {
+                    "probabilities": {
+                      "home_win": -0.0005,
+                      "draw": -0.0037,
+                      "away_win": 0.0041
+                    },
+                    "max_abs_delta": 0.0041,
+                    "mean_abs_delta": 0.0028
+                  }
+                },
+                "outcome_fragility": {
+                  "signal": 0.0,
+                  "favored_outcome": "away_win",
+                  "favored_probability": 0.5459,
+                  "second_outcome": "draw",
+                  "second_probability": 0.2549,
+                  "margin": 0.291,
+                  "margin_label": "clear_margin"
+                },
+                "model_disagreement": {
+                  "signal": 0.0683,
+                  "outcome_max_abs_delta": 0.0011,
+                  "goal_environment_max_abs_delta": 0.0041,
+                  "label": "low"
+                },
+                "goal_environment": {
+                  "signal": 0.118,
+                  "wide_scoreline_signal": 0.1913,
+                  "wide_scoreline_risk": "low",
+                  "movement": {
+                    "over_under_baseline_to_final": {
+                      "max_abs_delta": 0.0111,
+                      "over_1_5_delta": -0.0111,
+                      "over_2_5_delta": -0.0111,
+                      "over_3_5_delta": -0.0111
+                    },
+                    "over_under_baseline_to_goal_pressure": {
+                      "max_abs_delta": 0.015
+                    },
+                    "btts_baseline_to_final": {
+                      "max_abs_delta": 0.0118,
+                      "yes_delta": -0.0118
+                    },
+                    "goal_range_baseline_to_final": {
+                      "max_abs_delta": 0.011,
+                      "goals_0_1_delta": 0.011,
+                      "goals_2_3_delta": -0.0039,
+                      "goals_4_plus_delta": -0.0072
+                    }
+                  }
+                },
+                "data_quality": {
+                  "signal": 0.2543,
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "average_structural_reliability": 0.7012,
+                  "goal_pressure_reliability": 0.6858,
+                  "defensive_resistance_reliability": 0.7167,
+                  "prediction_stage": "referee_ready",
+                  "stage_signal": 0.12,
+                  "label": "low"
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_baseline_consensus": true,
+                  "has_consensus_after_goal_pressure": true,
+                  "has_final_consensus": true,
+                  "weights": {
+                    "consensus_movement": 0.34,
+                    "model_disagreement": 0.22,
+                    "outcome_fragility": 0.2,
+                    "goal_environment_volatility": 0.12,
+                    "data_quality_volatility": 0.12
+                  },
+                  "scales": {
+                    "consensus_movement_scale": 0.075,
+                    "model_disagreement_scale": 0.06,
+                    "outcome_margin_scale": 0.12,
+                    "goal_environment_scale": 0.1
+                  }
+                },
+                "premium": {
+                  "summary": "Volatility stable: score 0.0819. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_margin",
+                      "label": "clear_margin",
+                      "value": 0.291,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    }
+                  ]
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "volatility::stable",
+                    "upset_risk::low",
+                    "wide_scoreline_risk::low",
+                    "volatility::low_consensus_movement"
+                  ]
+                }
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v4_goal_pressure_defensive_resistance_refined",
-          "generated_at": "2026-05-01T15:35:31.597109Z",
+          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
+          "generated_at": "2026-05-01T16:05:26.733509Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -9987,10 +12494,127 @@
           "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
         },
         "volatility": {
-          "score": null,
-          "label": "not_available",
-          "source": "pending_model",
-          "note": "Volatility avanzata non ancora calcolata dal Volatility Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.1323,
+          "volatility_score": 0.1323,
+          "label": "stable",
+          "prediction_stability": "stable",
+          "source": "volatility_model_v1",
+          "upset_risk": "low",
+          "upset_signal": 0.07,
+          "wide_scoreline_risk": "low",
+          "wide_scoreline_signal": 0.313,
+          "confidence_penalty": 0.0463,
+          "model_disagreement_signal": 0.115,
+          "data_quality_volatility": 0.2673,
+          "consensus_movement_signal": 0.188,
+          "outcome_fragility_signal": 0.0,
+          "goal_environment_volatility": 0.092,
+          "movement": {
+            "baseline_to_goal_pressure": {
+              "probabilities": {
+                "home_win": 0.0136,
+                "draw": -0.0023,
+                "away_win": -0.0111
+              },
+              "max_abs_delta": 0.0136,
+              "mean_abs_delta": 0.009
+            },
+            "goal_pressure_to_final": {
+              "probabilities": {
+                "home_win": 0.0005,
+                "draw": -0.0031,
+                "away_win": 0.0026
+              },
+              "max_abs_delta": 0.0031,
+              "mean_abs_delta": 0.0021
+            },
+            "baseline_to_final": {
+              "probabilities": {
+                "home_win": 0.0141,
+                "draw": -0.0054,
+                "away_win": -0.0085
+              },
+              "max_abs_delta": 0.0141,
+              "mean_abs_delta": 0.0093
+            }
+          },
+          "outcome_fragility": {
+            "signal": 0.0,
+            "favored_outcome": "home_win",
+            "favored_probability": 0.6326,
+            "second_outcome": "draw",
+            "second_probability": 0.2025,
+            "margin": 0.4301,
+            "margin_label": "clear_margin"
+          },
+          "model_disagreement": {
+            "signal": 0.115,
+            "outcome_max_abs_delta": 0.0069,
+            "goal_environment_max_abs_delta": 0.0041,
+            "label": "low"
+          },
+          "goal_environment": {
+            "signal": 0.092,
+            "wide_scoreline_signal": 0.313,
+            "wide_scoreline_risk": "low",
+            "movement": {
+              "over_under_baseline_to_final": {
+                "max_abs_delta": 0.0058,
+                "over_1_5_delta": -0.0057,
+                "over_2_5_delta": -0.0058,
+                "over_3_5_delta": -0.0058
+              },
+              "over_under_baseline_to_goal_pressure": {
+                "max_abs_delta": 0.0105
+              },
+              "btts_baseline_to_final": {
+                "max_abs_delta": 0.0092,
+                "yes_delta": -0.0092
+              },
+              "goal_range_baseline_to_final": {
+                "max_abs_delta": 0.0058,
+                "goals_0_1_delta": 0.0058,
+                "goals_2_3_delta": -0.0021,
+                "goals_4_plus_delta": -0.0037
+              }
+            }
+          },
+          "data_quality": {
+            "signal": 0.2673,
+            "quality_flags": [
+              "opponent_goalkeeping_low_sample",
+              "team_goalkeeping_low_sample"
+            ],
+            "average_structural_reliability": 0.6776,
+            "goal_pressure_reliability": 0.6604,
+            "defensive_resistance_reliability": 0.6948,
+            "prediction_stage": "referee_ready",
+            "stage_signal": 0.12,
+            "label": "low"
+          },
+          "premium": {
+            "summary": "Volatility stable: score 0.1323. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "key_factors": [
+              {
+                "type": "outcome_margin",
+                "label": "clear_margin",
+                "value": 0.4301,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              }
+            ]
+          },
+          "bot": {
+            "semantic_tags": [
+              "volatility::stable",
+              "upset_risk::low",
+              "wide_scoreline_risk::low",
+              "volatility::low_consensus_movement"
+            ]
+          },
+          "note": "Volatility calcolata dal modello post-aggregator."
         },
         "bot": {
           "short_reading": "",
@@ -10000,7 +12624,11 @@
             "goal_pressure::home_pressure_edge",
             "goal_pressure::active_refinement_applied",
             "defensive_resistance::home_resistance_edge",
-            "defensive_resistance::active_refinement_applied"
+            "defensive_resistance::active_refinement_applied",
+            "volatility::stable",
+            "upset_risk::low",
+            "wide_scoreline_risk::low",
+            "volatility::low_consensus_movement"
           ]
         },
         "premium": {
@@ -10023,6 +12651,17 @@
               "resistance_edge": 0.0497,
               "reliability": 0.6948,
               "note": "Defensive Resistance ha raffinato la previsione finale con cap matematico."
+            },
+            {
+              "type": "stability_model",
+              "model": "volatility",
+              "status": "post_aggregator_analysis",
+              "label": "stable",
+              "volatility_score": 0.1323,
+              "upset_risk": "low",
+              "wide_scoreline_risk": "low",
+              "confidence_penalty": 0.0463,
+              "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             }
           ],
           "model_details": [
@@ -10129,14 +12768,162 @@
                   "goals_4_plus_delta": 0.0031
                 }
               }
+            },
+            {
+              "model": "volatility",
+              "policy": "post_aggregator_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000050",
+                "computed": true,
+                "fallback_used": false,
+                "source": "volatility_model_v1",
+                "score": 0.1323,
+                "label": "stable",
+                "volatility_score": 0.1323,
+                "prediction_stability": "stable",
+                "upset_risk": "low",
+                "upset_signal": 0.07,
+                "wide_scoreline_risk": "low",
+                "wide_scoreline_signal": 0.313,
+                "confidence_penalty": 0.0463,
+                "model_disagreement_signal": 0.115,
+                "data_quality_volatility": 0.2673,
+                "consensus_movement_signal": 0.188,
+                "outcome_fragility_signal": 0.0,
+                "goal_environment_volatility": 0.092,
+                "movement": {
+                  "baseline_to_goal_pressure": {
+                    "probabilities": {
+                      "home_win": 0.0136,
+                      "draw": -0.0023,
+                      "away_win": -0.0111
+                    },
+                    "max_abs_delta": 0.0136,
+                    "mean_abs_delta": 0.009
+                  },
+                  "goal_pressure_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0005,
+                      "draw": -0.0031,
+                      "away_win": 0.0026
+                    },
+                    "max_abs_delta": 0.0031,
+                    "mean_abs_delta": 0.0021
+                  },
+                  "baseline_to_final": {
+                    "probabilities": {
+                      "home_win": 0.0141,
+                      "draw": -0.0054,
+                      "away_win": -0.0085
+                    },
+                    "max_abs_delta": 0.0141,
+                    "mean_abs_delta": 0.0093
+                  }
+                },
+                "outcome_fragility": {
+                  "signal": 0.0,
+                  "favored_outcome": "home_win",
+                  "favored_probability": 0.6326,
+                  "second_outcome": "draw",
+                  "second_probability": 0.2025,
+                  "margin": 0.4301,
+                  "margin_label": "clear_margin"
+                },
+                "model_disagreement": {
+                  "signal": 0.115,
+                  "outcome_max_abs_delta": 0.0069,
+                  "goal_environment_max_abs_delta": 0.0041,
+                  "label": "low"
+                },
+                "goal_environment": {
+                  "signal": 0.092,
+                  "wide_scoreline_signal": 0.313,
+                  "wide_scoreline_risk": "low",
+                  "movement": {
+                    "over_under_baseline_to_final": {
+                      "max_abs_delta": 0.0058,
+                      "over_1_5_delta": -0.0057,
+                      "over_2_5_delta": -0.0058,
+                      "over_3_5_delta": -0.0058
+                    },
+                    "over_under_baseline_to_goal_pressure": {
+                      "max_abs_delta": 0.0105
+                    },
+                    "btts_baseline_to_final": {
+                      "max_abs_delta": 0.0092,
+                      "yes_delta": -0.0092
+                    },
+                    "goal_range_baseline_to_final": {
+                      "max_abs_delta": 0.0058,
+                      "goals_0_1_delta": 0.0058,
+                      "goals_2_3_delta": -0.0021,
+                      "goals_4_plus_delta": -0.0037
+                    }
+                  }
+                },
+                "data_quality": {
+                  "signal": 0.2673,
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "average_structural_reliability": 0.6776,
+                  "goal_pressure_reliability": 0.6604,
+                  "defensive_resistance_reliability": 0.6948,
+                  "prediction_stage": "referee_ready",
+                  "stage_signal": 0.12,
+                  "label": "low"
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_baseline_consensus": true,
+                  "has_consensus_after_goal_pressure": true,
+                  "has_final_consensus": true,
+                  "weights": {
+                    "consensus_movement": 0.34,
+                    "model_disagreement": 0.22,
+                    "outcome_fragility": 0.2,
+                    "goal_environment_volatility": 0.12,
+                    "data_quality_volatility": 0.12
+                  },
+                  "scales": {
+                    "consensus_movement_scale": 0.075,
+                    "model_disagreement_scale": 0.06,
+                    "outcome_margin_scale": 0.12,
+                    "goal_environment_scale": 0.1
+                  }
+                },
+                "premium": {
+                  "summary": "Volatility stable: score 0.1323. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_margin",
+                      "label": "clear_margin",
+                      "value": 0.4301,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    }
+                  ]
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "volatility::stable",
+                    "upset_risk::low",
+                    "wide_scoreline_risk::low",
+                    "volatility::low_consensus_movement"
+                  ]
+                }
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v4_goal_pressure_defensive_resistance_refined",
-          "generated_at": "2026-05-01T15:35:31.597109Z",
+          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
+          "generated_at": "2026-05-01T16:05:26.733509Z",
           "has_lineups": false,
           "has_referee": true
         }
