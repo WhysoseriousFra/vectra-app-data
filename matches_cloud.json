@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T21:30:40.732406Z",
+  "generated_at": "2026-05-01T09:00:38.946778Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_035",
   "matchday": 35,
@@ -38,8 +38,8 @@
       },
       "referee": {
         "assigned": true,
-        "vectra_referee_id": "vxr_000002",
-        "referee_name": "Marco Guida"
+        "vectra_referee_id": "vxr_000004",
+        "referee_name": "Daniele Doveri"
       },
       "lineups": {
         "available": false,

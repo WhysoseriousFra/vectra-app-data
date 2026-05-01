@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T21:30:39.551229Z",
+  "generated_at": "2026-05-01T09:00:37.756134Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -16,27 +16,27 @@
     "vxm_000041": {
       "vectra_match_id": "vxm_000041",
       "prediction_stage": "referee_ready",
-      "lambda_home_core": 0.815,
-      "lambda_away_core": 0.7784,
+      "lambda_home_core": 0.8132,
+      "lambda_away_core": 0.7801,
       "lambda_before_referee": {
         "home": 0.8155,
         "away": 0.7779
       },
       "lambda_referee": {
-        "home": 0.815,
-        "away": 0.7784
+        "home": 0.8132,
+        "away": 0.7801
       },
       "lambda_before": {
         "home": 0.8155,
         "away": 0.7779
       },
       "lambda_after": {
-        "home": 0.815,
-        "away": 0.7784
+        "home": 0.8132,
+        "away": 0.7801
       },
       "referee_modifier": {
         "applied": true,
-        "vectra_referee_id": "vxr_000002",
+        "vectra_referee_id": "vxr_000004",
         "reason_flags": [
           "balanced_referee_interaction"
         ]
@@ -44,68 +44,68 @@
       "referee_impact": {
         "applied": true,
         "referee": {
-          "vectra_referee_id": "vxr_000002",
-          "name": "Marco Guida",
+          "vectra_referee_id": "vxr_000004",
+          "name": "Daniele Doveri",
           "identity_status": "resolved",
           "reliability": 1.0,
           "metrics": {
-            "matches_officiated": 15.0,
-            "fouls_per_game": 24.8,
-            "fouls_per_tackle": 0.8285,
-            "penalties_per_game": 0.4667,
-            "yellow_cards_per_game": 3.9333,
-            "red_cards_per_game": 0.2,
-            "home_win_ratio": 0.4,
-            "away_win_ratio": 0.3333,
-            "draw_ratio": 0.2667,
-            "strictness": 0.4857,
-            "card_tendency": 0.4944,
-            "penalty_tendency": 0.5833,
-            "home_bias_signal": 0.5333
+            "matches_officiated": 17.0,
+            "fouls_per_game": 23.8823,
+            "fouls_per_tackle": 0.9103,
+            "penalties_per_game": 0.1765,
+            "yellow_cards_per_game": 3.2353,
+            "red_cards_per_game": 0.0588,
+            "home_win_ratio": 0.2941,
+            "away_win_ratio": 0.4706,
+            "draw_ratio": 0.2353,
+            "strictness": 0.4202,
+            "card_tendency": 0.3186,
+            "penalty_tendency": 0.2206,
+            "home_bias_signal": 0.4118
           }
         },
         "home": {
           "team_id": "vxt_000026",
-          "referee_attack_boost": 0.0088,
-          "referee_edge": -0.0066,
+          "referee_attack_boost": -0.0058,
+          "referee_edge": -0.0281,
           "lambda_before_referee": 0.8155,
-          "lambda_raw_unbounded": 0.815,
-          "lambda_after_referee": 0.815,
-          "lambda_delta_raw": -0.0005,
-          "lambda_delta_applied": -0.0005,
+          "lambda_raw_unbounded": 0.8132,
+          "lambda_after_referee": 0.8132,
+          "lambda_delta_raw": -0.0023,
+          "lambda_delta_applied": -0.0023,
           "lambda_cap_reached": false
         },
         "away": {
           "team_id": "vxt_000037",
-          "referee_attack_boost": 0.0154,
-          "referee_edge": 0.0066,
+          "referee_attack_boost": 0.0223,
+          "referee_edge": 0.0281,
           "lambda_before_referee": 0.7779,
-          "lambda_raw_unbounded": 0.7784,
-          "lambda_after_referee": 0.7784,
-          "lambda_delta_raw": 0.0005,
-          "lambda_delta_applied": 0.0005,
+          "lambda_raw_unbounded": 0.7801,
+          "lambda_after_referee": 0.7801,
+          "lambda_delta_raw": 0.0022,
+          "lambda_delta_applied": 0.0022,
           "lambda_cap_reached": false
         },
         "components": {
           "home": {
-            "foul_gain_advantage": 0.0953,
-            "penalty_volatility_advantage": 0.0328,
-            "contact_strictness_positive": 0.0953,
-            "contact_strictness_negative": 0.143,
-            "contact_strictness_interaction": -0.0476,
-            "card_exposure_penalty": 0.1018,
-            "rhythm_interruption_penalty": 0.0773,
-            "home_away_sensitivity": 0.0666
+            "foul_gain_advantage": 0.0825,
+            "penalty_volatility_advantage": 0.0124,
+            "contact_strictness_positive": 0.0825,
+            "contact_strictness_negative": 0.1237,
+            "contact_strictness_interaction": -0.0412,
+            "card_exposure_penalty": 0.0656,
+            "rhythm_interruption_penalty": 0.0669,
+            "home_away_sensitivity": -0.1764
           },
           "away": {
-            "foul_gain_advantage": 0.1192,
-            "penalty_volatility_advantage": 0.0404,
-            "contact_strictness_positive": 0.1192,
-            "contact_strictness_negative": 0.1476,
-            "contact_strictness_interaction": -0.0284,
-            "card_exposure_penalty": 0.1022,
-            "rhythm_interruption_penalty": 0.0748,
-            "home_away_sensitivity": -0.0666
+            "foul_gain_advantage": 0.1031,
+            "penalty_volatility_advantage": 0.0153,
+            "contact_strictness_positive": 0.1031,
+            "contact_strictness_negative": 0.1277,
+            "contact_strictness_interaction": -0.0246,
+            "card_exposure_penalty": 0.0659,
+            "rhythm_interruption_penalty": 0.0648,
+            "home_away_sensitivity": 0.1764
           },
           "team_inputs": {
             "home": {
@@ -139,12 +139,12 @@
       },
       "referee_factors": {
         "goal_environment_factor": 1.0,
-        "home_shift_factor": 0.9934,
-        "away_shift_factor": 1.0066,
-        "penalty_tendency": 0.5833,
-        "strictness": 0.4857,
-        "card_tendency": 0.4944,
-        "home_bias_signal": 0.5333,
+        "home_shift_factor": 0.9719,
+        "away_shift_factor": 1.0281,
+        "penalty_tendency": 0.2206,
+        "strictness": 0.4202,
+        "card_tendency": 0.3186,
+        "home_bias_signal": 0.4118,
         "sample_reliability": 1.0
       },
       "active_stage_source": "match_lambdas_referee.json",
@@ -160,8 +160,8 @@
       "stadium": "Cetilar Arena",
       "city": "Pisa",
       "active_lambda": {
-        "home": 0.815,
-        "away": 0.7784
+        "home": 0.8132,
+        "away": 0.7801
       }
     },
     "vxm_000042": {
