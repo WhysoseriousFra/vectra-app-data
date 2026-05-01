@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T20:35:26.960099Z",
+  "generated_at": "2026-05-01T21:05:29.764399Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -9,7 +9,7 @@
       "vectra_match_id": "vxm_000041",
       "home_team_name": "Pisa",
       "away_team_name": "Lecce",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "closed_match",
         "balance_edge_label": "balanced_match",
