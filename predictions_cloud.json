@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T14:35:30.270157Z",
+  "generated_at": "2026-05-01T15:07:16.115873Z",
   "schema": "vectra.predictions_cloud.v3",
   "source_schema": "vectra.match_predictions.v4",
   "model_layer_status": "baseline_plus_goal_pressure_defensive_resistance_active_refinement",
@@ -903,7 +903,7 @@
         },
         "meta": {
           "model": "vectra_v3_goal_pressure_refined",
-          "generated_at": "2026-05-01T14:35:30.270157Z",
+          "generated_at": "2026-05-01T15:07:16.115873Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -1770,7 +1770,7 @@
         },
         "meta": {
           "model": "vectra_v3_goal_pressure_refined",
-          "generated_at": "2026-05-01T14:35:30.270157Z",
+          "generated_at": "2026-05-01T15:07:16.115873Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -2637,7 +2637,7 @@
         },
         "meta": {
           "model": "vectra_v3_goal_pressure_refined",
-          "generated_at": "2026-05-01T14:35:30.270157Z",
+          "generated_at": "2026-05-01T15:07:16.115873Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -3504,7 +3504,7 @@
         },
         "meta": {
           "model": "vectra_v3_goal_pressure_refined",
-          "generated_at": "2026-05-01T14:35:30.270157Z",
+          "generated_at": "2026-05-01T15:07:16.115873Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -4371,7 +4371,7 @@
         },
         "meta": {
           "model": "vectra_v3_goal_pressure_refined",
-          "generated_at": "2026-05-01T14:35:30.270157Z",
+          "generated_at": "2026-05-01T15:07:16.115873Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -5238,7 +5238,7 @@
         },
         "meta": {
           "model": "vectra_v3_goal_pressure_refined",
-          "generated_at": "2026-05-01T14:35:30.270157Z",
+          "generated_at": "2026-05-01T15:07:16.115873Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -6105,7 +6105,7 @@
         },
         "meta": {
           "model": "vectra_v3_goal_pressure_refined",
-          "generated_at": "2026-05-01T14:35:30.270157Z",
+          "generated_at": "2026-05-01T15:07:16.115873Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -6972,7 +6972,7 @@
         },
         "meta": {
           "model": "vectra_v3_goal_pressure_refined",
-          "generated_at": "2026-05-01T14:35:30.270157Z",
+          "generated_at": "2026-05-01T15:07:16.115873Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -7839,7 +7839,7 @@
         },
         "meta": {
           "model": "vectra_v3_goal_pressure_refined",
-          "generated_at": "2026-05-01T14:35:30.270157Z",
+          "generated_at": "2026-05-01T15:07:16.115873Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -8706,7 +8706,7 @@
         },
         "meta": {
           "model": "vectra_v3_goal_pressure_refined",
-          "generated_at": "2026-05-01T14:35:30.270157Z",
+          "generated_at": "2026-05-01T15:07:16.115873Z",
           "has_lineups": false,
           "has_referee": true
         }
