@@ -1,10 +1,12 @@
 {
-  "generated_at": "2026-05-01T16:05:26.733509Z",
-  "schema": "vectra.predictions_cloud.v5",
+  "generated_at": "2026-05-01T16:35:25.200066Z",
+  "schema": "vectra.predictions_cloud.v6",
   "source_schema": "vectra.match_predictions.v4",
   "model_layer_status": "baseline_plus_goal_pressure_defensive_resistance_active_refinement",
   "volatility_layer_status": "available",
   "volatility_source_schema": "vectra.volatility_model.v1",
+  "confidence_layer_status": "available",
+  "confidence_source_schema": "vectra.confidence_reliability_model.v1",
   "model_layer_summary": {
     "probability_engines": [
       "poisson",
@@ -666,16 +668,16 @@
           }
         },
         "model_explorer": {
-          "status": "baseline_plus_goal_pressure_defensive_resistance_active",
+          "status": "baseline_plus_goal_pressure_defensive_resistance_volatility_confidence_available",
           "available_models": [
             "poisson",
             "montecarlo",
             "goal_pressure",
-            "defensive_resistance"
+            "defensive_resistance",
+            "volatility",
+            "confidence_reliability"
           ],
           "pending_models": [
-            "volatility",
-            "confidence",
             "dixon_coles",
             "bivariate_poisson",
             "dynamic_team_rating",
@@ -893,10 +895,96 @@
           ]
         },
         "confidence": {
-          "score": 0.0164,
-          "label": "balanced_baseline",
-          "source": "baseline_margin_after_structural_refinement",
-          "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.4831,
+          "confidence_score": 0.4831,
+          "band": "medium",
+          "label": "Lettura discreta",
+          "source": "confidence_reliability_model_v1",
+          "data_quality_label": "low",
+          "model_agreement_label": "very_high_agreement",
+          "stage_reliability": "referee_ready",
+          "volatility_penalty": 0.112,
+          "base_confidence": 0.5951,
+          "components": {
+            "outcome_clarity": {
+              "score": 0.0656,
+              "favored_outcome": "draw",
+              "favored_probability": 0.3492,
+              "second_outcome": "away_win",
+              "second_probability": 0.3328,
+              "margin": 0.0164,
+              "label": "very_thin_margin"
+            },
+            "model_agreement": {
+              "score": 0.9625,
+              "label": "very_high_agreement",
+              "outcome_max_abs_delta": 0.003,
+              "goal_environment_max_abs_delta": 0.0007,
+              "disagreement_signal": 0.0375
+            },
+            "structural_reliability": {
+              "score": 0.6982,
+              "label": "medium_reliability",
+              "goal_pressure_reliability": 0.6824,
+              "defensive_resistance_reliability": 0.7139,
+              "source": "structural_models_reliability"
+            },
+            "data_stage_reliability": {
+              "score": 0.76,
+              "label": "referee_ready",
+              "prediction_stage": "referee_ready",
+              "match_status": "UPCOMING",
+              "active_stage_source": "match_lambdas_referee.json"
+            },
+            "goal_environment_stability": {
+              "score": 0.854,
+              "label": "stable_goal_environment",
+              "source_signal": 0.146
+            },
+            "volatility_penalty": {
+              "score": 0.112,
+              "source": "volatility_model_v1",
+              "volatility_score": 0.3199,
+              "prediction_stability": "moderate"
+            }
+          },
+          "premium": {
+            "summary": "Confidence medium: score 0.4831. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "key_factors": [
+              {
+                "type": "outcome_clarity",
+                "label": "very_thin_margin",
+                "value": 0.0164,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              },
+              {
+                "type": "model_agreement",
+                "label": "very_high_agreement",
+                "value": 0.9625,
+                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+              },
+              {
+                "type": "volatility_penalty",
+                "label": "active_volatility_penalty",
+                "value": 0.112,
+                "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              }
+            ],
+            "user_label": "Lettura discreta",
+            "stage_note": "referee_ready"
+          },
+          "bot": {
+            "semantic_tags": [
+              "confidence::medium",
+              "model_agreement::very_high_agreement",
+              "confidence_stage::referee_ready",
+              "confidence_penalty::volatility_moderate"
+            ]
+          },
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
@@ -1031,7 +1119,11 @@
             "defensive_resistance::active_refinement_applied",
             "volatility::moderate",
             "upset_risk::medium",
-            "wide_scoreline_risk::low"
+            "wide_scoreline_risk::low",
+            "confidence::medium",
+            "model_agreement::very_high_agreement",
+            "confidence_stage::referee_ready",
+            "confidence_penalty::volatility_moderate"
           ]
         },
         "premium": {
@@ -1065,6 +1157,16 @@
               "wide_scoreline_risk": "low",
               "confidence_penalty": 0.112,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
+            },
+            {
+              "type": "confidence_model",
+              "model": "confidence_reliability",
+              "status": "post_volatility_analysis",
+              "confidence_score": 0.4831,
+              "confidence_band": "medium",
+              "label": "Lettura discreta",
+              "volatility_penalty": 0.112,
+              "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
           "model_details": [
@@ -1318,14 +1420,142 @@
                   ]
                 }
               }
+            },
+            {
+              "model": "confidence_reliability",
+              "policy": "post_volatility_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000041",
+                "computed": true,
+                "fallback_used": false,
+                "source": "confidence_reliability_model_v1",
+                "confidence_score": 0.4831,
+                "score": 0.4831,
+                "confidence_band": "medium",
+                "band": "medium",
+                "confidence_label": "Lettura discreta",
+                "label": "Lettura discreta",
+                "data_quality_label": "low",
+                "model_agreement_label": "very_high_agreement",
+                "stage_reliability": "referee_ready",
+                "volatility_penalty": 0.112,
+                "base_confidence": 0.5951,
+                "components": {
+                  "outcome_clarity": {
+                    "score": 0.0656,
+                    "favored_outcome": "draw",
+                    "favored_probability": 0.3492,
+                    "second_outcome": "away_win",
+                    "second_probability": 0.3328,
+                    "margin": 0.0164,
+                    "label": "very_thin_margin"
+                  },
+                  "model_agreement": {
+                    "score": 0.9625,
+                    "label": "very_high_agreement",
+                    "outcome_max_abs_delta": 0.003,
+                    "goal_environment_max_abs_delta": 0.0007,
+                    "disagreement_signal": 0.0375
+                  },
+                  "structural_reliability": {
+                    "score": 0.6982,
+                    "label": "medium_reliability",
+                    "goal_pressure_reliability": 0.6824,
+                    "defensive_resistance_reliability": 0.7139,
+                    "source": "structural_models_reliability"
+                  },
+                  "data_stage_reliability": {
+                    "score": 0.76,
+                    "label": "referee_ready",
+                    "prediction_stage": "referee_ready",
+                    "match_status": "UPCOMING",
+                    "active_stage_source": "match_lambdas_referee.json"
+                  },
+                  "goal_environment_stability": {
+                    "score": 0.854,
+                    "label": "stable_goal_environment",
+                    "source_signal": 0.146
+                  },
+                  "volatility_penalty": {
+                    "score": 0.112,
+                    "source": "volatility_model_v1",
+                    "volatility_score": 0.3199,
+                    "prediction_stability": "moderate"
+                  }
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_match_predictions": true,
+                  "has_volatility": true,
+                  "missing_components": [],
+                  "weights": {
+                    "outcome_clarity": 0.3,
+                    "model_agreement": 0.22,
+                    "structural_reliability": 0.2,
+                    "data_stage_reliability": 0.16,
+                    "goal_environment_stability": 0.12
+                  },
+                  "scales": {
+                    "outcome_margin_full_confidence": 0.25,
+                    "model_disagreement_full_penalty": 0.08
+                  }
+                },
+                "premium": {
+                  "summary": "Confidence medium: score 0.4831. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_clarity",
+                      "label": "very_thin_margin",
+                      "value": 0.0164,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    },
+                    {
+                      "type": "model_agreement",
+                      "label": "very_high_agreement",
+                      "value": 0.9625,
+                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                    },
+                    {
+                      "type": "volatility_penalty",
+                      "label": "active_volatility_penalty",
+                      "value": 0.112,
+                      "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    }
+                  ],
+                  "user_label": "Lettura discreta",
+                  "stage_note": "referee_ready"
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "confidence::medium",
+                    "model_agreement::very_high_agreement",
+                    "confidence_stage::referee_ready",
+                    "confidence_penalty::volatility_moderate"
+                  ]
+                },
+                "policy": {
+                  "mode": "post_aggregator_reliability_layer",
+                  "probability_impact": "none",
+                  "probability_shift": false,
+                  "reads": [
+                    "match_predictions.json",
+                    "volatility_model.json"
+                  ],
+                  "exports_to": "predictions_cloud.json"
+                },
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
-          "generated_at": "2026-05-01T16:05:26.733509Z",
+          "model": "vectra_v6_goal_pressure_defensive_resistance_volatility_confidence",
+          "generated_at": "2026-05-01T16:35:25.200066Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -1953,16 +2183,16 @@
           }
         },
         "model_explorer": {
-          "status": "baseline_plus_goal_pressure_defensive_resistance_active",
+          "status": "baseline_plus_goal_pressure_defensive_resistance_volatility_confidence_available",
           "available_models": [
             "poisson",
             "montecarlo",
             "goal_pressure",
-            "defensive_resistance"
+            "defensive_resistance",
+            "volatility",
+            "confidence_reliability"
           ],
           "pending_models": [
-            "volatility",
-            "confidence",
             "dixon_coles",
             "bivariate_poisson",
             "dynamic_team_rating",
@@ -2180,10 +2410,96 @@
           ]
         },
         "confidence": {
-          "score": 0.1994,
-          "label": "moderate_baseline",
-          "source": "baseline_margin_after_structural_refinement",
-          "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.7791,
+          "confidence_score": 0.7791,
+          "band": "high",
+          "label": "Lettura solida",
+          "source": "confidence_reliability_model_v1",
+          "data_quality_label": "low",
+          "model_agreement_label": "very_high_agreement",
+          "stage_reliability": "referee_ready",
+          "volatility_penalty": 0.039,
+          "base_confidence": 0.8181,
+          "components": {
+            "outcome_clarity": {
+              "score": 0.7976,
+              "favored_outcome": "home_win",
+              "favored_probability": 0.4702,
+              "second_outcome": "draw",
+              "second_probability": 0.2708,
+              "margin": 0.1994,
+              "label": "clear_margin"
+            },
+            "model_agreement": {
+              "score": 0.9337,
+              "label": "very_high_agreement",
+              "outcome_max_abs_delta": 0.0023,
+              "goal_environment_max_abs_delta": 0.0053,
+              "disagreement_signal": 0.0663
+            },
+            "structural_reliability": {
+              "score": 0.7089,
+              "label": "medium_reliability",
+              "goal_pressure_reliability": 0.694,
+              "defensive_resistance_reliability": 0.7238,
+              "source": "structural_models_reliability"
+            },
+            "data_stage_reliability": {
+              "score": 0.76,
+              "label": "referee_ready",
+              "prediction_stage": "referee_ready",
+              "match_status": "UPCOMING",
+              "active_stage_source": "match_lambdas_referee.json"
+            },
+            "goal_environment_stability": {
+              "score": 0.917,
+              "label": "stable_goal_environment",
+              "source_signal": 0.083
+            },
+            "volatility_penalty": {
+              "score": 0.039,
+              "source": "volatility_model_v1",
+              "volatility_score": 0.1115,
+              "prediction_stability": "stable"
+            }
+          },
+          "premium": {
+            "summary": "Confidence high: score 0.7791. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "key_factors": [
+              {
+                "type": "outcome_clarity",
+                "label": "clear_margin",
+                "value": 0.1994,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              },
+              {
+                "type": "model_agreement",
+                "label": "very_high_agreement",
+                "value": 0.9337,
+                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+              },
+              {
+                "type": "volatility_penalty",
+                "label": "active_volatility_penalty",
+                "value": 0.039,
+                "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              }
+            ],
+            "user_label": "Lettura solida",
+            "stage_note": "referee_ready"
+          },
+          "bot": {
+            "semantic_tags": [
+              "confidence::high",
+              "model_agreement::very_high_agreement",
+              "confidence_stage::referee_ready",
+              "confidence_penalty::volatility_low"
+            ]
+          },
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
@@ -2320,7 +2636,11 @@
             "volatility::stable",
             "upset_risk::low",
             "wide_scoreline_risk::low",
-            "volatility::low_consensus_movement"
+            "volatility::low_consensus_movement",
+            "confidence::high",
+            "model_agreement::very_high_agreement",
+            "confidence_stage::referee_ready",
+            "confidence_penalty::volatility_low"
           ]
         },
         "premium": {
@@ -2354,6 +2674,16 @@
               "wide_scoreline_risk": "low",
               "confidence_penalty": 0.039,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
+            },
+            {
+              "type": "confidence_model",
+              "model": "confidence_reliability",
+              "status": "post_volatility_analysis",
+              "confidence_score": 0.7791,
+              "confidence_band": "high",
+              "label": "Lettura solida",
+              "volatility_penalty": 0.039,
+              "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
           "model_details": [
@@ -2608,14 +2938,142 @@
                   ]
                 }
               }
+            },
+            {
+              "model": "confidence_reliability",
+              "policy": "post_volatility_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000042",
+                "computed": true,
+                "fallback_used": false,
+                "source": "confidence_reliability_model_v1",
+                "confidence_score": 0.7791,
+                "score": 0.7791,
+                "confidence_band": "high",
+                "band": "high",
+                "confidence_label": "Lettura solida",
+                "label": "Lettura solida",
+                "data_quality_label": "low",
+                "model_agreement_label": "very_high_agreement",
+                "stage_reliability": "referee_ready",
+                "volatility_penalty": 0.039,
+                "base_confidence": 0.8181,
+                "components": {
+                  "outcome_clarity": {
+                    "score": 0.7976,
+                    "favored_outcome": "home_win",
+                    "favored_probability": 0.4702,
+                    "second_outcome": "draw",
+                    "second_probability": 0.2708,
+                    "margin": 0.1994,
+                    "label": "clear_margin"
+                  },
+                  "model_agreement": {
+                    "score": 0.9337,
+                    "label": "very_high_agreement",
+                    "outcome_max_abs_delta": 0.0023,
+                    "goal_environment_max_abs_delta": 0.0053,
+                    "disagreement_signal": 0.0663
+                  },
+                  "structural_reliability": {
+                    "score": 0.7089,
+                    "label": "medium_reliability",
+                    "goal_pressure_reliability": 0.694,
+                    "defensive_resistance_reliability": 0.7238,
+                    "source": "structural_models_reliability"
+                  },
+                  "data_stage_reliability": {
+                    "score": 0.76,
+                    "label": "referee_ready",
+                    "prediction_stage": "referee_ready",
+                    "match_status": "UPCOMING",
+                    "active_stage_source": "match_lambdas_referee.json"
+                  },
+                  "goal_environment_stability": {
+                    "score": 0.917,
+                    "label": "stable_goal_environment",
+                    "source_signal": 0.083
+                  },
+                  "volatility_penalty": {
+                    "score": 0.039,
+                    "source": "volatility_model_v1",
+                    "volatility_score": 0.1115,
+                    "prediction_stability": "stable"
+                  }
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_match_predictions": true,
+                  "has_volatility": true,
+                  "missing_components": [],
+                  "weights": {
+                    "outcome_clarity": 0.3,
+                    "model_agreement": 0.22,
+                    "structural_reliability": 0.2,
+                    "data_stage_reliability": 0.16,
+                    "goal_environment_stability": 0.12
+                  },
+                  "scales": {
+                    "outcome_margin_full_confidence": 0.25,
+                    "model_disagreement_full_penalty": 0.08
+                  }
+                },
+                "premium": {
+                  "summary": "Confidence high: score 0.7791. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_clarity",
+                      "label": "clear_margin",
+                      "value": 0.1994,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    },
+                    {
+                      "type": "model_agreement",
+                      "label": "very_high_agreement",
+                      "value": 0.9337,
+                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                    },
+                    {
+                      "type": "volatility_penalty",
+                      "label": "active_volatility_penalty",
+                      "value": 0.039,
+                      "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    }
+                  ],
+                  "user_label": "Lettura solida",
+                  "stage_note": "referee_ready"
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "confidence::high",
+                    "model_agreement::very_high_agreement",
+                    "confidence_stage::referee_ready",
+                    "confidence_penalty::volatility_low"
+                  ]
+                },
+                "policy": {
+                  "mode": "post_aggregator_reliability_layer",
+                  "probability_impact": "none",
+                  "probability_shift": false,
+                  "reads": [
+                    "match_predictions.json",
+                    "volatility_model.json"
+                  ],
+                  "exports_to": "predictions_cloud.json"
+                },
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
-          "generated_at": "2026-05-01T16:05:26.733509Z",
+          "model": "vectra_v6_goal_pressure_defensive_resistance_volatility_confidence",
+          "generated_at": "2026-05-01T16:35:25.200066Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -3243,16 +3701,16 @@
           }
         },
         "model_explorer": {
-          "status": "baseline_plus_goal_pressure_defensive_resistance_active",
+          "status": "baseline_plus_goal_pressure_defensive_resistance_volatility_confidence_available",
           "available_models": [
             "poisson",
             "montecarlo",
             "goal_pressure",
-            "defensive_resistance"
+            "defensive_resistance",
+            "volatility",
+            "confidence_reliability"
           ],
           "pending_models": [
-            "volatility",
-            "confidence",
             "dixon_coles",
             "bivariate_poisson",
             "dynamic_team_rating",
@@ -3470,10 +3928,96 @@
           ]
         },
         "confidence": {
-          "score": 0.2541,
-          "label": "solid_baseline",
-          "source": "baseline_margin_after_structural_refinement",
-          "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.8488,
+          "confidence_score": 0.8488,
+          "band": "very_high",
+          "label": "Lettura molto solida",
+          "source": "confidence_reliability_model_v1",
+          "data_quality_label": "low",
+          "model_agreement_label": "very_high_agreement",
+          "stage_reliability": "referee_ready",
+          "volatility_penalty": 0.0316,
+          "base_confidence": 0.8804,
+          "components": {
+            "outcome_clarity": {
+              "score": 1.0,
+              "favored_outcome": "home_win",
+              "favored_probability": 0.517,
+              "second_outcome": "away_win",
+              "second_probability": 0.2629,
+              "margin": 0.2541,
+              "label": "clear_margin"
+            },
+            "model_agreement": {
+              "score": 0.9337,
+              "label": "very_high_agreement",
+              "outcome_max_abs_delta": 0.0008,
+              "goal_environment_max_abs_delta": 0.0053,
+              "disagreement_signal": 0.0663
+            },
+            "structural_reliability": {
+              "score": 0.6901,
+              "label": "medium_reliability",
+              "goal_pressure_reliability": 0.6738,
+              "defensive_resistance_reliability": 0.7064,
+              "source": "structural_models_reliability"
+            },
+            "data_stage_reliability": {
+              "score": 0.76,
+              "label": "referee_ready",
+              "prediction_stage": "referee_ready",
+              "match_status": "UPCOMING",
+              "active_stage_source": "match_lambdas_referee.json"
+            },
+            "goal_environment_stability": {
+              "score": 0.961,
+              "label": "stable_goal_environment",
+              "source_signal": 0.039
+            },
+            "volatility_penalty": {
+              "score": 0.0316,
+              "source": "volatility_model_v1",
+              "volatility_score": 0.0903,
+              "prediction_stability": "stable"
+            }
+          },
+          "premium": {
+            "summary": "Confidence very_high: score 0.8488. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "key_factors": [
+              {
+                "type": "outcome_clarity",
+                "label": "clear_margin",
+                "value": 0.2541,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              },
+              {
+                "type": "model_agreement",
+                "label": "very_high_agreement",
+                "value": 0.9337,
+                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+              },
+              {
+                "type": "volatility_penalty",
+                "label": "active_volatility_penalty",
+                "value": 0.0316,
+                "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              }
+            ],
+            "user_label": "Lettura molto solida",
+            "stage_note": "referee_ready"
+          },
+          "bot": {
+            "semantic_tags": [
+              "confidence::very_high",
+              "model_agreement::very_high_agreement",
+              "confidence_stage::referee_ready",
+              "confidence_penalty::volatility_low"
+            ]
+          },
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
@@ -3610,7 +4154,11 @@
             "volatility::stable",
             "upset_risk::low",
             "wide_scoreline_risk::medium",
-            "volatility::low_consensus_movement"
+            "volatility::low_consensus_movement",
+            "confidence::very_high",
+            "model_agreement::very_high_agreement",
+            "confidence_stage::referee_ready",
+            "confidence_penalty::volatility_low"
           ]
         },
         "premium": {
@@ -3644,6 +4192,16 @@
               "wide_scoreline_risk": "medium",
               "confidence_penalty": 0.0316,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
+            },
+            {
+              "type": "confidence_model",
+              "model": "confidence_reliability",
+              "status": "post_volatility_analysis",
+              "confidence_score": 0.8488,
+              "confidence_band": "very_high",
+              "label": "Lettura molto solida",
+              "volatility_penalty": 0.0316,
+              "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
           "model_details": [
@@ -3898,14 +4456,142 @@
                   ]
                 }
               }
+            },
+            {
+              "model": "confidence_reliability",
+              "policy": "post_volatility_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000043",
+                "computed": true,
+                "fallback_used": false,
+                "source": "confidence_reliability_model_v1",
+                "confidence_score": 0.8488,
+                "score": 0.8488,
+                "confidence_band": "very_high",
+                "band": "very_high",
+                "confidence_label": "Lettura molto solida",
+                "label": "Lettura molto solida",
+                "data_quality_label": "low",
+                "model_agreement_label": "very_high_agreement",
+                "stage_reliability": "referee_ready",
+                "volatility_penalty": 0.0316,
+                "base_confidence": 0.8804,
+                "components": {
+                  "outcome_clarity": {
+                    "score": 1.0,
+                    "favored_outcome": "home_win",
+                    "favored_probability": 0.517,
+                    "second_outcome": "away_win",
+                    "second_probability": 0.2629,
+                    "margin": 0.2541,
+                    "label": "clear_margin"
+                  },
+                  "model_agreement": {
+                    "score": 0.9337,
+                    "label": "very_high_agreement",
+                    "outcome_max_abs_delta": 0.0008,
+                    "goal_environment_max_abs_delta": 0.0053,
+                    "disagreement_signal": 0.0663
+                  },
+                  "structural_reliability": {
+                    "score": 0.6901,
+                    "label": "medium_reliability",
+                    "goal_pressure_reliability": 0.6738,
+                    "defensive_resistance_reliability": 0.7064,
+                    "source": "structural_models_reliability"
+                  },
+                  "data_stage_reliability": {
+                    "score": 0.76,
+                    "label": "referee_ready",
+                    "prediction_stage": "referee_ready",
+                    "match_status": "UPCOMING",
+                    "active_stage_source": "match_lambdas_referee.json"
+                  },
+                  "goal_environment_stability": {
+                    "score": 0.961,
+                    "label": "stable_goal_environment",
+                    "source_signal": 0.039
+                  },
+                  "volatility_penalty": {
+                    "score": 0.0316,
+                    "source": "volatility_model_v1",
+                    "volatility_score": 0.0903,
+                    "prediction_stability": "stable"
+                  }
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_match_predictions": true,
+                  "has_volatility": true,
+                  "missing_components": [],
+                  "weights": {
+                    "outcome_clarity": 0.3,
+                    "model_agreement": 0.22,
+                    "structural_reliability": 0.2,
+                    "data_stage_reliability": 0.16,
+                    "goal_environment_stability": 0.12
+                  },
+                  "scales": {
+                    "outcome_margin_full_confidence": 0.25,
+                    "model_disagreement_full_penalty": 0.08
+                  }
+                },
+                "premium": {
+                  "summary": "Confidence very_high: score 0.8488. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_clarity",
+                      "label": "clear_margin",
+                      "value": 0.2541,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    },
+                    {
+                      "type": "model_agreement",
+                      "label": "very_high_agreement",
+                      "value": 0.9337,
+                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                    },
+                    {
+                      "type": "volatility_penalty",
+                      "label": "active_volatility_penalty",
+                      "value": 0.0316,
+                      "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    }
+                  ],
+                  "user_label": "Lettura molto solida",
+                  "stage_note": "referee_ready"
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "confidence::very_high",
+                    "model_agreement::very_high_agreement",
+                    "confidence_stage::referee_ready",
+                    "confidence_penalty::volatility_low"
+                  ]
+                },
+                "policy": {
+                  "mode": "post_aggregator_reliability_layer",
+                  "probability_impact": "none",
+                  "probability_shift": false,
+                  "reads": [
+                    "match_predictions.json",
+                    "volatility_model.json"
+                  ],
+                  "exports_to": "predictions_cloud.json"
+                },
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
-          "generated_at": "2026-05-01T16:05:26.733509Z",
+          "model": "vectra_v6_goal_pressure_defensive_resistance_volatility_confidence",
+          "generated_at": "2026-05-01T16:35:25.200066Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -4533,16 +5219,16 @@
           }
         },
         "model_explorer": {
-          "status": "baseline_plus_goal_pressure_defensive_resistance_active",
+          "status": "baseline_plus_goal_pressure_defensive_resistance_volatility_confidence_available",
           "available_models": [
             "poisson",
             "montecarlo",
             "goal_pressure",
-            "defensive_resistance"
+            "defensive_resistance",
+            "volatility",
+            "confidence_reliability"
           ],
           "pending_models": [
-            "volatility",
-            "confidence",
             "dixon_coles",
             "bivariate_poisson",
             "dynamic_team_rating",
@@ -4760,10 +5446,96 @@
           ]
         },
         "confidence": {
-          "score": 0.5449,
-          "label": "solid_baseline",
-          "source": "baseline_margin_after_structural_refinement",
-          "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.805,
+          "confidence_score": 0.805,
+          "band": "very_high",
+          "label": "Lettura molto solida",
+          "source": "confidence_reliability_model_v1",
+          "data_quality_label": "low",
+          "model_agreement_label": "very_high_agreement",
+          "stage_reliability": "referee_ready",
+          "volatility_penalty": 0.0657,
+          "base_confidence": 0.8707,
+          "components": {
+            "outcome_clarity": {
+              "score": 1.0,
+              "favored_outcome": "home_win",
+              "favored_probability": 0.7154,
+              "second_outcome": "draw",
+              "second_probability": 0.1705,
+              "margin": 0.5449,
+              "label": "clear_margin"
+            },
+            "model_agreement": {
+              "score": 0.9387,
+              "label": "very_high_agreement",
+              "outcome_max_abs_delta": 0.0031,
+              "goal_environment_max_abs_delta": 0.0049,
+              "disagreement_signal": 0.0612
+            },
+            "structural_reliability": {
+              "score": 0.6977,
+              "label": "medium_reliability",
+              "goal_pressure_reliability": 0.6819,
+              "defensive_resistance_reliability": 0.7135,
+              "source": "structural_models_reliability"
+            },
+            "data_stage_reliability": {
+              "score": 0.76,
+              "label": "referee_ready",
+              "prediction_stage": "referee_ready",
+              "match_status": "UPCOMING",
+              "active_stage_source": "match_lambdas_referee.json"
+            },
+            "goal_environment_stability": {
+              "score": 0.859,
+              "label": "stable_goal_environment",
+              "source_signal": 0.141
+            },
+            "volatility_penalty": {
+              "score": 0.0657,
+              "source": "volatility_model_v1",
+              "volatility_score": 0.1876,
+              "prediction_stability": "stable"
+            }
+          },
+          "premium": {
+            "summary": "Confidence very_high: score 0.805. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "key_factors": [
+              {
+                "type": "outcome_clarity",
+                "label": "clear_margin",
+                "value": 0.5449,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              },
+              {
+                "type": "model_agreement",
+                "label": "very_high_agreement",
+                "value": 0.9387,
+                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+              },
+              {
+                "type": "volatility_penalty",
+                "label": "active_volatility_penalty",
+                "value": 0.0657,
+                "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              }
+            ],
+            "user_label": "Lettura molto solida",
+            "stage_note": "referee_ready"
+          },
+          "bot": {
+            "semantic_tags": [
+              "confidence::very_high",
+              "model_agreement::very_high_agreement",
+              "confidence_stage::referee_ready",
+              "confidence_penalty::volatility_moderate"
+            ]
+          },
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
@@ -4898,7 +5670,11 @@
             "defensive_resistance::active_refinement_applied",
             "volatility::stable",
             "upset_risk::low",
-            "wide_scoreline_risk::medium"
+            "wide_scoreline_risk::medium",
+            "confidence::very_high",
+            "model_agreement::very_high_agreement",
+            "confidence_stage::referee_ready",
+            "confidence_penalty::volatility_moderate"
           ]
         },
         "premium": {
@@ -4932,6 +5708,16 @@
               "wide_scoreline_risk": "medium",
               "confidence_penalty": 0.0657,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
+            },
+            {
+              "type": "confidence_model",
+              "model": "confidence_reliability",
+              "status": "post_volatility_analysis",
+              "confidence_score": 0.805,
+              "confidence_band": "very_high",
+              "label": "Lettura molto solida",
+              "volatility_penalty": 0.0657,
+              "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
           "model_details": [
@@ -5185,14 +5971,142 @@
                   ]
                 }
               }
+            },
+            {
+              "model": "confidence_reliability",
+              "policy": "post_volatility_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000044",
+                "computed": true,
+                "fallback_used": false,
+                "source": "confidence_reliability_model_v1",
+                "confidence_score": 0.805,
+                "score": 0.805,
+                "confidence_band": "very_high",
+                "band": "very_high",
+                "confidence_label": "Lettura molto solida",
+                "label": "Lettura molto solida",
+                "data_quality_label": "low",
+                "model_agreement_label": "very_high_agreement",
+                "stage_reliability": "referee_ready",
+                "volatility_penalty": 0.0657,
+                "base_confidence": 0.8707,
+                "components": {
+                  "outcome_clarity": {
+                    "score": 1.0,
+                    "favored_outcome": "home_win",
+                    "favored_probability": 0.7154,
+                    "second_outcome": "draw",
+                    "second_probability": 0.1705,
+                    "margin": 0.5449,
+                    "label": "clear_margin"
+                  },
+                  "model_agreement": {
+                    "score": 0.9387,
+                    "label": "very_high_agreement",
+                    "outcome_max_abs_delta": 0.0031,
+                    "goal_environment_max_abs_delta": 0.0049,
+                    "disagreement_signal": 0.0612
+                  },
+                  "structural_reliability": {
+                    "score": 0.6977,
+                    "label": "medium_reliability",
+                    "goal_pressure_reliability": 0.6819,
+                    "defensive_resistance_reliability": 0.7135,
+                    "source": "structural_models_reliability"
+                  },
+                  "data_stage_reliability": {
+                    "score": 0.76,
+                    "label": "referee_ready",
+                    "prediction_stage": "referee_ready",
+                    "match_status": "UPCOMING",
+                    "active_stage_source": "match_lambdas_referee.json"
+                  },
+                  "goal_environment_stability": {
+                    "score": 0.859,
+                    "label": "stable_goal_environment",
+                    "source_signal": 0.141
+                  },
+                  "volatility_penalty": {
+                    "score": 0.0657,
+                    "source": "volatility_model_v1",
+                    "volatility_score": 0.1876,
+                    "prediction_stability": "stable"
+                  }
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_match_predictions": true,
+                  "has_volatility": true,
+                  "missing_components": [],
+                  "weights": {
+                    "outcome_clarity": 0.3,
+                    "model_agreement": 0.22,
+                    "structural_reliability": 0.2,
+                    "data_stage_reliability": 0.16,
+                    "goal_environment_stability": 0.12
+                  },
+                  "scales": {
+                    "outcome_margin_full_confidence": 0.25,
+                    "model_disagreement_full_penalty": 0.08
+                  }
+                },
+                "premium": {
+                  "summary": "Confidence very_high: score 0.805. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_clarity",
+                      "label": "clear_margin",
+                      "value": 0.5449,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    },
+                    {
+                      "type": "model_agreement",
+                      "label": "very_high_agreement",
+                      "value": 0.9387,
+                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                    },
+                    {
+                      "type": "volatility_penalty",
+                      "label": "active_volatility_penalty",
+                      "value": 0.0657,
+                      "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    }
+                  ],
+                  "user_label": "Lettura molto solida",
+                  "stage_note": "referee_ready"
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "confidence::very_high",
+                    "model_agreement::very_high_agreement",
+                    "confidence_stage::referee_ready",
+                    "confidence_penalty::volatility_moderate"
+                  ]
+                },
+                "policy": {
+                  "mode": "post_aggregator_reliability_layer",
+                  "probability_impact": "none",
+                  "probability_shift": false,
+                  "reads": [
+                    "match_predictions.json",
+                    "volatility_model.json"
+                  ],
+                  "exports_to": "predictions_cloud.json"
+                },
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
-          "generated_at": "2026-05-01T16:05:26.733509Z",
+          "model": "vectra_v6_goal_pressure_defensive_resistance_volatility_confidence",
+          "generated_at": "2026-05-01T16:35:25.200066Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -5820,16 +6734,16 @@
           }
         },
         "model_explorer": {
-          "status": "baseline_plus_goal_pressure_defensive_resistance_active",
+          "status": "baseline_plus_goal_pressure_defensive_resistance_volatility_confidence_available",
           "available_models": [
             "poisson",
             "montecarlo",
             "goal_pressure",
-            "defensive_resistance"
+            "defensive_resistance",
+            "volatility",
+            "confidence_reliability"
           ],
           "pending_models": [
-            "volatility",
-            "confidence",
             "dixon_coles",
             "bivariate_poisson",
             "dynamic_team_rating",
@@ -6047,10 +6961,96 @@
           ]
         },
         "confidence": {
-          "score": 0.3826,
-          "label": "solid_baseline",
-          "source": "baseline_margin_after_structural_refinement",
-          "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.8486,
+          "confidence_score": 0.8486,
+          "band": "very_high",
+          "label": "Lettura molto solida",
+          "source": "confidence_reliability_model_v1",
+          "data_quality_label": "low",
+          "model_agreement_label": "very_high_agreement",
+          "stage_reliability": "referee_ready",
+          "volatility_penalty": 0.0302,
+          "base_confidence": 0.8788,
+          "components": {
+            "outcome_clarity": {
+              "score": 1.0,
+              "favored_outcome": "home_win",
+              "favored_probability": 0.6164,
+              "second_outcome": "draw",
+              "second_probability": 0.2338,
+              "margin": 0.3826,
+              "label": "clear_margin"
+            },
+            "model_agreement": {
+              "score": 0.95,
+              "label": "very_high_agreement",
+              "outcome_max_abs_delta": 0.0031,
+              "goal_environment_max_abs_delta": 0.004,
+              "disagreement_signal": 0.05
+            },
+            "structural_reliability": {
+              "score": 0.7014,
+              "label": "medium_reliability",
+              "goal_pressure_reliability": 0.6859,
+              "defensive_resistance_reliability": 0.7169,
+              "source": "structural_models_reliability"
+            },
+            "data_stage_reliability": {
+              "score": 0.76,
+              "label": "referee_ready",
+              "prediction_stage": "referee_ready",
+              "match_status": "UPCOMING",
+              "active_stage_source": "match_lambdas_referee.json"
+            },
+            "goal_environment_stability": {
+              "score": 0.899,
+              "label": "stable_goal_environment",
+              "source_signal": 0.101
+            },
+            "volatility_penalty": {
+              "score": 0.0302,
+              "source": "volatility_model_v1",
+              "volatility_score": 0.0863,
+              "prediction_stability": "stable"
+            }
+          },
+          "premium": {
+            "summary": "Confidence very_high: score 0.8486. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "key_factors": [
+              {
+                "type": "outcome_clarity",
+                "label": "clear_margin",
+                "value": 0.3826,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              },
+              {
+                "type": "model_agreement",
+                "label": "very_high_agreement",
+                "value": 0.95,
+                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+              },
+              {
+                "type": "volatility_penalty",
+                "label": "active_volatility_penalty",
+                "value": 0.0302,
+                "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              }
+            ],
+            "user_label": "Lettura molto solida",
+            "stage_note": "referee_ready"
+          },
+          "bot": {
+            "semantic_tags": [
+              "confidence::very_high",
+              "model_agreement::very_high_agreement",
+              "confidence_stage::referee_ready",
+              "confidence_penalty::volatility_low"
+            ]
+          },
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
@@ -6187,7 +7187,11 @@
             "volatility::stable",
             "upset_risk::low",
             "wide_scoreline_risk::low",
-            "volatility::low_consensus_movement"
+            "volatility::low_consensus_movement",
+            "confidence::very_high",
+            "model_agreement::very_high_agreement",
+            "confidence_stage::referee_ready",
+            "confidence_penalty::volatility_low"
           ]
         },
         "premium": {
@@ -6221,6 +7225,16 @@
               "wide_scoreline_risk": "low",
               "confidence_penalty": 0.0302,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
+            },
+            {
+              "type": "confidence_model",
+              "model": "confidence_reliability",
+              "status": "post_volatility_analysis",
+              "confidence_score": 0.8486,
+              "confidence_band": "very_high",
+              "label": "Lettura molto solida",
+              "volatility_penalty": 0.0302,
+              "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
           "model_details": [
@@ -6475,14 +7489,142 @@
                   ]
                 }
               }
+            },
+            {
+              "model": "confidence_reliability",
+              "policy": "post_volatility_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000045",
+                "computed": true,
+                "fallback_used": false,
+                "source": "confidence_reliability_model_v1",
+                "confidence_score": 0.8486,
+                "score": 0.8486,
+                "confidence_band": "very_high",
+                "band": "very_high",
+                "confidence_label": "Lettura molto solida",
+                "label": "Lettura molto solida",
+                "data_quality_label": "low",
+                "model_agreement_label": "very_high_agreement",
+                "stage_reliability": "referee_ready",
+                "volatility_penalty": 0.0302,
+                "base_confidence": 0.8788,
+                "components": {
+                  "outcome_clarity": {
+                    "score": 1.0,
+                    "favored_outcome": "home_win",
+                    "favored_probability": 0.6164,
+                    "second_outcome": "draw",
+                    "second_probability": 0.2338,
+                    "margin": 0.3826,
+                    "label": "clear_margin"
+                  },
+                  "model_agreement": {
+                    "score": 0.95,
+                    "label": "very_high_agreement",
+                    "outcome_max_abs_delta": 0.0031,
+                    "goal_environment_max_abs_delta": 0.004,
+                    "disagreement_signal": 0.05
+                  },
+                  "structural_reliability": {
+                    "score": 0.7014,
+                    "label": "medium_reliability",
+                    "goal_pressure_reliability": 0.6859,
+                    "defensive_resistance_reliability": 0.7169,
+                    "source": "structural_models_reliability"
+                  },
+                  "data_stage_reliability": {
+                    "score": 0.76,
+                    "label": "referee_ready",
+                    "prediction_stage": "referee_ready",
+                    "match_status": "UPCOMING",
+                    "active_stage_source": "match_lambdas_referee.json"
+                  },
+                  "goal_environment_stability": {
+                    "score": 0.899,
+                    "label": "stable_goal_environment",
+                    "source_signal": 0.101
+                  },
+                  "volatility_penalty": {
+                    "score": 0.0302,
+                    "source": "volatility_model_v1",
+                    "volatility_score": 0.0863,
+                    "prediction_stability": "stable"
+                  }
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_match_predictions": true,
+                  "has_volatility": true,
+                  "missing_components": [],
+                  "weights": {
+                    "outcome_clarity": 0.3,
+                    "model_agreement": 0.22,
+                    "structural_reliability": 0.2,
+                    "data_stage_reliability": 0.16,
+                    "goal_environment_stability": 0.12
+                  },
+                  "scales": {
+                    "outcome_margin_full_confidence": 0.25,
+                    "model_disagreement_full_penalty": 0.08
+                  }
+                },
+                "premium": {
+                  "summary": "Confidence very_high: score 0.8486. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_clarity",
+                      "label": "clear_margin",
+                      "value": 0.3826,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    },
+                    {
+                      "type": "model_agreement",
+                      "label": "very_high_agreement",
+                      "value": 0.95,
+                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                    },
+                    {
+                      "type": "volatility_penalty",
+                      "label": "active_volatility_penalty",
+                      "value": 0.0302,
+                      "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    }
+                  ],
+                  "user_label": "Lettura molto solida",
+                  "stage_note": "referee_ready"
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "confidence::very_high",
+                    "model_agreement::very_high_agreement",
+                    "confidence_stage::referee_ready",
+                    "confidence_penalty::volatility_low"
+                  ]
+                },
+                "policy": {
+                  "mode": "post_aggregator_reliability_layer",
+                  "probability_impact": "none",
+                  "probability_shift": false,
+                  "reads": [
+                    "match_predictions.json",
+                    "volatility_model.json"
+                  ],
+                  "exports_to": "predictions_cloud.json"
+                },
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
-          "generated_at": "2026-05-01T16:05:26.733509Z",
+          "model": "vectra_v6_goal_pressure_defensive_resistance_volatility_confidence",
+          "generated_at": "2026-05-01T16:35:25.200066Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -7110,16 +8252,16 @@
           }
         },
         "model_explorer": {
-          "status": "baseline_plus_goal_pressure_defensive_resistance_active",
+          "status": "baseline_plus_goal_pressure_defensive_resistance_volatility_confidence_available",
           "available_models": [
             "poisson",
             "montecarlo",
             "goal_pressure",
-            "defensive_resistance"
+            "defensive_resistance",
+            "volatility",
+            "confidence_reliability"
           ],
           "pending_models": [
-            "volatility",
-            "confidence",
             "dixon_coles",
             "bivariate_poisson",
             "dynamic_team_rating",
@@ -7337,10 +8479,96 @@
           ]
         },
         "confidence": {
-          "score": 0.4476,
-          "label": "solid_baseline",
-          "source": "baseline_margin_after_structural_refinement",
-          "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.8126,
+          "confidence_score": 0.8126,
+          "band": "very_high",
+          "label": "Lettura molto solida",
+          "source": "confidence_reliability_model_v1",
+          "data_quality_label": "low",
+          "model_agreement_label": "very_high_agreement",
+          "stage_reliability": "referee_ready",
+          "volatility_penalty": 0.059,
+          "base_confidence": 0.8716,
+          "components": {
+            "outcome_clarity": {
+              "score": 1.0,
+              "favored_outcome": "away_win",
+              "favored_probability": 0.6481,
+              "second_outcome": "draw",
+              "second_probability": 0.2005,
+              "margin": 0.4476,
+              "label": "clear_margin"
+            },
+            "model_agreement": {
+              "score": 0.9275,
+              "label": "very_high_agreement",
+              "outcome_max_abs_delta": 0.0023,
+              "goal_environment_max_abs_delta": 0.0058,
+              "disagreement_signal": 0.0725
+            },
+            "structural_reliability": {
+              "score": 0.6975,
+              "label": "medium_reliability",
+              "goal_pressure_reliability": 0.6819,
+              "defensive_resistance_reliability": 0.7132,
+              "source": "structural_models_reliability"
+            },
+            "data_stage_reliability": {
+              "score": 0.76,
+              "label": "referee_ready",
+              "prediction_stage": "referee_ready",
+              "match_status": "UPCOMING",
+              "active_stage_source": "match_lambdas_referee.json"
+            },
+            "goal_environment_stability": {
+              "score": 0.887,
+              "label": "stable_goal_environment",
+              "source_signal": 0.113
+            },
+            "volatility_penalty": {
+              "score": 0.059,
+              "source": "volatility_model_v1",
+              "volatility_score": 0.1685,
+              "prediction_stability": "stable"
+            }
+          },
+          "premium": {
+            "summary": "Confidence very_high: score 0.8126. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "key_factors": [
+              {
+                "type": "outcome_clarity",
+                "label": "clear_margin",
+                "value": 0.4476,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              },
+              {
+                "type": "model_agreement",
+                "label": "very_high_agreement",
+                "value": 0.9275,
+                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+              },
+              {
+                "type": "volatility_penalty",
+                "label": "active_volatility_penalty",
+                "value": 0.059,
+                "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              }
+            ],
+            "user_label": "Lettura molto solida",
+            "stage_note": "referee_ready"
+          },
+          "bot": {
+            "semantic_tags": [
+              "confidence::very_high",
+              "model_agreement::very_high_agreement",
+              "confidence_stage::referee_ready",
+              "confidence_penalty::volatility_low"
+            ]
+          },
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
@@ -7475,7 +8703,11 @@
             "defensive_resistance::active_refinement_applied",
             "volatility::stable",
             "upset_risk::low",
-            "wide_scoreline_risk::low"
+            "wide_scoreline_risk::low",
+            "confidence::very_high",
+            "model_agreement::very_high_agreement",
+            "confidence_stage::referee_ready",
+            "confidence_penalty::volatility_low"
           ]
         },
         "premium": {
@@ -7509,6 +8741,16 @@
               "wide_scoreline_risk": "low",
               "confidence_penalty": 0.059,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
+            },
+            {
+              "type": "confidence_model",
+              "model": "confidence_reliability",
+              "status": "post_volatility_analysis",
+              "confidence_score": 0.8126,
+              "confidence_band": "very_high",
+              "label": "Lettura molto solida",
+              "volatility_penalty": 0.059,
+              "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
           "model_details": [
@@ -7762,14 +9004,142 @@
                   ]
                 }
               }
+            },
+            {
+              "model": "confidence_reliability",
+              "policy": "post_volatility_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000046",
+                "computed": true,
+                "fallback_used": false,
+                "source": "confidence_reliability_model_v1",
+                "confidence_score": 0.8126,
+                "score": 0.8126,
+                "confidence_band": "very_high",
+                "band": "very_high",
+                "confidence_label": "Lettura molto solida",
+                "label": "Lettura molto solida",
+                "data_quality_label": "low",
+                "model_agreement_label": "very_high_agreement",
+                "stage_reliability": "referee_ready",
+                "volatility_penalty": 0.059,
+                "base_confidence": 0.8716,
+                "components": {
+                  "outcome_clarity": {
+                    "score": 1.0,
+                    "favored_outcome": "away_win",
+                    "favored_probability": 0.6481,
+                    "second_outcome": "draw",
+                    "second_probability": 0.2005,
+                    "margin": 0.4476,
+                    "label": "clear_margin"
+                  },
+                  "model_agreement": {
+                    "score": 0.9275,
+                    "label": "very_high_agreement",
+                    "outcome_max_abs_delta": 0.0023,
+                    "goal_environment_max_abs_delta": 0.0058,
+                    "disagreement_signal": 0.0725
+                  },
+                  "structural_reliability": {
+                    "score": 0.6975,
+                    "label": "medium_reliability",
+                    "goal_pressure_reliability": 0.6819,
+                    "defensive_resistance_reliability": 0.7132,
+                    "source": "structural_models_reliability"
+                  },
+                  "data_stage_reliability": {
+                    "score": 0.76,
+                    "label": "referee_ready",
+                    "prediction_stage": "referee_ready",
+                    "match_status": "UPCOMING",
+                    "active_stage_source": "match_lambdas_referee.json"
+                  },
+                  "goal_environment_stability": {
+                    "score": 0.887,
+                    "label": "stable_goal_environment",
+                    "source_signal": 0.113
+                  },
+                  "volatility_penalty": {
+                    "score": 0.059,
+                    "source": "volatility_model_v1",
+                    "volatility_score": 0.1685,
+                    "prediction_stability": "stable"
+                  }
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_match_predictions": true,
+                  "has_volatility": true,
+                  "missing_components": [],
+                  "weights": {
+                    "outcome_clarity": 0.3,
+                    "model_agreement": 0.22,
+                    "structural_reliability": 0.2,
+                    "data_stage_reliability": 0.16,
+                    "goal_environment_stability": 0.12
+                  },
+                  "scales": {
+                    "outcome_margin_full_confidence": 0.25,
+                    "model_disagreement_full_penalty": 0.08
+                  }
+                },
+                "premium": {
+                  "summary": "Confidence very_high: score 0.8126. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_clarity",
+                      "label": "clear_margin",
+                      "value": 0.4476,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    },
+                    {
+                      "type": "model_agreement",
+                      "label": "very_high_agreement",
+                      "value": 0.9275,
+                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                    },
+                    {
+                      "type": "volatility_penalty",
+                      "label": "active_volatility_penalty",
+                      "value": 0.059,
+                      "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    }
+                  ],
+                  "user_label": "Lettura molto solida",
+                  "stage_note": "referee_ready"
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "confidence::very_high",
+                    "model_agreement::very_high_agreement",
+                    "confidence_stage::referee_ready",
+                    "confidence_penalty::volatility_low"
+                  ]
+                },
+                "policy": {
+                  "mode": "post_aggregator_reliability_layer",
+                  "probability_impact": "none",
+                  "probability_shift": false,
+                  "reads": [
+                    "match_predictions.json",
+                    "volatility_model.json"
+                  ],
+                  "exports_to": "predictions_cloud.json"
+                },
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
-          "generated_at": "2026-05-01T16:05:26.733509Z",
+          "model": "vectra_v6_goal_pressure_defensive_resistance_volatility_confidence",
+          "generated_at": "2026-05-01T16:35:25.200066Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -8397,16 +9767,16 @@
           }
         },
         "model_explorer": {
-          "status": "baseline_plus_goal_pressure_defensive_resistance_active",
+          "status": "baseline_plus_goal_pressure_defensive_resistance_volatility_confidence_available",
           "available_models": [
             "poisson",
             "montecarlo",
             "goal_pressure",
-            "defensive_resistance"
+            "defensive_resistance",
+            "volatility",
+            "confidence_reliability"
           ],
           "pending_models": [
-            "volatility",
-            "confidence",
             "dixon_coles",
             "bivariate_poisson",
             "dynamic_team_rating",
@@ -8624,10 +9994,96 @@
           ]
         },
         "confidence": {
-          "score": 0.6444,
-          "label": "solid_baseline",
-          "source": "baseline_margin_after_structural_refinement",
-          "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.7962,
+          "confidence_score": 0.7962,
+          "band": "high",
+          "label": "Lettura solida",
+          "source": "confidence_reliability_model_v1",
+          "data_quality_label": "low",
+          "model_agreement_label": "very_high_agreement",
+          "stage_reliability": "referee_ready",
+          "volatility_penalty": 0.0657,
+          "base_confidence": 0.8619,
+          "components": {
+            "outcome_clarity": {
+              "score": 1.0,
+              "favored_outcome": "home_win",
+              "favored_probability": 0.7894,
+              "second_outcome": "draw",
+              "second_probability": 0.145,
+              "margin": 0.6444,
+              "label": "clear_margin"
+            },
+            "model_agreement": {
+              "score": 0.8812,
+              "label": "very_high_agreement",
+              "outcome_max_abs_delta": 0.0008,
+              "goal_environment_max_abs_delta": 0.0095,
+              "disagreement_signal": 0.1187
+            },
+            "structural_reliability": {
+              "score": 0.6981,
+              "label": "medium_reliability",
+              "goal_pressure_reliability": 0.6824,
+              "defensive_resistance_reliability": 0.7137,
+              "source": "structural_models_reliability"
+            },
+            "data_stage_reliability": {
+              "score": 0.76,
+              "label": "referee_ready",
+              "prediction_stage": "referee_ready",
+              "match_status": "UPCOMING",
+              "active_stage_source": "match_lambdas_referee.json"
+            },
+            "goal_environment_stability": {
+              "score": 0.89,
+              "label": "stable_goal_environment",
+              "source_signal": 0.11
+            },
+            "volatility_penalty": {
+              "score": 0.0657,
+              "source": "volatility_model_v1",
+              "volatility_score": 0.1876,
+              "prediction_stability": "stable"
+            }
+          },
+          "premium": {
+            "summary": "Confidence high: score 0.7962. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "key_factors": [
+              {
+                "type": "outcome_clarity",
+                "label": "clear_margin",
+                "value": 0.6444,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              },
+              {
+                "type": "model_agreement",
+                "label": "very_high_agreement",
+                "value": 0.8812,
+                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+              },
+              {
+                "type": "volatility_penalty",
+                "label": "active_volatility_penalty",
+                "value": 0.0657,
+                "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              }
+            ],
+            "user_label": "Lettura solida",
+            "stage_note": "referee_ready"
+          },
+          "bot": {
+            "semantic_tags": [
+              "confidence::high",
+              "model_agreement::very_high_agreement",
+              "confidence_stage::referee_ready",
+              "confidence_penalty::volatility_moderate"
+            ]
+          },
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
@@ -8762,7 +10218,11 @@
             "defensive_resistance::active_refinement_applied",
             "volatility::stable",
             "upset_risk::low",
-            "wide_scoreline_risk::low"
+            "wide_scoreline_risk::low",
+            "confidence::high",
+            "model_agreement::very_high_agreement",
+            "confidence_stage::referee_ready",
+            "confidence_penalty::volatility_moderate"
           ]
         },
         "premium": {
@@ -8796,6 +10256,16 @@
               "wide_scoreline_risk": "low",
               "confidence_penalty": 0.0657,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
+            },
+            {
+              "type": "confidence_model",
+              "model": "confidence_reliability",
+              "status": "post_volatility_analysis",
+              "confidence_score": 0.7962,
+              "confidence_band": "high",
+              "label": "Lettura solida",
+              "volatility_penalty": 0.0657,
+              "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
           "model_details": [
@@ -9049,14 +10519,142 @@
                   ]
                 }
               }
+            },
+            {
+              "model": "confidence_reliability",
+              "policy": "post_volatility_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000047",
+                "computed": true,
+                "fallback_used": false,
+                "source": "confidence_reliability_model_v1",
+                "confidence_score": 0.7962,
+                "score": 0.7962,
+                "confidence_band": "high",
+                "band": "high",
+                "confidence_label": "Lettura solida",
+                "label": "Lettura solida",
+                "data_quality_label": "low",
+                "model_agreement_label": "very_high_agreement",
+                "stage_reliability": "referee_ready",
+                "volatility_penalty": 0.0657,
+                "base_confidence": 0.8619,
+                "components": {
+                  "outcome_clarity": {
+                    "score": 1.0,
+                    "favored_outcome": "home_win",
+                    "favored_probability": 0.7894,
+                    "second_outcome": "draw",
+                    "second_probability": 0.145,
+                    "margin": 0.6444,
+                    "label": "clear_margin"
+                  },
+                  "model_agreement": {
+                    "score": 0.8812,
+                    "label": "very_high_agreement",
+                    "outcome_max_abs_delta": 0.0008,
+                    "goal_environment_max_abs_delta": 0.0095,
+                    "disagreement_signal": 0.1187
+                  },
+                  "structural_reliability": {
+                    "score": 0.6981,
+                    "label": "medium_reliability",
+                    "goal_pressure_reliability": 0.6824,
+                    "defensive_resistance_reliability": 0.7137,
+                    "source": "structural_models_reliability"
+                  },
+                  "data_stage_reliability": {
+                    "score": 0.76,
+                    "label": "referee_ready",
+                    "prediction_stage": "referee_ready",
+                    "match_status": "UPCOMING",
+                    "active_stage_source": "match_lambdas_referee.json"
+                  },
+                  "goal_environment_stability": {
+                    "score": 0.89,
+                    "label": "stable_goal_environment",
+                    "source_signal": 0.11
+                  },
+                  "volatility_penalty": {
+                    "score": 0.0657,
+                    "source": "volatility_model_v1",
+                    "volatility_score": 0.1876,
+                    "prediction_stability": "stable"
+                  }
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_match_predictions": true,
+                  "has_volatility": true,
+                  "missing_components": [],
+                  "weights": {
+                    "outcome_clarity": 0.3,
+                    "model_agreement": 0.22,
+                    "structural_reliability": 0.2,
+                    "data_stage_reliability": 0.16,
+                    "goal_environment_stability": 0.12
+                  },
+                  "scales": {
+                    "outcome_margin_full_confidence": 0.25,
+                    "model_disagreement_full_penalty": 0.08
+                  }
+                },
+                "premium": {
+                  "summary": "Confidence high: score 0.7962. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_clarity",
+                      "label": "clear_margin",
+                      "value": 0.6444,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    },
+                    {
+                      "type": "model_agreement",
+                      "label": "very_high_agreement",
+                      "value": 0.8812,
+                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                    },
+                    {
+                      "type": "volatility_penalty",
+                      "label": "active_volatility_penalty",
+                      "value": 0.0657,
+                      "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    }
+                  ],
+                  "user_label": "Lettura solida",
+                  "stage_note": "referee_ready"
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "confidence::high",
+                    "model_agreement::very_high_agreement",
+                    "confidence_stage::referee_ready",
+                    "confidence_penalty::volatility_moderate"
+                  ]
+                },
+                "policy": {
+                  "mode": "post_aggregator_reliability_layer",
+                  "probability_impact": "none",
+                  "probability_shift": false,
+                  "reads": [
+                    "match_predictions.json",
+                    "volatility_model.json"
+                  ],
+                  "exports_to": "predictions_cloud.json"
+                },
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
-          "generated_at": "2026-05-01T16:05:26.733509Z",
+          "model": "vectra_v6_goal_pressure_defensive_resistance_volatility_confidence",
+          "generated_at": "2026-05-01T16:35:25.200066Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -9684,16 +11282,16 @@
           }
         },
         "model_explorer": {
-          "status": "baseline_plus_goal_pressure_defensive_resistance_active",
+          "status": "baseline_plus_goal_pressure_defensive_resistance_volatility_confidence_available",
           "available_models": [
             "poisson",
             "montecarlo",
             "goal_pressure",
-            "defensive_resistance"
+            "defensive_resistance",
+            "volatility",
+            "confidence_reliability"
           ],
           "pending_models": [
-            "volatility",
-            "confidence",
             "dixon_coles",
             "bivariate_poisson",
             "dynamic_team_rating",
@@ -9911,10 +11509,96 @@
           ]
         },
         "confidence": {
-          "score": 0.6427,
-          "label": "solid_baseline",
-          "source": "baseline_margin_after_structural_refinement",
-          "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.8087,
+          "confidence_score": 0.8087,
+          "band": "very_high",
+          "label": "Lettura molto solida",
+          "source": "confidence_reliability_model_v1",
+          "data_quality_label": "low",
+          "model_agreement_label": "very_high_agreement",
+          "stage_reliability": "referee_ready",
+          "volatility_penalty": 0.0624,
+          "base_confidence": 0.8711,
+          "components": {
+            "outcome_clarity": {
+              "score": 1.0,
+              "favored_outcome": "home_win",
+              "favored_probability": 0.7882,
+              "second_outcome": "draw",
+              "second_probability": 0.1455,
+              "margin": 0.6427,
+              "label": "clear_margin"
+            },
+            "model_agreement": {
+              "score": 0.905,
+              "label": "very_high_agreement",
+              "outcome_max_abs_delta": 0.0035,
+              "goal_environment_max_abs_delta": 0.0076,
+              "disagreement_signal": 0.095
+            },
+            "structural_reliability": {
+              "score": 0.7095,
+              "label": "medium_reliability",
+              "goal_pressure_reliability": 0.6946,
+              "defensive_resistance_reliability": 0.7243,
+              "source": "structural_models_reliability"
+            },
+            "data_stage_reliability": {
+              "score": 0.76,
+              "label": "referee_ready",
+              "prediction_stage": "referee_ready",
+              "match_status": "UPCOMING",
+              "active_stage_source": "match_lambdas_referee.json"
+            },
+            "goal_environment_stability": {
+              "score": 0.904,
+              "label": "stable_goal_environment",
+              "source_signal": 0.096
+            },
+            "volatility_penalty": {
+              "score": 0.0624,
+              "source": "volatility_model_v1",
+              "volatility_score": 0.1782,
+              "prediction_stability": "stable"
+            }
+          },
+          "premium": {
+            "summary": "Confidence very_high: score 0.8087. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "key_factors": [
+              {
+                "type": "outcome_clarity",
+                "label": "clear_margin",
+                "value": 0.6427,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              },
+              {
+                "type": "model_agreement",
+                "label": "very_high_agreement",
+                "value": 0.905,
+                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+              },
+              {
+                "type": "volatility_penalty",
+                "label": "active_volatility_penalty",
+                "value": 0.0624,
+                "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              }
+            ],
+            "user_label": "Lettura molto solida",
+            "stage_note": "referee_ready"
+          },
+          "bot": {
+            "semantic_tags": [
+              "confidence::very_high",
+              "model_agreement::very_high_agreement",
+              "confidence_stage::referee_ready",
+              "confidence_penalty::volatility_moderate"
+            ]
+          },
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
@@ -10049,7 +11733,11 @@
             "defensive_resistance::active_refinement_applied",
             "volatility::stable",
             "upset_risk::low",
-            "wide_scoreline_risk::low"
+            "wide_scoreline_risk::low",
+            "confidence::very_high",
+            "model_agreement::very_high_agreement",
+            "confidence_stage::referee_ready",
+            "confidence_penalty::volatility_moderate"
           ]
         },
         "premium": {
@@ -10083,6 +11771,16 @@
               "wide_scoreline_risk": "low",
               "confidence_penalty": 0.0624,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
+            },
+            {
+              "type": "confidence_model",
+              "model": "confidence_reliability",
+              "status": "post_volatility_analysis",
+              "confidence_score": 0.8087,
+              "confidence_band": "very_high",
+              "label": "Lettura molto solida",
+              "volatility_penalty": 0.0624,
+              "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
           "model_details": [
@@ -10336,14 +12034,142 @@
                   ]
                 }
               }
+            },
+            {
+              "model": "confidence_reliability",
+              "policy": "post_volatility_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000048",
+                "computed": true,
+                "fallback_used": false,
+                "source": "confidence_reliability_model_v1",
+                "confidence_score": 0.8087,
+                "score": 0.8087,
+                "confidence_band": "very_high",
+                "band": "very_high",
+                "confidence_label": "Lettura molto solida",
+                "label": "Lettura molto solida",
+                "data_quality_label": "low",
+                "model_agreement_label": "very_high_agreement",
+                "stage_reliability": "referee_ready",
+                "volatility_penalty": 0.0624,
+                "base_confidence": 0.8711,
+                "components": {
+                  "outcome_clarity": {
+                    "score": 1.0,
+                    "favored_outcome": "home_win",
+                    "favored_probability": 0.7882,
+                    "second_outcome": "draw",
+                    "second_probability": 0.1455,
+                    "margin": 0.6427,
+                    "label": "clear_margin"
+                  },
+                  "model_agreement": {
+                    "score": 0.905,
+                    "label": "very_high_agreement",
+                    "outcome_max_abs_delta": 0.0035,
+                    "goal_environment_max_abs_delta": 0.0076,
+                    "disagreement_signal": 0.095
+                  },
+                  "structural_reliability": {
+                    "score": 0.7095,
+                    "label": "medium_reliability",
+                    "goal_pressure_reliability": 0.6946,
+                    "defensive_resistance_reliability": 0.7243,
+                    "source": "structural_models_reliability"
+                  },
+                  "data_stage_reliability": {
+                    "score": 0.76,
+                    "label": "referee_ready",
+                    "prediction_stage": "referee_ready",
+                    "match_status": "UPCOMING",
+                    "active_stage_source": "match_lambdas_referee.json"
+                  },
+                  "goal_environment_stability": {
+                    "score": 0.904,
+                    "label": "stable_goal_environment",
+                    "source_signal": 0.096
+                  },
+                  "volatility_penalty": {
+                    "score": 0.0624,
+                    "source": "volatility_model_v1",
+                    "volatility_score": 0.1782,
+                    "prediction_stability": "stable"
+                  }
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_match_predictions": true,
+                  "has_volatility": true,
+                  "missing_components": [],
+                  "weights": {
+                    "outcome_clarity": 0.3,
+                    "model_agreement": 0.22,
+                    "structural_reliability": 0.2,
+                    "data_stage_reliability": 0.16,
+                    "goal_environment_stability": 0.12
+                  },
+                  "scales": {
+                    "outcome_margin_full_confidence": 0.25,
+                    "model_disagreement_full_penalty": 0.08
+                  }
+                },
+                "premium": {
+                  "summary": "Confidence very_high: score 0.8087. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_clarity",
+                      "label": "clear_margin",
+                      "value": 0.6427,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    },
+                    {
+                      "type": "model_agreement",
+                      "label": "very_high_agreement",
+                      "value": 0.905,
+                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                    },
+                    {
+                      "type": "volatility_penalty",
+                      "label": "active_volatility_penalty",
+                      "value": 0.0624,
+                      "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    }
+                  ],
+                  "user_label": "Lettura molto solida",
+                  "stage_note": "referee_ready"
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "confidence::very_high",
+                    "model_agreement::very_high_agreement",
+                    "confidence_stage::referee_ready",
+                    "confidence_penalty::volatility_moderate"
+                  ]
+                },
+                "policy": {
+                  "mode": "post_aggregator_reliability_layer",
+                  "probability_impact": "none",
+                  "probability_shift": false,
+                  "reads": [
+                    "match_predictions.json",
+                    "volatility_model.json"
+                  ],
+                  "exports_to": "predictions_cloud.json"
+                },
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
-          "generated_at": "2026-05-01T16:05:26.733509Z",
+          "model": "vectra_v6_goal_pressure_defensive_resistance_volatility_confidence",
+          "generated_at": "2026-05-01T16:35:25.200066Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -10971,16 +12797,16 @@
           }
         },
         "model_explorer": {
-          "status": "baseline_plus_goal_pressure_defensive_resistance_active",
+          "status": "baseline_plus_goal_pressure_defensive_resistance_volatility_confidence_available",
           "available_models": [
             "poisson",
             "montecarlo",
             "goal_pressure",
-            "defensive_resistance"
+            "defensive_resistance",
+            "volatility",
+            "confidence_reliability"
           ],
           "pending_models": [
-            "volatility",
-            "confidence",
             "dixon_coles",
             "bivariate_poisson",
             "dynamic_team_rating",
@@ -11198,10 +13024,96 @@
           ]
         },
         "confidence": {
-          "score": 0.291,
-          "label": "solid_baseline",
-          "source": "baseline_margin_after_structural_refinement",
-          "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.8477,
+          "confidence_score": 0.8477,
+          "band": "very_high",
+          "label": "Lettura molto solida",
+          "source": "confidence_reliability_model_v1",
+          "data_quality_label": "low",
+          "model_agreement_label": "very_high_agreement",
+          "stage_reliability": "referee_ready",
+          "volatility_penalty": 0.0287,
+          "base_confidence": 0.8764,
+          "components": {
+            "outcome_clarity": {
+              "score": 1.0,
+              "favored_outcome": "away_win",
+              "favored_probability": 0.5459,
+              "second_outcome": "draw",
+              "second_probability": 0.2549,
+              "margin": 0.291,
+              "label": "clear_margin"
+            },
+            "model_agreement": {
+              "score": 0.9487,
+              "label": "very_high_agreement",
+              "outcome_max_abs_delta": 0.0011,
+              "goal_environment_max_abs_delta": 0.0041,
+              "disagreement_signal": 0.0513
+            },
+            "structural_reliability": {
+              "score": 0.7012,
+              "label": "medium_reliability",
+              "goal_pressure_reliability": 0.6858,
+              "defensive_resistance_reliability": 0.7167,
+              "source": "structural_models_reliability"
+            },
+            "data_stage_reliability": {
+              "score": 0.76,
+              "label": "referee_ready",
+              "prediction_stage": "referee_ready",
+              "match_status": "UPCOMING",
+              "active_stage_source": "match_lambdas_referee.json"
+            },
+            "goal_environment_stability": {
+              "score": 0.882,
+              "label": "stable_goal_environment",
+              "source_signal": 0.118
+            },
+            "volatility_penalty": {
+              "score": 0.0287,
+              "source": "volatility_model_v1",
+              "volatility_score": 0.0819,
+              "prediction_stability": "stable"
+            }
+          },
+          "premium": {
+            "summary": "Confidence very_high: score 0.8477. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "key_factors": [
+              {
+                "type": "outcome_clarity",
+                "label": "clear_margin",
+                "value": 0.291,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              },
+              {
+                "type": "model_agreement",
+                "label": "very_high_agreement",
+                "value": 0.9487,
+                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+              },
+              {
+                "type": "volatility_penalty",
+                "label": "active_volatility_penalty",
+                "value": 0.0287,
+                "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              }
+            ],
+            "user_label": "Lettura molto solida",
+            "stage_note": "referee_ready"
+          },
+          "bot": {
+            "semantic_tags": [
+              "confidence::very_high",
+              "model_agreement::very_high_agreement",
+              "confidence_stage::referee_ready",
+              "confidence_penalty::volatility_low"
+            ]
+          },
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
@@ -11338,7 +13250,11 @@
             "volatility::stable",
             "upset_risk::low",
             "wide_scoreline_risk::low",
-            "volatility::low_consensus_movement"
+            "volatility::low_consensus_movement",
+            "confidence::very_high",
+            "model_agreement::very_high_agreement",
+            "confidence_stage::referee_ready",
+            "confidence_penalty::volatility_low"
           ]
         },
         "premium": {
@@ -11372,6 +13288,16 @@
               "wide_scoreline_risk": "low",
               "confidence_penalty": 0.0287,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
+            },
+            {
+              "type": "confidence_model",
+              "model": "confidence_reliability",
+              "status": "post_volatility_analysis",
+              "confidence_score": 0.8477,
+              "confidence_band": "very_high",
+              "label": "Lettura molto solida",
+              "volatility_penalty": 0.0287,
+              "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
           "model_details": [
@@ -11626,14 +13552,142 @@
                   ]
                 }
               }
+            },
+            {
+              "model": "confidence_reliability",
+              "policy": "post_volatility_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000049",
+                "computed": true,
+                "fallback_used": false,
+                "source": "confidence_reliability_model_v1",
+                "confidence_score": 0.8477,
+                "score": 0.8477,
+                "confidence_band": "very_high",
+                "band": "very_high",
+                "confidence_label": "Lettura molto solida",
+                "label": "Lettura molto solida",
+                "data_quality_label": "low",
+                "model_agreement_label": "very_high_agreement",
+                "stage_reliability": "referee_ready",
+                "volatility_penalty": 0.0287,
+                "base_confidence": 0.8764,
+                "components": {
+                  "outcome_clarity": {
+                    "score": 1.0,
+                    "favored_outcome": "away_win",
+                    "favored_probability": 0.5459,
+                    "second_outcome": "draw",
+                    "second_probability": 0.2549,
+                    "margin": 0.291,
+                    "label": "clear_margin"
+                  },
+                  "model_agreement": {
+                    "score": 0.9487,
+                    "label": "very_high_agreement",
+                    "outcome_max_abs_delta": 0.0011,
+                    "goal_environment_max_abs_delta": 0.0041,
+                    "disagreement_signal": 0.0513
+                  },
+                  "structural_reliability": {
+                    "score": 0.7012,
+                    "label": "medium_reliability",
+                    "goal_pressure_reliability": 0.6858,
+                    "defensive_resistance_reliability": 0.7167,
+                    "source": "structural_models_reliability"
+                  },
+                  "data_stage_reliability": {
+                    "score": 0.76,
+                    "label": "referee_ready",
+                    "prediction_stage": "referee_ready",
+                    "match_status": "UPCOMING",
+                    "active_stage_source": "match_lambdas_referee.json"
+                  },
+                  "goal_environment_stability": {
+                    "score": 0.882,
+                    "label": "stable_goal_environment",
+                    "source_signal": 0.118
+                  },
+                  "volatility_penalty": {
+                    "score": 0.0287,
+                    "source": "volatility_model_v1",
+                    "volatility_score": 0.0819,
+                    "prediction_stability": "stable"
+                  }
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_match_predictions": true,
+                  "has_volatility": true,
+                  "missing_components": [],
+                  "weights": {
+                    "outcome_clarity": 0.3,
+                    "model_agreement": 0.22,
+                    "structural_reliability": 0.2,
+                    "data_stage_reliability": 0.16,
+                    "goal_environment_stability": 0.12
+                  },
+                  "scales": {
+                    "outcome_margin_full_confidence": 0.25,
+                    "model_disagreement_full_penalty": 0.08
+                  }
+                },
+                "premium": {
+                  "summary": "Confidence very_high: score 0.8477. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_clarity",
+                      "label": "clear_margin",
+                      "value": 0.291,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    },
+                    {
+                      "type": "model_agreement",
+                      "label": "very_high_agreement",
+                      "value": 0.9487,
+                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                    },
+                    {
+                      "type": "volatility_penalty",
+                      "label": "active_volatility_penalty",
+                      "value": 0.0287,
+                      "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    }
+                  ],
+                  "user_label": "Lettura molto solida",
+                  "stage_note": "referee_ready"
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "confidence::very_high",
+                    "model_agreement::very_high_agreement",
+                    "confidence_stage::referee_ready",
+                    "confidence_penalty::volatility_low"
+                  ]
+                },
+                "policy": {
+                  "mode": "post_aggregator_reliability_layer",
+                  "probability_impact": "none",
+                  "probability_shift": false,
+                  "reads": [
+                    "match_predictions.json",
+                    "volatility_model.json"
+                  ],
+                  "exports_to": "predictions_cloud.json"
+                },
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
-          "generated_at": "2026-05-01T16:05:26.733509Z",
+          "model": "vectra_v6_goal_pressure_defensive_resistance_volatility_confidence",
+          "generated_at": "2026-05-01T16:35:25.200066Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -12261,16 +14315,16 @@
           }
         },
         "model_explorer": {
-          "status": "baseline_plus_goal_pressure_defensive_resistance_active",
+          "status": "baseline_plus_goal_pressure_defensive_resistance_volatility_confidence_available",
           "available_models": [
             "poisson",
             "montecarlo",
             "goal_pressure",
-            "defensive_resistance"
+            "defensive_resistance",
+            "volatility",
+            "confidence_reliability"
           ],
           "pending_models": [
-            "volatility",
-            "confidence",
             "dixon_coles",
             "bivariate_poisson",
             "dynamic_team_rating",
@@ -12488,10 +14542,96 @@
           ]
         },
         "confidence": {
-          "score": 0.4301,
-          "label": "solid_baseline",
-          "source": "baseline_margin_after_structural_refinement",
-          "note": "Confidence baseline calcolata sul consensus già raffinato dai modelli strutturali. Sarà sostituita dal Confidence / Reliability Model."
+          "available": true,
+          "computed": true,
+          "fallback_used": false,
+          "score": 0.8208,
+          "confidence_score": 0.8208,
+          "band": "very_high",
+          "label": "Lettura molto solida",
+          "source": "confidence_reliability_model_v1",
+          "data_quality_label": "low",
+          "model_agreement_label": "very_high_agreement",
+          "stage_reliability": "referee_ready",
+          "volatility_penalty": 0.0463,
+          "base_confidence": 0.8671,
+          "components": {
+            "outcome_clarity": {
+              "score": 1.0,
+              "favored_outcome": "home_win",
+              "favored_probability": 0.6326,
+              "second_outcome": "draw",
+              "second_probability": 0.2025,
+              "margin": 0.4301,
+              "label": "clear_margin"
+            },
+            "model_agreement": {
+              "score": 0.9138,
+              "label": "very_high_agreement",
+              "outcome_max_abs_delta": 0.0069,
+              "goal_environment_max_abs_delta": 0.0041,
+              "disagreement_signal": 0.0862
+            },
+            "structural_reliability": {
+              "score": 0.6776,
+              "label": "medium_reliability",
+              "goal_pressure_reliability": 0.6604,
+              "defensive_resistance_reliability": 0.6948,
+              "source": "structural_models_reliability"
+            },
+            "data_stage_reliability": {
+              "score": 0.76,
+              "label": "referee_ready",
+              "prediction_stage": "referee_ready",
+              "match_status": "UPCOMING",
+              "active_stage_source": "match_lambdas_referee.json"
+            },
+            "goal_environment_stability": {
+              "score": 0.908,
+              "label": "stable_goal_environment",
+              "source_signal": 0.092
+            },
+            "volatility_penalty": {
+              "score": 0.0463,
+              "source": "volatility_model_v1",
+              "volatility_score": 0.1323,
+              "prediction_stability": "stable"
+            }
+          },
+          "premium": {
+            "summary": "Confidence very_high: score 0.8208. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "key_factors": [
+              {
+                "type": "outcome_clarity",
+                "label": "clear_margin",
+                "value": 0.4301,
+                "note": "Distanza tra il primo e il secondo esito del consensus finale."
+              },
+              {
+                "type": "model_agreement",
+                "label": "very_high_agreement",
+                "value": 0.9138,
+                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+              },
+              {
+                "type": "volatility_penalty",
+                "label": "active_volatility_penalty",
+                "value": 0.0463,
+                "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              }
+            ],
+            "user_label": "Lettura molto solida",
+            "stage_note": "referee_ready"
+          },
+          "bot": {
+            "semantic_tags": [
+              "confidence::very_high",
+              "model_agreement::very_high_agreement",
+              "confidence_stage::referee_ready",
+              "confidence_penalty::volatility_low"
+            ]
+          },
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
@@ -12628,7 +14768,11 @@
             "volatility::stable",
             "upset_risk::low",
             "wide_scoreline_risk::low",
-            "volatility::low_consensus_movement"
+            "volatility::low_consensus_movement",
+            "confidence::very_high",
+            "model_agreement::very_high_agreement",
+            "confidence_stage::referee_ready",
+            "confidence_penalty::volatility_low"
           ]
         },
         "premium": {
@@ -12662,6 +14806,16 @@
               "wide_scoreline_risk": "low",
               "confidence_penalty": 0.0463,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
+            },
+            {
+              "type": "confidence_model",
+              "model": "confidence_reliability",
+              "status": "post_volatility_analysis",
+              "confidence_score": 0.8208,
+              "confidence_band": "very_high",
+              "label": "Lettura molto solida",
+              "volatility_penalty": 0.0463,
+              "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
           "model_details": [
@@ -12916,14 +15070,142 @@
                   ]
                 }
               }
+            },
+            {
+              "model": "confidence_reliability",
+              "policy": "post_volatility_no_probability_shift_v1",
+              "details": {
+                "vectra_match_id": "vxm_000050",
+                "computed": true,
+                "fallback_used": false,
+                "source": "confidence_reliability_model_v1",
+                "confidence_score": 0.8208,
+                "score": 0.8208,
+                "confidence_band": "very_high",
+                "band": "very_high",
+                "confidence_label": "Lettura molto solida",
+                "label": "Lettura molto solida",
+                "data_quality_label": "low",
+                "model_agreement_label": "very_high_agreement",
+                "stage_reliability": "referee_ready",
+                "volatility_penalty": 0.0463,
+                "base_confidence": 0.8671,
+                "components": {
+                  "outcome_clarity": {
+                    "score": 1.0,
+                    "favored_outcome": "home_win",
+                    "favored_probability": 0.6326,
+                    "second_outcome": "draw",
+                    "second_probability": 0.2025,
+                    "margin": 0.4301,
+                    "label": "clear_margin"
+                  },
+                  "model_agreement": {
+                    "score": 0.9138,
+                    "label": "very_high_agreement",
+                    "outcome_max_abs_delta": 0.0069,
+                    "goal_environment_max_abs_delta": 0.0041,
+                    "disagreement_signal": 0.0862
+                  },
+                  "structural_reliability": {
+                    "score": 0.6776,
+                    "label": "medium_reliability",
+                    "goal_pressure_reliability": 0.6604,
+                    "defensive_resistance_reliability": 0.6948,
+                    "source": "structural_models_reliability"
+                  },
+                  "data_stage_reliability": {
+                    "score": 0.76,
+                    "label": "referee_ready",
+                    "prediction_stage": "referee_ready",
+                    "match_status": "UPCOMING",
+                    "active_stage_source": "match_lambdas_referee.json"
+                  },
+                  "goal_environment_stability": {
+                    "score": 0.908,
+                    "label": "stable_goal_environment",
+                    "source_signal": 0.092
+                  },
+                  "volatility_penalty": {
+                    "score": 0.0463,
+                    "source": "volatility_model_v1",
+                    "volatility_score": 0.1323,
+                    "prediction_stability": "stable"
+                  }
+                },
+                "diagnostics": {
+                  "quality_flags": [
+                    "opponent_goalkeeping_low_sample",
+                    "team_goalkeeping_low_sample"
+                  ],
+                  "has_match_predictions": true,
+                  "has_volatility": true,
+                  "missing_components": [],
+                  "weights": {
+                    "outcome_clarity": 0.3,
+                    "model_agreement": 0.22,
+                    "structural_reliability": 0.2,
+                    "data_stage_reliability": 0.16,
+                    "goal_environment_stability": 0.12
+                  },
+                  "scales": {
+                    "outcome_margin_full_confidence": 0.25,
+                    "model_disagreement_full_penalty": 0.08
+                  }
+                },
+                "premium": {
+                  "summary": "Confidence very_high: score 0.8208. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "key_factors": [
+                    {
+                      "type": "outcome_clarity",
+                      "label": "clear_margin",
+                      "value": 0.4301,
+                      "note": "Distanza tra il primo e il secondo esito del consensus finale."
+                    },
+                    {
+                      "type": "model_agreement",
+                      "label": "very_high_agreement",
+                      "value": 0.9138,
+                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                    },
+                    {
+                      "type": "volatility_penalty",
+                      "label": "active_volatility_penalty",
+                      "value": 0.0463,
+                      "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    }
+                  ],
+                  "user_label": "Lettura molto solida",
+                  "stage_note": "referee_ready"
+                },
+                "bot": {
+                  "semantic_tags": [
+                    "confidence::very_high",
+                    "model_agreement::very_high_agreement",
+                    "confidence_stage::referee_ready",
+                    "confidence_penalty::volatility_low"
+                  ]
+                },
+                "policy": {
+                  "mode": "post_aggregator_reliability_layer",
+                  "probability_impact": "none",
+                  "probability_shift": false,
+                  "reads": [
+                    "match_predictions.json",
+                    "volatility_model.json"
+                  ],
+                  "exports_to": "predictions_cloud.json"
+                },
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+              }
             }
           ],
           "reliability_details": [],
           "scenario_notes": []
         },
         "meta": {
-          "model": "vectra_v5_goal_pressure_defensive_resistance_volatility",
-          "generated_at": "2026-05-01T16:05:26.733509Z",
+          "model": "vectra_v6_goal_pressure_defensive_resistance_volatility_confidence",
+          "generated_at": "2026-05-01T16:35:25.200066Z",
           "has_lineups": false,
           "has_referee": true
         }
