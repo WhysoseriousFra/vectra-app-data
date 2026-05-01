@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T17:35:24.423811Z",
+  "generated_at": "2026-05-01T18:05:25.369489Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_035",
   "matchday": 35,
@@ -28,13 +28,13 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "referee_ready",
-        "has_lineups": false,
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 0,
+        "away_score": 0
       },
       "referee": {
         "assigned": true,
@@ -42,18 +42,18 @@
         "referee_name": "Daniele Doveri"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "pending",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "full",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-5-2",
+          "starting_count": 11,
+          "bench_count": 15
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-2-3-1",
+          "starting_count": 11,
+          "bench_count": 14
         }
       }
     },
