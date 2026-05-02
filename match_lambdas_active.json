@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T12:35:28.878396Z",
+  "generated_at": "2026-05-02T13:05:31.247634Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -3784,7 +3784,7 @@
       "away_team_id": "vxt_000032",
       "home_team_name": "Udinese",
       "away_team_name": "Torino",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-02T13:00:00Z",
       "stadium": "Friuli/Bluenergy stadium",
       "city": "Udine",

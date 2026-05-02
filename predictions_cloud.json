@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T12:35:46.440876Z",
+  "generated_at": "2026-05-02T13:05:41.359836Z",
   "schema": "vectra.predictions_cloud.v7",
   "source_schema": "vectra.match_predictions.v10",
   "model_layer_status": "baseline_plus_dixon_coles_bivariate_poisson_dynamic_team_rating_latent_xg_goalkeeper_impact_set_piece_threat_goal_pressure_defensive_resistance_active_refinement",
@@ -1571,7 +1571,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-02T12:35:46.440876Z",
+          "generated_at": "2026-05-02T13:05:41.359836Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -1593,7 +1593,7 @@
         }
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "active_stage_source": "match_lambdas_lineups.json"
       },
@@ -6796,6 +6796,13 @@
                     "upset_risk::low",
                     "wide_scoreline_risk::low"
                   ]
+                },
+                "live_freeze": {
+                  "applied": true,
+                  "reason": "match_status_live_or_finished_volatility_frozen",
+                  "source": "previous_volatility_model_record",
+                  "frozen_at": "2026-05-02T13:05:41.012404Z",
+                  "policy": "LIVE/FINISHED match: previous Volatility output is preserved; no new volatility calculation is applied."
                 }
               }
             },
@@ -6879,6 +6886,13 @@
                   "scales": {
                     "outcome_margin_full_confidence": 0.25,
                     "model_disagreement_full_penalty": 0.08
+                  },
+                  "live_freeze": {
+                    "applied": true,
+                    "reason": "match_status_live_or_finished_confidence_frozen",
+                    "source": "previous_confidence_reliability_record",
+                    "frozen_at": "2026-05-02T13:05:41.104815Z",
+                    "policy": "LIVE/FINISHED match: previous Confidence output is preserved; no new confidence calculation is applied."
                   }
                 },
                 "premium": {
@@ -6924,7 +6938,14 @@
                   ],
                   "exports_to": "predictions_cloud.json"
                 },
-                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali.",
+                "live_freeze": {
+                  "applied": true,
+                  "reason": "match_status_live_or_finished_confidence_frozen",
+                  "source": "previous_confidence_reliability_record",
+                  "frozen_at": "2026-05-02T13:05:41.104815Z",
+                  "policy": "LIVE/FINISHED match: previous Confidence output is preserved; no new confidence calculation is applied."
+                }
               }
             }
           ],
@@ -6933,7 +6954,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-02T12:35:46.440876Z",
+          "generated_at": "2026-05-02T13:05:41.359836Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -11537,7 +11558,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-02T12:35:46.440876Z",
+          "generated_at": "2026-05-02T13:05:41.359836Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -16143,7 +16164,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-02T12:35:46.440876Z",
+          "generated_at": "2026-05-02T13:05:41.359836Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -20738,7 +20759,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-02T12:35:46.440876Z",
+          "generated_at": "2026-05-02T13:05:41.359836Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -25343,7 +25364,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-02T12:35:46.440876Z",
+          "generated_at": "2026-05-02T13:05:41.359836Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -29962,7 +29983,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-02T12:35:46.440876Z",
+          "generated_at": "2026-05-02T13:05:41.359836Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -34578,7 +34599,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-02T12:35:46.440876Z",
+          "generated_at": "2026-05-02T13:05:41.359836Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -39183,7 +39204,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-02T12:35:46.440876Z",
+          "generated_at": "2026-05-02T13:05:41.359836Z",
           "has_lineups": false,
           "has_referee": true
         }
@@ -43788,7 +43809,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-02T12:35:46.440876Z",
+          "generated_at": "2026-05-02T13:05:41.359836Z",
           "has_lineups": false,
           "has_referee": true
         }
