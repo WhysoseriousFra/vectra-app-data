@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T16:35:26.820440Z",
+  "generated_at": "2026-05-02T17:05:30.347299Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -4798,13 +4798,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000463",
-              "name": "Beukema",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000459",
               "name": "Gutiérrez",
               "role": "Defender",
@@ -4821,6 +4814,13 @@
             {
               "vectra_player_id": "vxp_000466",
               "name": "Rrahmani",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000463",
+              "name": "Beukema",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -4847,13 +4847,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000473",
-              "name": "Alisson",
-              "role": "Forward",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000455",
               "name": "Højlund",
               "role": "Forward",
@@ -4863,6 +4856,13 @@
             {
               "vectra_player_id": "vxp_000451",
               "name": "Politano",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000473",
+              "name": "Alisson",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
