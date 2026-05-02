@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T12:06:05.468919Z",
+  "generated_at": "2026-05-02T12:35:28.878396Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -1933,7 +1933,7 @@
         "resolution_status": "partial",
         "home": {
           "team_id": "vxt_000028",
-          "formation": "Unknown",
+          "formation": "3-5-2",
           "starting_players_count": 11,
           "bench_players_count": 11,
           "starting_xi_quality": {
@@ -1988,7 +1988,7 @@
         },
         "away": {
           "team_id": "vxt_000032",
-          "formation": "Unknown",
+          "formation": "3-5-1-1",
           "starting_players_count": 11,
           "bench_players_count": 11,
           "starting_xi_quality": {
@@ -2152,8 +2152,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000692",
-              "name": "Ehizibue",
+              "vectra_player_id": "vxp_000698",
+              "name": "Kristensen",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -2166,15 +2166,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000699",
-              "name": "Kamara",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000698",
-              "name": "Kristensen",
+              "vectra_player_id": "vxp_000692",
+              "name": "Ehizibue",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -2182,6 +2175,13 @@
             {
               "vectra_player_id": "vxp_000688",
               "name": "Solet",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000699",
+              "name": "Kamara",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -2208,15 +2208,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000690",
-              "name": "Zaniolo",
+              "vectra_player_id": "vxp_000701",
+              "name": "Buksa",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000701",
-              "name": "Buksa",
+              "vectra_player_id": "vxp_000690",
+              "name": "Zaniolo",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -2913,22 +2913,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000675",
-              "name": "Marianucci",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000653",
               "name": "Lazaro",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000668",
-              "name": "Ebosse",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -2941,15 +2927,29 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000666",
-              "name": "İlkhan",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000675",
+              "name": "Marianucci",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000668",
+              "name": "Ebosse",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
               "vectra_player_id": "vxp_000657",
               "name": "Gineitis",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000666",
+              "name": "İlkhan",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
