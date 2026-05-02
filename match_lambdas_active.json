@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T19:05:36.945412Z",
+  "generated_at": "2026-05-02T19:35:46.371913Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -6714,13 +6714,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000232",
-              "name": "Ellertsson",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000233",
               "name": "Frendrup",
               "role": "Midfielder",
@@ -6735,9 +6728,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000231",
-              "name": "Vitinha",
-              "role": "Forward",
+              "vectra_player_id": "vxp_000232",
+              "name": "Ellertsson",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -6751,6 +6744,13 @@
             {
               "vectra_player_id": "vxp_000239",
               "name": "Ekhator",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000231",
+              "name": "Vitinha",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
