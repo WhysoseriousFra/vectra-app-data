@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T20:36:45.080631Z",
+  "generated_at": "2026-05-02T21:07:00.235520Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -264,6 +264,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000530",
+              "name": "Canestrelli",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000533",
               "name": "Angori",
               "role": "Defender",
@@ -273,13 +280,6 @@
             {
               "vectra_player_id": "vxp_000556",
               "name": "Božhinov",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000530",
-              "name": "Canestrelli",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -299,13 +299,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000546",
-              "name": "Vural",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000542",
               "name": "Akinsanmiro",
               "role": "Midfielder",
@@ -320,15 +313,22 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000529",
-              "name": "Moreo",
-              "role": "Forward",
+              "vectra_player_id": "vxp_000546",
+              "name": "Vural",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
               "vectra_player_id": "vxp_000550",
               "name": "Stojilković",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000529",
+              "name": "Moreo",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -1025,6 +1025,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000398",
+              "name": "Siebert",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000383",
               "name": "Tiago Gabriel",
               "role": "Defender",
@@ -1039,22 +1046,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000398",
-              "name": "Siebert",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000403",
               "name": "Ngom",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000387",
-              "name": "Ramadani",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -1069,6 +1062,13 @@
             {
               "vectra_player_id": "vxp_000385",
               "name": "Pierotti",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000387",
+              "name": "Ramadani",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -1160,7 +1160,7 @@
               "weighted_players": 11,
               "missing_profile_players": 0,
               "skipped_zero_role_players": 0,
-              "total_weight": 8.7732,
+              "total_weight": 8.7733,
               "contributors": [
                 {
                   "vectra_player_id": "vxp_000386",
@@ -1376,7 +1376,7 @@
               "weighted_players": 11,
               "missing_profile_players": 0,
               "skipped_zero_role_players": 0,
-              "total_weight": 8.5733,
+              "total_weight": 8.5732,
               "contributors": [
                 {
                   "vectra_player_id": "vxp_000383",
@@ -7564,7 +7564,7 @@
       "away_team_id": "vxt_000029",
       "home_team_name": "Atalanta",
       "away_team_name": "Genoa",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-05-02T18:45:00Z",
       "stadium": "New Balance Arena",
       "city": "Bergamo",

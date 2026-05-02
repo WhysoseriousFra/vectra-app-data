@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T20:37:39.469482Z",
+  "generated_at": "2026-05-02T21:07:19.614548Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -87,7 +87,7 @@
       "vectra_match_id": "vxm_000044",
       "home_team_name": "Atalanta",
       "away_team_name": "Genoa",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_home_edge",
