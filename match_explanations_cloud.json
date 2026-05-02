@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T17:35:53.466494Z",
+  "generated_at": "2026-05-02T18:05:52.978262Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -61,7 +61,7 @@
       "vectra_match_id": "vxm_000043",
       "home_team_name": "Como",
       "away_team_name": "Napoli",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "slight_home_edge",
@@ -105,7 +105,7 @@
           "Minaccia offensiva Atalanta: molto alta.",
           "Minaccia offensiva Genoa: presente ma contenuta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Atalanta emerge con un vantaggio strutturale più netto, mentre Genoa appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Atalanta emerge con un vantaggio strutturale più netto, mentre Genoa appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
