@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T14:35:45.809683Z",
+  "generated_at": "2026-05-02T15:05:47.663713Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -35,7 +35,7 @@
       "vectra_match_id": "vxm_000042",
       "home_team_name": "Udinese",
       "away_team_name": "Torino",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "balanced_goal_environment",
         "balance_edge_label": "slight_home_edge",
@@ -79,7 +79,7 @@
           "Minaccia offensiva Como: molto alta.",
           "Minaccia offensiva Napoli: alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un lieve vantaggio per la squadra di casa dentro un profilo di gara aperta. Como mantiene un vantaggio leggero sul piano strutturale, ma anche Napoli conserva un profilo offensivo credibile; per questo il margine resta contenuto e la gara resta contendibile. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un lieve vantaggio per la squadra di casa dentro un profilo di gara aperta. Como mantiene un vantaggio leggero sul piano strutturale, ma anche Napoli conserva un profilo offensivo credibile; per questo il margine resta contenuto e la gara resta contendibile. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
