@@ -1,171 +1,71 @@
 {
-  "generated_at": "2026-05-01T21:30:43.281726Z",
-  "schema": "vectra.match_lambdas_active.v2_stage_aware",
+  "generated_at": "2026-05-02T09:00:45.357413Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
   "lineups_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_lineups.json",
   "matches_backend_file": "vectra/local_backend/entities/matches/season_2025_2026/matches_backend.json",
-  "optional_inputs": {
-    "referee_file_exists": true,
-    "lineups_file_exists": true,
-    "referee_file_loaded": true,
-    "lineups_file_loaded": true
-  },
   "matches_count": 10,
   "stage_counts": {
     "base_ready": 0,
-    "referee_ready": 10,
-    "lineups_ready": 0,
+    "referee_ready": 9,
+    "lineups_ready": 1,
     "missing": 0
   },
-  "active_sources_count": {
-    "match_lambdas.json": 0,
-    "match_lambdas_referee.json": 10,
-    "match_lambdas_lineups.json": 0,
-    "none": 0
-  },
-  "stage_priority": [
-    "lineups_ready",
-    "referee_ready",
-    "base_ready"
-  ],
   "data": {
     "vxm_000041": {
       "vectra_match_id": "vxm_000041",
-      "prediction_stage": "referee_ready",
+      "prediction_stage": "lineups_ready",
+      "lineups_ready": false,
+      "lineups_source_applied": false,
+      "lineups_source_reason": "lineups_not_available",
       "lambda_home_core": 0.8128,
       "lambda_away_core": 0.7805,
-      "lambda_before_referee": {
-        "home": 0.8155,
-        "away": 0.7779
+      "lambda_before_lineups": {
+        "home": 0.8128,
+        "away": 0.7805
       },
-      "lambda_referee": {
+      "lambda_lineups": {
         "home": 0.8128,
         "away": 0.7805
       },
       "lambda_before": {
-        "home": 0.8155,
-        "away": 0.7779
+        "home": 0.8128,
+        "away": 0.7805
       },
       "lambda_after": {
         "home": 0.8128,
         "away": 0.7805
       },
-      "referee_modifier": {
-        "applied": true,
-        "vectra_referee_id": "vxr_000004",
-        "reason_flags": [
-          "away_referee_interaction_edge"
-        ]
-      },
-      "referee_impact": {
-        "applied": true,
-        "referee": {
-          "vectra_referee_id": "vxr_000004",
-          "name": "Daniele Doveri",
-          "identity_status": "resolved",
-          "reliability": 1.0,
-          "metrics": {
-            "matches_officiated": 18.0,
-            "fouls_per_game": 24.1111,
-            "fouls_per_tackle": 0.9061,
-            "penalties_per_game": 0.1667,
-            "yellow_cards_per_game": 3.3889,
-            "red_cards_per_game": 0.0556,
-            "home_win_ratio": 0.2778,
-            "away_win_ratio": 0.5,
-            "draw_ratio": 0.2222,
-            "strictness": 0.4365,
-            "card_tendency": 0.3287,
-            "penalty_tendency": 0.2083,
-            "home_bias_signal": 0.3889
-          }
-        },
+      "source_lambda_file": "match_lambdas_referee.json",
+      "lineups_impact": {
+        "applied": false,
+        "reason": "lineups_not_available",
+        "lineups_confirmed": false,
         "home": {
-          "team_id": "vxt_000026",
-          "referee_attack_boost": -0.0082,
-          "referee_edge": -0.033,
-          "lambda_before_referee": 0.8155,
-          "lambda_raw_unbounded": 0.8128,
-          "lambda_after_referee": 0.8128,
-          "lambda_delta_raw": -0.0027,
-          "lambda_delta_applied": -0.0027,
-          "lambda_cap_reached": false
+          "lambda_before_lineups": 0.8128,
+          "lambda_after_lineups": 0.8128,
+          "lambda_delta_applied": 0.0
         },
         "away": {
-          "team_id": "vxt_000037",
-          "referee_attack_boost": 0.0248,
-          "referee_edge": 0.033,
-          "lambda_before_referee": 0.7779,
-          "lambda_raw_unbounded": 0.7805,
-          "lambda_after_referee": 0.7805,
-          "lambda_delta_raw": 0.0026,
-          "lambda_delta_applied": 0.0026,
-          "lambda_cap_reached": false
+          "lambda_before_lineups": 0.7805,
+          "lambda_after_lineups": 0.7805,
+          "lambda_delta_applied": 0.0
         },
-        "components": {
-          "home": {
-            "foul_gain_advantage": 0.0857,
-            "penalty_volatility_advantage": 0.0117,
-            "contact_strictness_positive": 0.0857,
-            "contact_strictness_negative": 0.1285,
-            "contact_strictness_interaction": -0.0428,
-            "card_exposure_penalty": 0.0677,
-            "rhythm_interruption_penalty": 0.0695,
-            "home_away_sensitivity": -0.2222
-          },
-          "away": {
-            "foul_gain_advantage": 0.1071,
-            "penalty_volatility_advantage": 0.0144,
-            "contact_strictness_positive": 0.1071,
-            "contact_strictness_negative": 0.1327,
-            "contact_strictness_interaction": -0.0256,
-            "card_exposure_penalty": 0.0679,
-            "rhythm_interruption_penalty": 0.0673,
-            "home_away_sensitivity": 0.2222
-          },
-          "team_inputs": {
-            "home": {
-              "discipline_risk": 0.4537,
-              "discipline_stability": 0.5463,
-              "foul_gain": 0.3592,
-              "box_presence": 0.3445,
-              "physical": 0.6487,
-              "creator_supply": 0.2832
-            },
-            "away": {
-              "discipline_risk": 0.4547,
-              "discipline_stability": 0.5453,
-              "foul_gain": 0.45,
-              "box_presence": 0.3389,
-              "physical": 0.6686,
-              "creator_supply": 0.3169
-            }
-          }
+        "bench": {
+          "home": {},
+          "away": {}
         },
-        "parameters": {
-          "referee_stage_multiplier": 0.1,
-          "referee_impact_cap": 0.12,
-          "lambda_min": 0.65,
-          "lambda_max": 2.45
-        },
-        "bot_summary_key": "referee_balanced_low_impact",
+        "bot_summary_key": "lineups_unavailable",
         "evidence": [
-          "away_referee_interaction_edge"
+          "lineups_not_available"
         ]
       },
-      "referee_factors": {
-        "goal_environment_factor": 1.0,
-        "home_shift_factor": 0.967,
-        "away_shift_factor": 1.033,
-        "penalty_tendency": 0.2083,
-        "strictness": 0.4365,
-        "card_tendency": 0.3287,
-        "home_bias_signal": 0.3889,
-        "sample_reliability": 1.0
+      "starting_players_impact": {
+        "applied": false,
+        "reason": "lineups_not_available"
       },
-      "active_stage_source": "match_lambdas_referee.json",
+      "active_stage_source": "match_lambdas_lineups.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_035",
       "matchday": 35,
@@ -175,28 +75,8 @@
       "away_team_name": "Lecce",
       "match_status": "FINISHED",
       "kickoff_utc": "2026-05-01T18:45:00Z",
-      "kickoff_local": "2026-05-01T20:45:00",
       "stadium": "Cetilar Arena",
       "city": "Pisa",
-      "stage_rank": 2,
-      "stage_label": "REFEREE_ADVANCED",
-      "stage_availability": {
-        "base": {
-          "available": true,
-          "stage": "finished",
-          "ready": true
-        },
-        "referee": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "lineups": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": false
-        }
-      },
       "active_lambda": {
         "home": 0.8128,
         "away": 0.7805
@@ -350,28 +230,8 @@
       "away_team_name": "Torino",
       "match_status": "UPCOMING",
       "kickoff_utc": "2026-05-02T13:00:00Z",
-      "kickoff_local": "2026-05-02T15:00:00",
       "stadium": "Friuli/Bluenergy stadium",
       "city": "Udine",
-      "stage_rank": 2,
-      "stage_label": "REFEREE_ADVANCED",
-      "stage_availability": {
-        "base": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "referee": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "lineups": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": false
-        }
-      },
       "active_lambda": {
         "home": 1.3388,
         "away": 0.9395
@@ -523,28 +383,8 @@
       "away_team_name": "Napoli",
       "match_status": "UPCOMING",
       "kickoff_utc": "2026-05-02T16:00:00Z",
-      "kickoff_local": "2026-05-02T18:00:00",
       "stadium": "Giuseppe Sinigaglia",
       "city": "Como",
-      "stage_rank": 2,
-      "stage_label": "REFEREE_ADVANCED",
-      "stage_availability": {
-        "base": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "referee": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "lineups": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": false
-        }
-      },
       "active_lambda": {
         "home": 1.881,
         "away": 1.2991
@@ -698,28 +538,8 @@
       "away_team_name": "Genoa",
       "match_status": "UPCOMING",
       "kickoff_utc": "2026-05-02T18:45:00Z",
-      "kickoff_local": "2026-05-02T20:45:00",
       "stadium": "New Balance Arena",
       "city": "Bergamo",
-      "stage_rank": 2,
-      "stage_label": "REFEREE_ADVANCED",
-      "stage_availability": {
-        "base": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "referee": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "lineups": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": false
-        }
-      },
       "active_lambda": {
         "home": 2.3571,
         "away": 0.9353
@@ -869,28 +689,8 @@
       "away_team_name": "Cagliari",
       "match_status": "UPCOMING",
       "kickoff_utc": "2026-05-03T10:30:00Z",
-      "kickoff_local": "2026-05-03T12:30:00",
       "stadium": "Renato Dall'Ara",
       "city": "Bologna",
-      "stage_rank": 2,
-      "stage_label": "REFEREE_ADVANCED",
-      "stage_availability": {
-        "base": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "referee": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "lineups": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": false
-        }
-      },
       "active_lambda": {
         "home": 1.6616,
         "away": 0.6779
@@ -1040,28 +840,8 @@
       "away_team_name": "Milan",
       "match_status": "UPCOMING",
       "kickoff_utc": "2026-05-03T13:00:00Z",
-      "kickoff_local": "2026-05-03T15:00:00",
       "stadium": "Mapei Stadium",
       "city": "Reggio Emilia",
-      "stage_rank": 2,
-      "stage_label": "REFEREE_ADVANCED",
-      "stage_availability": {
-        "base": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "referee": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "lineups": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": false
-        }
-      },
       "active_lambda": {
         "home": 0.9267,
         "away": 2.016
@@ -1215,28 +995,8 @@
       "away_team_name": "Hellas Verona",
       "match_status": "UPCOMING",
       "kickoff_utc": "2026-05-03T16:00:00Z",
-      "kickoff_local": "2026-05-03T18:00:00",
       "stadium": "Allianz Stadium",
       "city": "Torino",
-      "stage_rank": 2,
-      "stage_label": "REFEREE_ADVANCED",
-      "stage_availability": {
-        "base": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "referee": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "lineups": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": false
-        }
-      },
       "active_lambda": {
         "home": 2.4494,
         "away": 0.6502
@@ -1390,28 +1150,8 @@
       "away_team_name": "Parma",
       "match_status": "UPCOMING",
       "kickoff_utc": "2026-05-03T18:45:00Z",
-      "kickoff_local": "2026-05-03T20:45:00",
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
-      "stage_rank": 2,
-      "stage_label": "REFEREE_ADVANCED",
-      "stage_availability": {
-        "base": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "referee": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "lineups": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": false
-        }
-      },
       "active_lambda": {
         "home": 2.445,
         "away": 0.6513
@@ -1563,28 +1303,8 @@
       "away_team_name": "Lazio",
       "match_status": "UPCOMING",
       "kickoff_utc": "2026-05-04T16:30:00Z",
-      "kickoff_local": "2026-05-04T18:30:00",
       "stadium": "Giovanni Zini",
       "city": "Cremona",
-      "stage_rank": 2,
-      "stage_label": "REFEREE_ADVANCED",
-      "stage_availability": {
-        "base": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "referee": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "lineups": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": false
-        }
-      },
       "active_lambda": {
         "home": 0.8126,
         "away": 1.5305
@@ -1736,28 +1456,8 @@
       "away_team_name": "Fiorentina",
       "match_status": "UPCOMING",
       "kickoff_utc": "2026-05-04T18:45:00Z",
-      "kickoff_local": "2026-05-04T20:45:00",
       "stadium": "Olimpico",
       "city": "Roma",
-      "stage_rank": 2,
-      "stage_label": "REFEREE_ADVANCED",
-      "stage_availability": {
-        "base": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "referee": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": true
-        },
-        "lineups": {
-          "available": true,
-          "stage": "referee_ready",
-          "ready": false
-        }
-      },
       "active_lambda": {
         "home": 2.0169,
         "away": 0.968
