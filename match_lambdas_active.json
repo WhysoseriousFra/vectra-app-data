@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T18:35:38.565023Z",
+  "generated_at": "2026-05-03T19:05:32.161160Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -7877,15 +7877,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000045",
-              "name": "Odgaard",
+              "vectra_player_id": "vxp_000055",
+              "name": "Domínguez",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000055",
-              "name": "Domínguez",
+              "vectra_player_id": "vxp_000045",
+              "name": "Odgaard",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -8575,6 +8575,20 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000072",
+              "name": "Palestra",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000081",
+              "name": "Mina",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000074",
               "name": "Obert",
               "role": "Defender",
@@ -8596,16 +8610,16 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000072",
-              "name": "Palestra",
-              "role": "Defender",
+              "vectra_player_id": "vxp_000070",
+              "name": "Adopo",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000081",
-              "name": "Mina",
-              "role": "Defender",
+              "vectra_player_id": "vxp_000079",
+              "name": "Folorunsho",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -8619,20 +8633,6 @@
             {
               "vectra_player_id": "vxp_000075",
               "name": "Gaetano",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000070",
-              "name": "Adopo",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000079",
-              "name": "Folorunsho",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -15124,7 +15124,7 @@
       "away_team_id": "vxt_000023",
       "home_team_name": "Inter",
       "away_team_name": "Parma",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-03T18:45:00Z",
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
