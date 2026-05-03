@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T20:05:34.065320Z",
+  "generated_at": "2026-05-03T20:35:34.288517Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -13548,15 +13548,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000270",
-              "name": "P. Esposito",
+              "vectra_player_id": "vxp_000280",
+              "name": "M. Thuram",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000280",
-              "name": "M. Thuram",
+              "vectra_player_id": "vxp_000270",
+              "name": "P. Esposito",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
