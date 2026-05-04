@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-04T19:05:48.325372Z",
+  "generated_at": "2026-05-04T19:35:48.216794Z",
   "schema": "vectra.predictions_cloud.v7",
-  "source_schema": "vectra.match_predictions.v19",
-  "model_layer_status": "baseline_plus_dixon_coles_bivariate_poisson_dynamic_team_rating_home_away_context_latent_xg_finishing_regression_chance_quality_volume_goalkeeper_impact_defensive_fragility_set_piece_threat_aerial_matchup_rhythm_tempo_transition_counterattack_pressing_buildup_disruption_match_control_dominance_goal_pressure_defensive_resistance_active_refinement",
+  "source_schema": "vectra.match_predictions.v20",
+  "model_layer_status": "baseline_plus_dixon_coles_bivariate_poisson_dynamic_team_rating_home_away_context_latent_xg_finishing_regression_chance_quality_volume_goalkeeper_impact_defensive_fragility_set_piece_threat_aerial_matchup_rhythm_tempo_transition_counterattack_pressing_buildup_disruption_match_control_dominance_goal_pressure_defensive_resistance_structural_impact_v2_active_refinement",
   "volatility_layer_status": "available",
   "volatility_source_schema": "vectra.volatility_model.v2",
   "confidence_layer_status": "available",
@@ -70,110 +70,110 @@
       "scoreline_probability_cap": 0.02
     },
     "bivariate_poisson_caps": {
-      "outcome_shift_cap": 0.014,
-      "over_under_shift_cap": 0.012,
-      "btts_shift_cap": 0.014,
-      "team_goals_shift_cap": 0.012,
-      "clean_sheet_shift_cap": 0.012,
-      "goal_range_shift_cap": 0.012,
-      "scoreline_probability_cap": 0.018
+      "outcome_shift_cap": 0.05,
+      "over_under_shift_cap": 0.09,
+      "btts_shift_cap": 0.1,
+      "team_goals_shift_cap": 0.07,
+      "clean_sheet_shift_cap": 0.07,
+      "goal_range_shift_cap": 0.09,
+      "scoreline_probability_cap": 0.09
     },
     "dynamic_team_rating_caps": {
-      "outcome_shift_cap": 0.012,
-      "over_under_shift_cap": 0.008,
-      "btts_shift_cap": 0.008,
-      "team_goals_shift_cap": 0.01,
-      "clean_sheet_shift_cap": 0.01,
-      "goal_range_shift_cap": 0.008,
-      "scoreline_probability_cap": 0.012
+      "outcome_shift_cap": 0.12,
+      "over_under_shift_cap": 0.08,
+      "btts_shift_cap": 0.06,
+      "team_goals_shift_cap": 0.14,
+      "clean_sheet_shift_cap": 0.11,
+      "goal_range_shift_cap": 0.08,
+      "scoreline_probability_cap": 0.06
     },
     "home_away_context_caps": {
-      "outcome_shift_cap": 0.045,
-      "over_under_shift_cap": 0.035,
-      "btts_shift_cap": 0.03,
-      "team_goals_shift_cap": 0.06,
-      "clean_sheet_shift_cap": 0.045,
-      "goal_range_shift_cap": 0.035,
-      "scoreline_probability_cap": 0.03
+      "outcome_shift_cap": 0.12,
+      "over_under_shift_cap": 0.09,
+      "btts_shift_cap": 0.08,
+      "team_goals_shift_cap": 0.15,
+      "clean_sheet_shift_cap": 0.13,
+      "goal_range_shift_cap": 0.09,
+      "scoreline_probability_cap": 0.06
     },
     "latent_xg_caps": {
-      "outcome_shift_cap": 0.018,
-      "over_under_shift_cap": 0.014,
-      "btts_shift_cap": 0.014,
-      "team_goals_shift_cap": 0.016,
-      "clean_sheet_shift_cap": 0.016,
-      "goal_range_shift_cap": 0.014,
-      "scoreline_probability_cap": 0.018
+      "outcome_shift_cap": 0.12,
+      "over_under_shift_cap": 0.13,
+      "btts_shift_cap": 0.12,
+      "team_goals_shift_cap": 0.16,
+      "clean_sheet_shift_cap": 0.11,
+      "goal_range_shift_cap": 0.13,
+      "scoreline_probability_cap": 0.08
     },
     "finishing_regression_caps": {
-      "outcome_shift_cap": 0.008,
-      "over_under_shift_cap": 0.01,
-      "btts_shift_cap": 0.01,
-      "team_goals_shift_cap": 0.012,
-      "clean_sheet_shift_cap": 0.01,
-      "goal_range_shift_cap": 0.01,
-      "scoreline_probability_cap": 0.012
+      "outcome_shift_cap": 0.08,
+      "over_under_shift_cap": 0.09,
+      "btts_shift_cap": 0.08,
+      "team_goals_shift_cap": 0.12,
+      "clean_sheet_shift_cap": 0.07,
+      "goal_range_shift_cap": 0.09,
+      "scoreline_probability_cap": 0.06
     },
     "chance_quality_volume_caps": {
-      "outcome_shift_cap": 0.008,
-      "over_under_shift_cap": 0.012,
-      "btts_shift_cap": 0.01,
-      "team_goals_shift_cap": 0.014,
-      "clean_sheet_shift_cap": 0.01,
-      "goal_range_shift_cap": 0.012,
-      "scoreline_probability_cap": 0.014
+      "outcome_shift_cap": 0.1,
+      "over_under_shift_cap": 0.13,
+      "btts_shift_cap": 0.12,
+      "team_goals_shift_cap": 0.15,
+      "clean_sheet_shift_cap": 0.11,
+      "goal_range_shift_cap": 0.13,
+      "scoreline_probability_cap": 0.08
     },
     "goalkeeper_impact_caps": {
-      "outcome_shift_cap": 0.012,
-      "over_under_shift_cap": 0.01,
-      "btts_shift_cap": 0.01,
-      "team_goals_shift_cap": 0.012,
-      "clean_sheet_shift_cap": 0.014,
-      "goal_range_shift_cap": 0.01,
-      "scoreline_probability_cap": 0.012
+      "outcome_shift_cap": 0.1,
+      "over_under_shift_cap": 0.11,
+      "btts_shift_cap": 0.11,
+      "team_goals_shift_cap": 0.14,
+      "clean_sheet_shift_cap": 0.15,
+      "goal_range_shift_cap": 0.11,
+      "scoreline_probability_cap": 0.07
     },
     "defensive_fragility_caps": {
-      "outcome_shift_cap": 0.004,
-      "over_under_shift_cap": 0.006,
-      "btts_shift_cap": 0.006,
-      "team_goals_shift_cap": 0.008,
-      "clean_sheet_shift_cap": 0.008,
-      "goal_range_shift_cap": 0.006,
-      "scoreline_probability_cap": 0.008
+      "outcome_shift_cap": 0.1,
+      "over_under_shift_cap": 0.13,
+      "btts_shift_cap": 0.13,
+      "team_goals_shift_cap": 0.16,
+      "clean_sheet_shift_cap": 0.15,
+      "goal_range_shift_cap": 0.13,
+      "scoreline_probability_cap": 0.08
     },
     "transition_counterattack_caps": {
-      "outcome_shift_cap": 0.008,
-      "over_under_shift_cap": 0.01,
-      "btts_shift_cap": 0.01,
-      "team_goals_shift_cap": 0.01,
-      "clean_sheet_shift_cap": 0.008,
-      "goal_range_shift_cap": 0.01,
-      "scoreline_probability_cap": 0.01
+      "outcome_shift_cap": 0.08,
+      "over_under_shift_cap": 0.13,
+      "btts_shift_cap": 0.12,
+      "team_goals_shift_cap": 0.14,
+      "clean_sheet_shift_cap": 0.09,
+      "goal_range_shift_cap": 0.13,
+      "scoreline_probability_cap": 0.08
     },
     "pressing_buildup_disruption_caps": {
-      "outcome_shift_cap": 0.006,
-      "over_under_shift_cap": 0.008,
-      "btts_shift_cap": 0.008,
-      "team_goals_shift_cap": 0.01,
-      "clean_sheet_shift_cap": 0.008,
-      "goal_range_shift_cap": 0.008,
-      "scoreline_probability_cap": 0.01
+      "outcome_shift_cap": 0.07,
+      "over_under_shift_cap": 0.11,
+      "btts_shift_cap": 0.11,
+      "team_goals_shift_cap": 0.13,
+      "clean_sheet_shift_cap": 0.11,
+      "goal_range_shift_cap": 0.11,
+      "scoreline_probability_cap": 0.07
     },
     "goal_pressure_caps": {
-      "outcome_shift_cap": 0.02,
-      "over_under_shift_cap": 0.015,
-      "btts_shift_cap": 0.015,
-      "team_goals_shift_cap": 0.015,
-      "clean_sheet_shift_cap": 0.015,
-      "goal_range_shift_cap": 0.015
+      "outcome_shift_cap": 0.12,
+      "over_under_shift_cap": 0.13,
+      "btts_shift_cap": 0.11,
+      "team_goals_shift_cap": 0.16,
+      "clean_sheet_shift_cap": 0.11,
+      "goal_range_shift_cap": 0.13
     },
     "defensive_resistance_caps": {
-      "outcome_shift_cap": 0.018,
-      "over_under_shift_cap": 0.014,
-      "btts_shift_cap": 0.014,
-      "team_goals_shift_cap": 0.014,
-      "clean_sheet_shift_cap": 0.014,
-      "goal_range_shift_cap": 0.014
+      "outcome_shift_cap": 0.1,
+      "over_under_shift_cap": 0.11,
+      "btts_shift_cap": 0.11,
+      "team_goals_shift_cap": 0.15,
+      "clean_sheet_shift_cap": 0.14,
+      "goal_range_shift_cap": 0.11
     }
   },
   "season_id": "vxs_serie_a_2025_2026",
@@ -1900,7 +1900,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "generated_at": "2026-05-04T19:35:48.216794Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -7576,7 +7576,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "generated_at": "2026-05-04T19:35:48.216794Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -14789,7 +14789,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "generated_at": "2026-05-04T19:35:48.216794Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -23091,7 +23091,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "generated_at": "2026-05-04T19:35:48.216794Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -30463,7 +30463,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "generated_at": "2026-05-04T19:35:48.216794Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -37950,7 +37950,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "generated_at": "2026-05-04T19:35:48.216794Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -45440,7 +45440,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "generated_at": "2026-05-04T19:35:48.216794Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -55397,7 +55397,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "generated_at": "2026-05-04T19:35:48.216794Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -65325,7 +65325,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "generated_at": "2026-05-04T19:35:48.216794Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -74982,7 +74982,7 @@
                   "applied": true,
                   "reason": "match_status_live_or_finished_volatility_frozen",
                   "source": "previous_volatility_model_record",
-                  "frozen_at": "2026-05-04T19:05:47.731196Z",
+                  "frozen_at": "2026-05-04T19:35:47.557426Z",
                   "policy": "LIVE/FINISHED match: previous Volatility output is preserved; no new volatility calculation is applied."
                 }
               }
@@ -75186,7 +75186,7 @@
                     "applied": true,
                     "reason": "match_status_live_or_finished_confidence_frozen",
                     "source": "previous_confidence_reliability_record",
-                    "frozen_at": "2026-05-04T19:05:47.877679Z",
+                    "frozen_at": "2026-05-04T19:35:47.761918Z",
                     "policy": "LIVE/FINISHED match: previous Confidence output is preserved; no new confidence calculation is applied."
                   }
                 },
@@ -75254,7 +75254,7 @@
                   "applied": true,
                   "reason": "match_status_live_or_finished_confidence_frozen",
                   "source": "previous_confidence_reliability_record",
-                  "frozen_at": "2026-05-04T19:05:47.877679Z",
+                  "frozen_at": "2026-05-04T19:35:47.761918Z",
                   "policy": "LIVE/FINISHED match: previous Confidence output is preserved; no new confidence calculation is applied."
                 }
               }
@@ -75265,7 +75265,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "generated_at": "2026-05-04T19:35:48.216794Z",
           "has_lineups": true,
           "has_referee": true
         }
