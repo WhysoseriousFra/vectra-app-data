@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T20:35:48.343936Z",
+  "generated_at": "2026-05-04T19:05:48.222632Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_035",
   "matchday": 35,
@@ -391,7 +391,7 @@
         "city": "Milano"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
@@ -443,14 +443,14 @@
         "city": "Cremona"
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "referee_ready",
-        "has_lineups": false,
+        "match_status": "FINISHED",
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 1,
+        "away_score": 2
       },
       "referee": {
         "assigned": true,
@@ -458,18 +458,18 @@
         "referee_name": "Daniele Chiffi"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "pending",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "full",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-4-2",
+          "starting_count": 11,
+          "bench_count": 14
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-3-3",
+          "starting_count": 11,
+          "bench_count": 12
         }
       }
     },
@@ -495,14 +495,14 @@
         "city": "Roma"
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "referee_ready",
-        "has_lineups": false,
+        "match_status": "LIVE",
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 1,
+        "away_score": 0
       },
       "referee": {
         "assigned": true,
@@ -510,18 +510,18 @@
         "referee_name": "Luca Zufferli"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "pending",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "partial",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-4-2-1",
+          "starting_count": 11,
+          "bench_count": 11
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-3-3",
+          "starting_count": 11,
+          "bench_count": 11
         }
       }
     }

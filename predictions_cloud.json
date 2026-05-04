@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T20:35:48.475029Z",
+  "generated_at": "2026-05-04T19:05:48.325372Z",
   "schema": "vectra.predictions_cloud.v7",
   "source_schema": "vectra.match_predictions.v19",
   "model_layer_status": "baseline_plus_dixon_coles_bivariate_poisson_dynamic_team_rating_home_away_context_latent_xg_finishing_regression_chance_quality_volume_goalkeeper_impact_defensive_fragility_set_piece_threat_aerial_matchup_rhythm_tempo_transition_counterattack_pressing_buildup_disruption_match_control_dominance_goal_pressure_defensive_resistance_active_refinement",
@@ -1900,7 +1900,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-03T20:35:48.475029Z",
+          "generated_at": "2026-05-04T19:05:48.325372Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -7576,7 +7576,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-03T20:35:48.475029Z",
+          "generated_at": "2026-05-04T19:05:48.325372Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -14789,7 +14789,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-03T20:35:48.475029Z",
+          "generated_at": "2026-05-04T19:05:48.325372Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -23091,7 +23091,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-03T20:35:48.475029Z",
+          "generated_at": "2026-05-04T19:05:48.325372Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -30463,7 +30463,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-03T20:35:48.475029Z",
+          "generated_at": "2026-05-04T19:05:48.325372Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -37950,7 +37950,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-03T20:35:48.475029Z",
+          "generated_at": "2026-05-04T19:05:48.325372Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -45440,7 +45440,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-03T20:35:48.475029Z",
+          "generated_at": "2026-05-04T19:05:48.325372Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -45462,7 +45462,7 @@
         }
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "active_stage_source": "match_lambdas_lineups.json"
       },
@@ -53339,32 +53339,77 @@
           "available": true,
           "computed": true,
           "fallback_used": false,
-          "score": 0.6922,
-          "confidence_score": 0.6922,
-          "band": "high",
-          "label": "Lettura solida",
+          "score": 0.505,
+          "confidence_score": 0.505,
+          "band": "medium",
+          "label": "Lettura discreta",
           "source": "confidence_reliability_model_v1",
           "data_quality_label": "low",
-          "model_agreement_label": "very_high_agreement",
-          "stage_reliability": "lineups_ready",
-          "volatility_penalty": 0.1584,
-          "base_confidence": 0.8506,
+          "model_agreement_label": "medium_agreement",
+          "stage_reliability": "finished_evaluation_context",
+          "volatility_penalty": 0.2139,
+          "base_confidence": 0.7189,
           "components": {
             "outcome_clarity": {
               "score": 1.0,
               "favored_outcome": "home_win",
-              "favored_probability": 0.917,
+              "favored_probability": 0.9175,
               "second_outcome": "draw",
-              "second_probability": 0.075,
-              "margin": 0.842,
+              "second_probability": 0.0745,
+              "margin": 0.843,
               "label": "clear_margin"
             },
             "model_agreement": {
-              "score": 0.8812,
-              "label": "very_high_agreement",
+              "score": 0.5677,
+              "label": "medium_agreement",
+              "source": "poisson_montecarlo_plus_model_agreement_disagreement",
+              "engine_agreement_score": 0.8812,
+              "internal_agreement_score": 0.8296,
+              "internal_disagreement_score": 0.1704,
+              "agreement_tier": "very_high",
+              "disagreement_tier": "medium",
+              "dominant_signal_family": "match_dynamics",
+              "dominant_direction": "home_edge",
+              "confidence_hint": {
+                "suggested_effect": "slight_up",
+                "reason": "high_internal_model_agreement"
+              },
+              "conflict_profile": {
+                "conflict_flags_count": 4.0,
+                "severity_counts": {
+                  "light": 0.0,
+                  "medium": 4.0,
+                  "high": 0.0,
+                  "severe": 0.0
+                },
+                "conflict_penalty": 0.28,
+                "has_medium_or_higher_conflict": true
+              },
               "outcome_max_abs_delta": 0.0036,
               "goal_environment_max_abs_delta": 0.0095,
-              "disagreement_signal": 0.1187
+              "disagreement_signal": 0.1704
+            },
+            "agreement_layer": {
+              "available": true,
+              "agreement_score": 0.8296,
+              "disagreement_score": 0.1704,
+              "agreement_tier": "very_high",
+              "disagreement_tier": "medium",
+              "dominant_signal_family": "match_dynamics",
+              "dominant_direction": "home_edge",
+              "conflict_flags_count": 4.0,
+              "conflict_penalty": 0.28,
+              "severity_counts": {
+                "light": 0.0,
+                "medium": 4.0,
+                "high": 0.0,
+                "severe": 0.0
+              },
+              "confidence_hint": {
+                "suggested_effect": "slight_up",
+                "reason": "high_internal_model_agreement"
+              },
+              "source": "model_agreement_disagreement_model.json"
             },
             "structural_reliability": {
               "score": 0.7095,
@@ -53374,87 +53419,124 @@
               "source": "structural_models_reliability"
             },
             "data_stage_reliability": {
-              "score": 0.9,
-              "label": "lineups_ready",
+              "score": 0.5,
+              "label": "finished_evaluation_context",
               "prediction_stage": "lineups_ready",
-              "match_status": "UPCOMING",
+              "match_status": "FINISHED",
               "active_stage_source": "match_lambdas_lineups.json"
             },
             "goal_environment_stability": {
-              "score": 0.59,
-              "label": "sensitive_goal_environment",
-              "source_signal": 0.41
+              "score": 0.601,
+              "label": "moderate_goal_environment",
+              "source_signal": 0.399
             },
             "volatility_penalty": {
-              "score": 0.1584,
-              "source": "volatility_model_v1",
-              "volatility_score": 0.4526,
-              "prediction_stability": "moderate"
+              "score": 0.2139,
+              "source": "volatility_model_v2",
+              "volatility_score": 0.6112,
+              "prediction_stability": "volatile"
+            },
+            "confidence_guards": {
+              "score_before_guards": 0.505,
+              "score_after_guards": 0.505,
+              "cap_applied": 0.79,
+              "guards_applied": [
+                {
+                  "source": "agreement_disagreement",
+                  "cap": 0.79,
+                  "reason": "agreement_disagreement_medium"
+                },
+                {
+                  "source": "volatility",
+                  "cap": 0.79,
+                  "reason": "volatility_moderate"
+                },
+                {
+                  "source": "stage",
+                  "cap": 0.79,
+                  "reason": "finished_evaluation_context_cap"
+                }
+              ]
             }
           },
           "premium": {
-            "summary": "Confidence high: score 0.6922. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "summary": "Confidence medium: score 0.505. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
             "key_factors": [
               {
                 "type": "outcome_clarity",
                 "label": "clear_margin",
-                "value": 0.842,
+                "value": 0.843,
                 "note": "Distanza tra il primo e il secondo esito del consensus finale."
               },
               {
                 "type": "model_agreement",
-                "label": "very_high_agreement",
-                "value": 0.8812,
-                "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                "label": "medium_agreement",
+                "value": 0.5677,
+                "note": "Allineamento combinato tra motori probabilistici e layer agreement/disagreement interno."
+              },
+              {
+                "type": "internal_conflicts",
+                "label": "medium",
+                "value": 0.28,
+                "note": "Penalità prudenziale legata ai contrasti interni tra famiglie di modelli."
               },
               {
                 "type": "volatility_penalty",
                 "label": "active_volatility_penalty",
-                "value": 0.1584,
+                "value": 0.2139,
                 "note": "Penalità applicata perché la stabilità della previsione non è piena."
+              },
+              {
+                "type": "confidence_guards",
+                "label": "active_confidence_guard",
+                "value": 0.79,
+                "note": "Cap prudenziale applicato per evitare confidence troppo alta in presenza di volatilità, conflitti o contesto dati sensibile."
               }
             ],
-            "user_label": "Lettura solida",
-            "stage_note": "lineups_ready"
+            "user_label": "Lettura discreta",
+            "stage_note": "finished_evaluation_context"
           },
           "bot": {
             "semantic_tags": [
-              "confidence::high",
-              "model_agreement::very_high_agreement",
-              "confidence_stage::lineups_ready",
-              "confidence_penalty::volatility_high"
+              "confidence::medium",
+              "model_agreement::medium_agreement",
+              "internal_agreement::very_high",
+              "internal_disagreement::medium",
+              "confidence_stage::finished_evaluation_context",
+              "confidence_penalty::volatility_high",
+              "confidence_guard::active"
             ]
           },
-          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali."
+          "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati, agreement layer e penalità volatility. Non modifica le probabilità finali."
         },
         "volatility": {
           "available": true,
           "computed": true,
           "fallback_used": false,
-          "score": 0.4526,
-          "volatility_score": 0.4526,
-          "label": "moderate",
-          "prediction_stability": "moderate",
-          "source": "volatility_model_v1",
+          "score": 0.6112,
+          "volatility_score": 0.6112,
+          "label": "volatile",
+          "prediction_stability": "volatile",
+          "source": "volatility_model_v2",
           "upset_risk": "low",
-          "upset_signal": 0.2817,
+          "upset_signal": 0.3138,
           "wide_scoreline_risk": "medium",
-          "wide_scoreline_signal": 0.3935,
-          "confidence_penalty": 0.1584,
+          "wide_scoreline_signal": 0.392,
+          "confidence_penalty": 0.2139,
           "model_disagreement_signal": 0.1583,
           "data_quality_volatility": 0.2378,
           "consensus_movement_signal": 1.0,
           "outcome_fragility_signal": 0.0,
-          "goal_environment_volatility": 0.41,
+          "goal_environment_volatility": 0.399,
           "movement": {
             "baseline_to_goal_pressure": {
               "probabilities": {
-                "home_win": 0.1547,
-                "draw": -0.0754,
+                "home_win": 0.1552,
+                "draw": -0.0759,
                 "away_win": -0.0794
               },
-              "max_abs_delta": 0.1547,
-              "mean_abs_delta": 0.1032
+              "max_abs_delta": 0.1552,
+              "mean_abs_delta": 0.1035
             },
             "goal_pressure_to_final": {
               "probabilities": {
@@ -53467,21 +53549,21 @@
             },
             "baseline_to_final": {
               "probabilities": {
-                "home_win": 0.1487,
-                "draw": -0.0774,
+                "home_win": 0.1492,
+                "draw": -0.0779,
                 "away_win": -0.0714
               },
-              "max_abs_delta": 0.1487,
-              "mean_abs_delta": 0.0992
+              "max_abs_delta": 0.1492,
+              "mean_abs_delta": 0.0995
             }
           },
           "outcome_fragility": {
             "signal": 0.0,
             "favored_outcome": "home_win",
-            "favored_probability": 0.917,
+            "favored_probability": 0.9175,
             "second_outcome": "draw",
-            "second_probability": 0.075,
-            "margin": 0.842,
+            "second_probability": 0.0745,
+            "margin": 0.843,
             "margin_label": "clear_margin"
           },
           "model_disagreement": {
@@ -53491,28 +53573,28 @@
             "label": "low"
           },
           "goal_environment": {
-            "signal": 0.41,
-            "wide_scoreline_signal": 0.3935,
+            "signal": 0.399,
+            "wide_scoreline_signal": 0.392,
             "wide_scoreline_risk": "medium",
             "movement": {
               "over_under_baseline_to_final": {
-                "max_abs_delta": 0.041,
-                "over_1_5_delta": 0.041,
-                "over_2_5_delta": 0.0409,
-                "over_3_5_delta": 0.041
+                "max_abs_delta": 0.0399,
+                "over_1_5_delta": 0.0399,
+                "over_2_5_delta": 0.0398,
+                "over_3_5_delta": 0.0399
               },
               "over_under_baseline_to_goal_pressure": {
-                "max_abs_delta": 0.0338
+                "max_abs_delta": 0.0327
               },
               "btts_baseline_to_final": {
-                "max_abs_delta": 0.0098,
-                "yes_delta": -0.0098
+                "max_abs_delta": 0.0109,
+                "yes_delta": -0.0109
               },
               "goal_range_baseline_to_final": {
-                "max_abs_delta": 0.0296,
-                "goals_0_1_delta": -0.0217,
+                "max_abs_delta": 0.0289,
+                "goals_0_1_delta": -0.0209,
                 "goals_2_3_delta": -0.008,
-                "goals_4_plus_delta": 0.0296
+                "goals_4_plus_delta": 0.0289
               }
             }
           },
@@ -53530,28 +53612,40 @@
             "label": "low"
           },
           "premium": {
-            "summary": "Volatility moderate: score 0.4526. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "summary": "Volatility volatile: score 0.6112. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
             "key_factors": [
               {
                 "type": "outcome_margin",
                 "label": "clear_margin",
-                "value": 0.842,
+                "value": 0.843,
                 "note": "Distanza tra il primo e il secondo esito del consensus finale."
               },
               {
                 "type": "goal_environment_movement",
                 "label": "medium",
-                "value": 0.41,
+                "value": 0.399,
                 "note": "Movimento degli scenari goal dopo i raffinamenti strutturali."
+              },
+              {
+                "type": "internal_structural_conflict",
+                "label": "medium",
+                "value": 0.16,
+                "note": "Contrasti interni tra famiglie di modelli rilevati dal layer agreement/disagreement."
               }
             ]
           },
           "bot": {
             "semantic_tags": [
-              "volatility::moderate",
+              "volatility::volatile",
               "upset_risk::low",
               "wide_scoreline_risk::medium",
-              "volatility::meaningful_consensus_movement"
+              "volatility::meaningful_consensus_movement",
+              "internal_conflict::medium",
+              "internal_conflict_volatility::clear_up",
+              "structural_conflict::goal_environment_conflict",
+              "structural_conflict::baseline_vs_structural_conflict",
+              "structural_conflict::market_family_split",
+              "structural_conflict::btts_disagreement"
             ]
           },
           "note": "Volatility calcolata dal modello post-aggregator."
@@ -53630,14 +53724,23 @@
             "defensive_resistance::home_resistance_edge",
             "defensive_resistance_impact::standard",
             "defensive_resistance::active_refinement_applied",
-            "volatility::moderate",
+            "volatility::volatile",
             "upset_risk::low",
             "wide_scoreline_risk::medium",
             "volatility::meaningful_consensus_movement",
-            "confidence::high",
-            "model_agreement::very_high_agreement",
-            "confidence_stage::lineups_ready",
-            "confidence_penalty::volatility_high"
+            "internal_conflict::medium",
+            "internal_conflict_volatility::clear_up",
+            "structural_conflict::goal_environment_conflict",
+            "structural_conflict::baseline_vs_structural_conflict",
+            "structural_conflict::market_family_split",
+            "structural_conflict::btts_disagreement",
+            "confidence::medium",
+            "model_agreement::medium_agreement",
+            "internal_agreement::very_high",
+            "internal_disagreement::medium",
+            "confidence_stage::finished_evaluation_context",
+            "confidence_penalty::volatility_high",
+            "confidence_guard::active"
           ]
         },
         "premium": {
@@ -53779,21 +53882,21 @@
               "type": "stability_model",
               "model": "volatility",
               "status": "post_aggregator_analysis",
-              "label": "moderate",
-              "volatility_score": 0.4526,
+              "label": "volatile",
+              "volatility_score": 0.6112,
               "upset_risk": "low",
               "wide_scoreline_risk": "medium",
-              "confidence_penalty": 0.1584,
+              "confidence_penalty": 0.2139,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             },
             {
               "type": "confidence_model",
               "model": "confidence_reliability",
               "status": "post_volatility_analysis",
-              "confidence_score": 0.6922,
-              "confidence_band": "high",
-              "label": "Lettura solida",
-              "volatility_penalty": 0.1584,
+              "confidence_score": 0.505,
+              "confidence_band": "medium",
+              "label": "Lettura discreta",
+              "volatility_penalty": 0.2139,
               "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
@@ -54758,30 +54861,89 @@
                 "vectra_match_id": "vxm_000048",
                 "computed": true,
                 "fallback_used": false,
-                "source": "volatility_model_v1",
-                "score": 0.4526,
-                "label": "moderate",
-                "volatility_score": 0.4526,
-                "prediction_stability": "moderate",
+                "source": "volatility_model_v2",
+                "score": 0.6112,
+                "label": "volatile",
+                "volatility_score": 0.6112,
+                "prediction_stability": "volatile",
                 "upset_risk": "low",
-                "upset_signal": 0.2817,
+                "upset_signal": 0.3138,
                 "wide_scoreline_risk": "medium",
-                "wide_scoreline_signal": 0.3935,
-                "confidence_penalty": 0.1584,
+                "wide_scoreline_signal": 0.392,
+                "confidence_penalty": 0.2139,
+                "base_volatility_score": 0.4512,
+                "internal_conflict_delta": 0.16,
+                "internal_conflict_volatility": {
+                  "available": true,
+                  "score": 0.4504,
+                  "delta": 0.16,
+                  "effect": "clear_up",
+                  "source": "model_agreement_disagreement_model.json",
+                  "agreement_score": 0.8296,
+                  "disagreement_score": 0.1704,
+                  "agreement_tier": "very_high",
+                  "disagreement_tier": "medium",
+                  "effective_disagreement_tier": "medium",
+                  "dominant_signal_family": "match_dynamics",
+                  "dominant_direction": "home_edge",
+                  "conflict_flags_count": 4.0,
+                  "medium_or_higher_conflicts": 4.0,
+                  "severity_counts": {
+                    "light": 0.0,
+                    "medium": 4.0,
+                    "high": 0.0,
+                    "severe": 0.0
+                  },
+                  "main_conflict_types": [
+                    "goal_environment_conflict",
+                    "baseline_vs_structural_conflict",
+                    "market_family_split",
+                    "btts_disagreement"
+                  ],
+                  "description_keys": [
+                    "tempo_opens_but_defensive_layers_suppress",
+                    "baseline_low_score_but_structural_models_open",
+                    "side_edge_clearer_than_goal_environment",
+                    "btts_signals_are_mixed_across_model_families"
+                  ],
+                  "confidence_hint": {
+                    "suggested_effect": "slight_up",
+                    "reason": "high_internal_model_agreement"
+                  }
+                },
+                "structural_conflict_profile": {
+                  "available": true,
+                  "main_conflict_types": [
+                    "goal_environment_conflict",
+                    "baseline_vs_structural_conflict",
+                    "market_family_split",
+                    "btts_disagreement"
+                  ],
+                  "goal_environment_conflict": true,
+                  "btts_disagreement": true,
+                  "side_edge_conflict": false,
+                  "baseline_vs_structural_conflict": true,
+                  "market_family_split": true,
+                  "volatility_effect": "clear_up",
+                  "disagreement_tier": "medium",
+                  "effective_disagreement_tier": "medium",
+                  "conflict_flags_count": 4.0,
+                  "medium_or_higher_conflicts": 4.0
+                },
                 "model_disagreement_signal": 0.1583,
                 "data_quality_volatility": 0.2378,
                 "consensus_movement_signal": 1.0,
                 "outcome_fragility_signal": 0.0,
-                "goal_environment_volatility": 0.41,
+                "goal_environment_volatility": 0.399,
                 "movement": {
                   "baseline_to_goal_pressure": {
                     "probabilities": {
-                      "home_win": 0.1547,
-                      "draw": -0.0754,
+                      "home_win": 0.1552,
+                      "draw": -0.0759,
                       "away_win": -0.0794
                     },
-                    "max_abs_delta": 0.1547,
-                    "mean_abs_delta": 0.1032
+                    "max_abs_delta": 0.1552,
+                    "mean_abs_delta": 0.1035
                   },
                   "goal_pressure_to_final": {
                     "probabilities": {
@@ -54794,21 +54956,21 @@
                   },
                   "baseline_to_final": {
                     "probabilities": {
-                      "home_win": 0.1487,
-                      "draw": -0.0774,
+                      "home_win": 0.1492,
+                      "draw": -0.0779,
                       "away_win": -0.0714
                     },
-                    "max_abs_delta": 0.1487,
-                    "mean_abs_delta": 0.0992
+                    "max_abs_delta": 0.1492,
+                    "mean_abs_delta": 0.0995
                   }
                 },
                 "outcome_fragility": {
                   "signal": 0.0,
                   "favored_outcome": "home_win",
-                  "favored_probability": 0.917,
+                  "favored_probability": 0.9175,
                   "second_outcome": "draw",
-                  "second_probability": 0.075,
-                  "margin": 0.842,
+                  "second_probability": 0.0745,
+                  "margin": 0.843,
                   "margin_label": "clear_margin"
                 },
                 "model_disagreement": {
@@ -54818,29 +54980,67 @@
                   "label": "low"
                 },
                 "goal_environment": {
-                  "signal": 0.41,
-                  "wide_scoreline_signal": 0.3935,
+                  "signal": 0.399,
+                  "wide_scoreline_signal": 0.392,
                   "wide_scoreline_risk": "medium",
                   "movement": {
                     "over_under_baseline_to_final": {
-                      "max_abs_delta": 0.041,
-                      "over_1_5_delta": 0.041,
-                      "over_2_5_delta": 0.0409,
-                      "over_3_5_delta": 0.041
+                      "max_abs_delta": 0.0399,
+                      "over_1_5_delta": 0.0399,
+                      "over_2_5_delta": 0.0398,
+                      "over_3_5_delta": 0.0399
                     },
                     "over_under_baseline_to_goal_pressure": {
-                      "max_abs_delta": 0.0338
+                      "max_abs_delta": 0.0327
                     },
                     "btts_baseline_to_final": {
-                      "max_abs_delta": 0.0098,
-                      "yes_delta": -0.0098
+                      "max_abs_delta": 0.0109,
+                      "yes_delta": -0.0109
                     },
                     "goal_range_baseline_to_final": {
-                      "max_abs_delta": 0.0296,
-                      "goals_0_1_delta": -0.0217,
+                      "max_abs_delta": 0.0289,
+                      "goals_0_1_delta": -0.0209,
                       "goals_2_3_delta": -0.008,
-                      "goals_4_plus_delta": 0.0296
+                      "goals_4_plus_delta": 0.0289
                     }
+                  }
+                },
+                "internal_conflict": {
+                  "available": true,
+                  "score": 0.4504,
+                  "delta": 0.16,
+                  "effect": "clear_up",
+                  "source": "model_agreement_disagreement_model.json",
+                  "agreement_score": 0.8296,
+                  "disagreement_score": 0.1704,
+                  "agreement_tier": "very_high",
+                  "disagreement_tier": "medium",
+                  "effective_disagreement_tier": "medium",
+                  "dominant_signal_family": "match_dynamics",
+                  "dominant_direction": "home_edge",
+                  "conflict_flags_count": 4.0,
+                  "medium_or_higher_conflicts": 4.0,
+                  "severity_counts": {
+                    "light": 0.0,
+                    "medium": 4.0,
+                    "high": 0.0,
+                    "severe": 0.0
+                  },
+                  "main_conflict_types": [
+                    "goal_environment_conflict",
+                    "baseline_vs_structural_conflict",
+                    "market_family_split",
+                    "btts_disagreement"
+                  ],
+                  "description_keys": [
+                    "tempo_opens_but_defensive_layers_suppress",
+                    "baseline_low_score_but_structural_models_open",
+                    "side_edge_clearer_than_goal_environment",
+                    "btts_signals_are_mixed_across_model_families"
+                  ],
+                  "confidence_hint": {
+                    "suggested_effect": "slight_up",
+                    "reason": "high_internal_model_agreement"
                   }
                 },
                 "data_quality": {
@@ -54864,6 +55064,8 @@
                   "has_baseline_consensus": true,
                   "has_consensus_after_goal_pressure": true,
                   "has_final_consensus": true,
+                  "has_agreement_disagreement": true,
+                  "internal_conflict_delta": 0.16,
                   "weights": {
                     "consensus_movement": 0.34,
                     "model_disagreement": 0.22,
@@ -54875,40 +55077,59 @@
                     "consensus_movement_scale": 0.075,
                     "model_disagreement_scale": 0.06,
                     "outcome_margin_scale": 0.12,
-                    "goal_environment_scale": 0.1
+                    "goal_environment_scale": 0.1,
+                    "internal_conflict_base_deltas": {
+                      "none": 0.0,
+                      "light": 0.05,
+                      "medium": 0.1,
+                      "high": 0.17,
+                      "severe": 0.24
+                    },
+                    "internal_conflict_delta_caps": {
+                      "none": 0.0,
+                      "light": 0.08,
+                      "medium": 0.16,
+                      "high": 0.24,
+                      "severe": 0.32
+                    }
                   }
                 },
                 "premium": {
-                  "summary": "Volatility moderate: score 0.4526. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "summary": "Volatility volatile: score 0.6112. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
                   "key_factors": [
                     {
                       "type": "outcome_margin",
                       "label": "clear_margin",
-                      "value": 0.842,
+                      "value": 0.843,
                       "note": "Distanza tra il primo e il secondo esito del consensus finale."
                     },
                     {
                       "type": "goal_environment_movement",
                       "label": "medium",
-                      "value": 0.41,
+                      "value": 0.399,
                       "note": "Movimento degli scenari goal dopo i raffinamenti strutturali."
+                    },
+                    {
+                      "type": "internal_structural_conflict",
+                      "label": "medium",
+                      "value": 0.16,
+                      "note": "Contrasti interni tra famiglie di modelli rilevati dal layer agreement/disagreement."
                     }
                   ]
                 },
                 "bot": {
                   "semantic_tags": [
-                    "volatility::moderate",
+                    "volatility::volatile",
                     "upset_risk::low",
                     "wide_scoreline_risk::medium",
-                    "volatility::meaningful_consensus_movement"
+                    "volatility::meaningful_consensus_movement",
+                    "internal_conflict::medium",
+                    "internal_conflict_volatility::clear_up",
+                    "structural_conflict::goal_environment_conflict",
+                    "structural_conflict::baseline_vs_structural_conflict",
+                    "structural_conflict::market_family_split",
+                    "structural_conflict::btts_disagreement"
                   ]
-                },
-                "live_freeze": {
-                  "applied": true,
-                  "reason": "match_status_live_or_finished_volatility_frozen",
-                  "source": "previous_volatility_model_record",
-                  "frozen_at": "2026-05-03T20:35:47.852064Z",
-                  "policy": "LIVE/FINISHED match: previous Volatility output is preserved; no new volatility calculation is applied."
                 }
               }
             },
@@ -54920,33 +55141,101 @@
                 "computed": true,
                 "fallback_used": false,
                 "source": "confidence_reliability_model_v1",
-                "confidence_score": 0.6922,
-                "score": 0.6922,
-                "confidence_band": "high",
-                "band": "high",
-                "confidence_label": "Lettura solida",
-                "label": "Lettura solida",
+                "confidence_score": 0.505,
+                "score": 0.505,
+                "confidence_band": "medium",
+                "band": "medium",
+                "confidence_label": "Lettura discreta",
+                "label": "Lettura discreta",
                 "data_quality_label": "low",
-                "model_agreement_label": "very_high_agreement",
-                "stage_reliability": "lineups_ready",
-                "volatility_penalty": 0.1584,
-                "base_confidence": 0.8506,
+                "model_agreement_label": "medium_agreement",
+                "stage_reliability": "finished_evaluation_context",
+                "volatility_penalty": 0.2139,
+                "base_confidence": 0.7189,
+                "raw_confidence_score": 0.505,
+                "confidence_guards": {
+                  "score_before_guards": 0.505,
+                  "score_after_guards": 0.505,
+                  "cap_applied": 0.79,
+                  "guards_applied": [
+                    {
+                      "source": "agreement_disagreement",
+                      "cap": 0.79,
+                      "reason": "agreement_disagreement_medium"
+                    },
+                    {
+                      "source": "volatility",
+                      "cap": 0.79,
+                      "reason": "volatility_moderate"
+                    },
+                    {
+                      "source": "stage",
+                      "cap": 0.79,
+                      "reason": "finished_evaluation_context_cap"
+                    }
+                  ]
+                },
                 "components": {
                   "outcome_clarity": {
                     "score": 1.0,
                     "favored_outcome": "home_win",
-                    "favored_probability": 0.917,
+                    "favored_probability": 0.9175,
                     "second_outcome": "draw",
-                    "second_probability": 0.075,
-                    "margin": 0.842,
+                    "second_probability": 0.0745,
+                    "margin": 0.843,
                     "label": "clear_margin"
                   },
                   "model_agreement": {
-                    "score": 0.8812,
-                    "label": "very_high_agreement",
+                    "score": 0.5677,
+                    "label": "medium_agreement",
+                    "source": "poisson_montecarlo_plus_model_agreement_disagreement",
+                    "engine_agreement_score": 0.8812,
+                    "internal_agreement_score": 0.8296,
+                    "internal_disagreement_score": 0.1704,
+                    "agreement_tier": "very_high",
+                    "disagreement_tier": "medium",
+                    "dominant_signal_family": "match_dynamics",
+                    "dominant_direction": "home_edge",
+                    "confidence_hint": {
+                      "suggested_effect": "slight_up",
+                      "reason": "high_internal_model_agreement"
+                    },
+                    "conflict_profile": {
+                      "conflict_flags_count": 4.0,
+                      "severity_counts": {
+                        "light": 0.0,
+                        "medium": 4.0,
+                        "high": 0.0,
+                        "severe": 0.0
+                      },
+                      "conflict_penalty": 0.28,
+                      "has_medium_or_higher_conflict": true
+                    },
                     "outcome_max_abs_delta": 0.0036,
                     "goal_environment_max_abs_delta": 0.0095,
-                    "disagreement_signal": 0.1187
+                    "disagreement_signal": 0.1704
+                  },
+                  "agreement_layer": {
+                    "available": true,
+                    "agreement_score": 0.8296,
+                    "disagreement_score": 0.1704,
+                    "agreement_tier": "very_high",
+                    "disagreement_tier": "medium",
+                    "dominant_signal_family": "match_dynamics",
+                    "dominant_direction": "home_edge",
+                    "conflict_flags_count": 4.0,
+                    "conflict_penalty": 0.28,
+                    "severity_counts": {
+                      "light": 0.0,
+                      "medium": 4.0,
+                      "high": 0.0,
+                      "severe": 0.0
+                    },
+                    "confidence_hint": {
+                      "suggested_effect": "slight_up",
+                      "reason": "high_internal_model_agreement"
+                    },
+                    "source": "model_agreement_disagreement_model.json"
                   },
                   "structural_reliability": {
                     "score": 0.7095,
@@ -54956,22 +55245,44 @@
                     "source": "structural_models_reliability"
                   },
                   "data_stage_reliability": {
-                    "score": 0.9,
-                    "label": "lineups_ready",
+                    "score": 0.5,
+                    "label": "finished_evaluation_context",
                     "prediction_stage": "lineups_ready",
-                    "match_status": "UPCOMING",
+                    "match_status": "FINISHED",
                     "active_stage_source": "match_lambdas_lineups.json"
                   },
                   "goal_environment_stability": {
-                    "score": 0.59,
-                    "label": "sensitive_goal_environment",
-                    "source_signal": 0.41
+                    "score": 0.601,
+                    "label": "moderate_goal_environment",
+                    "source_signal": 0.399
                   },
                   "volatility_penalty": {
-                    "score": 0.1584,
-                    "source": "volatility_model_v1",
-                    "volatility_score": 0.4526,
-                    "prediction_stability": "moderate"
+                    "score": 0.2139,
+                    "source": "volatility_model_v2",
+                    "volatility_score": 0.6112,
+                    "prediction_stability": "volatile"
+                  },
+                  "confidence_guards": {
+                    "score_before_guards": 0.505,
+                    "score_after_guards": 0.505,
+                    "cap_applied": 0.79,
+                    "guards_applied": [
+                      {
+                        "source": "agreement_disagreement",
+                        "cap": 0.79,
+                        "reason": "agreement_disagreement_medium"
+                      },
+                      {
+                        "source": "volatility",
+                        "cap": 0.79,
+                        "reason": "volatility_moderate"
+                      },
+                      {
+                        "source": "stage",
+                        "cap": 0.79,
+                        "reason": "finished_evaluation_context_cap"
+                      }
+                    ]
                   }
                 },
                 "diagnostics": {
@@ -54981,6 +55292,30 @@
                   ],
                   "has_match_predictions": true,
                   "has_volatility": true,
+                  "has_agreement_disagreement": true,
+                  "agreement_layer_available": true,
+                  "confidence_guards": {
+                    "score_before_guards": 0.505,
+                    "score_after_guards": 0.505,
+                    "cap_applied": 0.79,
+                    "guards_applied": [
+                      {
+                        "source": "agreement_disagreement",
+                        "cap": 0.79,
+                        "reason": "agreement_disagreement_medium"
+                      },
+                      {
+                        "source": "volatility",
+                        "cap": 0.79,
+                        "reason": "volatility_moderate"
+                      },
+                      {
+                        "source": "stage",
+                        "cap": 0.79,
+                        "reason": "finished_evaluation_context_cap"
+                      }
+                    ]
+                  },
                   "missing_components": [],
                   "weights": {
                     "outcome_clarity": 0.3,
@@ -54992,46 +55327,54 @@
                   "scales": {
                     "outcome_margin_full_confidence": 0.25,
                     "model_disagreement_full_penalty": 0.08
-                  },
-                  "live_freeze": {
-                    "applied": true,
-                    "reason": "match_status_live_or_finished_confidence_frozen",
-                    "source": "previous_confidence_reliability_record",
-                    "frozen_at": "2026-05-03T20:35:48.045338Z",
-                    "policy": "LIVE/FINISHED match: previous Confidence output is preserved; no new confidence calculation is applied."
                   }
                 },
                 "premium": {
-                  "summary": "Confidence high: score 0.6922. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, accordo tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "summary": "Confidence medium: score 0.505. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
                   "key_factors": [
                     {
                       "type": "outcome_clarity",
                       "label": "clear_margin",
-                      "value": 0.842,
+                      "value": 0.843,
                       "note": "Distanza tra il primo e il secondo esito del consensus finale."
                     },
                     {
                       "type": "model_agreement",
-                      "label": "very_high_agreement",
-                      "value": 0.8812,
-                      "note": "Allineamento tra Poisson e Monte Carlo sugli scenari principali."
+                      "label": "medium_agreement",
+                      "value": 0.5677,
+                      "note": "Allineamento combinato tra motori probabilistici e layer agreement/disagreement interno."
+                    },
+                    {
+                      "type": "internal_conflicts",
+                      "label": "medium",
+                      "value": 0.28,
+                      "note": "Penalità prudenziale legata ai contrasti interni tra famiglie di modelli."
                     },
                     {
                       "type": "volatility_penalty",
                       "label": "active_volatility_penalty",
-                      "value": 0.1584,
+                      "value": 0.2139,
                       "note": "Penalità applicata perché la stabilità della previsione non è piena."
+                    },
+                    {
+                      "type": "confidence_guards",
+                      "label": "active_confidence_guard",
+                      "value": 0.79,
+                      "note": "Cap prudenziale applicato per evitare confidence troppo alta in presenza di volatilità, conflitti o contesto dati sensibile."
                     }
                   ],
-                  "user_label": "Lettura solida",
-                  "stage_note": "lineups_ready"
+                  "user_label": "Lettura discreta",
+                  "stage_note": "finished_evaluation_context"
                 },
                 "bot": {
                   "semantic_tags": [
-                    "confidence::high",
-                    "model_agreement::very_high_agreement",
-                    "confidence_stage::lineups_ready",
-                    "confidence_penalty::volatility_high"
+                    "confidence::medium",
+                    "model_agreement::medium_agreement",
+                    "internal_agreement::very_high",
+                    "internal_disagreement::medium",
+                    "confidence_stage::finished_evaluation_context",
+                    "confidence_penalty::volatility_high",
+                    "confidence_guard::active"
                   ]
                 },
                 "policy": {
@@ -55040,18 +55383,12 @@
                   "probability_shift": false,
                   "reads": [
                     "match_predictions.json",
-                    "volatility_model.json"
+                    "volatility_model.json",
+                    "model_agreement_disagreement_model.json"
                   ],
                   "exports_to": "predictions_cloud.json"
                 },
-                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati e penalità volatility. Non modifica le probabilità finali.",
-                "live_freeze": {
-                  "applied": true,
-                  "reason": "match_status_live_or_finished_confidence_frozen",
-                  "source": "previous_confidence_reliability_record",
-                  "frozen_at": "2026-05-03T20:35:48.045338Z",
-                  "policy": "LIVE/FINISHED match: previous Confidence output is preserved; no new confidence calculation is applied."
-                }
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati, agreement layer e penalità volatility. Non modifica le probabilità finali."
               }
             }
           ],
@@ -55060,7 +55397,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-03T20:35:48.475029Z",
+          "generated_at": "2026-05-04T19:05:48.325372Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -55082,9 +55419,9 @@
         }
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "referee_ready",
-        "active_stage_source": "match_lambdas_referee.json"
+        "match_status": "FINISHED",
+        "prediction_stage": "lineups_ready",
+        "active_stage_source": "match_lambdas_lineups.json"
       },
       "prediction": {
         "lambda": {
@@ -62704,16 +63041,16 @@
           "available": true,
           "computed": true,
           "fallback_used": false,
-          "score": 0.5995,
-          "confidence_score": 0.5995,
+          "score": 0.5584,
+          "confidence_score": 0.5584,
           "band": "medium",
           "label": "Lettura discreta",
           "source": "confidence_reliability_model_v1",
           "data_quality_label": "low",
           "model_agreement_label": "very_high_agreement",
-          "stage_reliability": "referee_ready",
-          "volatility_penalty": 0.1762,
-          "base_confidence": 0.7757,
+          "stage_reliability": "finished_evaluation_context",
+          "volatility_penalty": 0.1757,
+          "base_confidence": 0.7341,
           "components": {
             "outcome_clarity": {
               "score": 1.0,
@@ -62784,11 +63121,11 @@
               "source": "structural_models_reliability"
             },
             "data_stage_reliability": {
-              "score": 0.76,
-              "label": "referee_ready",
-              "prediction_stage": "referee_ready",
-              "match_status": "UPCOMING",
-              "active_stage_source": "match_lambdas_referee.json"
+              "score": 0.5,
+              "label": "finished_evaluation_context",
+              "prediction_stage": "lineups_ready",
+              "match_status": "FINISHED",
+              "active_stage_source": "match_lambdas_lineups.json"
             },
             "goal_environment_stability": {
               "score": 0.0,
@@ -62796,14 +63133,14 @@
               "source_signal": 1.0
             },
             "volatility_penalty": {
-              "score": 0.1762,
+              "score": 0.1757,
               "source": "volatility_model_v2",
-              "volatility_score": 0.5033,
+              "volatility_score": 0.5019,
               "prediction_stability": "moderate"
             },
             "confidence_guards": {
-              "score_before_guards": 0.5995,
-              "score_after_guards": 0.5995,
+              "score_before_guards": 0.5584,
+              "score_after_guards": 0.5584,
               "cap_applied": 0.79,
               "guards_applied": [
                 {
@@ -62813,14 +63150,14 @@
                 },
                 {
                   "source": "stage",
-                  "cap": 0.84,
-                  "reason": "referee_stage_cap"
+                  "cap": 0.79,
+                  "reason": "finished_evaluation_context_cap"
                 }
               ]
             }
           },
           "premium": {
-            "summary": "Confidence medium: score 0.5995. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "summary": "Confidence medium: score 0.5584. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
             "key_factors": [
               {
                 "type": "outcome_clarity",
@@ -62837,7 +63174,7 @@
               {
                 "type": "volatility_penalty",
                 "label": "active_volatility_penalty",
-                "value": 0.1762,
+                "value": 0.1757,
                 "note": "Penalità applicata perché la stabilità della previsione non è piena."
               },
               {
@@ -62848,7 +63185,7 @@
               }
             ],
             "user_label": "Lettura discreta",
-            "stage_note": "referee_ready"
+            "stage_note": "finished_evaluation_context"
           },
           "bot": {
             "semantic_tags": [
@@ -62856,7 +63193,7 @@
               "model_agreement::very_high_agreement",
               "internal_agreement::very_high",
               "internal_disagreement::none",
-              "confidence_stage::referee_ready",
+              "confidence_stage::finished_evaluation_context",
               "confidence_penalty::volatility_high",
               "confidence_guard::active"
             ]
@@ -62867,8 +63204,8 @@
           "available": true,
           "computed": true,
           "fallback_used": false,
-          "score": 0.5033,
-          "volatility_score": 0.5033,
+          "score": 0.5019,
+          "volatility_score": 0.5019,
           "label": "moderate",
           "prediction_stability": "moderate",
           "source": "volatility_model_v2",
@@ -62876,9 +63213,9 @@
           "upset_signal": 0.2126,
           "wide_scoreline_risk": "low",
           "wide_scoreline_signal": 0.2061,
-          "confidence_penalty": 0.1762,
+          "confidence_penalty": 0.1757,
           "model_disagreement_signal": 0.0583,
-          "data_quality_volatility": 0.2543,
+          "data_quality_volatility": 0.2423,
           "consensus_movement_signal": 1.0,
           "outcome_fragility_signal": 0.0,
           "goal_environment_volatility": 1.0,
@@ -62953,7 +63290,7 @@
             }
           },
           "data_quality": {
-            "signal": 0.2543,
+            "signal": 0.2423,
             "quality_flags": [
               "opponent_goalkeeping_low_sample",
               "team_goalkeeping_low_sample"
@@ -62961,12 +63298,12 @@
             "average_structural_reliability": 0.7012,
             "goal_pressure_reliability": 0.6858,
             "defensive_resistance_reliability": 0.7167,
-            "prediction_stage": "referee_ready",
-            "stage_signal": 0.12,
+            "prediction_stage": "lineups_ready",
+            "stage_signal": 0.04,
             "label": "low"
           },
           "premium": {
-            "summary": "Volatility moderate: score 0.5033. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "summary": "Volatility moderate: score 0.5019. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
             "key_factors": [
               {
                 "type": "outcome_margin",
@@ -63080,7 +63417,7 @@
             "model_agreement::very_high_agreement",
             "internal_agreement::very_high",
             "internal_disagreement::none",
-            "confidence_stage::referee_ready",
+            "confidence_stage::finished_evaluation_context",
             "confidence_penalty::volatility_high",
             "confidence_guard::active"
           ]
@@ -63238,20 +63575,20 @@
               "model": "volatility",
               "status": "post_aggregator_analysis",
               "label": "moderate",
-              "volatility_score": 0.5033,
+              "volatility_score": 0.5019,
               "upset_risk": "low",
               "wide_scoreline_risk": "low",
-              "confidence_penalty": 0.1762,
+              "confidence_penalty": 0.1757,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             },
             {
               "type": "confidence_model",
               "model": "confidence_reliability",
               "status": "post_volatility_analysis",
-              "confidence_score": 0.5995,
+              "confidence_score": 0.5584,
               "confidence_band": "medium",
               "label": "Lettura discreta",
-              "volatility_penalty": 0.1762,
+              "volatility_penalty": 0.1757,
               "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
@@ -64510,16 +64847,16 @@
                 "computed": true,
                 "fallback_used": false,
                 "source": "volatility_model_v2",
-                "score": 0.5033,
+                "score": 0.5019,
                 "label": "moderate",
-                "volatility_score": 0.5033,
+                "volatility_score": 0.5019,
                 "prediction_stability": "moderate",
                 "upset_risk": "low",
                 "upset_signal": 0.2126,
                 "wide_scoreline_risk": "low",
                 "wide_scoreline_signal": 0.2061,
-                "confidence_penalty": 0.1762,
-                "base_volatility_score": 0.5033,
+                "confidence_penalty": 0.1757,
+                "base_volatility_score": 0.5019,
                 "internal_conflict_delta": 0.0,
                 "internal_conflict_volatility": {
                   "available": true,
@@ -64564,7 +64901,7 @@
                   "medium_or_higher_conflicts": 0.0
                 },
                 "model_disagreement_signal": 0.0583,
-                "data_quality_volatility": 0.2543,
+                "data_quality_volatility": 0.2423,
                 "consensus_movement_signal": 1.0,
                 "outcome_fragility_signal": 0.0,
                 "goal_environment_volatility": 1.0,
@@ -64667,7 +65004,7 @@
                   }
                 },
                 "data_quality": {
-                  "signal": 0.2543,
+                  "signal": 0.2423,
                   "quality_flags": [
                     "opponent_goalkeeping_low_sample",
                     "team_goalkeeping_low_sample"
@@ -64675,8 +65012,8 @@
                   "average_structural_reliability": 0.7012,
                   "goal_pressure_reliability": 0.6858,
                   "defensive_resistance_reliability": 0.7167,
-                  "prediction_stage": "referee_ready",
-                  "stage_signal": 0.12,
+                  "prediction_stage": "lineups_ready",
+                  "stage_signal": 0.04,
                   "label": "low"
                 },
                 "diagnostics": {
@@ -64718,7 +65055,7 @@
                   }
                 },
                 "premium": {
-                  "summary": "Volatility moderate: score 0.5033. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "summary": "Volatility moderate: score 0.5019. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
                   "key_factors": [
                     {
                       "type": "outcome_margin",
@@ -64753,21 +65090,21 @@
                 "computed": true,
                 "fallback_used": false,
                 "source": "confidence_reliability_model_v1",
-                "confidence_score": 0.5995,
-                "score": 0.5995,
+                "confidence_score": 0.5584,
+                "score": 0.5584,
                 "confidence_band": "medium",
                 "band": "medium",
                 "confidence_label": "Lettura discreta",
                 "label": "Lettura discreta",
                 "data_quality_label": "low",
                 "model_agreement_label": "very_high_agreement",
-                "stage_reliability": "referee_ready",
-                "volatility_penalty": 0.1762,
-                "base_confidence": 0.7757,
-                "raw_confidence_score": 0.5995,
+                "stage_reliability": "finished_evaluation_context",
+                "volatility_penalty": 0.1757,
+                "base_confidence": 0.7341,
+                "raw_confidence_score": 0.5584,
                 "confidence_guards": {
-                  "score_before_guards": 0.5995,
-                  "score_after_guards": 0.5995,
+                  "score_before_guards": 0.5584,
+                  "score_after_guards": 0.5584,
                   "cap_applied": 0.79,
                   "guards_applied": [
                     {
@@ -64777,8 +65114,8 @@
                     },
                     {
                       "source": "stage",
-                      "cap": 0.84,
-                      "reason": "referee_stage_cap"
+                      "cap": 0.79,
+                      "reason": "finished_evaluation_context_cap"
                     }
                   ]
                 },
@@ -64852,11 +65189,11 @@
                     "source": "structural_models_reliability"
                   },
                   "data_stage_reliability": {
-                    "score": 0.76,
-                    "label": "referee_ready",
-                    "prediction_stage": "referee_ready",
-                    "match_status": "UPCOMING",
-                    "active_stage_source": "match_lambdas_referee.json"
+                    "score": 0.5,
+                    "label": "finished_evaluation_context",
+                    "prediction_stage": "lineups_ready",
+                    "match_status": "FINISHED",
+                    "active_stage_source": "match_lambdas_lineups.json"
                   },
                   "goal_environment_stability": {
                     "score": 0.0,
@@ -64864,14 +65201,14 @@
                     "source_signal": 1.0
                   },
                   "volatility_penalty": {
-                    "score": 0.1762,
+                    "score": 0.1757,
                     "source": "volatility_model_v2",
-                    "volatility_score": 0.5033,
+                    "volatility_score": 0.5019,
                     "prediction_stability": "moderate"
                   },
                   "confidence_guards": {
-                    "score_before_guards": 0.5995,
-                    "score_after_guards": 0.5995,
+                    "score_before_guards": 0.5584,
+                    "score_after_guards": 0.5584,
                     "cap_applied": 0.79,
                     "guards_applied": [
                       {
@@ -64881,8 +65218,8 @@
                       },
                       {
                         "source": "stage",
-                        "cap": 0.84,
-                        "reason": "referee_stage_cap"
+                        "cap": 0.79,
+                        "reason": "finished_evaluation_context_cap"
                       }
                     ]
                   }
@@ -64897,8 +65234,8 @@
                   "has_agreement_disagreement": true,
                   "agreement_layer_available": true,
                   "confidence_guards": {
-                    "score_before_guards": 0.5995,
-                    "score_after_guards": 0.5995,
+                    "score_before_guards": 0.5584,
+                    "score_after_guards": 0.5584,
                     "cap_applied": 0.79,
                     "guards_applied": [
                       {
@@ -64908,8 +65245,8 @@
                       },
                       {
                         "source": "stage",
-                        "cap": 0.84,
-                        "reason": "referee_stage_cap"
+                        "cap": 0.79,
+                        "reason": "finished_evaluation_context_cap"
                       }
                     ]
                   },
@@ -64927,7 +65264,7 @@
                   }
                 },
                 "premium": {
-                  "summary": "Confidence medium: score 0.5995. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "summary": "Confidence medium: score 0.5584. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
                   "key_factors": [
                     {
                       "type": "outcome_clarity",
@@ -64944,7 +65281,7 @@
                     {
                       "type": "volatility_penalty",
                       "label": "active_volatility_penalty",
-                      "value": 0.1762,
+                      "value": 0.1757,
                       "note": "Penalità applicata perché la stabilità della previsione non è piena."
                     },
                     {
@@ -64955,7 +65292,7 @@
                     }
                   ],
                   "user_label": "Lettura discreta",
-                  "stage_note": "referee_ready"
+                  "stage_note": "finished_evaluation_context"
                 },
                 "bot": {
                   "semantic_tags": [
@@ -64963,7 +65300,7 @@
                     "model_agreement::very_high_agreement",
                     "internal_agreement::very_high",
                     "internal_disagreement::none",
-                    "confidence_stage::referee_ready",
+                    "confidence_stage::finished_evaluation_context",
                     "confidence_penalty::volatility_high",
                     "confidence_guard::active"
                   ]
@@ -64988,8 +65325,8 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-03T20:35:48.475029Z",
-          "has_lineups": false,
+          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "has_lineups": true,
           "has_referee": true
         }
       }
@@ -65010,9 +65347,9 @@
         }
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "referee_ready",
-        "active_stage_source": "match_lambdas_referee.json"
+        "match_status": "LIVE",
+        "prediction_stage": "lineups_ready",
+        "active_stage_source": "match_lambdas_lineups.json"
       },
       "prediction": {
         "lambda": {
@@ -74640,6 +74977,13 @@
                     "structural_conflict::baseline_vs_structural_conflict",
                     "structural_conflict::market_family_split"
                   ]
+                },
+                "live_freeze": {
+                  "applied": true,
+                  "reason": "match_status_live_or_finished_volatility_frozen",
+                  "source": "previous_volatility_model_record",
+                  "frozen_at": "2026-05-04T19:05:47.731196Z",
+                  "policy": "LIVE/FINISHED match: previous Volatility output is preserved; no new volatility calculation is applied."
                 }
               }
             },
@@ -74837,6 +75181,13 @@
                   "scales": {
                     "outcome_margin_full_confidence": 0.25,
                     "model_disagreement_full_penalty": 0.08
+                  },
+                  "live_freeze": {
+                    "applied": true,
+                    "reason": "match_status_live_or_finished_confidence_frozen",
+                    "source": "previous_confidence_reliability_record",
+                    "frozen_at": "2026-05-04T19:05:47.877679Z",
+                    "policy": "LIVE/FINISHED match: previous Confidence output is preserved; no new confidence calculation is applied."
                   }
                 },
                 "premium": {
@@ -74898,7 +75249,14 @@
                   ],
                   "exports_to": "predictions_cloud.json"
                 },
-                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati, agreement layer e penalità volatility. Non modifica le probabilità finali."
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati, agreement layer e penalità volatility. Non modifica le probabilità finali.",
+                "live_freeze": {
+                  "applied": true,
+                  "reason": "match_status_live_or_finished_confidence_frozen",
+                  "source": "previous_confidence_reliability_record",
+                  "frozen_at": "2026-05-04T19:05:47.877679Z",
+                  "policy": "LIVE/FINISHED match: previous Confidence output is preserved; no new confidence calculation is applied."
+                }
               }
             }
           ],
@@ -74907,8 +75265,8 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-03T20:35:48.475029Z",
-          "has_lineups": false,
+          "generated_at": "2026-05-04T19:05:48.325372Z",
+          "has_lineups": true,
           "has_referee": true
         }
       }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T20:35:48.331038Z",
+  "generated_at": "2026-05-04T19:05:48.207760Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -191,7 +191,7 @@
       "vectra_match_id": "vxm_000048",
       "home_team_name": "Inter",
       "away_team_name": "Parma",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_home_edge",
@@ -217,7 +217,7 @@
       "vectra_match_id": "vxm_000049",
       "home_team_name": "Cremonese",
       "away_team_name": "Lazio",
-      "match_status": "UPCOMING",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "balanced_goal_environment",
         "balance_edge_label": "moderate_away_edge",
@@ -235,7 +235,7 @@
           "Minaccia offensiva Cremonese: presente ma contenuta.",
           "Minaccia offensiva Lazio: alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un ambiente offensivo intermedio. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un ambiente offensivo intermedio. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
@@ -243,7 +243,7 @@
       "vectra_match_id": "vxm_000050",
       "home_team_name": "Roma",
       "away_team_name": "Fiorentina",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "moderate_home_edge",
@@ -261,7 +261,7 @@
           "Minaccia offensiva Roma: molto alta.",
           "Minaccia offensiva Fiorentina: presente ma contenuta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra di casa dentro un profilo di gara aperta. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra di casa dentro un profilo di gara aperta. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     }
