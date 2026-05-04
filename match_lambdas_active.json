@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T20:35:28.479250Z",
+  "generated_at": "2026-05-04T21:05:33.064932Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -18048,20 +18048,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000199",
-              "name": "Brescianini",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000193",
-              "name": "Fagioli",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000200",
               "name": "Gosens",
               "role": "Midfielder",
@@ -18071,6 +18057,20 @@
             {
               "vectra_player_id": "vxp_000194",
               "name": "Ndour",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000199",
+              "name": "Brescianini",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000193",
+              "name": "Fagioli",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -18903,7 +18903,7 @@
       "away_team_id": "vxt_000027",
       "home_team_name": "Roma",
       "away_team_name": "Fiorentina",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-05-04T18:45:00Z",
       "stadium": "Olimpico",
       "city": "Roma",
