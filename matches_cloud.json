@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T21:06:00.585661Z",
+  "generated_at": "2026-05-05T21:31:30.493726Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_036",
   "matchday": 36,
@@ -44,7 +44,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -96,7 +96,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -148,7 +148,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -200,7 +200,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -252,7 +252,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -304,7 +304,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -356,7 +356,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -408,7 +408,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -460,7 +460,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -512,7 +512,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "pending",
+        "resolution_status": "",
         "home": {
           "formation": "",
           "starting_count": 0,

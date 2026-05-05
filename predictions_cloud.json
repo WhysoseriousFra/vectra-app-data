@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T21:06:00.720845Z",
+  "generated_at": "2026-05-05T21:31:30.663117Z",
   "schema": "vectra.predictions_cloud.v7",
   "source_schema": "vectra.match_predictions.v20",
   "model_layer_status": "baseline_plus_dixon_coles_bivariate_poisson_dynamic_team_rating_home_away_context_latent_xg_finishing_regression_chance_quality_volume_goalkeeper_impact_defensive_fragility_set_piece_threat_aerial_matchup_rhythm_tempo_transition_counterattack_pressing_buildup_disruption_match_control_dominance_goal_pressure_defensive_resistance_structural_impact_v2_active_refinement",
@@ -8922,7 +8922,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-05T21:06:00.720845Z",
+          "generated_at": "2026-05-05T21:31:30.663117Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -17710,7 +17710,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-05T21:06:00.720845Z",
+          "generated_at": "2026-05-05T21:31:30.663117Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -26614,7 +26614,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-05T21:06:00.720845Z",
+          "generated_at": "2026-05-05T21:31:30.663117Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -35440,7 +35440,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-05T21:06:00.720845Z",
+          "generated_at": "2026-05-05T21:31:30.663117Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -44348,7 +44348,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-05T21:06:00.720845Z",
+          "generated_at": "2026-05-05T21:31:30.663117Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -53045,7 +53045,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-05T21:06:00.720845Z",
+          "generated_at": "2026-05-05T21:31:30.663117Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -61795,7 +61795,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-05T21:06:00.720845Z",
+          "generated_at": "2026-05-05T21:31:30.663117Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -70550,7 +70550,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-05T21:06:00.720845Z",
+          "generated_at": "2026-05-05T21:31:30.663117Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -79351,7 +79351,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-05T21:06:00.720845Z",
+          "generated_at": "2026-05-05T21:31:30.663117Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -88180,7 +88180,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-05T21:06:00.720845Z",
+          "generated_at": "2026-05-05T21:31:30.663117Z",
           "has_lineups": false,
           "has_referee": false
         }
