@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T19:06:41.139941Z",
+  "generated_at": "2026-05-07T20:35:55.377314Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_036",
   "matchday": 36,
@@ -28,18 +28,18 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000039",
+        "referee_name": "Simone Galipo'"
       },
       "lineups": {
         "available": false,
@@ -80,18 +80,18 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000019",
+        "referee_name": "Federico Dionisi"
       },
       "lineups": {
         "available": false,
@@ -132,18 +132,18 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000007",
+        "referee_name": "Rosario Abisso"
       },
       "lineups": {
         "available": false,
@@ -184,18 +184,18 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000025",
+        "referee_name": "Andrea Colombo"
       },
       "lineups": {
         "available": false,
@@ -236,18 +236,18 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000006",
+        "referee_name": "Marco Di Bello"
       },
       "lineups": {
         "available": false,
@@ -288,18 +288,18 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000022",
+        "referee_name": "Giovanni Ayroldi"
       },
       "lineups": {
         "available": false,
@@ -340,18 +340,18 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000020",
+        "referee_name": "Luca Massimi"
       },
       "lineups": {
         "available": false,
@@ -392,18 +392,18 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000010",
+        "referee_name": "Daniele Chiffi"
       },
       "lineups": {
         "available": false,
@@ -444,18 +444,18 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000024",
+        "referee_name": "Luca Zufferli"
       },
       "lineups": {
         "available": false,
@@ -496,18 +496,18 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
-        "has_referee": false
+        "has_referee": true
       },
       "score": {
         "home_score": null,
         "away_score": null
       },
       "referee": {
-        "assigned": false,
-        "vectra_referee_id": "",
-        "referee_name": ""
+        "assigned": true,
+        "vectra_referee_id": "vxr_000016",
+        "referee_name": "Marco Piccinini"
       },
       "lineups": {
         "available": false,
