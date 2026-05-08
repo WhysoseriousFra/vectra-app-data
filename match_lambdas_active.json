@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T19:06:15.309643Z",
+  "generated_at": "2026-05-08T19:35:33.123947Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -298,6 +298,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000648",
+              "name": "Vlašić",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000657",
               "name": "Gineitis",
               "role": "Midfielder",
@@ -307,13 +314,6 @@
             {
               "vectra_player_id": "vxp_000651",
               "name": "Prati",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000648",
-              "name": "Vlašić",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
