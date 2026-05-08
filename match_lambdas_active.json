@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T20:35:35.593854Z",
+  "generated_at": "2026-05-08T21:05:33.759865Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -263,6 +263,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000668",
+              "name": "Ebosse",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000653",
               "name": "Lazaro",
               "role": "Defender",
@@ -291,15 +298,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000668",
-              "name": "Ebosse",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000648",
-              "name": "Vlašić",
+              "vectra_player_id": "vxp_000651",
+              "name": "Prati",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -312,22 +312,22 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000651",
-              "name": "Prati",
+              "vectra_player_id": "vxp_000648",
+              "name": "Vlašić",
               "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000654",
-              "name": "Simeone",
-              "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
               "vectra_player_id": "vxp_000670",
               "name": "Njie",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000654",
+              "name": "Simeone",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -1017,6 +1017,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000615",
+              "name": "Muharemović",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000610",
               "name": "Walukiewicz",
               "role": "Defender",
@@ -1038,15 +1045,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000615",
-              "name": "Muharemović",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000620",
-              "name": "Lipani",
+              "vectra_player_id": "vxp_000614",
+              "name": "Matić",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -1059,15 +1059,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000614",
-              "name": "Matić",
+              "vectra_player_id": "vxp_000620",
+              "name": "Lipani",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000607",
-              "name": "Laurienté",
+              "vectra_player_id": "vxp_000621",
+              "name": "Volpato",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -1080,8 +1080,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000621",
-              "name": "Volpato",
+              "vectra_player_id": "vxp_000607",
+              "name": "Laurienté",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -1895,7 +1895,7 @@
       "away_team_id": "vxt_000034",
       "home_team_name": "Torino",
       "away_team_name": "Sassuolo",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-05-08T18:45:00Z",
       "stadium": "Olimpico - Grande Torino",
       "city": "Torino",

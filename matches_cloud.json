@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T20:35:53.066430Z",
+  "generated_at": "2026-05-08T21:05:55.181918Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_036",
   "matchday": 36,
@@ -27,7 +27,7 @@
         "city": "Torino"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
