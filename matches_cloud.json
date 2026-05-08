@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T21:31:00.293620Z",
+  "generated_at": "2026-05-08T19:06:45.624703Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_036",
   "matchday": 36,
@@ -27,14 +27,14 @@
         "city": "Torino"
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "referee_ready",
-        "has_lineups": false,
+        "match_status": "LIVE",
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 0,
+        "away_score": 0
       },
       "referee": {
         "assigned": true,
@@ -42,18 +42,18 @@
         "referee_name": "Simone Galipo'"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "full",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-4-1-2",
+          "starting_count": 11,
+          "bench_count": 15
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-3-3",
+          "starting_count": 11,
+          "bench_count": 13
         }
       }
     },
@@ -96,7 +96,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -148,7 +148,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -200,7 +200,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -252,7 +252,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -304,7 +304,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -356,7 +356,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -408,7 +408,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -460,7 +460,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -512,7 +512,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
