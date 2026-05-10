@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T21:05:55.175632Z",
+  "generated_at": "2026-05-10T09:01:23.399990Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -35,7 +35,7 @@
       "vectra_match_id": "vxm_000052",
       "home_team_name": "Cagliari",
       "away_team_name": "Udinese",
-      "match_status": "UPCOMING",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "balanced_goal_environment",
         "balance_edge_label": "balanced_match",
@@ -53,7 +53,7 @@
           "Minaccia offensiva Cagliari: presente ma contenuta.",
           "Minaccia offensiva Udinese: presente ma contenuta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un quadro molto equilibrato dentro un ambiente offensivo intermedio. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un quadro molto equilibrato dentro un ambiente offensivo intermedio. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
@@ -61,7 +61,7 @@
       "vectra_match_id": "vxm_000053",
       "home_team_name": "Lazio",
       "away_team_name": "Inter",
-      "match_status": "UPCOMING",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "very_open_match",
         "balance_edge_label": "strong_away_edge",
@@ -79,7 +79,7 @@
           "Minaccia offensiva Lazio: presente ma contenuta.",
           "Minaccia offensiva Inter: molto alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un ambiente offensivo molto vivo. Inter emerge con un vantaggio strutturale più netto, mentre Lazio appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un ambiente offensivo molto vivo. Inter emerge con un vantaggio strutturale più netto, mentre Lazio appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
@@ -87,7 +87,7 @@
       "vectra_match_id": "vxm_000054",
       "home_team_name": "Lecce",
       "away_team_name": "Juventus",
-      "match_status": "UPCOMING",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_away_edge",
@@ -105,7 +105,7 @@
           "Minaccia offensiva Lecce: bassa.",
           "Minaccia offensiva Juventus: molto alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un profilo di gara aperta. Juventus emerge con un vantaggio strutturale più netto, mentre Lecce appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un profilo di gara aperta. Juventus emerge con un vantaggio strutturale più netto, mentre Lecce appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
