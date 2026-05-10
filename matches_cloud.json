@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T12:05:43.131521Z",
+  "generated_at": "2026-05-10T12:35:42.964686Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_036",
   "matchday": 36,
@@ -235,7 +235,7 @@
         "city": "Verona"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
@@ -306,12 +306,12 @@
         "confirmed": true,
         "resolution_status": "full",
         "home": {
-          "formation": "Unknown",
+          "formation": "4-4-2",
           "starting_count": 11,
           "bench_count": 12
         },
         "away": {
-          "formation": "Unknown",
+          "formation": "3-5-2",
           "starting_count": 11,
           "bench_count": 14
         }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T12:05:31.399011Z",
+  "generated_at": "2026-05-10T12:35:30.941648Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -7830,15 +7830,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000736",
-              "name": "Valentini",
+              "vectra_player_id": "vxp_000730",
+              "name": "Belghali",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000730",
-              "name": "Belghali",
+              "vectra_player_id": "vxp_000736",
+              "name": "Valentini",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -8605,6 +8605,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000115",
+              "name": "Nico Paz",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000117",
               "name": "Perrone",
               "role": "Midfielder",
@@ -8626,9 +8633,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000115",
-              "name": "Nico Paz",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000113",
+              "name": "Douvikas",
+              "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -8642,13 +8649,6 @@
             {
               "vectra_player_id": "vxp_000132",
               "name": "Diao",
-              "role": "Forward",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000113",
-              "name": "Douvikas",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -9458,7 +9458,7 @@
       "away_team_id": "vxt_000024",
       "home_team_name": "Hellas Verona",
       "away_team_name": "Como",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-05-10T10:30:00Z",
       "stadium": "Marcantonio Bentegodi",
       "city": "Verona",
@@ -9499,7 +9499,7 @@
         "resolution_status": "full",
         "home": {
           "team_id": "vxt_000031",
-          "formation": "Unknown",
+          "formation": "4-4-2",
           "starting_players_count": 11,
           "bench_players_count": 12,
           "starting_xi_quality": {
@@ -9554,7 +9554,7 @@
         },
         "away": {
           "team_id": "vxt_000026",
-          "formation": "Unknown",
+          "formation": "3-5-2",
           "starting_players_count": 11,
           "bench_players_count": 14,
           "starting_xi_quality": {
@@ -9718,8 +9718,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000158",
-              "name": "Barbieri",
+              "vectra_player_id": "vxp_000162",
+              "name": "Bianchetti",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000154",
+              "name": "Pezzella",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -9739,23 +9746,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000154",
-              "name": "Pezzella",
+              "vectra_player_id": "vxp_000158",
+              "name": "Barbieri",
               "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000162",
-              "name": "Bianchetti",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000165",
-              "name": "Maleh",
-              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -9774,15 +9767,22 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000148",
-              "name": "Bonazzoli",
-              "role": "Forward",
+              "vectra_player_id": "vxp_000165",
+              "name": "Maleh",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
               "vectra_player_id": "vxp_000159",
               "name": "Vardy",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000148",
+              "name": "Bonazzoli",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -10141,7 +10141,7 @@
               "weighted_players": 11,
               "missing_profile_players": 0,
               "skipped_zero_role_players": 0,
-              "total_weight": 9.1518,
+              "total_weight": 9.1517,
               "contributors": [
                 {
                   "vectra_player_id": "vxp_000162",
@@ -10472,13 +10472,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000530",
-              "name": "Canestrelli",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000532",
               "name": "Caracciolo",
               "role": "Defender",
@@ -10493,15 +10486,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000542",
-              "name": "Akinsanmiro",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000530",
+              "name": "Canestrelli",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000546",
-              "name": "Vural",
+              "vectra_player_id": "vxp_000547",
+              "name": "Loyola",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -10514,6 +10507,20 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000546",
+              "name": "Vural",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000542",
+              "name": "Akinsanmiro",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000535",
               "name": "I. Touré",
               "role": "Midfielder",
@@ -10521,22 +10528,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000547",
-              "name": "Loyola",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000550",
+              "name": "Stojilković",
+              "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
               "vectra_player_id": "vxp_000529",
               "name": "Moreo",
-              "role": "Forward",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000550",
-              "name": "Stojilković",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -11607,20 +11607,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000201",
-              "name": "Parisi",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000188",
-              "name": "Dodô",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000190",
               "name": "Ranieri",
               "role": "Defender",
@@ -11635,16 +11621,16 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000193",
-              "name": "Fagioli",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000201",
+              "name": "Parisi",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000194",
-              "name": "Ndour",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000188",
+              "name": "Dodô",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -11658,6 +11644,20 @@
             {
               "vectra_player_id": "vxp_000191",
               "name": "Mandragora",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000193",
+              "name": "Fagioli",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000194",
+              "name": "Ndour",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
