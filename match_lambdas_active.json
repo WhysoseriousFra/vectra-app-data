@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T20:35:27.889668Z",
+  "generated_at": "2026-05-10T21:05:29.253158Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -15392,6 +15392,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000427",
+              "name": "Bartesaghi",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000431",
               "name": "Gabbia",
               "role": "Defender",
@@ -15408,13 +15415,6 @@
             {
               "vectra_player_id": "vxp_000423",
               "name": "Pavlović",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000427",
-              "name": "Bartesaghi",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -15448,15 +15448,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000430",
-              "name": "Rafael Leão",
+              "vectra_player_id": "vxp_000421",
+              "name": "Saelemaekers",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000421",
-              "name": "Saelemaekers",
+              "vectra_player_id": "vxp_000430",
+              "name": "Rafael Leão",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -16153,15 +16153,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000020",
-              "name": "Kolašinac",
+              "vectra_player_id": "vxp_000010",
+              "name": "Hien",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000010",
-              "name": "Hien",
+              "vectra_player_id": "vxp_000020",
+              "name": "Kolašinac",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -16170,6 +16170,13 @@
               "vectra_player_id": "vxp_000016",
               "name": "Scalvini",
               "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000009",
+              "name": "Éderson",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -16183,13 +16190,6 @@
             {
               "vectra_player_id": "vxp_000006",
               "name": "de Roon",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000009",
-              "name": "Éderson",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -17022,7 +17022,7 @@
       "away_team_id": "vxt_000033",
       "home_team_name": "Milan",
       "away_team_name": "Atalanta",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-05-10T18:45:00Z",
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
