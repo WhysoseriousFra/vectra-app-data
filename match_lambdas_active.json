@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T10:35:28.827233Z",
+  "generated_at": "2026-05-10T11:05:30.723460Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -8605,6 +8605,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000115",
+              "name": "Nico Paz",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000117",
               "name": "Perrone",
               "role": "Midfielder",
@@ -8626,9 +8633,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000115",
-              "name": "Nico Paz",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000113",
+              "name": "Douvikas",
+              "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -8642,13 +8649,6 @@
             {
               "vectra_player_id": "vxp_000132",
               "name": "Diao",
-              "role": "Forward",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000113",
-              "name": "Douvikas",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
