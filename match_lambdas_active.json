@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T12:35:30.941648Z",
+  "generated_at": "2026-05-10T13:05:31.064756Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -11348,7 +11348,7 @@
       "away_team_id": "vxt_000026",
       "home_team_name": "Cremonese",
       "away_team_name": "Pisa",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-10T13:00:00Z",
       "stadium": "Giovanni Zini",
       "city": "Cremona",
@@ -11607,20 +11607,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000190",
-              "name": "Ranieri",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000189",
-              "name": "Pongračić",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000201",
               "name": "Parisi",
               "role": "Defender",
@@ -11635,16 +11621,16 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000200",
-              "name": "Gosens",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000190",
+              "name": "Ranieri",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000191",
-              "name": "Mandragora",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000189",
+              "name": "Pongračić",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -11658,6 +11644,20 @@
             {
               "vectra_player_id": "vxp_000194",
               "name": "Ndour",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000200",
+              "name": "Gosens",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000191",
+              "name": "Mandragora",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -13241,7 +13241,7 @@
       "away_team_id": "vxt_000029",
       "home_team_name": "Fiorentina",
       "away_team_name": "Genoa",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-10T13:00:00Z",
       "stadium": "Artemio Franchi",
       "city": "Firenze",
