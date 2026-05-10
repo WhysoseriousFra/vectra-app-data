@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T19:05:26.976772Z",
+  "generated_at": "2026-05-10T19:35:29.761588Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -14255,8 +14255,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000571",
-              "name": "Mancini",
+              "vectra_player_id": "vxp_000578",
+              "name": "Hermoso",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -14269,8 +14269,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000578",
-              "name": "Hermoso",
+              "vectra_player_id": "vxp_000571",
+              "name": "Mancini",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -15441,6 +15441,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000437",
+              "name": "Giménez",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000421",
               "name": "Saelemaekers",
               "role": "Forward",
@@ -15450,13 +15457,6 @@
             {
               "vectra_player_id": "vxp_000430",
               "name": "Rafael Leão",
-              "role": "Forward",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000437",
-              "name": "Giménez",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -15815,7 +15815,7 @@
               "weighted_players": 11,
               "missing_profile_players": 0,
               "skipped_zero_role_players": 0,
-              "total_weight": 8.5887,
+              "total_weight": 8.5888,
               "contributors": [
                 {
                   "vectra_player_id": "vxp_000423",
@@ -16146,15 +16146,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000010",
-              "name": "Hien",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000020",
-              "name": "Kolašinac",
+              "vectra_player_id": "vxp_000002",
+              "name": "Zappacosta",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -16167,8 +16160,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000002",
-              "name": "Zappacosta",
+              "vectra_player_id": "vxp_000010",
+              "name": "Hien",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000020",
+              "name": "Kolašinac",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -16202,15 +16202,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000022",
-              "name": "Raspadori",
+              "vectra_player_id": "vxp_000004",
+              "name": "Krstović",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000004",
-              "name": "Krstović",
+              "vectra_player_id": "vxp_000022",
+              "name": "Raspadori",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
