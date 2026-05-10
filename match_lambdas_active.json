@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T19:35:29.761588Z",
+  "generated_at": "2026-05-10T20:05:27.400140Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -15441,13 +15441,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000437",
-              "name": "Giménez",
-              "role": "Forward",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000421",
               "name": "Saelemaekers",
               "role": "Forward",
@@ -15457,6 +15450,13 @@
             {
               "vectra_player_id": "vxp_000430",
               "name": "Rafael Leão",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000437",
+              "name": "Giménez",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -15815,7 +15815,7 @@
               "weighted_players": 11,
               "missing_profile_players": 0,
               "skipped_zero_role_players": 0,
-              "total_weight": 8.5888,
+              "total_weight": 8.5887,
               "contributors": [
                 {
                   "vectra_player_id": "vxp_000423",
@@ -16146,8 +16146,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000002",
-              "name": "Zappacosta",
+              "vectra_player_id": "vxp_000010",
+              "name": "Hien",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000020",
+              "name": "Kolašinac",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -16160,15 +16167,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000010",
-              "name": "Hien",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000020",
-              "name": "Kolašinac",
+              "vectra_player_id": "vxp_000002",
+              "name": "Zappacosta",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
