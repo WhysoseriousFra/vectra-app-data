@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T18:35:31.542912Z",
+  "generated_at": "2026-05-10T19:05:26.976772Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -16202,15 +16202,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000004",
-              "name": "Krstović",
+              "vectra_player_id": "vxp_000022",
+              "name": "Raspadori",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000022",
-              "name": "Raspadori",
+              "vectra_player_id": "vxp_000004",
+              "name": "Krstović",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -17022,7 +17022,7 @@
       "away_team_id": "vxt_000033",
       "home_team_name": "Milan",
       "away_team_name": "Atalanta",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-10T18:45:00Z",
       "stadium": "Giuseppe Meazza",
       "city": "Milano",

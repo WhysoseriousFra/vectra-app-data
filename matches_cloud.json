@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T18:35:43.410226Z",
+  "generated_at": "2026-05-10T19:05:37.645965Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_036",
   "matchday": 36,
@@ -443,14 +443,14 @@
         "city": "Milano"
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
       },
       "score": {
         "home_score": 0,
-        "away_score": 0
+        "away_score": 1
       },
       "referee": {
         "assigned": true,
