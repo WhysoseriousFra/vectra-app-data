@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T13:05:31.064756Z",
+  "generated_at": "2026-05-10T13:35:29.680248Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -11607,20 +11607,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000201",
-              "name": "Parisi",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000188",
-              "name": "Dodô",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000190",
               "name": "Ranieri",
               "role": "Defender",
@@ -11635,16 +11621,16 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000193",
-              "name": "Fagioli",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000201",
+              "name": "Parisi",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000194",
-              "name": "Ndour",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000188",
+              "name": "Dodô",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -11658,6 +11644,20 @@
             {
               "vectra_player_id": "vxp_000191",
               "name": "Mandragora",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000193",
+              "name": "Fagioli",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000194",
+              "name": "Ndour",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
