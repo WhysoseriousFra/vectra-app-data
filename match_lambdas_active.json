@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T15:05:30.760446Z",
+  "generated_at": "2026-05-10T15:35:31.104489Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -9718,13 +9718,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000158",
-              "name": "Barbieri",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000162",
               "name": "Bianchetti",
               "role": "Defender",
@@ -9748,6 +9741,13 @@
             {
               "vectra_player_id": "vxp_000147",
               "name": "F. Terracciano",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000158",
+              "name": "Barbieri",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -10141,7 +10141,7 @@
               "weighted_players": 11,
               "missing_profile_players": 0,
               "skipped_zero_role_players": 0,
-              "total_weight": 9.1518,
+              "total_weight": 9.1517,
               "contributors": [
                 {
                   "vectra_player_id": "vxp_000162",
@@ -12361,6 +12361,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000255",
+              "name": "Zätterström",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000235",
               "name": "Martín",
               "role": "Defender",
@@ -12382,22 +12389,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000255",
-              "name": "Zätterström",
-              "role": "Defender",
+              "vectra_player_id": "vxp_000233",
+              "name": "Frendrup",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
               "vectra_player_id": "vxp_000232",
               "name": "Ellertsson",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000233",
-              "name": "Frendrup",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
