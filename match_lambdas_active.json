@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T20:05:29.685975Z",
+  "generated_at": "2026-05-11T20:35:31.218517Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -17315,13 +17315,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000456",
-              "name": "McTominay",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000457",
               "name": "Lobotka",
               "role": "Midfielder",
@@ -17329,15 +17322,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000450",
-              "name": "Giovane",
-              "role": "Forward",
+              "vectra_player_id": "vxp_000456",
+              "name": "McTominay",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000473",
-              "name": "Alisson",
+              "vectra_player_id": "vxp_000455",
+              "name": "Højlund",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -17350,8 +17343,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000455",
-              "name": "Højlund",
+              "vectra_player_id": "vxp_000473",
+              "name": "Alisson",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000450",
+              "name": "Giovane",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -18041,20 +18041,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000051",
-              "name": "João Mário",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000038",
-              "name": "Miranda",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000061",
               "name": "Helland",
               "role": "Defender",
@@ -18064,6 +18050,20 @@
             {
               "vectra_player_id": "vxp_000042",
               "name": "Lucumí",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000051",
+              "name": "João Mário",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000038",
+              "name": "Miranda",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
