@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T21:05:41.626474Z",
+  "generated_at": "2026-05-11T21:30:51.599478Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -258,7 +258,7 @@
         "key_insights": [
           "Margine strutturale: un vantaggio reale per la squadra di casa.",
           "Ambiente partita: un profilo di gara aperta.",
-          "Minaccia offensiva Napoli: molto alta.",
+          "Minaccia offensiva Napoli: alta.",
           "Minaccia offensiva Bologna: presente ma contenuta."
         ],
         "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra di casa dentro un profilo di gara aperta. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
