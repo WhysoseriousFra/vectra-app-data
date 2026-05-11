@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T09:00:46.607084Z",
+  "generated_at": "2026-05-11T10:05:43.807847Z",
   "schema": "vectra.predictions_cloud.v7",
   "source_schema": "vectra.match_predictions.v20",
   "model_layer_status": "baseline_plus_dixon_coles_bivariate_poisson_dynamic_team_rating_home_away_context_latent_xg_finishing_regression_chance_quality_volume_goalkeeper_impact_defensive_fragility_set_piece_threat_aerial_matchup_rhythm_tempo_transition_counterattack_pressing_buildup_disruption_match_control_dominance_goal_pressure_defensive_resistance_structural_impact_v2_active_refinement",
@@ -8924,7 +8924,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-11T09:00:46.607084Z",
+          "generated_at": "2026-05-11T10:05:43.807847Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -18844,7 +18844,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-11T09:00:46.607084Z",
+          "generated_at": "2026-05-11T10:05:43.807847Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -28867,7 +28867,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-11T09:00:46.607084Z",
+          "generated_at": "2026-05-11T10:05:43.807847Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -38880,7 +38880,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-11T09:00:46.607084Z",
+          "generated_at": "2026-05-11T10:05:43.807847Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -49681,7 +49681,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-11T09:00:46.607084Z",
+          "generated_at": "2026-05-11T10:05:43.807847Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -60344,7 +60344,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-11T09:00:46.607084Z",
+          "generated_at": "2026-05-11T10:05:43.807847Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -71136,7 +71136,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-11T09:00:46.607084Z",
+          "generated_at": "2026-05-11T10:05:43.807847Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -81830,7 +81830,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-11T09:00:46.607084Z",
+          "generated_at": "2026-05-11T10:05:43.807847Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -92542,7 +92542,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-11T09:00:46.607084Z",
+          "generated_at": "2026-05-11T10:05:43.807847Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -92575,93 +92575,93 @@
         },
         "outcomes": {
           "home_win": 0.7601,
-          "draw": 0.1979,
-          "away_win": 0.042
+          "draw": 0.1982,
+          "away_win": 0.0417
         },
         "over_under": {
           "over_1_5": 0.7345,
           "under_1_5": 0.2655,
-          "over_2_5": 0.4951,
-          "under_2_5": 0.5049,
-          "over_3_5": 0.2707,
-          "under_3_5": 0.7293
+          "over_2_5": 0.4952,
+          "under_2_5": 0.5048,
+          "over_3_5": 0.2709,
+          "under_3_5": 0.7291
         },
         "goal_scenarios": {
           "over_under": {
             "over_1_5": 0.7345,
             "under_1_5": 0.2655,
-            "over_2_5": 0.4951,
-            "under_2_5": 0.5049,
-            "over_3_5": 0.2707,
-            "under_3_5": 0.7293
+            "over_2_5": 0.4952,
+            "under_2_5": 0.5048,
+            "over_3_5": 0.2709,
+            "under_3_5": 0.7291
           },
           "team_goals": {
-            "away_over_0_5": 0.4664,
-            "away_over_1_5": 0.0974,
+            "away_over_0_5": 0.4665,
+            "away_over_1_5": 0.0973,
             "away_over_2_5": 0.0109,
-            "away_under_0_5": 0.5336,
-            "away_under_1_5": 0.9026,
+            "away_under_0_5": 0.5335,
+            "away_under_1_5": 0.9027,
             "away_under_2_5": 0.9891,
-            "home_over_0_5": 0.9186,
-            "home_over_1_5": 0.6168,
-            "home_over_2_5": 0.3484,
-            "home_under_0_5": 0.0814,
-            "home_under_1_5": 0.3832,
-            "home_under_2_5": 0.6516
+            "home_over_0_5": 0.9184,
+            "home_over_1_5": 0.6166,
+            "home_over_2_5": 0.3488,
+            "home_under_0_5": 0.0816,
+            "home_under_1_5": 0.3834,
+            "home_under_2_5": 0.6512
           },
           "clean_sheet": {
-            "home": 0.4931,
-            "away": 0.1251
+            "home": 0.493,
+            "away": 0.1253
           },
           "goal_range": {
             "goals_0_1": 0.2638,
-            "goals_2_3": 0.4501,
-            "goals_4_plus": 0.2861
+            "goals_2_3": 0.45,
+            "goals_4_plus": 0.2862
           }
         },
         "btts": {
-          "yes": 0.4283,
-          "no": 0.5717
+          "yes": 0.4285,
+          "no": 0.5715
         },
         "team_goals": {
-          "away_over_0_5": 0.4664,
-          "away_over_1_5": 0.0974,
+          "away_over_0_5": 0.4665,
+          "away_over_1_5": 0.0973,
           "away_over_2_5": 0.0109,
-          "away_under_0_5": 0.5336,
-          "away_under_1_5": 0.9026,
+          "away_under_0_5": 0.5335,
+          "away_under_1_5": 0.9027,
           "away_under_2_5": 0.9891,
-          "home_over_0_5": 0.9186,
-          "home_over_1_5": 0.6168,
-          "home_over_2_5": 0.3484,
-          "home_under_0_5": 0.0814,
-          "home_under_1_5": 0.3832,
-          "home_under_2_5": 0.6516
+          "home_over_0_5": 0.9184,
+          "home_over_1_5": 0.6166,
+          "home_over_2_5": 0.3488,
+          "home_under_0_5": 0.0816,
+          "home_under_1_5": 0.3834,
+          "home_under_2_5": 0.6512
         },
         "clean_sheet": {
-          "home": 0.4931,
-          "away": 0.1251
+          "home": 0.493,
+          "away": 0.1253
         },
         "goal_range": {
           "goals_0_1": 0.2638,
-          "goals_2_3": 0.4501,
-          "goals_4_plus": 0.2861
+          "goals_2_3": 0.45,
+          "goals_4_plus": 0.2862
         },
         "top_scorelines": [
           {
             "score": "1-0",
-            "probability": 0.1634
+            "probability": 0.1633
           },
           {
             "score": "2-0",
-            "probability": 0.1479
+            "probability": 0.1477
           },
           {
             "score": "2-1",
-            "probability": 0.1454
+            "probability": 0.1453
           },
           {
             "score": "1-1",
-            "probability": 0.0889
+            "probability": 0.0891
           },
           {
             "score": "0-1",
@@ -92671,150 +92671,150 @@
         "primary": {
           "outcome": "home_win",
           "probability": 0.7601,
-          "confidence": 0.5622,
-          "baseline_confidence": 0.5622,
+          "confidence": 0.5619,
+          "baseline_confidence": 0.5619,
           "scoreline": "1-0",
-          "scoreline_probability": 0.1634,
+          "scoreline_probability": 0.1633,
           "over_under": "under_2_5",
-          "over_under_probability": 0.5049,
+          "over_under_probability": 0.5048,
           "over_under_2_5": "under_2_5",
-          "over_under_2_5_probability": 0.5049,
+          "over_under_2_5_probability": 0.5048,
           "btts": "no",
-          "btts_probability": 0.5717,
+          "btts_probability": 0.5715,
           "goal_range": "goals_2_3",
-          "goal_range_probability": 0.4501,
+          "goal_range_probability": 0.45,
           "home_scoring_signal": {
             "label": "multi_goal_potential",
-            "over_0_5": 0.9186,
-            "over_1_5": 0.6168
+            "over_0_5": 0.9184,
+            "over_1_5": 0.6166
           },
           "away_scoring_signal": {
             "label": "low_scoring_signal",
-            "over_0_5": 0.4664,
-            "over_1_5": 0.0974
+            "over_0_5": 0.4665,
+            "over_1_5": 0.0973
           }
         },
         "baseline_consensus": {
           "outcomes": {
-            "home_win": 0.5554,
-            "draw": 0.2328,
-            "away_win": 0.2119
+            "home_win": 0.5552,
+            "draw": 0.2331,
+            "away_win": 0.2117
           },
           "over_under": {
-            "over_1_5": 0.7633,
-            "over_2_5": 0.5239,
-            "over_3_5": 0.2996,
+            "over_1_5": 0.7634,
+            "over_2_5": 0.524,
+            "over_3_5": 0.2998,
             "under_1_5": 0.2366,
-            "under_2_5": 0.476,
-            "under_3_5": 0.7004
+            "under_2_5": 0.4759,
+            "under_3_5": 0.7003
           },
           "btts": {
-            "no": 0.4743,
-            "yes": 0.5256
+            "no": 0.4741,
+            "yes": 0.5258
           },
           "team_goals": {
-            "away_over_0_5": 0.6319,
-            "away_over_1_5": 0.2629,
-            "away_over_2_5": 0.0809,
-            "away_under_0_5": 0.3681,
-            "away_under_1_5": 0.7371,
-            "away_under_2_5": 0.9191,
-            "home_over_0_5": 0.8306,
-            "home_over_1_5": 0.5288,
-            "home_over_2_5": 0.2604,
-            "home_under_0_5": 0.1694,
-            "home_under_1_5": 0.4712,
-            "home_under_2_5": 0.7395
+            "away_over_0_5": 0.632,
+            "away_over_1_5": 0.2628,
+            "away_over_2_5": 0.081,
+            "away_under_0_5": 0.368,
+            "away_under_1_5": 0.7372,
+            "away_under_2_5": 0.919,
+            "home_over_0_5": 0.8304,
+            "home_over_1_5": 0.5287,
+            "home_over_2_5": 0.2608,
+            "home_under_0_5": 0.1696,
+            "home_under_1_5": 0.4714,
+            "home_under_2_5": 0.7392
           },
           "clean_sheet": {
-            "away": 0.1694,
-            "home": 0.3681
+            "away": 0.1696,
+            "home": 0.368
           },
           "goal_range": {
             "goals_0_1": 0.2366,
             "goals_2_3": 0.4637,
-            "goals_4_plus": 0.2996
+            "goals_4_plus": 0.2998
           },
           "top_scorelines": [
             {
               "score": "1-0",
-              "probability": 0.1109
+              "probability": 0.1108
             },
             {
               "score": "1-1",
-              "probability": 0.1104
+              "probability": 0.1106
             },
             {
               "score": "2-1",
-              "probability": 0.1001
+              "probability": 0.1
             },
             {
               "score": "2-0",
-              "probability": 0.0985
+              "probability": 0.0983
             },
             {
               "score": "0-0",
-              "probability": 0.0633
+              "probability": 0.0635
             }
           ]
         },
         "consensus_after_dixon_coles": {
           "outcomes": {
-            "home_win": 0.5611,
-            "draw": 0.2213,
-            "away_win": 0.2176
+            "home_win": 0.561,
+            "draw": 0.2216,
+            "away_win": 0.2174
           },
           "over_under": {
             "over_1_5": 0.7921,
-            "over_2_5": 0.5527,
-            "over_3_5": 0.3283,
+            "over_2_5": 0.5528,
+            "over_3_5": 0.3285,
             "under_1_5": 0.2079,
-            "under_2_5": 0.4473,
-            "under_3_5": 0.6717
+            "under_2_5": 0.4472,
+            "under_3_5": 0.6715
           },
           "btts": {
-            "no": 0.4566,
-            "yes": 0.5434
+            "no": 0.4564,
+            "yes": 0.5436
           },
           "team_goals": {
-            "away_over_0_5": 0.632,
-            "away_over_1_5": 0.263,
-            "away_over_2_5": 0.081,
-            "away_under_0_5": 0.368,
-            "away_under_1_5": 0.737,
-            "away_under_2_5": 0.919,
-            "home_over_0_5": 0.8305,
-            "home_over_1_5": 0.5287,
-            "home_over_2_5": 0.2603,
-            "home_under_0_5": 0.1695,
-            "home_under_1_5": 0.4713,
-            "home_under_2_5": 0.7397
+            "away_over_0_5": 0.6321,
+            "away_over_1_5": 0.2629,
+            "away_over_2_5": 0.0811,
+            "away_under_0_5": 0.3679,
+            "away_under_1_5": 0.7371,
+            "away_under_2_5": 0.9189,
+            "home_over_0_5": 0.8303,
+            "home_over_1_5": 0.5285,
+            "home_over_2_5": 0.2607,
+            "home_under_0_5": 0.1697,
+            "home_under_1_5": 0.4715,
+            "home_under_2_5": 0.7393
           },
           "clean_sheet": {
-            "home": 0.368,
-            "away": 0.1694
+            "home": 0.3679,
+            "away": 0.1696
           },
           "goal_range": {
             "goals_0_1": 0.2147,
-            "goals_2_3": 0.4553,
-            "goals_4_plus": 0.3301
+            "goals_2_3": 0.4552,
+            "goals_4_plus": 0.3302
           },
           "top_scorelines": [
             {
               "score": "1-0",
-              "probability": 0.1167
+              "probability": 0.1166
             },
             {
               "score": "1-1",
-              "probability": 0.1046
+              "probability": 0.1048
             },
             {
               "score": "2-1",
-              "probability": 0.1001
+              "probability": 0.1
             },
             {
               "score": "2-0",
-              "probability": 0.0985
+              "probability": 0.0983
             },
             {
               "score": "0-1",
@@ -92825,60 +92825,60 @@
         "consensus_after_goal_pressure": {
           "outcomes": {
             "home_win": 0.7642,
-            "draw": 0.207,
-            "away_win": 0.0288
+            "draw": 0.2073,
+            "away_win": 0.0285
           },
           "over_under": {
             "over_1_5": 0.7202,
-            "over_2_5": 0.4808,
-            "over_3_5": 0.2564,
+            "over_2_5": 0.4809,
+            "over_3_5": 0.2566,
             "under_1_5": 0.2798,
-            "under_2_5": 0.5192,
-            "under_3_5": 0.7436
+            "under_2_5": 0.5191,
+            "under_3_5": 0.7434
           },
           "btts": {
-            "no": 0.5815,
-            "yes": 0.4185
+            "no": 0.5813,
+            "yes": 0.4187
           },
           "team_goals": {
-            "away_over_0_5": 0.4555,
-            "away_over_1_5": 0.0865,
+            "away_over_0_5": 0.4556,
+            "away_over_1_5": 0.0864,
             "away_over_2_5": 0.0,
-            "away_under_0_5": 0.5445,
-            "away_under_1_5": 0.9135,
+            "away_under_0_5": 0.5444,
+            "away_under_1_5": 0.9136,
             "away_under_2_5": 1.0,
-            "home_over_0_5": 0.901,
-            "home_over_1_5": 0.5992,
-            "home_over_2_5": 0.3308,
-            "home_under_0_5": 0.099,
-            "home_under_1_5": 0.4008,
-            "home_under_2_5": 0.6692
+            "home_over_0_5": 0.9008,
+            "home_over_1_5": 0.599,
+            "home_over_2_5": 0.3312,
+            "home_under_0_5": 0.0992,
+            "home_under_1_5": 0.401,
+            "home_under_2_5": 0.6688
           },
           "clean_sheet": {
-            "home": 0.5051,
-            "away": 0.1445
+            "home": 0.505,
+            "away": 0.1447
           },
           "goal_range": {
             "goals_0_1": 0.2781,
-            "goals_2_3": 0.4451,
-            "goals_4_plus": 0.2768
+            "goals_2_3": 0.445,
+            "goals_4_plus": 0.2769
           },
           "top_scorelines": [
             {
               "score": "1-0",
-              "probability": 0.1634
+              "probability": 0.1633
             },
             {
               "score": "2-0",
-              "probability": 0.1479
+              "probability": 0.1477
             },
             {
               "score": "2-1",
-              "probability": 0.1454
+              "probability": 0.1453
             },
             {
               "score": "1-1",
-              "probability": 0.0889
+              "probability": 0.0891
             },
             {
               "score": "0-1",
@@ -92889,60 +92889,60 @@
         "refined_consensus": {
           "outcomes": {
             "home_win": 0.7601,
-            "draw": 0.1979,
-            "away_win": 0.042
+            "draw": 0.1982,
+            "away_win": 0.0417
           },
           "over_under": {
             "over_1_5": 0.7345,
-            "over_2_5": 0.4951,
-            "over_3_5": 0.2707,
+            "over_2_5": 0.4952,
+            "over_3_5": 0.2709,
             "under_1_5": 0.2655,
-            "under_2_5": 0.5049,
-            "under_3_5": 0.7293
+            "under_2_5": 0.5048,
+            "under_3_5": 0.7291
           },
           "btts": {
-            "no": 0.5717,
-            "yes": 0.4283
+            "no": 0.5715,
+            "yes": 0.4285
           },
           "team_goals": {
-            "away_over_0_5": 0.4664,
-            "away_over_1_5": 0.0974,
+            "away_over_0_5": 0.4665,
+            "away_over_1_5": 0.0973,
             "away_over_2_5": 0.0109,
-            "away_under_0_5": 0.5336,
-            "away_under_1_5": 0.9026,
+            "away_under_0_5": 0.5335,
+            "away_under_1_5": 0.9027,
             "away_under_2_5": 0.9891,
-            "home_over_0_5": 0.9186,
-            "home_over_1_5": 0.6168,
-            "home_over_2_5": 0.3484,
-            "home_under_0_5": 0.0814,
-            "home_under_1_5": 0.3832,
-            "home_under_2_5": 0.6516
+            "home_over_0_5": 0.9184,
+            "home_over_1_5": 0.6166,
+            "home_over_2_5": 0.3488,
+            "home_under_0_5": 0.0816,
+            "home_under_1_5": 0.3834,
+            "home_under_2_5": 0.6512
           },
           "clean_sheet": {
-            "home": 0.4931,
-            "away": 0.1251
+            "home": 0.493,
+            "away": 0.1253
           },
           "goal_range": {
             "goals_0_1": 0.2638,
-            "goals_2_3": 0.4501,
-            "goals_4_plus": 0.2861
+            "goals_2_3": 0.45,
+            "goals_4_plus": 0.2862
           },
           "top_scorelines": [
             {
               "score": "1-0",
-              "probability": 0.1634
+              "probability": 0.1633
             },
             {
               "score": "2-0",
-              "probability": 0.1479
+              "probability": 0.1477
             },
             {
               "score": "2-1",
-              "probability": 0.1454
+              "probability": 0.1453
             },
             {
               "score": "1-1",
-              "probability": 0.0889
+              "probability": 0.0891
             },
             {
               "score": "0-1",
@@ -92977,7 +92977,7 @@
             "source": {
               "rho_proxy": 0.0525,
               "low_score_pressure": 0.4042,
-              "reliability": 0.9591,
+              "reliability": 0.9652,
               "rho_label": "positive_low_score_correlation",
               "low_score_label": "open_score_environment",
               "impact_tier": "strong",
@@ -93194,63 +93194,63 @@
           },
           "montecarlo": {
             "outcomes": {
-              "home_win": 0.5556,
-              "draw": 0.2321,
-              "away_win": 0.2124
+              "home_win": 0.5553,
+              "draw": 0.2328,
+              "away_win": 0.2119
             },
             "over_under": {
-              "over_1_5": 0.7626,
-              "under_1_5": 0.2374,
-              "over_2_5": 0.5244,
-              "under_2_5": 0.4755,
-              "over_3_5": 0.2985,
-              "under_3_5": 0.7015
+              "over_1_5": 0.7627,
+              "under_1_5": 0.2373,
+              "over_2_5": 0.5245,
+              "under_2_5": 0.4754,
+              "over_3_5": 0.2987,
+              "under_3_5": 0.7013
             },
             "btts": {
-              "yes": 0.5266,
-              "no": 0.4733
+              "yes": 0.5271,
+              "no": 0.4729
             },
             "team_goals": {
-              "home_over_0_5": 0.8308,
-              "home_under_0_5": 0.1692,
-              "home_over_1_5": 0.5286,
-              "home_under_1_5": 0.4713,
-              "home_over_2_5": 0.2596,
-              "home_under_2_5": 0.7403,
-              "away_over_0_5": 0.6319,
-              "away_under_0_5": 0.3681,
-              "away_over_1_5": 0.2618,
-              "away_under_1_5": 0.7382,
-              "away_over_2_5": 0.0817,
-              "away_under_2_5": 0.9183
+              "home_over_0_5": 0.8304,
+              "home_under_0_5": 0.1696,
+              "home_over_1_5": 0.5284,
+              "home_under_1_5": 0.4716,
+              "home_over_2_5": 0.2604,
+              "home_under_2_5": 0.7397,
+              "away_over_0_5": 0.6321,
+              "away_under_0_5": 0.3679,
+              "away_over_1_5": 0.2617,
+              "away_under_1_5": 0.7383,
+              "away_over_2_5": 0.0819,
+              "away_under_2_5": 0.9181
             },
             "clean_sheet": {
-              "home": 0.3681,
-              "away": 0.1692
+              "home": 0.3679,
+              "away": 0.1696
             },
             "goal_range": {
-              "goals_0_1": 0.2374,
-              "goals_2_3": 0.4641,
-              "goals_4_plus": 0.2985
+              "goals_0_1": 0.2373,
+              "goals_2_3": 0.464,
+              "goals_4_plus": 0.2987
             },
             "top_scorelines": [
               {
                 "score": "1-0",
-                "probability": 0.1109
+                "probability": 0.1106
               },
               {
                 "score": "1-1",
-                "probability": 0.11
+                "probability": 0.1104
               },
               {
                 "score": "2-1",
-                "probability": 0.1017
+                "probability": 0.1014
               }
             ],
             "goal_means": {
-              "home_goals_mean": 1.7683,
-              "away_goals_mean": 0.9999,
-              "total_goals_mean": 2.7682
+              "home_goals_mean": 1.7678,
+              "away_goals_mean": 1.0005,
+              "total_goals_mean": 2.7683
             },
             "simulations": 20000
           },
@@ -93261,7 +93261,7 @@
             "rho_label": "positive_low_score_correlation",
             "low_score_pressure": 0.4042,
             "low_score_label": "open_score_environment",
-            "reliability": 0.9591,
+            "reliability": 0.9652,
             "adjusted_top_scorelines": {
               "1-0": 0.1168,
               "1-1": 0.1051,
@@ -93365,7 +93365,7 @@
               "low_score_signal": 0.1458,
               "low_score_pressure": 0.4042,
               "rho_proxy": 0.0525,
-              "reliability": 0.9591,
+              "reliability": 0.9652,
               "thresholds": {
                 "light": {
                   "min_low_score_signal": 0.03,
@@ -93594,7 +93594,7 @@
               "rho_label": "positive_low_score_correlation",
               "low_score_pressure": 0.4042,
               "low_score_label": "open_score_environment",
-              "reliability": 0.9591,
+              "reliability": 0.9652,
               "adjusted_top_scorelines": {
                 "1-0": 0.1168,
                 "1-1": 0.1051,
@@ -93698,7 +93698,7 @@
                 "low_score_signal": 0.1458,
                 "low_score_pressure": 0.4042,
                 "rho_proxy": 0.0525,
-                "reliability": 0.9591,
+                "reliability": 0.9652,
                 "thresholds": {
                   "light": {
                     "min_low_score_signal": 0.03,
@@ -93752,7 +93752,7 @@
                 "source": {
                   "rho_proxy": 0.0525,
                   "low_score_pressure": 0.4042,
-                  "reliability": 0.9591,
+                  "reliability": 0.9652,
                   "rho_label": "positive_low_score_correlation",
                   "low_score_label": "open_score_environment",
                   "impact_tier": "strong",
@@ -93812,8 +93812,8 @@
               "correlation_signal": 0.1904,
               "correlation_direction": "positive",
               "correlation_label": "clear_shared_goal_environment",
-              "shared_lambda": 0.1116,
-              "reliability": 0.9518,
+              "shared_lambda": 0.1115,
+              "reliability": 0.9486,
               "adjusted_top_scorelines": {
                 "1-0": 0.1163,
                 "1-1": 0.111,
@@ -93916,8 +93916,8 @@
                 "correlation_signal": 0.1904,
                 "correlation_direction": "positive",
                 "correlation_strength": 0.1904,
-                "shared_lambda": 0.1116,
-                "reliability": 0.9518,
+                "shared_lambda": 0.1115,
+                "reliability": 0.9486,
                 "thresholds": {
                   "light": {
                     "min_correlation_strength": 0.08,
@@ -93946,14 +93946,14 @@
                 "fallback_used": false,
                 "quality_flags": [],
                 "correlation_source": "proxy_v1",
-                "engine_agreement": 0.9738,
+                "engine_agreement": 0.9687,
                 "stage_reliability": 0.9,
                 "lambda_quality": 0.94,
                 "negative_proxy_delta_used": false,
                 "cap_applied": true
               },
               "premium": {
-                "summary": "Bivariate Poisson clear_shared_goal_environment: correlation_signal 0.1904, shared_lambda 0.1116. Il modello legge la dipendenza strutturale tra i goal delle due squadre e applica solo variazioni cappate.",
+                "summary": "Bivariate Poisson clear_shared_goal_environment: correlation_signal 0.1904, shared_lambda 0.1115. Il modello legge la dipendenza strutturale tra i goal delle due squadre e applica solo variazioni cappate.",
                 "key_factors": [
                   {
                     "type": "correlation_signal",
@@ -93964,7 +93964,7 @@
                   {
                     "type": "shared_lambda",
                     "label": "common_goal_component",
-                    "value": 0.1116,
+                    "value": 0.1115,
                     "note": "Componente comune della bivariate Poisson classica quando la correlazione è positiva."
                   },
                   {
@@ -94008,8 +94008,8 @@
                   "correlation_signal": 0.1904,
                   "correlation_direction": "positive",
                   "correlation_label": "clear_shared_goal_environment",
-                  "shared_lambda": 0.1116,
-                  "reliability": 0.9518,
+                  "shared_lambda": 0.1115,
+                  "reliability": 0.9486,
                   "impact_tier": "standard",
                   "impact_direction": "shared_goal_correlation"
                 },
@@ -99922,7 +99922,7 @@
               "label": "open_score_environment",
               "value": 0.0525,
               "low_score_pressure": 0.4042,
-              "reliability": 0.9591,
+              "reliability": 0.9652,
               "impact_tier": "strong",
               "status": "active_refinement",
               "applied": true,
@@ -99934,8 +99934,8 @@
               "label": "clear_shared_goal_environment",
               "value": 0.1904,
               "correlation_direction": "positive",
-              "shared_lambda": 0.1116,
-              "reliability": 0.9518,
+              "shared_lambda": 0.1115,
+              "reliability": 0.9486,
               "impact_tier": "standard",
               "status": "active_refinement",
               "applied": true,
@@ -100186,33 +100186,33 @@
           "available": true,
           "computed": true,
           "fallback_used": false,
-          "score": 0.5671,
-          "confidence_score": 0.5671,
+          "score": 0.5667,
+          "confidence_score": 0.5667,
           "band": "medium",
           "label": "Lettura discreta",
           "source": "confidence_reliability_model_v1",
           "data_quality_label": "low",
           "model_agreement_label": "very_high_agreement",
           "stage_reliability": "referee_ready",
-          "volatility_penalty": 0.196,
-          "base_confidence": 0.7631,
+          "volatility_penalty": 0.1962,
+          "base_confidence": 0.7629,
           "components": {
             "outcome_clarity": {
               "score": 1.0,
               "favored_outcome": "home_win",
               "favored_probability": 0.7601,
               "second_outcome": "draw",
-              "second_probability": 0.1979,
-              "margin": 0.5622,
+              "second_probability": 0.1982,
+              "margin": 0.5619,
               "label": "clear_margin"
             },
             "model_agreement": {
-              "score": 0.889,
+              "score": 0.888,
               "label": "very_high_agreement",
               "source": "poisson_montecarlo_plus_model_agreement_disagreement",
-              "engine_agreement_score": 0.9712,
-              "internal_agreement_score": 0.8909,
-              "internal_disagreement_score": 0.1091,
+              "engine_agreement_score": 0.9688,
+              "internal_agreement_score": 0.8907,
+              "internal_disagreement_score": 0.1093,
               "agreement_tier": "very_high",
               "disagreement_tier": "none",
               "dominant_signal_family": "team_strength_control",
@@ -100232,14 +100232,14 @@
                 "conflict_penalty": 0.03,
                 "has_medium_or_higher_conflict": false
               },
-              "outcome_max_abs_delta": 0.0013,
-              "goal_environment_max_abs_delta": 0.0023,
-              "disagreement_signal": 0.1091
+              "outcome_max_abs_delta": 0.0006,
+              "goal_environment_max_abs_delta": 0.0025,
+              "disagreement_signal": 0.1093
             },
             "agreement_layer": {
               "available": true,
-              "agreement_score": 0.8909,
-              "disagreement_score": 0.1091,
+              "agreement_score": 0.8907,
+              "disagreement_score": 0.1093,
               "agreement_tier": "very_high",
               "disagreement_tier": "none",
               "dominant_signal_family": "team_strength_control",
@@ -100278,14 +100278,14 @@
               "source_signal": 0.974
             },
             "volatility_penalty": {
-              "score": 0.196,
+              "score": 0.1962,
               "source": "volatility_model_v2",
-              "volatility_score": 0.56,
+              "volatility_score": 0.5607,
               "prediction_stability": "volatile"
             },
             "confidence_guards": {
-              "score_before_guards": 0.5671,
-              "score_after_guards": 0.5671,
+              "score_before_guards": 0.5667,
+              "score_after_guards": 0.5667,
               "cap_applied": 0.79,
               "guards_applied": [
                 {
@@ -100302,18 +100302,18 @@
             }
           },
           "premium": {
-            "summary": "Confidence medium: score 0.5671. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "summary": "Confidence medium: score 0.5667. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
             "key_factors": [
               {
                 "type": "outcome_clarity",
                 "label": "clear_margin",
-                "value": 0.5622,
+                "value": 0.5619,
                 "note": "Distanza tra il primo e il secondo esito del consensus finale."
               },
               {
                 "type": "model_agreement",
                 "label": "very_high_agreement",
-                "value": 0.889,
+                "value": 0.888,
                 "note": "Allineamento combinato tra motori probabilistici e layer agreement/disagreement interno."
               },
               {
@@ -100325,7 +100325,7 @@
               {
                 "type": "volatility_penalty",
                 "label": "active_volatility_penalty",
-                "value": 0.196,
+                "value": 0.1962,
                 "note": "Penalità applicata perché la stabilità della previsione non è piena."
               },
               {
@@ -100355,17 +100355,17 @@
           "available": true,
           "computed": true,
           "fallback_used": false,
-          "score": 0.56,
-          "volatility_score": 0.56,
+          "score": 0.5607,
+          "volatility_score": 0.5607,
           "label": "volatile",
           "prediction_stability": "volatile",
           "source": "volatility_model_v2",
           "upset_risk": "low",
-          "upset_signal": 0.2503,
+          "upset_signal": 0.2509,
           "wide_scoreline_risk": "low",
-          "wide_scoreline_signal": 0.2793,
-          "confidence_penalty": 0.196,
-          "model_disagreement_signal": 0.0383,
+          "wide_scoreline_signal": 0.2794,
+          "confidence_penalty": 0.1962,
+          "model_disagreement_signal": 0.0417,
           "data_quality_volatility": 0.2472,
           "consensus_movement_signal": 1.0,
           "outcome_fragility_signal": 0.0,
@@ -100373,12 +100373,12 @@
           "movement": {
             "baseline_to_goal_pressure": {
               "probabilities": {
-                "home_win": 0.2088,
+                "home_win": 0.209,
                 "draw": -0.0258,
-                "away_win": -0.1831
+                "away_win": -0.1832
               },
-              "max_abs_delta": 0.2088,
-              "mean_abs_delta": 0.1392
+              "max_abs_delta": 0.209,
+              "mean_abs_delta": 0.1393
             },
             "goal_pressure_to_final": {
               "probabilities": {
@@ -100391,12 +100391,12 @@
             },
             "baseline_to_final": {
               "probabilities": {
-                "home_win": 0.2047,
+                "home_win": 0.2049,
                 "draw": -0.0349,
-                "away_win": -0.1699
+                "away_win": -0.17
               },
-              "max_abs_delta": 0.2047,
-              "mean_abs_delta": 0.1365
+              "max_abs_delta": 0.2049,
+              "mean_abs_delta": 0.1366
             }
           },
           "outcome_fragility": {
@@ -100404,24 +100404,24 @@
             "favored_outcome": "home_win",
             "favored_probability": 0.7601,
             "second_outcome": "draw",
-            "second_probability": 0.1979,
-            "margin": 0.5622,
+            "second_probability": 0.1982,
+            "margin": 0.5619,
             "margin_label": "clear_margin"
           },
           "model_disagreement": {
-            "signal": 0.0383,
-            "outcome_max_abs_delta": 0.0013,
-            "goal_environment_max_abs_delta": 0.0023,
+            "signal": 0.0417,
+            "outcome_max_abs_delta": 0.0006,
+            "goal_environment_max_abs_delta": 0.0025,
             "label": "low"
           },
           "goal_environment": {
             "signal": 0.974,
-            "wide_scoreline_signal": 0.2793,
+            "wide_scoreline_signal": 0.2794,
             "wide_scoreline_risk": "low",
             "movement": {
               "over_under_baseline_to_final": {
                 "max_abs_delta": 0.0289,
-                "over_1_5_delta": -0.0288,
+                "over_1_5_delta": -0.0289,
                 "over_2_5_delta": -0.0288,
                 "over_3_5_delta": -0.0289
               },
@@ -100435,8 +100435,8 @@
               "goal_range_baseline_to_final": {
                 "max_abs_delta": 0.0272,
                 "goals_0_1_delta": 0.0272,
-                "goals_2_3_delta": -0.0136,
-                "goals_4_plus_delta": -0.0135
+                "goals_2_3_delta": -0.0137,
+                "goals_4_plus_delta": -0.0136
               }
             }
           },
@@ -100454,12 +100454,12 @@
             "label": "low"
           },
           "premium": {
-            "summary": "Volatility volatile: score 0.56. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+            "summary": "Volatility volatile: score 0.5607. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
             "key_factors": [
               {
                 "type": "outcome_margin",
                 "label": "clear_margin",
-                "value": 0.5622,
+                "value": 0.5619,
                 "note": "Distanza tra il primo e il secondo esito del consensus finale."
               },
               {
@@ -100593,7 +100593,7 @@
               "label": "open_score_environment",
               "rho_proxy": 0.0525,
               "low_score_pressure": 0.4042,
-              "reliability": 0.9591,
+              "reliability": 0.9652,
               "note": "Dixon-Coles corregge in modo controllato le scoreline basse."
             },
             {
@@ -100603,8 +100603,8 @@
               "label": "clear_shared_goal_environment",
               "correlation_signal": 0.1904,
               "correlation_direction": "positive",
-              "shared_lambda": 0.1116,
-              "reliability": 0.9518,
+              "shared_lambda": 0.1115,
+              "reliability": 0.9486,
               "note": "Bivariate Poisson legge la dipendenza strutturale tra goal casa e goal trasferta."
             },
             {
@@ -100736,20 +100736,20 @@
               "model": "volatility",
               "status": "post_aggregator_analysis",
               "label": "volatile",
-              "volatility_score": 0.56,
+              "volatility_score": 0.5607,
               "upset_risk": "low",
               "wide_scoreline_risk": "low",
-              "confidence_penalty": 0.196,
+              "confidence_penalty": 0.1962,
               "note": "Volatility misura stabilità e fragilità della previsione matematica finale."
             },
             {
               "type": "confidence_model",
               "model": "confidence_reliability",
               "status": "post_volatility_analysis",
-              "confidence_score": 0.5671,
+              "confidence_score": 0.5667,
               "confidence_band": "medium",
               "label": "Lettura discreta",
-              "volatility_penalty": 0.196,
+              "volatility_penalty": 0.1962,
               "note": "Confidence misura l’affidabilità della lettura matematica finale, non la probabilità dell’esito."
             }
           ],
@@ -100764,7 +100764,7 @@
                 "source": {
                   "rho_proxy": 0.0525,
                   "low_score_pressure": 0.4042,
-                  "reliability": 0.9591,
+                  "reliability": 0.9652,
                   "rho_label": "positive_low_score_correlation",
                   "low_score_label": "open_score_environment",
                   "impact_tier": "strong",
@@ -100821,7 +100821,7 @@
               "model": "bivariate_poisson",
               "correlation_signal": 0.1904,
               "correlation_direction": "positive",
-              "shared_lambda": 0.1116,
+              "shared_lambda": 0.1115,
               "adjustments": {
                 "applied": true,
                 "reason": "bivariate_poisson_goal_correlation_active_refinement",
@@ -100829,8 +100829,8 @@
                   "correlation_signal": 0.1904,
                   "correlation_direction": "positive",
                   "correlation_label": "clear_shared_goal_environment",
-                  "shared_lambda": 0.1116,
-                  "reliability": 0.9518,
+                  "shared_lambda": 0.1115,
+                  "reliability": 0.9486,
                   "impact_tier": "standard",
                   "impact_direction": "shared_goal_correlation"
                 },
@@ -102003,25 +102003,25 @@
                 "computed": true,
                 "fallback_used": false,
                 "source": "volatility_model_v2",
-                "score": 0.56,
+                "score": 0.5607,
                 "label": "volatile",
-                "volatility_score": 0.56,
+                "volatility_score": 0.5607,
                 "prediction_stability": "volatile",
                 "upset_risk": "low",
-                "upset_signal": 0.2503,
+                "upset_signal": 0.2509,
                 "wide_scoreline_risk": "low",
-                "wide_scoreline_signal": 0.2793,
-                "confidence_penalty": 0.196,
-                "base_volatility_score": 0.495,
+                "wide_scoreline_signal": 0.2794,
+                "confidence_penalty": 0.1962,
+                "base_volatility_score": 0.4957,
                 "internal_conflict_delta": 0.065,
                 "internal_conflict_volatility": {
                   "available": true,
-                  "score": 0.2228,
+                  "score": 0.223,
                   "delta": 0.065,
                   "effect": "light_up",
                   "source": "model_agreement_disagreement_model.json",
-                  "agreement_score": 0.8909,
-                  "disagreement_score": 0.1091,
+                  "agreement_score": 0.8907,
+                  "disagreement_score": 0.1093,
                   "agreement_tier": "very_high",
                   "disagreement_tier": "none",
                   "effective_disagreement_tier": "light",
@@ -102062,7 +102062,7 @@
                   "conflict_flags_count": 1.0,
                   "medium_or_higher_conflicts": 0.0
                 },
-                "model_disagreement_signal": 0.0383,
+                "model_disagreement_signal": 0.0417,
                 "data_quality_volatility": 0.2472,
                 "consensus_movement_signal": 1.0,
                 "outcome_fragility_signal": 0.0,
@@ -102070,12 +102070,12 @@
                 "movement": {
                   "baseline_to_goal_pressure": {
                     "probabilities": {
-                      "home_win": 0.2088,
+                      "home_win": 0.209,
                       "draw": -0.0258,
-                      "away_win": -0.1831
+                      "away_win": -0.1832
                     },
-                    "max_abs_delta": 0.2088,
-                    "mean_abs_delta": 0.1392
+                    "max_abs_delta": 0.209,
+                    "mean_abs_delta": 0.1393
                   },
                   "goal_pressure_to_final": {
                     "probabilities": {
@@ -102088,12 +102088,12 @@
                   },
                   "baseline_to_final": {
                     "probabilities": {
-                      "home_win": 0.2047,
+                      "home_win": 0.2049,
                       "draw": -0.0349,
-                      "away_win": -0.1699
+                      "away_win": -0.17
                     },
-                    "max_abs_delta": 0.2047,
-                    "mean_abs_delta": 0.1365
+                    "max_abs_delta": 0.2049,
+                    "mean_abs_delta": 0.1366
                   }
                 },
                 "outcome_fragility": {
@@ -102101,24 +102101,24 @@
                   "favored_outcome": "home_win",
                   "favored_probability": 0.7601,
                   "second_outcome": "draw",
-                  "second_probability": 0.1979,
-                  "margin": 0.5622,
+                  "second_probability": 0.1982,
+                  "margin": 0.5619,
                   "margin_label": "clear_margin"
                 },
                 "model_disagreement": {
-                  "signal": 0.0383,
-                  "outcome_max_abs_delta": 0.0013,
-                  "goal_environment_max_abs_delta": 0.0023,
+                  "signal": 0.0417,
+                  "outcome_max_abs_delta": 0.0006,
+                  "goal_environment_max_abs_delta": 0.0025,
                   "label": "low"
                 },
                 "goal_environment": {
                   "signal": 0.974,
-                  "wide_scoreline_signal": 0.2793,
+                  "wide_scoreline_signal": 0.2794,
                   "wide_scoreline_risk": "low",
                   "movement": {
                     "over_under_baseline_to_final": {
                       "max_abs_delta": 0.0289,
-                      "over_1_5_delta": -0.0288,
+                      "over_1_5_delta": -0.0289,
                       "over_2_5_delta": -0.0288,
                       "over_3_5_delta": -0.0289
                     },
@@ -102132,19 +102132,19 @@
                     "goal_range_baseline_to_final": {
                       "max_abs_delta": 0.0272,
                       "goals_0_1_delta": 0.0272,
-                      "goals_2_3_delta": -0.0136,
-                      "goals_4_plus_delta": -0.0135
+                      "goals_2_3_delta": -0.0137,
+                      "goals_4_plus_delta": -0.0136
                     }
                   }
                 },
                 "internal_conflict": {
                   "available": true,
-                  "score": 0.2228,
+                  "score": 0.223,
                   "delta": 0.065,
                   "effect": "light_up",
                   "source": "model_agreement_disagreement_model.json",
-                  "agreement_score": 0.8909,
-                  "disagreement_score": 0.1091,
+                  "agreement_score": 0.8907,
+                  "disagreement_score": 0.1093,
                   "agreement_tier": "very_high",
                   "disagreement_tier": "none",
                   "effective_disagreement_tier": "light",
@@ -102221,12 +102221,12 @@
                   }
                 },
                 "premium": {
-                  "summary": "Volatility volatile: score 0.56. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
+                  "summary": "Volatility volatile: score 0.5607. La misura descrive stabilità o fragilità della previsione matematica, senza modificare direttamente le probabilità finali.",
                   "key_factors": [
                     {
                       "type": "outcome_margin",
                       "label": "clear_margin",
-                      "value": 0.5622,
+                      "value": 0.5619,
                       "note": "Distanza tra il primo e il secondo esito del consensus finale."
                     },
                     {
@@ -102264,8 +102264,8 @@
                 "computed": true,
                 "fallback_used": false,
                 "source": "confidence_reliability_model_v1",
-                "confidence_score": 0.5671,
-                "score": 0.5671,
+                "confidence_score": 0.5667,
+                "score": 0.5667,
                 "confidence_band": "medium",
                 "band": "medium",
                 "confidence_label": "Lettura discreta",
@@ -102273,12 +102273,12 @@
                 "data_quality_label": "low",
                 "model_agreement_label": "very_high_agreement",
                 "stage_reliability": "referee_ready",
-                "volatility_penalty": 0.196,
-                "base_confidence": 0.7631,
-                "raw_confidence_score": 0.5671,
+                "volatility_penalty": 0.1962,
+                "base_confidence": 0.7629,
+                "raw_confidence_score": 0.5667,
                 "confidence_guards": {
-                  "score_before_guards": 0.5671,
-                  "score_after_guards": 0.5671,
+                  "score_before_guards": 0.5667,
+                  "score_after_guards": 0.5667,
                   "cap_applied": 0.79,
                   "guards_applied": [
                     {
@@ -102299,17 +102299,17 @@
                     "favored_outcome": "home_win",
                     "favored_probability": 0.7601,
                     "second_outcome": "draw",
-                    "second_probability": 0.1979,
-                    "margin": 0.5622,
+                    "second_probability": 0.1982,
+                    "margin": 0.5619,
                     "label": "clear_margin"
                   },
                   "model_agreement": {
-                    "score": 0.889,
+                    "score": 0.888,
                     "label": "very_high_agreement",
                     "source": "poisson_montecarlo_plus_model_agreement_disagreement",
-                    "engine_agreement_score": 0.9712,
-                    "internal_agreement_score": 0.8909,
-                    "internal_disagreement_score": 0.1091,
+                    "engine_agreement_score": 0.9688,
+                    "internal_agreement_score": 0.8907,
+                    "internal_disagreement_score": 0.1093,
                     "agreement_tier": "very_high",
                     "disagreement_tier": "none",
                     "dominant_signal_family": "team_strength_control",
@@ -102329,14 +102329,14 @@
                       "conflict_penalty": 0.03,
                       "has_medium_or_higher_conflict": false
                     },
-                    "outcome_max_abs_delta": 0.0013,
-                    "goal_environment_max_abs_delta": 0.0023,
-                    "disagreement_signal": 0.1091
+                    "outcome_max_abs_delta": 0.0006,
+                    "goal_environment_max_abs_delta": 0.0025,
+                    "disagreement_signal": 0.1093
                   },
                   "agreement_layer": {
                     "available": true,
-                    "agreement_score": 0.8909,
-                    "disagreement_score": 0.1091,
+                    "agreement_score": 0.8907,
+                    "disagreement_score": 0.1093,
                     "agreement_tier": "very_high",
                     "disagreement_tier": "none",
                     "dominant_signal_family": "team_strength_control",
@@ -102375,14 +102375,14 @@
                     "source_signal": 0.974
                   },
                   "volatility_penalty": {
-                    "score": 0.196,
+                    "score": 0.1962,
                     "source": "volatility_model_v2",
-                    "volatility_score": 0.56,
+                    "volatility_score": 0.5607,
                     "prediction_stability": "volatile"
                   },
                   "confidence_guards": {
-                    "score_before_guards": 0.5671,
-                    "score_after_guards": 0.5671,
+                    "score_before_guards": 0.5667,
+                    "score_after_guards": 0.5667,
                     "cap_applied": 0.79,
                     "guards_applied": [
                       {
@@ -102408,8 +102408,8 @@
                   "has_agreement_disagreement": true,
                   "agreement_layer_available": true,
                   "confidence_guards": {
-                    "score_before_guards": 0.5671,
-                    "score_after_guards": 0.5671,
+                    "score_before_guards": 0.5667,
+                    "score_after_guards": 0.5667,
                     "cap_applied": 0.79,
                     "guards_applied": [
                       {
@@ -102438,18 +102438,18 @@
                   }
                 },
                 "premium": {
-                  "summary": "Confidence medium: score 0.5671. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "summary": "Confidence medium: score 0.5667. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
                   "key_factors": [
                     {
                       "type": "outcome_clarity",
                       "label": "clear_margin",
-                      "value": 0.5622,
+                      "value": 0.5619,
                       "note": "Distanza tra il primo e il secondo esito del consensus finale."
                     },
                     {
                       "type": "model_agreement",
                       "label": "very_high_agreement",
-                      "value": 0.889,
+                      "value": 0.888,
                       "note": "Allineamento combinato tra motori probabilistici e layer agreement/disagreement interno."
                     },
                     {
@@ -102461,7 +102461,7 @@
                     {
                       "type": "volatility_penalty",
                       "label": "active_volatility_penalty",
-                      "value": 0.196,
+                      "value": 0.1962,
                       "note": "Penalità applicata perché la stabilità della previsione non è piena."
                     },
                     {
@@ -102505,7 +102505,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-11T09:00:46.607084Z",
+          "generated_at": "2026-05-11T10:05:43.807847Z",
           "has_lineups": false,
           "has_referee": true
         }
