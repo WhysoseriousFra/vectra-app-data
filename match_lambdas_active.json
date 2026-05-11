@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T12:35:31.113339Z",
+  "generated_at": "2026-05-11T13:05:31.966963Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -7830,22 +7830,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000730",
-              "name": "Belghali",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000736",
               "name": "Valentini",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000727",
-              "name": "Frese",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -7865,9 +7851,16 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000728",
-              "name": "Gagliardini",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000727",
+              "name": "Frese",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000730",
+              "name": "Belghali",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -7879,15 +7872,22 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000745",
-              "name": "Suslov",
+              "vectra_player_id": "vxp_000725",
+              "name": "Bernède",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000725",
-              "name": "Bernède",
+              "vectra_player_id": "vxp_000728",
+              "name": "Gagliardini",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000745",
+              "name": "Suslov",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -8188,7 +8188,7 @@
               "weighted_players": 11,
               "missing_profile_players": 0,
               "skipped_zero_role_players": 0,
-              "total_weight": 8.2967,
+              "total_weight": 8.2968,
               "contributors": [
                 {
                   "vectra_player_id": "vxp_000728",
@@ -8584,15 +8584,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000118",
-              "name": "Kempf",
+              "vectra_player_id": "vxp_000123",
+              "name": "Álex Valle",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000123",
-              "name": "Álex Valle",
+              "vectra_player_id": "vxp_000118",
+              "name": "Kempf",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -8605,8 +8605,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000115",
-              "name": "Nico Paz",
+              "vectra_player_id": "vxp_000120",
+              "name": "Vojvoda",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -8626,16 +8626,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000120",
-              "name": "Vojvoda",
+              "vectra_player_id": "vxp_000115",
+              "name": "Nico Paz",
               "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000113",
-              "name": "Douvikas",
-              "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -8649,6 +8642,13 @@
             {
               "vectra_player_id": "vxp_000132",
               "name": "Diao",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000113",
+              "name": "Douvikas",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
