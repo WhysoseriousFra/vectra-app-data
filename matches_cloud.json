@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T20:35:41.844352Z",
+  "generated_at": "2026-05-11T21:05:41.637938Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_036",
   "matchday": 36,
@@ -495,14 +495,14 @@
         "city": "Napoli"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
       },
       "score": {
         "home_score": 2,
-        "away_score": 2
+        "away_score": 3
       },
       "referee": {
         "assigned": true,
