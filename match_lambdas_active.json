@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T18:35:31.486592Z",
+  "generated_at": "2026-05-11T19:05:30.601077Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -17287,6 +17287,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000459",
+              "name": "Gutiérrez",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000462",
               "name": "Di Lorenzo",
               "role": "Defender",
@@ -17303,13 +17310,6 @@
             {
               "vectra_player_id": "vxp_000466",
               "name": "Rrahmani",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000459",
-              "name": "Gutiérrez",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -18917,7 +18917,7 @@
       "away_team_id": "vxt_000025",
       "home_team_name": "Napoli",
       "away_team_name": "Bologna",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-11T18:45:00Z",
       "stadium": "Diego Armando Maradona",
       "city": "Napoli",
