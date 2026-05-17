@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T12:05:34.867788Z",
+  "generated_at": "2026-05-17T12:35:39.078296Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_037",
   "matchday": 37,
@@ -27,7 +27,7 @@
         "city": "Como"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
@@ -79,7 +79,7 @@
         "city": "Genova"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
@@ -288,8 +288,8 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "referee_ready",
-        "has_lineups": false,
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
@@ -302,18 +302,18 @@
         "referee_name": "Andrea Calzavara"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "pending",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "full",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-5-2",
+          "starting_count": 11,
+          "bench_count": 15
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-5-1-1",
+          "starting_count": 11,
+          "bench_count": 15
         }
       }
     },
