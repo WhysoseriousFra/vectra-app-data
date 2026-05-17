@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T16:35:31.883591Z",
+  "generated_at": "2026-05-17T17:05:35.440759Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -11606,13 +11606,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000002",
-              "name": "Zappacosta",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000003",
               "name": "Djimsiti",
               "role": "Defender",
@@ -11629,6 +11622,13 @@
             {
               "vectra_player_id": "vxp_000016",
               "name": "Scalvini",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000002",
+              "name": "Zappacosta",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -12360,20 +12360,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000038",
-              "name": "Miranda",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000051",
-              "name": "João Mário",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000061",
               "name": "Helland",
               "role": "Defender",
@@ -12388,8 +12374,22 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000043",
-              "name": "Freuler",
+              "vectra_player_id": "vxp_000038",
+              "name": "Miranda",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000051",
+              "name": "João Mário",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000041",
+              "name": "Bernardeschi",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -12402,15 +12402,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000041",
-              "name": "Bernardeschi",
+              "vectra_player_id": "vxp_000048",
+              "name": "L. Ferguson",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000048",
-              "name": "L. Ferguson",
+              "vectra_player_id": "vxp_000043",
+              "name": "Freuler",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
