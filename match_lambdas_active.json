@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T13:05:26.531553Z",
+  "generated_at": "2026-05-17T13:35:25.766477Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -9710,6 +9710,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000290",
+              "name": "de Vrij",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000277",
               "name": "Carlos Augusto",
               "role": "Defender",
@@ -9731,9 +9738,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000290",
-              "name": "de Vrij",
-              "role": "Defender",
+              "vectra_player_id": "vxp_000283",
+              "name": "Mkhitaryan",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -9759,22 +9766,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000283",
-              "name": "Mkhitaryan",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000281",
+              "name": "L. Martínez",
+              "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
               "vectra_player_id": "vxp_000278",
               "name": "Bonny",
-              "role": "Forward",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000281",
-              "name": "L. Martínez",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
