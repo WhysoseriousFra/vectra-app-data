@@ -1,50 +1,154 @@
 {
-  "generated_at": "2026-05-11T21:30:51.618228Z",
+  "generated_at": "2026-05-17T07:33:22.425021Z",
   "season_id": "vxs_serie_a_2025_2026",
-  "matchday_id": "vxd_serie_a_2025_2026_036",
-  "matchday": 36,
+  "matchday_id": "vxd_serie_a_2025_2026_037",
+  "matchday": 37,
   "matches_count": 10,
   "data": {
-    "vxm_000051": {
-      "vectra_match_id": "vxm_000051",
+    "vxm_000061": {
+      "vectra_match_id": "vxm_000061",
       "vectra_season_id": "vxs_serie_a_2025_2026",
-      "vectra_matchday_id": "vxd_serie_a_2025_2026_036",
-      "matchday": 36,
+      "vectra_matchday_id": "vxd_serie_a_2025_2026_037",
+      "matchday": 37,
       "teams": {
         "home": {
-          "team_id": "vxt_000032",
-          "name": "Torino"
+          "team_id": "vxt_000024",
+          "name": "Como"
         },
         "away": {
-          "team_id": "vxt_000034",
-          "name": "Sassuolo"
+          "team_id": "vxt_000023",
+          "name": "Parma"
         }
       },
       "context": {
-        "kickoff_utc": "2026-05-08T18:45:00Z",
-        "kickoff_local": "2026-05-08T20:45:00",
-        "stadium": "Olimpico - Grande Torino",
+        "kickoff_utc": "2026-05-17T10:00:00Z",
+        "kickoff_local": "2026-05-17T12:00:00",
+        "stadium": "Giuseppe Sinigaglia",
+        "city": "Como"
+      },
+      "status": {
+        "match_status": "UPCOMING",
+        "prediction_stage": "core_only",
+        "has_lineups": false,
+        "has_referee": false
+      },
+      "score": {
+        "home_score": null,
+        "away_score": null
+      },
+      "referee": {
+        "assigned": false,
+        "vectra_referee_id": "",
+        "referee_name": ""
+      },
+      "lineups": {
+        "available": false,
+        "confirmed": false,
+        "resolution_status": "pending",
+        "home": {
+          "formation": "",
+          "starting_count": 0,
+          "bench_count": 0
+        },
+        "away": {
+          "formation": "",
+          "starting_count": 0,
+          "bench_count": 0
+        }
+      }
+    },
+    "vxm_000062": {
+      "vectra_match_id": "vxm_000062",
+      "vectra_season_id": "vxs_serie_a_2025_2026",
+      "vectra_matchday_id": "vxd_serie_a_2025_2026_037",
+      "matchday": 37,
+      "teams": {
+        "home": {
+          "team_id": "vxt_000029",
+          "name": "Genoa"
+        },
+        "away": {
+          "team_id": "vxt_000038",
+          "name": "Milan"
+        }
+      },
+      "context": {
+        "kickoff_utc": "2026-05-17T10:00:00Z",
+        "kickoff_local": "2026-05-17T12:00:00",
+        "stadium": "Luigi Ferraris",
+        "city": "Genova"
+      },
+      "status": {
+        "match_status": "UPCOMING",
+        "prediction_stage": "core_only",
+        "has_lineups": false,
+        "has_referee": false
+      },
+      "score": {
+        "home_score": null,
+        "away_score": null
+      },
+      "referee": {
+        "assigned": false,
+        "vectra_referee_id": "",
+        "referee_name": ""
+      },
+      "lineups": {
+        "available": false,
+        "confirmed": false,
+        "resolution_status": "pending",
+        "home": {
+          "formation": "",
+          "starting_count": 0,
+          "bench_count": 0
+        },
+        "away": {
+          "formation": "",
+          "starting_count": 0,
+          "bench_count": 0
+        }
+      }
+    },
+    "vxm_000063": {
+      "vectra_match_id": "vxm_000063",
+      "vectra_season_id": "vxs_serie_a_2025_2026",
+      "vectra_matchday_id": "vxd_serie_a_2025_2026_037",
+      "matchday": 37,
+      "teams": {
+        "home": {
+          "team_id": "vxt_000021",
+          "name": "Juventus"
+        },
+        "away": {
+          "team_id": "vxt_000027",
+          "name": "Fiorentina"
+        }
+      },
+      "context": {
+        "kickoff_utc": "2026-05-17T10:00:00Z",
+        "kickoff_local": "2026-05-17T12:00:00",
+        "stadium": "Allianz Stadium",
         "city": "Torino"
       },
       "status": {
-        "match_status": "FINISHED",
-        "prediction_stage": "finished",
-        "has_lineups": true,
-        "has_referee": true
+        "match_status": "UPCOMING",
+        "prediction_stage": "core_only",
+        "has_lineups": false,
+        "has_referee": false
       },
       "score": {
-        "home_score": 2,
-        "away_score": 1
+        "home_score": null,
+        "away_score": null
       },
       "referee": {
-        "assigned": true,
-        "vectra_referee_id": "vxr_000034",
-        "referee_name": "Simone Galipò"
+        "assigned": false,
+        "vectra_referee_id": "",
+        "referee_name": ""
       },
       "lineups": {
-        "available": true,
+        "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -57,46 +161,46 @@
         }
       }
     },
-    "vxm_000052": {
-      "vectra_match_id": "vxm_000052",
+    "vxm_000064": {
+      "vectra_match_id": "vxm_000064",
       "vectra_season_id": "vxs_serie_a_2025_2026",
-      "vectra_matchday_id": "vxd_serie_a_2025_2026_036",
-      "matchday": 36,
+      "vectra_matchday_id": "vxd_serie_a_2025_2026_037",
+      "matchday": 37,
       "teams": {
         "home": {
-          "team_id": "vxt_000022",
-          "name": "Cagliari"
+          "team_id": "vxt_000026",
+          "name": "Pisa"
         },
         "away": {
-          "team_id": "vxt_000028",
-          "name": "Udinese"
+          "team_id": "vxt_000039",
+          "name": "Napoli"
         }
       },
       "context": {
-        "kickoff_utc": "2026-05-09T13:00:00Z",
-        "kickoff_local": "2026-05-09T15:00:00",
-        "stadium": "Unipol Domus",
-        "city": "Cagliari"
+        "kickoff_utc": "2026-05-17T10:00:00Z",
+        "kickoff_local": "2026-05-17T12:00:00",
+        "stadium": "Cetilar Arena",
+        "city": "Pisa"
       },
       "status": {
-        "match_status": "FINISHED",
-        "prediction_stage": "finished",
-        "has_lineups": true,
-        "has_referee": true
+        "match_status": "UPCOMING",
+        "prediction_stage": "core_only",
+        "has_lineups": false,
+        "has_referee": false
       },
       "score": {
-        "home_score": 0,
-        "away_score": 2
+        "home_score": null,
+        "away_score": null
       },
       "referee": {
-        "assigned": true,
-        "vectra_referee_id": "vxr_000019",
-        "referee_name": "Federico Dionisi"
+        "assigned": false,
+        "vectra_referee_id": "",
+        "referee_name": ""
       },
       "lineups": {
-        "available": true,
+        "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -109,46 +213,46 @@
         }
       }
     },
-    "vxm_000053": {
-      "vectra_match_id": "vxm_000053",
+    "vxm_000065": {
+      "vectra_match_id": "vxm_000065",
       "vectra_season_id": "vxs_serie_a_2025_2026",
-      "vectra_matchday_id": "vxd_serie_a_2025_2026_036",
-      "matchday": 36,
+      "vectra_matchday_id": "vxd_serie_a_2025_2026_037",
+      "matchday": 37,
       "teams": {
         "home": {
-          "team_id": "vxt_000040",
-          "name": "Lazio"
+          "team_id": "vxt_000030",
+          "name": "Roma"
         },
         "away": {
-          "team_id": "vxt_000035",
-          "name": "Inter"
+          "team_id": "vxt_000040",
+          "name": "Lazio"
         }
       },
       "context": {
-        "kickoff_utc": "2026-05-09T16:00:00Z",
-        "kickoff_local": "2026-05-09T18:00:00",
+        "kickoff_utc": "2026-05-17T10:00:00Z",
+        "kickoff_local": "2026-05-17T12:00:00",
         "stadium": "Olimpico",
         "city": "Roma"
       },
       "status": {
-        "match_status": "FINISHED",
-        "prediction_stage": "finished",
-        "has_lineups": true,
-        "has_referee": true
+        "match_status": "UPCOMING",
+        "prediction_stage": "core_only",
+        "has_lineups": false,
+        "has_referee": false
       },
       "score": {
-        "home_score": 0,
-        "away_score": 3
+        "home_score": null,
+        "away_score": null
       },
       "referee": {
-        "assigned": true,
-        "vectra_referee_id": "vxr_000007",
-        "referee_name": "Rosario Abisso"
+        "assigned": false,
+        "vectra_referee_id": "",
+        "referee_name": ""
       },
       "lineups": {
-        "available": true,
+        "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -161,306 +265,46 @@
         }
       }
     },
-    "vxm_000054": {
-      "vectra_match_id": "vxm_000054",
+    "vxm_000066": {
+      "vectra_match_id": "vxm_000066",
       "vectra_season_id": "vxs_serie_a_2025_2026",
-      "vectra_matchday_id": "vxd_serie_a_2025_2026_036",
-      "matchday": 36,
+      "vectra_matchday_id": "vxd_serie_a_2025_2026_037",
+      "matchday": 37,
       "teams": {
         "home": {
-          "team_id": "vxt_000037",
-          "name": "Lecce"
+          "team_id": "vxt_000035",
+          "name": "Inter"
         },
         "away": {
-          "team_id": "vxt_000021",
-          "name": "Juventus"
-        }
-      },
-      "context": {
-        "kickoff_utc": "2026-05-09T18:45:00Z",
-        "kickoff_local": "2026-05-09T20:45:00",
-        "stadium": "Ettore Giardiniero - Via Del Mare",
-        "city": "Lecce"
-      },
-      "status": {
-        "match_status": "FINISHED",
-        "prediction_stage": "finished",
-        "has_lineups": true,
-        "has_referee": true
-      },
-      "score": {
-        "home_score": 0,
-        "away_score": 1
-      },
-      "referee": {
-        "assigned": true,
-        "vectra_referee_id": "vxr_000025",
-        "referee_name": "Andrea Colombo"
-      },
-      "lineups": {
-        "available": true,
-        "confirmed": false,
-        "resolution_status": "",
-        "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
-        },
-        "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
-        }
-      }
-    },
-    "vxm_000055": {
-      "vectra_match_id": "vxm_000055",
-      "vectra_season_id": "vxs_serie_a_2025_2026",
-      "vectra_matchday_id": "vxd_serie_a_2025_2026_036",
-      "matchday": 36,
-      "teams": {
-        "home": {
           "team_id": "vxt_000036",
           "name": "Hellas Verona"
-        },
-        "away": {
-          "team_id": "vxt_000024",
-          "name": "Como"
         }
       },
       "context": {
-        "kickoff_utc": "2026-05-10T10:30:00Z",
-        "kickoff_local": "2026-05-10T12:30:00",
-        "stadium": "Marcantonio Bentegodi",
-        "city": "Verona"
-      },
-      "status": {
-        "match_status": "FINISHED",
-        "prediction_stage": "finished",
-        "has_lineups": true,
-        "has_referee": true
-      },
-      "score": {
-        "home_score": 0,
-        "away_score": 1
-      },
-      "referee": {
-        "assigned": true,
-        "vectra_referee_id": "vxr_000006",
-        "referee_name": "Marco Di Bello"
-      },
-      "lineups": {
-        "available": true,
-        "confirmed": false,
-        "resolution_status": "",
-        "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
-        },
-        "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
-        }
-      }
-    },
-    "vxm_000056": {
-      "vectra_match_id": "vxm_000056",
-      "vectra_season_id": "vxs_serie_a_2025_2026",
-      "vectra_matchday_id": "vxd_serie_a_2025_2026_036",
-      "matchday": 36,
-      "teams": {
-        "home": {
-          "team_id": "vxt_000031",
-          "name": "Cremonese"
-        },
-        "away": {
-          "team_id": "vxt_000026",
-          "name": "Pisa"
-        }
-      },
-      "context": {
-        "kickoff_utc": "2026-05-10T13:00:00Z",
-        "kickoff_local": "2026-05-10T15:00:00",
-        "stadium": "Giovanni Zini",
-        "city": "Cremona"
-      },
-      "status": {
-        "match_status": "FINISHED",
-        "prediction_stage": "finished",
-        "has_lineups": true,
-        "has_referee": true
-      },
-      "score": {
-        "home_score": 3,
-        "away_score": 0
-      },
-      "referee": {
-        "assigned": true,
-        "vectra_referee_id": "vxr_000022",
-        "referee_name": "Giovanni Ayroldi"
-      },
-      "lineups": {
-        "available": true,
-        "confirmed": false,
-        "resolution_status": "",
-        "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
-        },
-        "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
-        }
-      }
-    },
-    "vxm_000057": {
-      "vectra_match_id": "vxm_000057",
-      "vectra_season_id": "vxs_serie_a_2025_2026",
-      "vectra_matchday_id": "vxd_serie_a_2025_2026_036",
-      "matchday": 36,
-      "teams": {
-        "home": {
-          "team_id": "vxt_000027",
-          "name": "Fiorentina"
-        },
-        "away": {
-          "team_id": "vxt_000029",
-          "name": "Genoa"
-        }
-      },
-      "context": {
-        "kickoff_utc": "2026-05-10T13:00:00Z",
-        "kickoff_local": "2026-05-10T15:00:00",
-        "stadium": "Artemio Franchi",
-        "city": "Firenze"
-      },
-      "status": {
-        "match_status": "FINISHED",
-        "prediction_stage": "finished",
-        "has_lineups": true,
-        "has_referee": true
-      },
-      "score": {
-        "home_score": 0,
-        "away_score": 0
-      },
-      "referee": {
-        "assigned": true,
-        "vectra_referee_id": "vxr_000020",
-        "referee_name": "Luca Massimi"
-      },
-      "lineups": {
-        "available": true,
-        "confirmed": false,
-        "resolution_status": "",
-        "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
-        },
-        "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
-        }
-      }
-    },
-    "vxm_000058": {
-      "vectra_match_id": "vxm_000058",
-      "vectra_season_id": "vxs_serie_a_2025_2026",
-      "vectra_matchday_id": "vxd_serie_a_2025_2026_036",
-      "matchday": 36,
-      "teams": {
-        "home": {
-          "team_id": "vxt_000023",
-          "name": "Parma"
-        },
-        "away": {
-          "team_id": "vxt_000030",
-          "name": "Roma"
-        }
-      },
-      "context": {
-        "kickoff_utc": "2026-05-10T16:00:00Z",
-        "kickoff_local": "2026-05-10T18:00:00",
-        "stadium": "Ennio Tardini",
-        "city": "Parma"
-      },
-      "status": {
-        "match_status": "FINISHED",
-        "prediction_stage": "finished",
-        "has_lineups": true,
-        "has_referee": true
-      },
-      "score": {
-        "home_score": 2,
-        "away_score": 3
-      },
-      "referee": {
-        "assigned": true,
-        "vectra_referee_id": "vxr_000010",
-        "referee_name": "Daniele Chiffi"
-      },
-      "lineups": {
-        "available": true,
-        "confirmed": false,
-        "resolution_status": "",
-        "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
-        },
-        "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
-        }
-      }
-    },
-    "vxm_000059": {
-      "vectra_match_id": "vxm_000059",
-      "vectra_season_id": "vxs_serie_a_2025_2026",
-      "vectra_matchday_id": "vxd_serie_a_2025_2026_036",
-      "matchday": 36,
-      "teams": {
-        "home": {
-          "team_id": "vxt_000038",
-          "name": "Milan"
-        },
-        "away": {
-          "team_id": "vxt_000033",
-          "name": "Atalanta"
-        }
-      },
-      "context": {
-        "kickoff_utc": "2026-05-10T18:45:00Z",
-        "kickoff_local": "2026-05-10T20:45:00",
+        "kickoff_utc": "2026-05-17T13:00:00Z",
+        "kickoff_local": "2026-05-17T15:00:00",
         "stadium": "Giuseppe Meazza",
         "city": "Milano"
       },
       "status": {
-        "match_status": "FINISHED",
-        "prediction_stage": "finished",
-        "has_lineups": true,
-        "has_referee": true
+        "match_status": "UPCOMING",
+        "prediction_stage": "core_only",
+        "has_lineups": false,
+        "has_referee": false
       },
       "score": {
-        "home_score": 2,
-        "away_score": 3
+        "home_score": null,
+        "away_score": null
       },
       "referee": {
-        "assigned": true,
-        "vectra_referee_id": "vxr_000024",
-        "referee_name": "Luca Zufferli"
+        "assigned": false,
+        "vectra_referee_id": "",
+        "referee_name": ""
       },
       "lineups": {
-        "available": true,
+        "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -473,15 +317,15 @@
         }
       }
     },
-    "vxm_000060": {
-      "vectra_match_id": "vxm_000060",
+    "vxm_000067": {
+      "vectra_match_id": "vxm_000067",
       "vectra_season_id": "vxs_serie_a_2025_2026",
-      "vectra_matchday_id": "vxd_serie_a_2025_2026_036",
-      "matchday": 36,
+      "vectra_matchday_id": "vxd_serie_a_2025_2026_037",
+      "matchday": 37,
       "teams": {
         "home": {
-          "team_id": "vxt_000039",
-          "name": "Napoli"
+          "team_id": "vxt_000033",
+          "name": "Atalanta"
         },
         "away": {
           "team_id": "vxt_000025",
@@ -489,30 +333,186 @@
         }
       },
       "context": {
-        "kickoff_utc": "2026-05-11T18:45:00Z",
-        "kickoff_local": "2026-05-11T20:45:00",
-        "stadium": "Diego Armando Maradona",
-        "city": "Napoli"
+        "kickoff_utc": "2026-05-17T16:00:00Z",
+        "kickoff_local": "2026-05-17T18:00:00",
+        "stadium": "New Balance Arena",
+        "city": "Bergamo"
       },
       "status": {
-        "match_status": "FINISHED",
-        "prediction_stage": "finished",
-        "has_lineups": true,
-        "has_referee": true
+        "match_status": "UPCOMING",
+        "prediction_stage": "core_only",
+        "has_lineups": false,
+        "has_referee": false
       },
       "score": {
-        "home_score": 2,
-        "away_score": 3
+        "home_score": null,
+        "away_score": null
       },
       "referee": {
-        "assigned": true,
-        "vectra_referee_id": "vxr_000016",
-        "referee_name": "Marco Piccinini"
+        "assigned": false,
+        "vectra_referee_id": "",
+        "referee_name": ""
       },
       "lineups": {
-        "available": true,
+        "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
+        "home": {
+          "formation": "",
+          "starting_count": 0,
+          "bench_count": 0
+        },
+        "away": {
+          "formation": "",
+          "starting_count": 0,
+          "bench_count": 0
+        }
+      }
+    },
+    "vxm_000068": {
+      "vectra_match_id": "vxm_000068",
+      "vectra_season_id": "vxs_serie_a_2025_2026",
+      "vectra_matchday_id": "vxd_serie_a_2025_2026_037",
+      "matchday": 37,
+      "teams": {
+        "home": {
+          "team_id": "vxt_000022",
+          "name": "Cagliari"
+        },
+        "away": {
+          "team_id": "vxt_000032",
+          "name": "Torino"
+        }
+      },
+      "context": {
+        "kickoff_utc": "2026-05-17T18:45:00Z",
+        "kickoff_local": "2026-05-17T20:45:00",
+        "stadium": "Unipol Domus",
+        "city": "Cagliari"
+      },
+      "status": {
+        "match_status": "UPCOMING",
+        "prediction_stage": "core_only",
+        "has_lineups": false,
+        "has_referee": false
+      },
+      "score": {
+        "home_score": null,
+        "away_score": null
+      },
+      "referee": {
+        "assigned": false,
+        "vectra_referee_id": "",
+        "referee_name": ""
+      },
+      "lineups": {
+        "available": false,
+        "confirmed": false,
+        "resolution_status": "pending",
+        "home": {
+          "formation": "",
+          "starting_count": 0,
+          "bench_count": 0
+        },
+        "away": {
+          "formation": "",
+          "starting_count": 0,
+          "bench_count": 0
+        }
+      }
+    },
+    "vxm_000069": {
+      "vectra_match_id": "vxm_000069",
+      "vectra_season_id": "vxs_serie_a_2025_2026",
+      "vectra_matchday_id": "vxd_serie_a_2025_2026_037",
+      "matchday": 37,
+      "teams": {
+        "home": {
+          "team_id": "vxt_000034",
+          "name": "Sassuolo"
+        },
+        "away": {
+          "team_id": "vxt_000037",
+          "name": "Lecce"
+        }
+      },
+      "context": {
+        "kickoff_utc": "2026-05-17T18:45:00Z",
+        "kickoff_local": "2026-05-17T20:45:00",
+        "stadium": "Mapei Stadium",
+        "city": "Reggio Emilia"
+      },
+      "status": {
+        "match_status": "UPCOMING",
+        "prediction_stage": "core_only",
+        "has_lineups": false,
+        "has_referee": false
+      },
+      "score": {
+        "home_score": null,
+        "away_score": null
+      },
+      "referee": {
+        "assigned": false,
+        "vectra_referee_id": "",
+        "referee_name": ""
+      },
+      "lineups": {
+        "available": false,
+        "confirmed": false,
+        "resolution_status": "pending",
+        "home": {
+          "formation": "",
+          "starting_count": 0,
+          "bench_count": 0
+        },
+        "away": {
+          "formation": "",
+          "starting_count": 0,
+          "bench_count": 0
+        }
+      }
+    },
+    "vxm_000070": {
+      "vectra_match_id": "vxm_000070",
+      "vectra_season_id": "vxs_serie_a_2025_2026",
+      "vectra_matchday_id": "vxd_serie_a_2025_2026_037",
+      "matchday": 37,
+      "teams": {
+        "home": {
+          "team_id": "vxt_000028",
+          "name": "Udinese"
+        },
+        "away": {
+          "team_id": "vxt_000031",
+          "name": "Cremonese"
+        }
+      },
+      "context": {
+        "kickoff_utc": "2026-05-17T18:45:00Z",
+        "kickoff_local": "2026-05-17T20:45:00",
+        "stadium": "Friuli/Bluenergy stadium",
+        "city": "Udine"
+      },
+      "status": {
+        "match_status": "UPCOMING",
+        "prediction_stage": "core_only",
+        "has_lineups": false,
+        "has_referee": false
+      },
+      "score": {
+        "home_score": null,
+        "away_score": null
+      },
+      "referee": {
+        "assigned": false,
+        "vectra_referee_id": "",
+        "referee_name": ""
+      },
+      "lineups": {
+        "available": false,
+        "confirmed": false,
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,

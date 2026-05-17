@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-11T21:30:52.394699Z",
+  "generated_at": "2026-05-17T07:33:23.033148Z",
   "season_id": "",
   "matchday_id": "",
   "matchday": null,
-  "matches_count": 50,
+  "matches_count": 60,
   "data": {
     "vxm_000011": {
       "vectra_match_id": "vxm_000011",
@@ -13404,6 +13404,536 @@
             "btts": {
               "yes": 0.4298,
               "no": 0.5702
+            }
+          }
+        }
+      ]
+    },
+    "vxm_000061": {
+      "vectra_match_id": "vxm_000061",
+      "teams": {
+        "home": {
+          "team_id": "vxt_000024",
+          "name": "Como"
+        },
+        "away": {
+          "team_id": "vxt_000023",
+          "name": "Parma"
+        }
+      },
+      "history": [
+        {
+          "snapshot_id": "vxm_000061_snap_0001",
+          "captured_at": "2026-05-17T07:33:22.307193Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "base_ready"
+          },
+          "lambda": {
+            "home": 2.45,
+            "away": 0.65
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.8934,
+            "confidence": 0.796,
+            "scoreline": "2-0",
+            "scoreline_probability": 0.1829,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.6269,
+            "btts": "no",
+            "btts_probability": 0.6123
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.8934,
+              "draw": 0.0974,
+              "away_win": 0.0092
+            },
+            "over_under": {
+              "over_2_5": 0.6269,
+              "under_2_5": 0.3731
+            },
+            "btts": {
+              "yes": 0.3877,
+              "no": 0.6123
+            }
+          }
+        }
+      ]
+    },
+    "vxm_000062": {
+      "vectra_match_id": "vxm_000062",
+      "teams": {
+        "home": {
+          "team_id": "vxt_000029",
+          "name": "Genoa"
+        },
+        "away": {
+          "team_id": "vxt_000038",
+          "name": "Milan"
+        }
+      },
+      "history": [
+        {
+          "snapshot_id": "vxm_000062_snap_0001",
+          "captured_at": "2026-05-17T07:33:22.307255Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "base_ready"
+          },
+          "lambda": {
+            "home": 1.1008,
+            "away": 1.9384
+          },
+          "primary": {
+            "outcome": "away_win",
+            "probability": 0.6695,
+            "confidence": 0.4879,
+            "scoreline": "0-1",
+            "scoreline_probability": 0.1325,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.5878,
+            "btts": "yes",
+            "btts_probability": 0.5359
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.1489,
+              "draw": 0.1816,
+              "away_win": 0.6695
+            },
+            "over_under": {
+              "over_2_5": 0.5878,
+              "under_2_5": 0.4122
+            },
+            "btts": {
+              "yes": 0.5359,
+              "no": 0.4641
+            }
+          }
+        }
+      ]
+    },
+    "vxm_000063": {
+      "vectra_match_id": "vxm_000063",
+      "teams": {
+        "home": {
+          "team_id": "vxt_000021",
+          "name": "Juventus"
+        },
+        "away": {
+          "team_id": "vxt_000027",
+          "name": "Fiorentina"
+        }
+      },
+      "history": [
+        {
+          "snapshot_id": "vxm_000063_snap_0001",
+          "captured_at": "2026-05-17T07:33:22.307288Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "base_ready"
+          },
+          "lambda": {
+            "home": 2.45,
+            "away": 0.9636
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.836,
+            "confidence": 0.7118,
+            "scoreline": "2-1",
+            "scoreline_probability": 0.1546,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.6953,
+            "btts": "yes",
+            "btts_probability": 0.5344
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.836,
+              "draw": 0.1242,
+              "away_win": 0.0398
+            },
+            "over_under": {
+              "over_2_5": 0.6953,
+              "under_2_5": 0.3047
+            },
+            "btts": {
+              "yes": 0.5344,
+              "no": 0.4656
+            }
+          }
+        }
+      ]
+    },
+    "vxm_000064": {
+      "vectra_match_id": "vxm_000064",
+      "teams": {
+        "home": {
+          "team_id": "vxt_000026",
+          "name": "Pisa"
+        },
+        "away": {
+          "team_id": "vxt_000039",
+          "name": "Napoli"
+        }
+      },
+      "history": [
+        {
+          "snapshot_id": "vxm_000064_snap_0001",
+          "captured_at": "2026-05-17T07:33:22.307317Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "base_ready"
+          },
+          "lambda": {
+            "home": 0.65,
+            "away": 2.2788
+          },
+          "primary": {
+            "outcome": "away_win",
+            "probability": 0.918,
+            "confidence": 0.8462,
+            "scoreline": "0-2",
+            "scoreline_probability": 0.211,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.51,
+            "btts": "no",
+            "btts_probability": 0.7036
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.0101,
+              "draw": 0.0718,
+              "away_win": 0.918
+            },
+            "over_under": {
+              "over_2_5": 0.51,
+              "under_2_5": 0.49
+            },
+            "btts": {
+              "yes": 0.2964,
+              "no": 0.7036
+            }
+          }
+        }
+      ]
+    },
+    "vxm_000065": {
+      "vectra_match_id": "vxm_000065",
+      "teams": {
+        "home": {
+          "team_id": "vxt_000030",
+          "name": "Roma"
+        },
+        "away": {
+          "team_id": "vxt_000040",
+          "name": "Lazio"
+        }
+      },
+      "history": [
+        {
+          "snapshot_id": "vxm_000065_snap_0001",
+          "captured_at": "2026-05-17T07:33:22.307343Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "base_ready"
+          },
+          "lambda": {
+            "home": 2.0355,
+            "away": 0.9078
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.8379,
+            "confidence": 0.6829,
+            "scoreline": "1-0",
+            "scoreline_probability": 0.1505,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.5515,
+            "btts": "no",
+            "btts_probability": 0.5667
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.8379,
+              "draw": 0.155,
+              "away_win": 0.0071
+            },
+            "over_under": {
+              "over_2_5": 0.5515,
+              "under_2_5": 0.4485
+            },
+            "btts": {
+              "yes": 0.4333,
+              "no": 0.5667
+            }
+          }
+        }
+      ]
+    },
+    "vxm_000066": {
+      "vectra_match_id": "vxm_000066",
+      "teams": {
+        "home": {
+          "team_id": "vxt_000035",
+          "name": "Inter"
+        },
+        "away": {
+          "team_id": "vxt_000036",
+          "name": "Hellas Verona"
+        }
+      },
+      "history": [
+        {
+          "snapshot_id": "vxm_000066_snap_0001",
+          "captured_at": "2026-05-17T07:33:22.307370Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "base_ready"
+          },
+          "lambda": {
+            "home": 2.45,
+            "away": 0.65
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.9512,
+            "confidence": 0.919,
+            "scoreline": "2-0",
+            "scoreline_probability": 0.2226,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.6864,
+            "btts": "no",
+            "btts_probability": 0.6606
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.9512,
+              "draw": 0.0322,
+              "away_win": 0.0165
+            },
+            "over_under": {
+              "over_2_5": 0.6864,
+              "under_2_5": 0.3136
+            },
+            "btts": {
+              "yes": 0.3394,
+              "no": 0.6606
+            }
+          }
+        }
+      ]
+    },
+    "vxm_000067": {
+      "vectra_match_id": "vxm_000067",
+      "teams": {
+        "home": {
+          "team_id": "vxt_000033",
+          "name": "Atalanta"
+        },
+        "away": {
+          "team_id": "vxt_000025",
+          "name": "Bologna"
+        }
+      },
+      "history": [
+        {
+          "snapshot_id": "vxm_000067_snap_0001",
+          "captured_at": "2026-05-17T07:33:22.307396Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "base_ready"
+          },
+          "lambda": {
+            "home": 1.9027,
+            "away": 1.0676
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.7928,
+            "confidence": 0.6083,
+            "scoreline": "2-1",
+            "scoreline_probability": 0.1714,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.5307,
+            "btts": "no",
+            "btts_probability": 0.541
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.7928,
+              "draw": 0.1845,
+              "away_win": 0.0227
+            },
+            "over_under": {
+              "over_2_5": 0.5307,
+              "under_2_5": 0.4693
+            },
+            "btts": {
+              "yes": 0.459,
+              "no": 0.541
+            }
+          }
+        }
+      ]
+    },
+    "vxm_000068": {
+      "vectra_match_id": "vxm_000068",
+      "teams": {
+        "home": {
+          "team_id": "vxt_000022",
+          "name": "Cagliari"
+        },
+        "away": {
+          "team_id": "vxt_000032",
+          "name": "Torino"
+        }
+      },
+      "history": [
+        {
+          "snapshot_id": "vxm_000068_snap_0001",
+          "captured_at": "2026-05-17T07:33:22.307421Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "base_ready"
+          },
+          "lambda": {
+            "home": 1.1204,
+            "away": 1.0014
+          },
+          "primary": {
+            "outcome": "away_win",
+            "probability": 0.3869,
+            "confidence": 0.0797,
+            "scoreline": "0-0",
+            "scoreline_probability": 0.1437,
+            "over_under": "under_2_5",
+            "over_under_probability": 0.711,
+            "btts": "no",
+            "btts_probability": 0.6627
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.3072,
+              "draw": 0.3059,
+              "away_win": 0.3869
+            },
+            "over_under": {
+              "over_2_5": 0.289,
+              "under_2_5": 0.711
+            },
+            "btts": {
+              "yes": 0.3373,
+              "no": 0.6627
+            }
+          }
+        }
+      ]
+    },
+    "vxm_000069": {
+      "vectra_match_id": "vxm_000069",
+      "teams": {
+        "home": {
+          "team_id": "vxt_000034",
+          "name": "Sassuolo"
+        },
+        "away": {
+          "team_id": "vxt_000037",
+          "name": "Lecce"
+        }
+      },
+      "history": [
+        {
+          "snapshot_id": "vxm_000069_snap_0001",
+          "captured_at": "2026-05-17T07:33:22.307446Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "base_ready"
+          },
+          "lambda": {
+            "home": 1.1726,
+            "away": 0.7012
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.5643,
+            "confidence": 0.2654,
+            "scoreline": "1-0",
+            "scoreline_probability": 0.1832,
+            "over_under": "under_2_5",
+            "over_under_probability": 0.8005,
+            "btts": "no",
+            "btts_probability": 0.7604
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.5643,
+              "draw": 0.2989,
+              "away_win": 0.1368
+            },
+            "over_under": {
+              "over_2_5": 0.1995,
+              "under_2_5": 0.8005
+            },
+            "btts": {
+              "yes": 0.2396,
+              "no": 0.7604
+            }
+          }
+        }
+      ]
+    },
+    "vxm_000070": {
+      "vectra_match_id": "vxm_000070",
+      "teams": {
+        "home": {
+          "team_id": "vxt_000028",
+          "name": "Udinese"
+        },
+        "away": {
+          "team_id": "vxt_000031",
+          "name": "Cremonese"
+        }
+      },
+      "history": [
+        {
+          "snapshot_id": "vxm_000070_snap_0001",
+          "captured_at": "2026-05-17T07:33:22.307471Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "base_ready"
+          },
+          "lambda": {
+            "home": 1.4975,
+            "away": 0.8004
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.6769,
+            "confidence": 0.4402,
+            "scoreline": "1-0",
+            "scoreline_probability": 0.1757,
+            "over_under": "under_2_5",
+            "over_under_probability": 0.6909,
+            "btts": "no",
+            "btts_probability": 0.7038
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.6769,
+              "draw": 0.2367,
+              "away_win": 0.0864
+            },
+            "over_under": {
+              "over_2_5": 0.3091,
+              "under_2_5": 0.6909
+            },
+            "btts": {
+              "yes": 0.2962,
+              "no": 0.7038
             }
           }
         }
