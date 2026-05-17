@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T19:35:28.909492Z",
+  "generated_at": "2026-05-17T20:05:30.868224Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -14254,13 +14254,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000668",
-              "name": "Ebosse",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000675",
               "name": "Marianucci",
               "role": "Defender",
@@ -14277,6 +14270,13 @@
             {
               "vectra_player_id": "vxp_000650",
               "name": "Coco",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000668",
+              "name": "Ebosse",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -16147,6 +16147,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000398",
+              "name": "Siebert",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000383",
               "name": "Tiago Gabriel",
               "role": "Defender",
@@ -16156,13 +16163,6 @@
             {
               "vectra_player_id": "vxp_000386",
               "name": "Gallo",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000398",
-              "name": "Siebert",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -17278,6 +17278,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000698",
+              "name": "Kristensen",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000688",
               "name": "Solet",
               "role": "Defender",
@@ -17294,13 +17301,6 @@
             {
               "vectra_player_id": "vxp_000699",
               "name": "Kamara",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000698",
-              "name": "Kristensen",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -18032,6 +18032,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000158",
+              "name": "Barbieri",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000149",
               "name": "Luperto",
               "role": "Defender",
@@ -18060,9 +18067,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000158",
-              "name": "Barbieri",
-              "role": "Defender",
+              "vectra_player_id": "vxp_000164",
+              "name": "Thorsby",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -18076,13 +18083,6 @@
             {
               "vectra_player_id": "vxp_000165",
               "name": "Maleh",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000164",
-              "name": "Thorsby",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
