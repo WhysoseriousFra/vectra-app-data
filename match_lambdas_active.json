@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T13:35:25.766477Z",
+  "generated_at": "2026-05-17T14:05:30.120430Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -9738,20 +9738,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000283",
-              "name": "Mkhitaryan",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000289",
-              "name": "Diouf",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000276",
               "name": "Sučić",
               "role": "Midfielder",
@@ -9766,15 +9752,29 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000281",
-              "name": "L. Martínez",
-              "role": "Forward",
+              "vectra_player_id": "vxp_000283",
+              "name": "Mkhitaryan",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000289",
+              "name": "Diouf",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
               "vectra_player_id": "vxp_000278",
               "name": "Bonny",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000281",
+              "name": "L. Martínez",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -10464,8 +10464,22 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000736",
+              "name": "Valentini",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000740",
               "name": "Edmundsson",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000721",
+              "name": "Nelsson",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -10480,20 +10494,6 @@
             {
               "vectra_player_id": "vxp_000730",
               "name": "Belghali",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000736",
-              "name": "Valentini",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000721",
-              "name": "Nelsson",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
