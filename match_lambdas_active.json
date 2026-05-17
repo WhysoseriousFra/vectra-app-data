@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T12:35:28.626754Z",
+  "generated_at": "2026-05-17T13:05:26.531553Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -4796,22 +4796,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000188",
-              "name": "Dodô",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000190",
               "name": "Ranieri",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000201",
-              "name": "Parisi",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -4824,15 +4810,22 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000200",
-              "name": "Gosens",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000201",
+              "name": "Parisi",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000194",
-              "name": "Ndour",
+              "vectra_player_id": "vxp_000188",
+              "name": "Dodô",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000193",
+              "name": "Fagioli",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -4845,22 +4838,29 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000193",
-              "name": "Fagioli",
+              "vectra_player_id": "vxp_000194",
+              "name": "Ndour",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000205",
-              "name": "Solomon",
-              "role": "Forward",
+              "vectra_player_id": "vxp_000200",
+              "name": "Gosens",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
               "vectra_player_id": "vxp_000192",
               "name": "Piccoli",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000205",
+              "name": "Solomon",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -7824,8 +7824,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000578",
-              "name": "Hermoso",
+              "vectra_player_id": "vxp_000575",
+              "name": "Wesley",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -7838,6 +7838,20 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000572",
+              "name": "Çelik",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000578",
+              "name": "Hermoso",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000574",
               "name": "Ndicka",
               "role": "Defender",
@@ -7845,16 +7859,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000575",
-              "name": "Wesley",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000572",
-              "name": "Çelik",
-              "role": "Defender",
+              "vectra_player_id": "vxp_000579",
+              "name": "El  Aynaoui",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -7868,13 +7875,6 @@
             {
               "vectra_player_id": "vxp_000581",
               "name": "Pisilli",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000579",
-              "name": "El  Aynaoui",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -11348,7 +11348,7 @@
       "away_team_id": "vxt_000036",
       "home_team_name": "Inter",
       "away_team_name": "Hellas Verona",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-17T13:00:00Z",
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
