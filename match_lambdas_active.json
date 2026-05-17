@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T15:35:27.930708Z",
+  "generated_at": "2026-05-17T16:05:29.947913Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -12388,6 +12388,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000041",
+              "name": "Bernardeschi",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000044",
               "name": "Pobega",
               "role": "Midfielder",
@@ -12404,13 +12411,6 @@
             {
               "vectra_player_id": "vxp_000043",
               "name": "Freuler",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000041",
-              "name": "Bernardeschi",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -13236,7 +13236,7 @@
       "away_team_id": "vxt_000025",
       "home_team_name": "Atalanta",
       "away_team_name": "Bologna",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-17T16:00:00Z",
       "stadium": "New Balance Arena",
       "city": "Bergamo",

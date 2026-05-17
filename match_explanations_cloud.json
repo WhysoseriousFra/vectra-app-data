@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T15:35:38.778380Z",
+  "generated_at": "2026-05-17T16:05:42.098293Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -165,7 +165,7 @@
       "vectra_match_id": "vxm_000067",
       "home_team_name": "Atalanta",
       "away_team_name": "Bologna",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "moderate_home_edge",

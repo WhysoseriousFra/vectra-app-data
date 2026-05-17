@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T15:35:38.787242Z",
+  "generated_at": "2026-05-17T16:05:42.107494Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_037",
   "matchday": 37,
@@ -339,7 +339,7 @@
         "city": "Bergamo"
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
