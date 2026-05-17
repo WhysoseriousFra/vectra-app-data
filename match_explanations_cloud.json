@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T09:00:45.726500Z",
+  "generated_at": "2026-05-17T10:05:45.305202Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -9,7 +9,7 @@
       "vectra_match_id": "vxm_000061",
       "home_team_name": "Como",
       "away_team_name": "Parma",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_home_edge",
@@ -27,7 +27,7 @@
           "Minaccia offensiva Como: molto alta.",
           "Minaccia offensiva Parma: bassa."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Como emerge con un vantaggio strutturale più netto, mentre Parma appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Como emerge con un vantaggio strutturale più netto, mentre Parma appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
@@ -35,7 +35,7 @@
       "vectra_match_id": "vxm_000062",
       "home_team_name": "Genoa",
       "away_team_name": "Milan",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "moderate_away_edge",
@@ -53,7 +53,7 @@
           "Minaccia offensiva Genoa: presente ma contenuta.",
           "Minaccia offensiva Milan: molto alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un profilo di gara aperta. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un profilo di gara aperta. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
@@ -61,7 +61,7 @@
       "vectra_match_id": "vxm_000063",
       "home_team_name": "Juventus",
       "away_team_name": "Fiorentina",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "very_open_match",
         "balance_edge_label": "strong_home_edge",
@@ -79,7 +79,7 @@
           "Minaccia offensiva Juventus: molto alta.",
           "Minaccia offensiva Fiorentina: presente ma contenuta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un ambiente offensivo molto vivo. Juventus emerge con un vantaggio strutturale più netto, mentre Fiorentina appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un ambiente offensivo molto vivo. Juventus emerge con un vantaggio strutturale più netto, mentre Fiorentina appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
@@ -87,7 +87,7 @@
       "vectra_match_id": "vxm_000064",
       "home_team_name": "Pisa",
       "away_team_name": "Napoli",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_away_edge",
@@ -105,7 +105,7 @@
           "Minaccia offensiva Pisa: bassa.",
           "Minaccia offensiva Napoli: molto alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un profilo di gara aperta. Napoli emerge con un vantaggio strutturale più netto, mentre Pisa appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un profilo di gara aperta. Napoli emerge con un vantaggio strutturale più netto, mentre Pisa appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
@@ -113,25 +113,25 @@
       "vectra_match_id": "vxm_000065",
       "home_team_name": "Roma",
       "away_team_name": "Lazio",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "open_match",
-        "balance_edge_label": "moderate_home_edge",
-        "match_script_label": "home_edge_open"
+        "balance_edge_label": "strong_home_edge",
+        "match_script_label": "one_sided_home_control"
       },
       "free_explanation": {
-        "match_reading_verdict": "Vantaggio casa in gara aperta",
-        "short_reading": "Il quadro favorisce Roma, ma senza chiudere davvero il match: Lazio mantiene segnali sufficienti per restare dentro una gara ancora aperta."
+        "match_reading_verdict": "Forte vantaggio casa",
+        "short_reading": "Roma parte chiaramente avanti: il match resta leggibile sul piano offensivo, ma Lazio arriva con un peso più limitato e senza lo stesso margine strutturale."
       },
       "premium_explanation": {
-        "extended_explanation": "Il match presenta un vantaggio reale per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Roma, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Roma conserva un margine reale ma contenuto, mentre Lazio resta comunque abbastanza presente da non uscire dal quadro del match.",
+        "extended_explanation": "Il match presenta un vantaggio netto per la squadra di casa e un profilo di gara aperta. La lettura attuale porta il match verso Roma, ma il margine va interpretato come vantaggio strutturale e non come certezza assoluta sul risultato. Roma mostra un profilo complessivamente più forte, mentre Lazio arriva con un peso offensivo più limitato e con meno margine strutturale.",
         "key_insights": [
-          "Margine strutturale: un vantaggio reale per la squadra di casa.",
+          "Margine strutturale: un vantaggio netto per la squadra di casa.",
           "Ambiente partita: un profilo di gara aperta.",
           "Minaccia offensiva Roma: molto alta.",
           "Minaccia offensiva Lazio: presente ma contenuta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra di casa dentro un profilo di gara aperta. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Roma emerge con un vantaggio strutturale più netto, mentre Lazio appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },

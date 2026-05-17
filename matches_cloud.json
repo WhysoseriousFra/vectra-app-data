@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T09:00:45.730430Z",
+  "generated_at": "2026-05-17T10:05:45.312966Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_037",
   "matchday": 37,
@@ -27,14 +27,14 @@
         "city": "Como"
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "has_lineups": false,
+        "match_status": "LIVE",
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 0,
+        "away_score": 0
       },
       "referee": {
         "assigned": true,
@@ -42,18 +42,18 @@
         "referee_name": "Luca Zufferli"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "partial",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-2-3-1",
+          "starting_count": 11,
+          "bench_count": 13
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-5-2",
+          "starting_count": 11,
+          "bench_count": 12
         }
       }
     },
@@ -79,14 +79,14 @@
         "city": "Genova"
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "has_lineups": false,
+        "match_status": "LIVE",
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 0,
+        "away_score": 0
       },
       "referee": {
         "assigned": true,
@@ -94,18 +94,18 @@
         "referee_name": "Simone Sozza"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "partial",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-3-2-1",
+          "starting_count": 11,
+          "bench_count": 13
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-5-2",
+          "starting_count": 11,
+          "bench_count": 12
         }
       }
     },
@@ -131,14 +131,14 @@
         "city": "Torino"
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "has_lineups": false,
+        "match_status": "LIVE",
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 0,
+        "away_score": 0
       },
       "referee": {
         "assigned": true,
@@ -146,18 +146,18 @@
         "referee_name": "Davide Massa"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "full",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-4-2-1",
+          "starting_count": 11,
+          "bench_count": 14
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-3-3",
+          "starting_count": 11,
+          "bench_count": 12
         }
       }
     },
@@ -183,14 +183,14 @@
         "city": "Pisa"
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "has_lineups": false,
+        "match_status": "LIVE",
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 0,
+        "away_score": 0
       },
       "referee": {
         "assigned": true,
@@ -198,18 +198,18 @@
         "referee_name": "Francesco Fourneau"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "full",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-5-2",
+          "starting_count": 11,
+          "bench_count": 13
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-4-2-1",
+          "starting_count": 11,
+          "bench_count": 11
         }
       }
     },
@@ -235,14 +235,14 @@
         "city": "Roma"
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "has_lineups": false,
+        "match_status": "LIVE",
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 0,
+        "away_score": 0
       },
       "referee": {
         "assigned": true,
@@ -250,18 +250,18 @@
         "referee_name": "Fabio Maresca"
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "full",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-4-2-1",
+          "starting_count": 11,
+          "bench_count": 11
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-3-3",
+          "starting_count": 11,
+          "bench_count": 14
         }
       }
     },
@@ -288,7 +288,7 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
         "has_referee": true
       },
@@ -304,7 +304,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -340,7 +340,7 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
         "has_referee": true
       },
@@ -356,7 +356,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -392,7 +392,7 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
         "has_referee": true
       },
@@ -408,7 +408,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -444,7 +444,7 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
         "has_referee": true
       },
@@ -460,7 +460,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
@@ -496,7 +496,7 @@
       },
       "status": {
         "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
+        "prediction_stage": "referee_ready",
         "has_lineups": false,
         "has_referee": true
       },
@@ -512,7 +512,7 @@
       "lineups": {
         "available": false,
         "confirmed": false,
-        "resolution_status": "",
+        "resolution_status": "pending",
         "home": {
           "formation": "",
           "starting_count": 0,
