@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T20:35:39.460437Z",
+  "generated_at": "2026-05-17T21:05:33.912431Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -15125,7 +15125,7 @@
       "away_team_id": "vxt_000032",
       "home_team_name": "Cagliari",
       "away_team_name": "Torino",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-05-17T18:45:00Z",
       "stadium": "Unipol Domus",
       "city": "Cagliari",
@@ -15400,13 +15400,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000634",
-              "name": "Pedro Felipe",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000615",
               "name": "Muharemović",
               "role": "Defender",
@@ -15414,9 +15407,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000612",
-              "name": "I. Koné",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000634",
+              "name": "Pedro Felipe",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -15430,6 +15423,13 @@
             {
               "vectra_player_id": "vxp_000616",
               "name": "Thorstvedt",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000612",
+              "name": "I. Koné",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -16140,6 +16140,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000386",
+              "name": "Gallo",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000389",
               "name": "Danilo Veiga",
               "role": "Defender",
@@ -16149,13 +16156,6 @@
             {
               "vectra_player_id": "vxp_000383",
               "name": "Tiago Gabriel",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000386",
-              "name": "Gallo",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -17018,7 +17018,7 @@
       "away_team_id": "vxt_000037",
       "home_team_name": "Sassuolo",
       "away_team_name": "Lecce",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-05-17T18:45:00Z",
       "stadium": "Mapei Stadium",
       "city": "Reggio Emilia",
@@ -17334,15 +17334,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000693",
-              "name": "Davis",
+              "vectra_player_id": "vxp_000701",
+              "name": "Buksa",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000701",
-              "name": "Buksa",
+              "vectra_player_id": "vxp_000693",
+              "name": "Davis",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -18906,7 +18906,7 @@
       "away_team_id": "vxt_000031",
       "home_team_name": "Udinese",
       "away_team_name": "Cremonese",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-05-17T18:45:00Z",
       "stadium": "Friuli/Bluenergy stadium",
       "city": "Udine",

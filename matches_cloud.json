@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T20:35:53.886634Z",
+  "generated_at": "2026-05-17T21:05:46.389660Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_037",
   "matchday": 37,
@@ -391,7 +391,7 @@
         "city": "Cagliari"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
@@ -443,14 +443,14 @@
         "city": "Reggio Emilia"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
       },
       "score": {
         "home_score": 2,
-        "away_score": 2
+        "away_score": 3
       },
       "referee": {
         "assigned": true,
@@ -495,7 +495,7 @@
         "city": "Udine"
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
