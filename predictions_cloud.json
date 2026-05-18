@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T21:05:43.526412Z",
+  "generated_at": "2026-05-18T21:30:49.307415Z",
   "schema": "vectra.predictions_cloud.v7",
   "source_schema": "vectra.match_predictions.v20",
   "model_layer_status": "baseline_plus_dixon_coles_bivariate_poisson_dynamic_team_rating_home_away_context_latent_xg_finishing_regression_chance_quality_volume_goalkeeper_impact_defensive_fragility_set_piece_threat_aerial_matchup_rhythm_tempo_transition_counterattack_pressing_buildup_disruption_match_control_dominance_goal_pressure_defensive_resistance_structural_impact_v2_active_refinement",
@@ -9107,7 +9107,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-18T21:05:43.526412Z",
+          "generated_at": "2026-05-18T21:30:49.307415Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -17906,7 +17906,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-18T21:05:43.526412Z",
+          "generated_at": "2026-05-18T21:30:49.307415Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -26628,7 +26628,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-18T21:05:43.526412Z",
+          "generated_at": "2026-05-18T21:30:49.307415Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -35480,7 +35480,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-18T21:05:43.526412Z",
+          "generated_at": "2026-05-18T21:30:49.307415Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -44309,7 +44309,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-18T21:05:43.526412Z",
+          "generated_at": "2026-05-18T21:30:49.307415Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -54000,7 +54000,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-18T21:05:43.526412Z",
+          "generated_at": "2026-05-18T21:30:49.307415Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -63543,7 +63543,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-18T21:05:43.526412Z",
+          "generated_at": "2026-05-18T21:30:49.307415Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -73123,7 +73123,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-18T21:05:43.526412Z",
+          "generated_at": "2026-05-18T21:30:49.307415Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -82710,7 +82710,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-18T21:05:43.526412Z",
+          "generated_at": "2026-05-18T21:30:49.307415Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -92247,7 +92247,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-18T21:05:43.526412Z",
+          "generated_at": "2026-05-18T21:30:49.307415Z",
           "has_lineups": true,
           "has_referee": true
         }
