@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T18:35:41.793705Z",
+  "generated_at": "2026-05-23T19:05:54.113091Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_038",
   "matchday": 38,
@@ -131,7 +131,7 @@
         "city": "Roma"
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": false
