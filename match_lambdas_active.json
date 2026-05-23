@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T17:05:32.949919Z",
+  "generated_at": "2026-05-23T17:35:32.321362Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -2171,6 +2171,20 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000058",
+              "name": "De Silvestri",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000061",
+              "name": "Helland",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000038",
               "name": "Miranda",
               "role": "Defender",
@@ -2185,16 +2199,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000058",
-              "name": "De Silvestri",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000061",
-              "name": "Helland",
-              "role": "Defender",
+              "vectra_player_id": "vxp_000041",
+              "name": "Bernardeschi",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -2215,13 +2222,6 @@
             {
               "vectra_player_id": "vxp_000043",
               "name": "Freuler",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000041",
-              "name": "Bernardeschi",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -2925,6 +2925,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000286",
+              "name": "Bisseck",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000290",
               "name": "de Vrij",
               "role": "Defender",
@@ -2939,29 +2946,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000286",
-              "name": "Bisseck",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000271",
-              "name": "Dimarco",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000289",
               "name": "Diouf",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000276",
-              "name": "Sučić",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -2976,6 +2962,20 @@
             {
               "vectra_player_id": "vxp_000274",
               "name": "Barella",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000271",
+              "name": "Dimarco",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000276",
+              "name": "Sučić",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
