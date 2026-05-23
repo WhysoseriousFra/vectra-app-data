@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T17:35:47.854574Z",
+  "generated_at": "2026-05-23T18:05:43.755977Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -35,7 +35,7 @@
       "vectra_match_id": "vxm_000072",
       "home_team_name": "Bologna",
       "away_team_name": "Inter",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_away_edge",
@@ -79,7 +79,7 @@
           "Minaccia offensiva Lazio: alta.",
           "Minaccia offensiva Pisa: bassa."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra di casa dentro un ambiente offensivo intermedio. Lazio regge meglio il match per una combinazione più favorevole di spinta offensiva (0.273) e qualità di costruzione (0.671); inoltre il contesto difensivo avversario offre un livello di concedibilità pari a 0.777, che aiuta a sostenere il profilo home. Lo stato attuale arriva dal layer `base_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra di casa dentro un ambiente offensivo intermedio. Lazio regge meglio il match per una combinazione più favorevole di spinta offensiva (0.273) e qualità di costruzione (0.671); inoltre il contesto difensivo avversario offre un livello di concedibilità pari a 0.777, che aiuta a sostenere il profilo home. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },

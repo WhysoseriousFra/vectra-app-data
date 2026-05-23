@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T17:35:48.679097Z",
+  "generated_at": "2026-05-23T18:05:44.400526Z",
   "season_id": "",
   "matchday_id": "",
   "matchday": null,
@@ -15448,6 +15448,44 @@
               "no": 0.4824
             }
           }
+        },
+        {
+          "snapshot_id": "vxm_000072_snap_0003",
+          "captured_at": "2026-05-23T18:05:43.559172Z",
+          "status": {
+            "match_status": "FINISHED",
+            "prediction_stage": "lineups_ready"
+          },
+          "lambda": {
+            "home": 1.0026,
+            "away": 2.2232
+          },
+          "primary": {
+            "outcome": "away_win",
+            "probability": 0.8725,
+            "confidence": 0.7655,
+            "scoreline": "1-2",
+            "scoreline_probability": 0.1738,
+            "over_under": "over_2_5",
+            "over_under_probability": 0.7022,
+            "btts": "yes",
+            "btts_probability": 0.5176
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.0205,
+              "draw": 0.107,
+              "away_win": 0.8725
+            },
+            "over_under": {
+              "over_2_5": 0.7022,
+              "under_2_5": 0.2978
+            },
+            "btts": {
+              "yes": 0.5176,
+              "no": 0.4824
+            }
+          }
         }
       ]
     },
@@ -15499,6 +15537,44 @@
             "btts": {
               "yes": 0.2628,
               "no": 0.7372
+            }
+          }
+        },
+        {
+          "snapshot_id": "vxm_000073_snap_0002",
+          "captured_at": "2026-05-23T18:05:43.559205Z",
+          "status": {
+            "match_status": "UPCOMING",
+            "prediction_stage": "lineups_ready"
+          },
+          "lambda": {
+            "home": 1.7538,
+            "away": 0.6762
+          },
+          "primary": {
+            "outcome": "home_win",
+            "probability": 0.8067,
+            "confidence": 0.6247,
+            "scoreline": "1-0",
+            "scoreline_probability": 0.1695,
+            "over_under": "under_2_5",
+            "over_under_probability": 0.6221,
+            "btts": "no",
+            "btts_probability": 0.7124
+          },
+          "consensus": {
+            "outcomes": {
+              "home_win": 0.8067,
+              "draw": 0.182,
+              "away_win": 0.0113
+            },
+            "over_under": {
+              "over_2_5": 0.3779,
+              "under_2_5": 0.6221
+            },
+            "btts": {
+              "yes": 0.2876,
+              "no": 0.7124
             }
           }
         }
