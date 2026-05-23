@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T20:35:47.663718Z",
+  "generated_at": "2026-05-23T21:05:40.428544Z",
   "schema": "vectra.predictions_cloud.v7",
   "source_schema": "vectra.match_predictions.v20",
   "model_layer_status": "baseline_plus_dixon_coles_bivariate_poisson_dynamic_team_rating_home_away_context_latent_xg_finishing_regression_chance_quality_volume_goalkeeper_impact_defensive_fragility_set_piece_threat_aerial_matchup_rhythm_tempo_transition_counterattack_pressing_buildup_disruption_match_control_dominance_goal_pressure_defensive_resistance_structural_impact_v2_active_refinement",
@@ -9005,7 +9005,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-23T20:35:47.663718Z",
+          "generated_at": "2026-05-23T21:05:40.428544Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -17941,7 +17941,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-23T20:35:47.663718Z",
+          "generated_at": "2026-05-23T21:05:40.428544Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -17963,7 +17963,7 @@
         }
       },
       "status": {
-        "match_status": "LIVE",
+        "match_status": "FINISHED",
         "prediction_stage": "lineups_ready",
         "active_stage_source": "match_lambdas_lineups.json"
       },
@@ -25474,16 +25474,16 @@
           "available": true,
           "computed": true,
           "fallback_used": false,
-          "score": 0.5776,
-          "confidence_score": 0.5776,
+          "score": 0.5136,
+          "confidence_score": 0.5136,
           "band": "medium",
           "label": "Lettura discreta",
           "source": "confidence_reliability_model_v1",
           "data_quality_label": "low",
           "model_agreement_label": "very_high_agreement",
-          "stage_reliability": "lineups_ready",
+          "stage_reliability": "finished_evaluation_context",
           "volatility_penalty": 0.1973,
-          "base_confidence": 0.7749,
+          "base_confidence": 0.7109,
           "components": {
             "outcome_clarity": {
               "score": 1.0,
@@ -25554,10 +25554,10 @@
               "source": "structural_models_reliability"
             },
             "data_stage_reliability": {
-              "score": 0.9,
-              "label": "lineups_ready",
+              "score": 0.5,
+              "label": "finished_evaluation_context",
               "prediction_stage": "lineups_ready",
-              "match_status": "UPCOMING",
+              "match_status": "FINISHED",
               "active_stage_source": "match_lambdas_lineups.json"
             },
             "goal_environment_stability": {
@@ -25572,8 +25572,8 @@
               "prediction_stability": "volatile"
             },
             "confidence_guards": {
-              "score_before_guards": 0.5776,
-              "score_after_guards": 0.5776,
+              "score_before_guards": 0.5136,
+              "score_after_guards": 0.5136,
               "cap_applied": 0.79,
               "guards_applied": [
                 {
@@ -25585,12 +25585,17 @@
                   "source": "volatility",
                   "cap": 0.79,
                   "reason": "volatility_moderate"
+                },
+                {
+                  "source": "stage",
+                  "cap": 0.79,
+                  "reason": "finished_evaluation_context_cap"
                 }
               ]
             }
           },
           "premium": {
-            "summary": "Confidence medium: score 0.5776. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+            "summary": "Confidence medium: score 0.5136. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
             "key_factors": [
               {
                 "type": "outcome_clarity",
@@ -25618,7 +25623,7 @@
               }
             ],
             "user_label": "Lettura discreta",
-            "stage_note": "lineups_ready"
+            "stage_note": "finished_evaluation_context"
           },
           "bot": {
             "semantic_tags": [
@@ -25626,7 +25631,7 @@
               "model_agreement::very_high_agreement",
               "internal_agreement::very_high",
               "internal_disagreement::light",
-              "confidence_stage::lineups_ready",
+              "confidence_stage::finished_evaluation_context",
               "confidence_penalty::volatility_high",
               "confidence_guard::active"
             ]
@@ -25850,7 +25855,7 @@
             "model_agreement::very_high_agreement",
             "internal_agreement::very_high",
             "internal_disagreement::light",
-            "confidence_stage::lineups_ready",
+            "confidence_stage::finished_evaluation_context",
             "confidence_penalty::volatility_high",
             "confidence_guard::active"
           ]
@@ -25992,7 +25997,7 @@
               "type": "confidence_model",
               "model": "confidence_reliability",
               "status": "post_volatility_analysis",
-              "confidence_score": 0.5776,
+              "confidence_score": 0.5136,
               "confidence_band": "medium",
               "label": "Lettura discreta",
               "volatility_penalty": 0.1973,
@@ -27267,13 +27272,6 @@
                     "internal_conflict::light",
                     "internal_conflict_volatility::light_up"
                   ]
-                },
-                "live_freeze": {
-                  "applied": true,
-                  "reason": "match_status_live_or_finished_volatility_frozen",
-                  "source": "previous_volatility_model_record",
-                  "frozen_at": "2026-05-23T20:35:46.969816Z",
-                  "policy": "LIVE/FINISHED match: previous Volatility output is preserved; no new volatility calculation is applied."
                 }
               }
             },
@@ -27285,21 +27283,21 @@
                 "computed": true,
                 "fallback_used": false,
                 "source": "confidence_reliability_model_v1",
-                "confidence_score": 0.5776,
-                "score": 0.5776,
+                "confidence_score": 0.5136,
+                "score": 0.5136,
                 "confidence_band": "medium",
                 "band": "medium",
                 "confidence_label": "Lettura discreta",
                 "label": "Lettura discreta",
                 "data_quality_label": "low",
                 "model_agreement_label": "very_high_agreement",
-                "stage_reliability": "lineups_ready",
+                "stage_reliability": "finished_evaluation_context",
                 "volatility_penalty": 0.1973,
-                "base_confidence": 0.7749,
-                "raw_confidence_score": 0.5776,
+                "base_confidence": 0.7109,
+                "raw_confidence_score": 0.5136,
                 "confidence_guards": {
-                  "score_before_guards": 0.5776,
-                  "score_after_guards": 0.5776,
+                  "score_before_guards": 0.5136,
+                  "score_after_guards": 0.5136,
                   "cap_applied": 0.79,
                   "guards_applied": [
                     {
@@ -27311,6 +27309,11 @@
                       "source": "volatility",
                       "cap": 0.79,
                       "reason": "volatility_moderate"
+                    },
+                    {
+                      "source": "stage",
+                      "cap": 0.79,
+                      "reason": "finished_evaluation_context_cap"
                     }
                   ]
                 },
@@ -27384,10 +27387,10 @@
                     "source": "structural_models_reliability"
                   },
                   "data_stage_reliability": {
-                    "score": 0.9,
-                    "label": "lineups_ready",
+                    "score": 0.5,
+                    "label": "finished_evaluation_context",
                     "prediction_stage": "lineups_ready",
-                    "match_status": "UPCOMING",
+                    "match_status": "FINISHED",
                     "active_stage_source": "match_lambdas_lineups.json"
                   },
                   "goal_environment_stability": {
@@ -27402,8 +27405,8 @@
                     "prediction_stability": "volatile"
                   },
                   "confidence_guards": {
-                    "score_before_guards": 0.5776,
-                    "score_after_guards": 0.5776,
+                    "score_before_guards": 0.5136,
+                    "score_after_guards": 0.5136,
                     "cap_applied": 0.79,
                     "guards_applied": [
                       {
@@ -27415,6 +27418,11 @@
                         "source": "volatility",
                         "cap": 0.79,
                         "reason": "volatility_moderate"
+                      },
+                      {
+                        "source": "stage",
+                        "cap": 0.79,
+                        "reason": "finished_evaluation_context_cap"
                       }
                     ]
                   }
@@ -27429,8 +27437,8 @@
                   "has_agreement_disagreement": true,
                   "agreement_layer_available": true,
                   "confidence_guards": {
-                    "score_before_guards": 0.5776,
-                    "score_after_guards": 0.5776,
+                    "score_before_guards": 0.5136,
+                    "score_after_guards": 0.5136,
                     "cap_applied": 0.79,
                     "guards_applied": [
                       {
@@ -27442,6 +27450,11 @@
                         "source": "volatility",
                         "cap": 0.79,
                         "reason": "volatility_moderate"
+                      },
+                      {
+                        "source": "stage",
+                        "cap": 0.79,
+                        "reason": "finished_evaluation_context_cap"
                       }
                     ]
                   },
@@ -27456,17 +27469,10 @@
                   "scales": {
                     "outcome_margin_full_confidence": 0.25,
                     "model_disagreement_full_penalty": 0.08
-                  },
-                  "live_freeze": {
-                    "applied": true,
-                    "reason": "match_status_live_or_finished_confidence_frozen",
-                    "source": "previous_confidence_reliability_record",
-                    "frozen_at": "2026-05-23T20:35:47.152666Z",
-                    "policy": "LIVE/FINISHED match: previous Confidence output is preserved; no new confidence calculation is applied."
                   }
                 },
                 "premium": {
-                  "summary": "Confidence medium: score 0.5776. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
+                  "summary": "Confidence medium: score 0.5136. La misura valuta quanto la lettura matematica finale è supportata da chiarezza, coerenza interna tra modelli, affidabilità strutturale, completezza dello stage e stabilità.",
                   "key_factors": [
                     {
                       "type": "outcome_clarity",
@@ -27494,7 +27500,7 @@
                     }
                   ],
                   "user_label": "Lettura discreta",
-                  "stage_note": "lineups_ready"
+                  "stage_note": "finished_evaluation_context"
                 },
                 "bot": {
                   "semantic_tags": [
@@ -27502,7 +27508,7 @@
                     "model_agreement::very_high_agreement",
                     "internal_agreement::very_high",
                     "internal_disagreement::light",
-                    "confidence_stage::lineups_ready",
+                    "confidence_stage::finished_evaluation_context",
                     "confidence_penalty::volatility_high",
                     "confidence_guard::active"
                   ]
@@ -27518,14 +27524,7 @@
                   ],
                   "exports_to": "predictions_cloud.json"
                 },
-                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati, agreement layer e penalità volatility. Non modifica le probabilità finali.",
-                "live_freeze": {
-                  "applied": true,
-                  "reason": "match_status_live_or_finished_confidence_frozen",
-                  "source": "previous_confidence_reliability_record",
-                  "frozen_at": "2026-05-23T20:35:47.152666Z",
-                  "policy": "LIVE/FINISHED match: previous Confidence output is preserved; no new confidence calculation is applied."
-                }
+                "note": "Confidence calcolata combinando chiarezza dell’esito, accordo tra modelli, affidabilità dei modelli strutturali, completezza dello stage dati, agreement layer e penalità volatility. Non modifica le probabilità finali."
               }
             }
           ],
@@ -27534,7 +27533,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-23T20:35:47.663718Z",
+          "generated_at": "2026-05-23T21:05:40.428544Z",
           "has_lineups": true,
           "has_referee": true
         }
@@ -36137,7 +36136,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-23T20:35:47.663718Z",
+          "generated_at": "2026-05-23T21:05:40.428544Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -45000,7 +44999,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-23T20:35:47.663718Z",
+          "generated_at": "2026-05-23T21:05:40.428544Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -53915,7 +53914,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-23T20:35:47.663718Z",
+          "generated_at": "2026-05-23T21:05:40.428544Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -62853,7 +62852,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-23T20:35:47.663718Z",
+          "generated_at": "2026-05-23T21:05:40.428544Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -71562,7 +71561,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-23T20:35:47.663718Z",
+          "generated_at": "2026-05-23T21:05:40.428544Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -80377,7 +80376,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-23T20:35:47.663718Z",
+          "generated_at": "2026-05-23T21:05:40.428544Z",
           "has_lineups": false,
           "has_referee": false
         }
@@ -89294,7 +89293,7 @@
         },
         "meta": {
           "model": "vectra_v7_dixon_coles_goal_pressure_defensive_resistance_volatility_confidence",
-          "generated_at": "2026-05-23T20:35:47.663718Z",
+          "generated_at": "2026-05-23T21:05:40.428544Z",
           "has_lineups": false,
           "has_referee": false
         }

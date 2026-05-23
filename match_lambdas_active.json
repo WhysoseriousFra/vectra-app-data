@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T20:35:32.709307Z",
+  "generated_at": "2026-05-23T21:05:30.102774Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -5728,7 +5728,7 @@
       "away_team_id": "vxt_000026",
       "home_team_name": "Lazio",
       "away_team_name": "Pisa",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-05-23T18:45:00Z",
       "stadium": "Olimpico",
       "city": "Roma",
