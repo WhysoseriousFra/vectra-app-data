@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T02:24:35.708392Z",
+  "generated_at": "2026-05-23T16:35:43.410283Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_038",
   "matchday": 38,
@@ -27,14 +27,14 @@
         "city": "Firenze"
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "has_lineups": false,
+        "match_status": "FINISHED",
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": false
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 1,
+        "away_score": 1
       },
       "referee": {
         "assigned": false,
@@ -42,18 +42,18 @@
         "referee_name": ""
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "pending",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "full",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-3-3",
+          "starting_count": 11,
+          "bench_count": 10
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-4-2-1",
+          "starting_count": 11,
+          "bench_count": 13
         }
       }
     },
@@ -79,14 +79,14 @@
         "city": "Bologna"
       },
       "status": {
-        "match_status": "UPCOMING",
-        "prediction_stage": "core_only",
-        "has_lineups": false,
+        "match_status": "LIVE",
+        "prediction_stage": "lineups_ready",
+        "has_lineups": true,
         "has_referee": false
       },
       "score": {
-        "home_score": null,
-        "away_score": null
+        "home_score": 1,
+        "away_score": 1
       },
       "referee": {
         "assigned": false,
@@ -94,18 +94,18 @@
         "referee_name": ""
       },
       "lineups": {
-        "available": false,
-        "confirmed": false,
-        "resolution_status": "pending",
+        "available": true,
+        "confirmed": true,
+        "resolution_status": "full",
         "home": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "4-3-3",
+          "starting_count": 11,
+          "bench_count": 11
         },
         "away": {
-          "formation": "",
-          "starting_count": 0,
-          "bench_count": 0
+          "formation": "3-5-2",
+          "starting_count": 11,
+          "bench_count": 12
         }
       }
     },

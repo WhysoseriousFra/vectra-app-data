@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T02:24:35.702962Z",
+  "generated_at": "2026-05-23T16:35:43.404606Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -9,7 +9,7 @@
       "vectra_match_id": "vxm_000071",
       "home_team_name": "Fiorentina",
       "away_team_name": "Atalanta",
-      "match_status": "UPCOMING",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "moderate_away_edge",
@@ -27,7 +27,7 @@
           "Minaccia offensiva Fiorentina: alta.",
           "Minaccia offensiva Atalanta: molto alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un profilo di gara aperta. Atalanta mantiene un vantaggio leggero grazie a una combinazione un po' migliore di spinta offensiva (0.632) e qualità di costruzione (0.760); tuttavia anche Fiorentina conserva un profilo offensivo credibile, quindi il margine resta contenuto e la gara resta contendibile. Lo stato attuale arriva dal layer `base_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio reale per la squadra ospite dentro un profilo di gara aperta. Atalanta mantiene un vantaggio leggero grazie a una combinazione un po' migliore di spinta offensiva (0.632) e qualità di costruzione (0.760); tuttavia anche Fiorentina conserva un profilo offensivo credibile, quindi il margine resta contenuto e la gara resta contendibile. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
@@ -35,7 +35,7 @@
       "vectra_match_id": "vxm_000072",
       "home_team_name": "Bologna",
       "away_team_name": "Inter",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_away_edge",
@@ -53,7 +53,7 @@
           "Minaccia offensiva Bologna: presente ma contenuta.",
           "Minaccia offensiva Inter: molto alta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un profilo di gara aperta. Inter emerge per una combinazione più forte tra peso offensivo (0.955) e sostenibilità della manovra (0.900); in più trova un contesto difensivo avversario con concedibilità pari a 0.340, coerente con un vantaggio strutturale ospite. Lo stato attuale arriva dal layer `base_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra ospite dentro un profilo di gara aperta. Inter emerge per una combinazione più forte tra peso offensivo (0.955) e sostenibilità della manovra (0.900); in più trova un contesto difensivo avversario con concedibilità pari a 0.340, coerente con un vantaggio strutturale ospite. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },
