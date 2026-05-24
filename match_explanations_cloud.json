@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T20:35:38.866119Z",
+  "generated_at": "2026-05-24T21:05:38.011856Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -139,7 +139,7 @@
       "vectra_match_id": "vxm_000076",
       "home_team_name": "Milan",
       "away_team_name": "Cagliari",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_home_edge",
@@ -165,7 +165,7 @@
       "vectra_match_id": "vxm_000077",
       "home_team_name": "Cremonese",
       "away_team_name": "Como",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_away_edge",
@@ -191,7 +191,7 @@
       "vectra_match_id": "vxm_000078",
       "home_team_name": "Lecce",
       "away_team_name": "Genoa",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "balanced_goal_environment",
         "balance_edge_label": "slight_away_edge",
@@ -243,7 +243,7 @@
       "vectra_match_id": "vxm_000080",
       "home_team_name": "Hellas Verona",
       "away_team_name": "Roma",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_away_edge",
