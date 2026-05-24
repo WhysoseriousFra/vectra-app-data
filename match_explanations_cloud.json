@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T12:35:40.449409Z",
+  "generated_at": "2026-05-24T13:05:39.224158Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -87,7 +87,7 @@
       "vectra_match_id": "vxm_000074",
       "home_team_name": "Parma",
       "away_team_name": "Sassuolo",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "semantic_tags": {
         "goal_environment_label": "balanced_goal_environment",
         "balance_edge_label": "slight_away_edge",
