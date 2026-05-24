@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T18:35:40.553166Z",
+  "generated_at": "2026-05-24T19:05:37.793029Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_038",
   "matchday": 38,
@@ -287,13 +287,13 @@
         "city": "Milano"
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": 0,
+        "home_score": 1,
         "away_score": 0
       },
       "referee": {
@@ -339,7 +339,7 @@
         "city": "Cremona"
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
@@ -391,13 +391,13 @@
         "city": "Lecce"
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true
       },
       "score": {
-        "home_score": 0,
+        "home_score": 1,
         "away_score": 0
       },
       "referee": {
@@ -495,7 +495,7 @@
         "city": "Verona"
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true

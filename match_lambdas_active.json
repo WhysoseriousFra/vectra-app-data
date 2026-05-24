@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T18:35:29.433123Z",
+  "generated_at": "2026-05-24T19:05:26.996428Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -10487,15 +10487,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000082",
-              "name": "Zé Pedro",
+              "vectra_player_id": "vxp_000081",
+              "name": "Mina",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000081",
-              "name": "Mina",
+              "vectra_player_id": "vxp_000082",
+              "name": "Zé Pedro",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -11342,7 +11342,7 @@
       "away_team_id": "vxt_000022",
       "home_team_name": "Milan",
       "away_team_name": "Cagliari",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-24T18:45:00Z",
       "stadium": "Giuseppe Meazza",
       "city": "Milano",
@@ -13236,7 +13236,7 @@
       "away_team_id": "vxt_000024",
       "home_team_name": "Cremonese",
       "away_team_name": "Como",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-24T18:45:00Z",
       "stadium": "Giovanni Zini",
       "city": "Cremona",
@@ -13496,6 +13496,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000383",
+              "name": "Tiago Gabriel",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000389",
               "name": "Danilo Veiga",
               "role": "Defender",
@@ -13517,9 +13524,16 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000383",
-              "name": "Tiago Gabriel",
-              "role": "Defender",
+              "vectra_player_id": "vxp_000385",
+              "name": "Pierotti",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000391",
+              "name": "L. Coulibaly",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -13533,20 +13547,6 @@
             {
               "vectra_player_id": "vxp_000403",
               "name": "Ngom",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000385",
-              "name": "Pierotti",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000391",
-              "name": "L. Coulibaly",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -14257,20 +14257,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000245",
-              "name": "Sabelli",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000248",
-              "name": "Otoa",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000255",
               "name": "Zätterström",
               "role": "Defender",
@@ -14280,6 +14266,20 @@
             {
               "vectra_player_id": "vxp_000235",
               "name": "Martín",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000245",
+              "name": "Sabelli",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000248",
+              "name": "Otoa",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -15124,7 +15124,7 @@
       "away_team_id": "vxt_000029",
       "home_team_name": "Lecce",
       "away_team_name": "Genoa",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-24T18:45:00Z",
       "stadium": "Ettore Giardiniero - Via Del Mare",
       "city": "Lecce",
@@ -18908,7 +18908,7 @@
       "away_team_id": "vxt_000030",
       "home_team_name": "Hellas Verona",
       "away_team_name": "Roma",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-24T18:45:00Z",
       "stadium": "Marcantonio Bentegodi",
       "city": "Verona",
