@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T12:05:24.763640Z",
+  "generated_at": "2026-05-24T12:35:29.310572Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -5712,7 +5712,7 @@
         "resolution_status": "partial",
         "home": {
           "team_id": "vxt_000023",
-          "formation": "Unknown",
+          "formation": "3-5-2",
           "starting_players_count": 11,
           "bench_players_count": 12,
           "starting_xi_quality": {
@@ -5767,7 +5767,7 @@
         },
         "away": {
           "team_id": "vxt_000034",
-          "formation": "Unknown",
+          "formation": "4-3-3",
           "starting_players_count": 11,
           "bench_players_count": 15,
           "starting_xi_quality": {
@@ -5930,13 +5930,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000490",
-              "name": "Valeri",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000493",
               "name": "Valenti",
               "role": "Defender",
@@ -5946,6 +5939,13 @@
             {
               "vectra_player_id": "vxp_000492",
               "name": "Circati",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000490",
+              "name": "Valeri",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -6684,15 +6684,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000608",
-              "name": "Idzes",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000640",
-              "name": "Macchioni",
+              "vectra_player_id": "vxp_000628",
+              "name": "Garcia",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -6705,9 +6698,23 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000628",
-              "name": "Garcia",
+              "vectra_player_id": "vxp_000640",
+              "name": "Macchioni",
               "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000608",
+              "name": "Idzes",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000612",
+              "name": "I. Koné",
+              "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -6726,20 +6733,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000612",
-              "name": "I. Koné",
-              "role": "Midfielder",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000609",
-              "name": "Pinamonti",
-              "role": "Forward",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000607",
               "name": "Laurienté",
               "role": "Forward",
@@ -6749,6 +6742,13 @@
             {
               "vectra_player_id": "vxp_000619",
               "name": "Berardi",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000609",
+              "name": "Pinamonti",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99

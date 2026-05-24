@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T12:05:36.543588Z",
+  "generated_at": "2026-05-24T12:35:40.458154Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_038",
   "matchday": 38,
@@ -202,12 +202,12 @@
         "confirmed": true,
         "resolution_status": "partial",
         "home": {
-          "formation": "Unknown",
+          "formation": "3-5-2",
           "starting_count": 11,
           "bench_count": 12
         },
         "away": {
-          "formation": "Unknown",
+          "formation": "4-3-3",
           "starting_count": 11,
           "bench_count": 15
         }
