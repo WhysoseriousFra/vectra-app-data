@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T21:31:16.900841Z",
+  "generated_at": "2026-05-24T09:01:02.807022Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_038",
   "matchday": 38,
@@ -142,8 +142,8 @@
       },
       "referee": {
         "assigned": true,
-        "vectra_referee_id": "vxr_000028",
-        "referee_name": "Maria Ferrieri Caputi"
+        "vectra_referee_id": "vxr_000047",
+        "referee_name": "Maria Sole Ferrieri Caputi"
       },
       "lineups": {
         "available": true,
@@ -194,7 +194,7 @@
       },
       "referee": {
         "assigned": true,
-        "vectra_referee_id": "vxr_000094",
+        "vectra_referee_id": "vxr_000051",
         "referee_name": "Niccolo' Turrini"
       },
       "lineups": {
@@ -246,7 +246,7 @@
       },
       "referee": {
         "assigned": true,
-        "vectra_referee_id": "vxr_000095",
+        "vectra_referee_id": "vxr_000055",
         "referee_name": "Andrea Zanotti"
       },
       "lineups": {

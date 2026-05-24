@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T21:30:42.459649Z",
+  "generated_at": "2026-05-24T09:00:46.448568Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -243,19 +243,19 @@
       },
       "referee_modifier": {
         "applied": true,
-        "vectra_referee_id": "vxr_000094",
+        "vectra_referee_id": "vxr_000051",
         "reason_flags": [
+          "low_referee_strictness",
           "balanced_referee_interaction",
-          "away_card_exposure_penalty",
           "referee_sample_low_reliability"
         ]
       },
       "referee_impact": {
         "applied": true,
         "referee": {
-          "vectra_referee_id": "vxr_000094",
+          "vectra_referee_id": "vxr_000051",
           "name": "Niccolo' Turrini",
-          "identity_status": "resolved_from_match_assignment",
+          "identity_status": "resolved",
           "reliability": 0.0,
           "metrics": {
             "matches_officiated": 0.0,
@@ -267,16 +267,16 @@
             "home_win_ratio": 0.0,
             "away_win_ratio": 0.0,
             "draw_ratio": 0.0,
-            "strictness": 0.5,
-            "card_tendency": 0.5,
-            "penalty_tendency": 0.5,
+            "strictness": 0.0,
+            "card_tendency": 0.0,
+            "penalty_tendency": 0.0,
             "home_bias_signal": 0.5
           }
         },
         "home": {
           "team_id": "vxt_000023",
-          "referee_attack_boost": 0.0233,
-          "referee_edge": 0.0283,
+          "referee_attack_boost": 0.0,
+          "referee_edge": 0.0,
           "lambda_before_referee": 0.8929,
           "lambda_raw_unbounded": 0.8929,
           "lambda_after_referee": 0.8929,
@@ -286,8 +286,8 @@
         },
         "away": {
           "team_id": "vxt_000034",
-          "referee_attack_boost": -0.005,
-          "referee_edge": -0.0283,
+          "referee_attack_boost": 0.0,
+          "referee_edge": 0.0,
           "lambda_before_referee": 1.159,
           "lambda_raw_unbounded": 1.159,
           "lambda_after_referee": 1.159,
@@ -297,23 +297,23 @@
         },
         "components": {
           "home": {
-            "foul_gain_advantage": 0.1256,
-            "penalty_volatility_advantage": 0.0384,
-            "contact_strictness_positive": 0.1256,
-            "contact_strictness_negative": 0.139,
-            "contact_strictness_interaction": -0.0134,
-            "card_exposure_penalty": 0.0874,
-            "rhythm_interruption_penalty": 0.0836,
+            "foul_gain_advantage": 0.0,
+            "penalty_volatility_advantage": 0.0,
+            "contact_strictness_positive": 0.0,
+            "contact_strictness_negative": 0.0,
+            "contact_strictness_interaction": 0.0,
+            "card_exposure_penalty": 0.0,
+            "rhythm_interruption_penalty": 0.0,
             "home_away_sensitivity": 0.0
           },
           "away": {
-            "foul_gain_advantage": 0.1049,
-            "penalty_volatility_advantage": 0.0317,
-            "contact_strictness_positive": 0.1049,
-            "contact_strictness_negative": 0.1824,
-            "contact_strictness_interaction": -0.0775,
-            "card_exposure_penalty": 0.1355,
-            "rhythm_interruption_penalty": 0.1022,
+            "foul_gain_advantage": 0.0,
+            "penalty_volatility_advantage": 0.0,
+            "contact_strictness_positive": 0.0,
+            "contact_strictness_negative": 0.0,
+            "contact_strictness_interaction": 0.0,
+            "card_exposure_penalty": 0.0,
+            "rhythm_interruption_penalty": 0.0,
             "home_away_sensitivity": -0.0
           },
           "team_inputs": {
@@ -343,18 +343,18 @@
         },
         "bot_summary_key": "referee_low_reliability_caution",
         "evidence": [
+          "low_referee_strictness",
           "balanced_referee_interaction",
-          "away_card_exposure_penalty",
           "referee_sample_low_reliability"
         ]
       },
       "referee_factors": {
         "goal_environment_factor": 1.0,
-        "home_shift_factor": 1.0283,
-        "away_shift_factor": 0.9717,
-        "penalty_tendency": 0.5,
-        "strictness": 0.5,
-        "card_tendency": 0.5,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "card_tendency": 0.0,
         "home_bias_signal": 0.5,
         "sample_reliability": 0.0
       },
@@ -398,19 +398,19 @@
       },
       "referee_modifier": {
         "applied": true,
-        "vectra_referee_id": "vxr_000095",
+        "vectra_referee_id": "vxr_000055",
         "reason_flags": [
+          "low_referee_strictness",
           "balanced_referee_interaction",
-          "away_card_exposure_penalty",
           "referee_sample_low_reliability"
         ]
       },
       "referee_impact": {
         "applied": true,
         "referee": {
-          "vectra_referee_id": "vxr_000095",
+          "vectra_referee_id": "vxr_000055",
           "name": "Andrea Zanotti",
-          "identity_status": "resolved_from_match_assignment",
+          "identity_status": "resolved",
           "reliability": 0.0,
           "metrics": {
             "matches_officiated": 0.0,
@@ -422,16 +422,16 @@
             "home_win_ratio": 0.0,
             "away_win_ratio": 0.0,
             "draw_ratio": 0.0,
-            "strictness": 0.5,
-            "card_tendency": 0.5,
-            "penalty_tendency": 0.5,
+            "strictness": 0.0,
+            "card_tendency": 0.0,
+            "penalty_tendency": 0.0,
             "home_bias_signal": 0.5
           }
         },
         "home": {
           "team_id": "vxt_000039",
-          "referee_attack_boost": 0.0191,
-          "referee_edge": 0.0143,
+          "referee_attack_boost": 0.0,
+          "referee_edge": 0.0,
           "lambda_before_referee": 2.2325,
           "lambda_raw_unbounded": 2.2325,
           "lambda_after_referee": 2.2325,
@@ -441,8 +441,8 @@
         },
         "away": {
           "team_id": "vxt_000028",
-          "referee_attack_boost": 0.0048,
-          "referee_edge": -0.0143,
+          "referee_attack_boost": 0.0,
+          "referee_edge": 0.0,
           "lambda_before_referee": 0.821,
           "lambda_raw_unbounded": 0.821,
           "lambda_after_referee": 0.821,
@@ -452,23 +452,23 @@
         },
         "components": {
           "home": {
-            "foul_gain_advantage": 0.1311,
-            "penalty_volatility_advantage": 0.0628,
-            "contact_strictness_positive": 0.1311,
-            "contact_strictness_negative": 0.1679,
-            "contact_strictness_interaction": -0.0368,
-            "card_exposure_penalty": 0.1006,
-            "rhythm_interruption_penalty": 0.1234,
+            "foul_gain_advantage": 0.0,
+            "penalty_volatility_advantage": 0.0,
+            "contact_strictness_positive": 0.0,
+            "contact_strictness_negative": 0.0,
+            "contact_strictness_interaction": 0.0,
+            "card_exposure_penalty": 0.0,
+            "rhythm_interruption_penalty": 0.0,
             "home_away_sensitivity": 0.0
           },
           "away": {
-            "foul_gain_advantage": 0.1133,
-            "penalty_volatility_advantage": 0.0491,
-            "contact_strictness_positive": 0.1133,
-            "contact_strictness_negative": 0.1816,
-            "contact_strictness_interaction": -0.0682,
-            "card_exposure_penalty": 0.1314,
-            "rhythm_interruption_penalty": 0.098,
+            "foul_gain_advantage": 0.0,
+            "penalty_volatility_advantage": 0.0,
+            "contact_strictness_positive": 0.0,
+            "contact_strictness_negative": 0.0,
+            "contact_strictness_interaction": 0.0,
+            "card_exposure_penalty": 0.0,
+            "rhythm_interruption_penalty": 0.0,
             "home_away_sensitivity": -0.0
           },
           "team_inputs": {
@@ -498,18 +498,18 @@
         },
         "bot_summary_key": "referee_low_reliability_caution",
         "evidence": [
+          "low_referee_strictness",
           "balanced_referee_interaction",
-          "away_card_exposure_penalty",
           "referee_sample_low_reliability"
         ]
       },
       "referee_factors": {
         "goal_environment_factor": 1.0,
-        "home_shift_factor": 1.0143,
-        "away_shift_factor": 0.9857,
-        "penalty_tendency": 0.5,
-        "strictness": 0.5,
-        "card_tendency": 0.5,
+        "home_shift_factor": 1.0,
+        "away_shift_factor": 1.0,
+        "penalty_tendency": 0.0,
+        "strictness": 0.0,
+        "card_tendency": 0.0,
         "home_bias_signal": 0.5,
         "sample_reliability": 0.0
       },
