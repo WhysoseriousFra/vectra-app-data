@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T16:05:24.897845Z",
+  "generated_at": "2026-05-24T16:35:25.216148Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -7823,20 +7823,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000460",
-              "name": "Olivera",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000459",
-              "name": "Gutiérrez",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000462",
               "name": "Di Lorenzo",
               "role": "Defender",
@@ -7846,6 +7832,20 @@
             {
               "vectra_player_id": "vxp_000466",
               "name": "Rrahmani",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000460",
+              "name": "Olivera",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000459",
+              "name": "Gutiérrez",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -7872,13 +7872,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000451",
-              "name": "Politano",
-              "role": "Forward",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000473",
               "name": "Alisson",
               "role": "Forward",
@@ -7888,6 +7881,13 @@
             {
               "vectra_player_id": "vxp_000455",
               "name": "Højlund",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000451",
+              "name": "Politano",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
