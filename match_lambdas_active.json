@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T16:35:25.216148Z",
+  "generated_at": "2026-05-24T17:05:25.852394Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -7823,6 +7823,13 @@
               "confidence": 0.99
             },
             {
+              "vectra_player_id": "vxp_000459",
+              "name": "Gutiérrez",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
               "vectra_player_id": "vxp_000462",
               "name": "Di Lorenzo",
               "role": "Defender",
@@ -7839,13 +7846,6 @@
             {
               "vectra_player_id": "vxp_000460",
               "name": "Olivera",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
-              "vectra_player_id": "vxp_000459",
-              "name": "Gutiérrez",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
