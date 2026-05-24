@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T14:35:35.434158Z",
+  "generated_at": "2026-05-24T15:05:35.573561Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -87,7 +87,7 @@
       "vectra_match_id": "vxm_000074",
       "home_team_name": "Parma",
       "away_team_name": "Sassuolo",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "balanced_goal_environment",
         "balance_edge_label": "slight_away_edge",
@@ -131,7 +131,7 @@
           "Minaccia offensiva Napoli: molto alta.",
           "Minaccia offensiva Udinese: presente ma contenuta."
         ],
-        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Napoli emerge con un vantaggio strutturale più netto, mentre Udinese appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `referee_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
+        "premium_deep_explanation": "La lettura profonda del modello parte da un vantaggio netto per la squadra di casa dentro un profilo di gara aperta. Napoli emerge con un vantaggio strutturale più netto, mentre Udinese appare più limitata sul piano della minaccia offensiva complessiva. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
         "layer_evolution_summary": "La lettura corrente deriva da uno stadio progressivo già aggiornato. Quando saranno disponibili confronti completi tra layer, il riepilogo evolutivo descriverà con precisione se e come la previsione si è modificata."
       }
     },

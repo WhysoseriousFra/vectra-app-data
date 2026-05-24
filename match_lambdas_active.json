@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T14:35:25.066709Z",
+  "generated_at": "2026-05-24T15:05:25.060083Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -8,8 +8,8 @@
   "matches_count": 10,
   "stage_counts": {
     "base_ready": 0,
-    "referee_ready": 6,
-    "lineups_ready": 4,
+    "referee_ready": 5,
+    "lineups_ready": 5,
     "missing": 0
   },
   "data": {
@@ -5930,13 +5930,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000491",
-              "name": "Britschgi",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000493",
               "name": "Valenti",
               "role": "Defender",
@@ -5960,6 +5953,13 @@
             {
               "vectra_player_id": "vxp_000490",
               "name": "Valeri",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000491",
+              "name": "Britschgi",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -6691,13 +6691,6 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000608",
-              "name": "Idzes",
-              "role": "Defender",
-              "is_goalkeeper": false,
-              "confidence": 0.99
-            },
-            {
               "vectra_player_id": "vxp_000628",
               "name": "Garcia",
               "role": "Defender",
@@ -6712,9 +6705,9 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000616",
-              "name": "Thorstvedt",
-              "role": "Midfielder",
+              "vectra_player_id": "vxp_000608",
+              "name": "Idzes",
+              "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
@@ -6728,6 +6721,13 @@
             {
               "vectra_player_id": "vxp_000620",
               "name": "Lipani",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000616",
+              "name": "Thorstvedt",
               "role": "Midfielder",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -7562,7 +7562,7 @@
       "away_team_id": "vxt_000034",
       "home_team_name": "Parma",
       "away_team_name": "Sassuolo",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "kickoff_utc": "2026-05-24T13:00:00Z",
       "stadium": "Ennio Tardini",
       "city": "Parma",
@@ -7573,9 +7573,1755 @@
     },
     "vxm_000075": {
       "vectra_match_id": "vxm_000075",
-      "prediction_stage": "referee_ready",
-      "lambda_home_core": 2.2325,
-      "lambda_away_core": 0.821,
+      "prediction_stage": "lineups_ready",
+      "lineups_ready": true,
+      "lineups_source_applied": true,
+      "lineups_source_reason": "lineups_confirmed_and_resolved",
+      "source_lambda_file": "match_lambdas_referee.json",
+      "lambda_home_core": 2.2203,
+      "lambda_away_core": 0.8371,
+      "lambda_before_lineups": {
+        "home": 2.2325,
+        "away": 0.821
+      },
+      "lambda_lineups": {
+        "home": 2.2203,
+        "away": 0.8371
+      },
+      "lambda_before": {
+        "home": 2.2325,
+        "away": 0.821
+      },
+      "lambda_after": {
+        "home": 2.2203,
+        "away": 0.8371
+      },
+      "lineups_impact": {
+        "applied": true,
+        "lineups_confirmed": true,
+        "lineups_available": true,
+        "resolution_status": "full",
+        "home": {
+          "team_id": "vxt_000039",
+          "formation": "3-4-2-1",
+          "starting_players_count": 11,
+          "bench_players_count": 10,
+          "starting_xi_quality": {
+            "finishing": 0.4409,
+            "creator_supply": 0.5422,
+            "box_presence": 0.6548,
+            "goalkeeping": 0.3111,
+            "defensive_duel": 0.4364,
+            "aerial_attack": 0.4032,
+            "aerial_defense": 0.3114,
+            "discipline_risk": 0.4437,
+            "discipline_stability": 0.5563,
+            "foul_gain": 0.5308,
+            "physical": 0.7928
+          },
+          "team_baseline": {
+            "finishing": 0.370867,
+            "creator_supply": 0.51604,
+            "box_presence": 0.515006,
+            "goalkeeping": 0.594812,
+            "defensive_duel": 0.425794,
+            "aerial_attack": 0.365643,
+            "aerial_defense": 0.327945,
+            "discipline_risk": 0.448574,
+            "discipline_stability": 0.551426,
+            "foul_gain": 0.475535,
+            "physical": 0.74876
+          },
+          "deltas": {
+            "finishing": 0.07,
+            "creator_supply": 0.0262,
+            "box_presence": 0.1398,
+            "goalkeeping": -0.2837,
+            "defensive_duel": 0.0106,
+            "aerial_attack": 0.0376,
+            "aerial_defense": -0.0165,
+            "discipline_risk": -0.0049,
+            "discipline_stability": 0.0049,
+            "foul_gain": 0.0553,
+            "physical": 0.044
+          },
+          "attack_delta": 0.0639,
+          "defensive_delta": -0.0667,
+          "lineup_edge": -0.0342,
+          "lineup_multiplier": -0.0055,
+          "lambda_before_lineups": 2.2325,
+          "lambda_raw_unbounded": 2.2203,
+          "lambda_after_lineups": 2.2203,
+          "lambda_delta_raw": -0.0122,
+          "lambda_delta_applied": -0.0122,
+          "lambda_cap_reached": false
+        },
+        "away": {
+          "team_id": "vxt_000028",
+          "formation": "3-5-1-1",
+          "starting_players_count": 11,
+          "bench_players_count": 10,
+          "starting_xi_quality": {
+            "finishing": 0.4976,
+            "creator_supply": 0.4145,
+            "box_presence": 0.5454,
+            "goalkeeping": 0.7369,
+            "defensive_duel": 0.4648,
+            "aerial_attack": 0.3812,
+            "aerial_defense": 0.4397,
+            "discipline_risk": 0.5542,
+            "discipline_stability": 0.4458,
+            "foul_gain": 0.5339,
+            "physical": 0.7768
+          },
+          "team_baseline": {
+            "finishing": 0.39297,
+            "creator_supply": 0.408155,
+            "box_presence": 0.470711,
+            "goalkeeping": 0.521002,
+            "defensive_duel": 0.414364,
+            "aerial_attack": 0.341509,
+            "aerial_defense": 0.35263,
+            "discipline_risk": 0.512567,
+            "discipline_stability": 0.487433,
+            "foul_gain": 0.465074,
+            "physical": 0.708573
+          },
+          "deltas": {
+            "finishing": 0.1046,
+            "creator_supply": 0.0063,
+            "box_presence": 0.0747,
+            "goalkeeping": 0.2159,
+            "defensive_duel": 0.0504,
+            "aerial_attack": 0.0397,
+            "aerial_defense": 0.0871,
+            "discipline_risk": 0.0416,
+            "discipline_stability": -0.0416,
+            "foul_gain": 0.0688,
+            "physical": 0.0682
+          },
+          "attack_delta": 0.0566,
+          "defensive_delta": 0.0981,
+          "lineup_edge": 0.1233,
+          "lineup_multiplier": 0.0197,
+          "lambda_before_lineups": 0.821,
+          "lambda_raw_unbounded": 0.8371,
+          "lambda_after_lineups": 0.8371,
+          "lambda_delta_raw": 0.0161,
+          "lambda_delta_applied": 0.0161,
+          "lambda_cap_reached": false
+        },
+        "bench": {
+          "home": {
+            "top_offensive_bench_options": [
+              {
+                "vectra_player_id": "vxp_000450",
+                "name": "Giovane",
+                "role": "Forward",
+                "offensive_sub_signal": 0.5953,
+                "reliability": 1.0
+              },
+              {
+                "vectra_player_id": "vxp_000465",
+                "name": "Anguissa",
+                "role": "Midfielder",
+                "offensive_sub_signal": 0.5907,
+                "reliability": 0.7946
+              },
+              {
+                "vectra_player_id": "vxp_000470",
+                "name": "De Bruyne",
+                "role": "Midfielder",
+                "offensive_sub_signal": 0.5377,
+                "reliability": 0.7002
+              },
+              {
+                "vectra_player_id": "vxp_000463",
+                "name": "Beukema",
+                "role": "Defender",
+                "offensive_sub_signal": 0.4581,
+                "reliability": 0.768
+              },
+              {
+                "vectra_player_id": "vxp_000469",
+                "name": "Gilmour",
+                "role": "Midfielder",
+                "offensive_sub_signal": 0.2816,
+                "reliability": 0.512
+              }
+            ],
+            "bench_players_count": 10,
+            "bench_model_applied_to_lambda": false
+          },
+          "away": {
+            "top_offensive_bench_options": [
+              {
+                "vectra_player_id": "vxp_000696",
+                "name": "Bertola",
+                "role": "Defender",
+                "offensive_sub_signal": 0.3054,
+                "reliability": 0.8701
+              },
+              {
+                "vectra_player_id": "vxp_000701",
+                "name": "Buksa",
+                "role": "Forward",
+                "offensive_sub_signal": 0.2909,
+                "reliability": 0.5905
+              },
+              {
+                "vectra_player_id": "vxp_000705",
+                "name": "Gueye",
+                "role": "Forward",
+                "offensive_sub_signal": 0.1669,
+                "reliability": 0.4163
+              },
+              {
+                "vectra_player_id": "vxp_000706",
+                "name": "Bayo",
+                "role": "Forward",
+                "offensive_sub_signal": 0.1499,
+                "reliability": 0.4358
+              },
+              {
+                "vectra_player_id": "vxp_000700",
+                "name": "Zarraga",
+                "role": "Midfielder",
+                "offensive_sub_signal": 0.0817,
+                "reliability": 0.4374
+              }
+            ],
+            "bench_players_count": 10,
+            "bench_model_applied_to_lambda": false
+          }
+        },
+        "parameters": {
+          "lineup_stage_multiplier": 0.16,
+          "lineup_impact_cap": 0.2,
+          "lambda_min": 0.65,
+          "lambda_max": 2.45
+        },
+        "lineup_reliability": 0.997,
+        "bot_summary_key": "lineups_away_structural_boost",
+        "evidence": [
+          "home_starting_xi_attack_above_team_core",
+          "away_starting_xi_attack_above_team_core",
+          "home_starting_xi_defense_below_team_core",
+          "away_starting_xi_defense_above_team_core",
+          "away_lineup_edge"
+        ]
+      },
+      "starting_players_impact": {
+        "applied": true,
+        "home": {
+          "players": [
+            {
+              "vectra_player_id": "vxp_000474",
+              "name": "Meret",
+              "role": "Goalkeeper",
+              "is_goalkeeper": true,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000460",
+              "name": "Olivera",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000459",
+              "name": "Gutiérrez",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000462",
+              "name": "Di Lorenzo",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000466",
+              "name": "Rrahmani",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000457",
+              "name": "Lobotka",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000456",
+              "name": "McTominay",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000452",
+              "name": "Elmas",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000451",
+              "name": "Politano",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000473",
+              "name": "Alisson",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000455",
+              "name": "Højlund",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            }
+          ],
+          "profile_details": {
+            "finishing": {
+              "score": 0.4409,
+              "fallback_used": false,
+              "weighted_players": 10,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 1,
+              "total_weight": 7.2989,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000455",
+                  "name": "Højlund",
+                  "role": "Forward",
+                  "score": 0.6578,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.6565
+                },
+                {
+                  "vectra_player_id": "vxp_000456",
+                  "name": "McTominay",
+                  "role": "Midfielder",
+                  "score": 0.7068,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.65,
+                  "weight": 0.8055,
+                  "weighted_contribution": 0.5693
+                },
+                {
+                  "vectra_player_id": "vxp_000451",
+                  "name": "Politano",
+                  "role": "Forward",
+                  "score": 0.3912,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.3904
+                },
+                {
+                  "vectra_player_id": "vxp_000457",
+                  "name": "Lobotka",
+                  "role": "Midfielder",
+                  "score": 0.4778,
+                  "reliability": 0.8071,
+                  "confidence": 0.99,
+                  "role_relevance": 0.65,
+                  "weight": 0.7573,
+                  "weighted_contribution": 0.3618
+                },
+                {
+                  "vectra_player_id": "vxp_000473",
+                  "name": "Alisson",
+                  "role": "Forward",
+                  "score": 0.3542,
+                  "reliability": 0.4505,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.8606,
+                  "weighted_contribution": 0.3049
+                }
+              ]
+            },
+            "creator_supply": {
+              "score": 0.5422,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 8.7458,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000451",
+                  "name": "Politano",
+                  "role": "Forward",
+                  "score": 0.883,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.85,
+                  "weight": 0.9155,
+                  "weighted_contribution": 0.8084
+                },
+                {
+                  "vectra_player_id": "vxp_000462",
+                  "name": "Di Lorenzo",
+                  "role": "Defender",
+                  "score": 0.8231,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.55,
+                  "weight": 0.7505,
+                  "weighted_contribution": 0.6178
+                },
+                {
+                  "vectra_player_id": "vxp_000457",
+                  "name": "Lobotka",
+                  "role": "Midfielder",
+                  "score": 0.5814,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.5802
+                },
+                {
+                  "vectra_player_id": "vxp_000452",
+                  "name": "Elmas",
+                  "role": "Midfielder",
+                  "score": 0.5789,
+                  "reliability": 0.9942,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9966,
+                  "weighted_contribution": 0.5769
+                },
+                {
+                  "vectra_player_id": "vxp_000459",
+                  "name": "Gutiérrez",
+                  "role": "Defender",
+                  "score": 0.7483,
+                  "reliability": 0.8788,
+                  "confidence": 0.99,
+                  "role_relevance": 0.55,
+                  "weight": 0.7202,
+                  "weighted_contribution": 0.5389
+                }
+              ]
+            },
+            "box_presence": {
+              "score": 0.6548,
+              "fallback_used": false,
+              "weighted_players": 10,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 1,
+              "total_weight": 7.4576,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000455",
+                  "name": "Højlund",
+                  "role": "Forward",
+                  "score": 0.8519,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.8502
+                },
+                {
+                  "vectra_player_id": "vxp_000456",
+                  "name": "McTominay",
+                  "role": "Midfielder",
+                  "score": 0.9667,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.6,
+                  "weight": 0.778,
+                  "weighted_contribution": 0.7521
+                },
+                {
+                  "vectra_player_id": "vxp_000451",
+                  "name": "Politano",
+                  "role": "Forward",
+                  "score": 0.6323,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.631
+                },
+                {
+                  "vectra_player_id": "vxp_000462",
+                  "name": "Di Lorenzo",
+                  "role": "Defender",
+                  "score": 1.0,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.3,
+                  "weight": 0.613,
+                  "weighted_contribution": 0.613
+                },
+                {
+                  "vectra_player_id": "vxp_000452",
+                  "name": "Elmas",
+                  "role": "Midfielder",
+                  "score": 0.7658,
+                  "reliability": 0.9942,
+                  "confidence": 0.99,
+                  "role_relevance": 0.6,
+                  "weight": 0.7766,
+                  "weighted_contribution": 0.5947
+                }
+              ]
+            },
+            "goalkeeping": {
+              "score": 0.3111,
+              "fallback_used": false,
+              "weighted_players": 1,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 10,
+              "total_weight": 0.879,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000474",
+                  "name": "Meret",
+                  "role": "Goalkeeper",
+                  "score": 0.3111,
+                  "reliability": 0.5238,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.879,
+                  "weighted_contribution": 0.2734
+                }
+              ]
+            },
+            "defensive_duel": {
+              "score": 0.4364,
+              "fallback_used": false,
+              "weighted_players": 10,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 1,
+              "total_weight": 8.3696,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000456",
+                  "name": "McTominay",
+                  "role": "Midfielder",
+                  "score": 0.5676,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.8,
+                  "weight": 0.888,
+                  "weighted_contribution": 0.504
+                },
+                {
+                  "vectra_player_id": "vxp_000466",
+                  "name": "Rrahmani",
+                  "role": "Defender",
+                  "score": 0.5131,
+                  "reliability": 0.903,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9738,
+                  "weighted_contribution": 0.4996
+                },
+                {
+                  "vectra_player_id": "vxp_000457",
+                  "name": "Lobotka",
+                  "role": "Midfielder",
+                  "score": 0.4994,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.8,
+                  "weight": 0.888,
+                  "weighted_contribution": 0.4434
+                },
+                {
+                  "vectra_player_id": "vxp_000460",
+                  "name": "Olivera",
+                  "role": "Defender",
+                  "score": 0.4446,
+                  "reliability": 0.9042,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9741,
+                  "weighted_contribution": 0.433
+                },
+                {
+                  "vectra_player_id": "vxp_000462",
+                  "name": "Di Lorenzo",
+                  "role": "Defender",
+                  "score": 0.4322,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.4313
+                }
+              ]
+            },
+            "aerial_attack": {
+              "score": 0.4032,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 8.7375,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000455",
+                  "name": "Højlund",
+                  "role": "Forward",
+                  "score": 0.6545,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.6532
+                },
+                {
+                  "vectra_player_id": "vxp_000456",
+                  "name": "McTominay",
+                  "role": "Midfielder",
+                  "score": 0.7952,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.55,
+                  "weight": 0.7505,
+                  "weighted_contribution": 0.5968
+                },
+                {
+                  "vectra_player_id": "vxp_000462",
+                  "name": "Di Lorenzo",
+                  "role": "Defender",
+                  "score": 0.5857,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.8,
+                  "weight": 0.888,
+                  "weighted_contribution": 0.5201
+                },
+                {
+                  "vectra_player_id": "vxp_000466",
+                  "name": "Rrahmani",
+                  "role": "Defender",
+                  "score": 0.6042,
+                  "reliability": 0.793,
+                  "confidence": 0.99,
+                  "role_relevance": 0.8,
+                  "weight": 0.8363,
+                  "weighted_contribution": 0.5052
+                },
+                {
+                  "vectra_player_id": "vxp_000460",
+                  "name": "Olivera",
+                  "role": "Defender",
+                  "score": 0.4515,
+                  "reliability": 0.8343,
+                  "confidence": 0.99,
+                  "role_relevance": 0.8,
+                  "weight": 0.8466,
+                  "weighted_contribution": 0.3822
+                }
+              ]
+            },
+            "aerial_defense": {
+              "score": 0.3114,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 8.4187,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000466",
+                  "name": "Rrahmani",
+                  "role": "Defender",
+                  "score": 0.7255,
+                  "reliability": 0.903,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9738,
+                  "weighted_contribution": 0.7065
+                },
+                {
+                  "vectra_player_id": "vxp_000456",
+                  "name": "McTominay",
+                  "role": "Midfielder",
+                  "score": 0.6268,
+                  "reliability": 0.925,
+                  "confidence": 0.99,
+                  "role_relevance": 0.65,
+                  "weight": 0.7868,
+                  "weighted_contribution": 0.4932
+                },
+                {
+                  "vectra_player_id": "vxp_000460",
+                  "name": "Olivera",
+                  "role": "Defender",
+                  "score": 0.3465,
+                  "reliability": 0.7692,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9403,
+                  "weighted_contribution": 0.3258
+                },
+                {
+                  "vectra_player_id": "vxp_000462",
+                  "name": "Di Lorenzo",
+                  "role": "Defender",
+                  "score": 0.3172,
+                  "reliability": 0.82,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.953,
+                  "weighted_contribution": 0.3023
+                },
+                {
+                  "vectra_player_id": "vxp_000455",
+                  "name": "Højlund",
+                  "role": "Forward",
+                  "score": 0.4528,
+                  "reliability": 0.885,
+                  "confidence": 0.99,
+                  "role_relevance": 0.35,
+                  "weight": 0.6118,
+                  "weighted_contribution": 0.277
+                }
+              ]
+            },
+            "discipline_risk": {
+              "score": 0.4437,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 9.6458,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000460",
+                  "name": "Olivera",
+                  "role": "Defender",
+                  "score": 0.5781,
+                  "reliability": 0.9042,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9741,
+                  "weighted_contribution": 0.5631
+                },
+                {
+                  "vectra_player_id": "vxp_000451",
+                  "name": "Politano",
+                  "role": "Forward",
+                  "score": 0.6047,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.75,
+                  "weight": 0.8605,
+                  "weighted_contribution": 0.5203
+                },
+                {
+                  "vectra_player_id": "vxp_000466",
+                  "name": "Rrahmani",
+                  "role": "Defender",
+                  "score": 0.5278,
+                  "reliability": 0.903,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9738,
+                  "weighted_contribution": 0.5139
+                },
+                {
+                  "vectra_player_id": "vxp_000462",
+                  "name": "Di Lorenzo",
+                  "role": "Defender",
+                  "score": 0.5002,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.4992
+                },
+                {
+                  "vectra_player_id": "vxp_000452",
+                  "name": "Elmas",
+                  "role": "Midfielder",
+                  "score": 0.5113,
+                  "reliability": 0.9942,
+                  "confidence": 0.99,
+                  "role_relevance": 0.9,
+                  "weight": 0.9416,
+                  "weighted_contribution": 0.4814
+                }
+              ]
+            },
+            "discipline_stability": {
+              "score": 0.5563,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 9.6458,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000473",
+                  "name": "Alisson",
+                  "role": "Forward",
+                  "score": 0.9241,
+                  "reliability": 0.3498,
+                  "confidence": 0.99,
+                  "role_relevance": 0.75,
+                  "weight": 0.698,
+                  "weighted_contribution": 0.645
+                },
+                {
+                  "vectra_player_id": "vxp_000456",
+                  "name": "McTominay",
+                  "role": "Midfielder",
+                  "score": 0.6716,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.9,
+                  "weight": 0.943,
+                  "weighted_contribution": 0.6333
+                },
+                {
+                  "vectra_player_id": "vxp_000457",
+                  "name": "Lobotka",
+                  "role": "Midfielder",
+                  "score": 0.6014,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.9,
+                  "weight": 0.943,
+                  "weighted_contribution": 0.5671
+                },
+                {
+                  "vectra_player_id": "vxp_000459",
+                  "name": "Gutiérrez",
+                  "role": "Defender",
+                  "score": 0.554,
+                  "reliability": 0.8855,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9694,
+                  "weighted_contribution": 0.5371
+                },
+                {
+                  "vectra_player_id": "vxp_000462",
+                  "name": "Di Lorenzo",
+                  "role": "Defender",
+                  "score": 0.4998,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.4988
+                }
+              ]
+            },
+            "foul_gain": {
+              "score": 0.5308,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 8.4786,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000456",
+                  "name": "McTominay",
+                  "role": "Midfielder",
+                  "score": 0.8368,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.85,
+                  "weight": 0.9155,
+                  "weighted_contribution": 0.7661
+                },
+                {
+                  "vectra_player_id": "vxp_000451",
+                  "name": "Politano",
+                  "role": "Forward",
+                  "score": 0.6,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.5988
+                },
+                {
+                  "vectra_player_id": "vxp_000455",
+                  "name": "Højlund",
+                  "role": "Forward",
+                  "score": 0.5232,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.5222
+                },
+                {
+                  "vectra_player_id": "vxp_000462",
+                  "name": "Di Lorenzo",
+                  "role": "Defender",
+                  "score": 0.7442,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.4,
+                  "weight": 0.668,
+                  "weighted_contribution": 0.4971
+                },
+                {
+                  "vectra_player_id": "vxp_000457",
+                  "name": "Lobotka",
+                  "role": "Midfielder",
+                  "score": 0.5105,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.85,
+                  "weight": 0.9155,
+                  "weighted_contribution": 0.4674
+                }
+              ]
+            },
+            "physical": {
+              "score": 0.7928,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 9.9102,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000456",
+                  "name": "McTominay",
+                  "role": "Midfielder",
+                  "score": 0.9417,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.9398
+                },
+                {
+                  "vectra_player_id": "vxp_000455",
+                  "name": "Højlund",
+                  "role": "Forward",
+                  "score": 1.0,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.85,
+                  "weight": 0.9155,
+                  "weighted_contribution": 0.9155
+                },
+                {
+                  "vectra_player_id": "vxp_000462",
+                  "name": "Di Lorenzo",
+                  "role": "Defender",
+                  "score": 0.9654,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.9,
+                  "weight": 0.943,
+                  "weighted_contribution": 0.9104
+                },
+                {
+                  "vectra_player_id": "vxp_000451",
+                  "name": "Politano",
+                  "role": "Forward",
+                  "score": 0.9881,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.85,
+                  "weight": 0.9155,
+                  "weighted_contribution": 0.9046
+                },
+                {
+                  "vectra_player_id": "vxp_000457",
+                  "name": "Lobotka",
+                  "role": "Midfielder",
+                  "score": 0.8566,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.8549
+                }
+              ]
+            }
+          }
+        },
+        "away": {
+          "players": [
+            {
+              "vectra_player_id": "vxp_000697",
+              "name": "Okoye",
+              "role": "Goalkeeper",
+              "is_goalkeeper": true,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000698",
+              "name": "Kristensen",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000688",
+              "name": "Solet",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000704",
+              "name": "Zemura",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000695",
+              "name": "Kabasele",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000692",
+              "name": "Ehizibue",
+              "role": "Defender",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000687",
+              "name": "Karlström",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000689",
+              "name": "Piotrowski",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000702",
+              "name": "Miller",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000694",
+              "name": "Atta",
+              "role": "Midfielder",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            },
+            {
+              "vectra_player_id": "vxp_000693",
+              "name": "Davis",
+              "role": "Forward",
+              "is_goalkeeper": false,
+              "confidence": 0.99
+            }
+          ],
+          "profile_details": {
+            "finishing": {
+              "score": 0.4976,
+              "fallback_used": false,
+              "weighted_players": 10,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 1,
+              "total_weight": 6.7151,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000693",
+                  "name": "Davis",
+                  "role": "Forward",
+                  "score": 0.8414,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.8397
+                },
+                {
+                  "vectra_player_id": "vxp_000694",
+                  "name": "Atta",
+                  "role": "Midfielder",
+                  "score": 0.7019,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.65,
+                  "weight": 0.8055,
+                  "weighted_contribution": 0.5654
+                },
+                {
+                  "vectra_player_id": "vxp_000695",
+                  "name": "Kabasele",
+                  "role": "Defender",
+                  "score": 0.7393,
+                  "reliability": 0.8214,
+                  "confidence": 0.99,
+                  "role_relevance": 0.25,
+                  "weight": 0.5409,
+                  "weighted_contribution": 0.3998
+                },
+                {
+                  "vectra_player_id": "vxp_000698",
+                  "name": "Kristensen",
+                  "role": "Defender",
+                  "score": 0.6758,
+                  "reliability": 0.8143,
+                  "confidence": 0.99,
+                  "role_relevance": 0.25,
+                  "weight": 0.5391,
+                  "weighted_contribution": 0.3643
+                },
+                {
+                  "vectra_player_id": "vxp_000688",
+                  "name": "Solet",
+                  "role": "Defender",
+                  "score": 0.6214,
+                  "reliability": 0.9429,
+                  "confidence": 0.99,
+                  "role_relevance": 0.25,
+                  "weight": 0.5712,
+                  "weighted_contribution": 0.3549
+                }
+              ]
+            },
+            "creator_supply": {
+              "score": 0.4145,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 8.6719,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000694",
+                  "name": "Atta",
+                  "role": "Midfielder",
+                  "score": 0.7274,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.7259
+                },
+                {
+                  "vectra_player_id": "vxp_000688",
+                  "name": "Solet",
+                  "role": "Defender",
+                  "score": 0.6686,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.55,
+                  "weight": 0.7505,
+                  "weighted_contribution": 0.5018
+                },
+                {
+                  "vectra_player_id": "vxp_000693",
+                  "name": "Davis",
+                  "role": "Forward",
+                  "score": 0.5452,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.85,
+                  "weight": 0.9155,
+                  "weighted_contribution": 0.4991
+                },
+                {
+                  "vectra_player_id": "vxp_000704",
+                  "name": "Zemura",
+                  "role": "Defender",
+                  "score": 0.5474,
+                  "reliability": 0.6958,
+                  "confidence": 0.99,
+                  "role_relevance": 0.55,
+                  "weight": 0.6745,
+                  "weighted_contribution": 0.3692
+                },
+                {
+                  "vectra_player_id": "vxp_000689",
+                  "name": "Piotrowski",
+                  "role": "Midfielder",
+                  "score": 0.3646,
+                  "reliability": 0.8955,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9719,
+                  "weighted_contribution": 0.3544
+                }
+              ]
+            },
+            "box_presence": {
+              "score": 0.5454,
+              "fallback_used": false,
+              "weighted_players": 10,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 1,
+              "total_weight": 6.8131,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000694",
+                  "name": "Atta",
+                  "role": "Midfielder",
+                  "score": 0.97,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.6,
+                  "weight": 0.778,
+                  "weighted_contribution": 0.7547
+                },
+                {
+                  "vectra_player_id": "vxp_000693",
+                  "name": "Davis",
+                  "role": "Forward",
+                  "score": 0.7543,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.7528
+                },
+                {
+                  "vectra_player_id": "vxp_000689",
+                  "name": "Piotrowski",
+                  "role": "Midfielder",
+                  "score": 0.7759,
+                  "reliability": 0.9755,
+                  "confidence": 0.99,
+                  "role_relevance": 0.6,
+                  "weight": 0.7719,
+                  "weighted_contribution": 0.5989
+                },
+                {
+                  "vectra_player_id": "vxp_000688",
+                  "name": "Solet",
+                  "role": "Defender",
+                  "score": 0.7069,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.3,
+                  "weight": 0.613,
+                  "weighted_contribution": 0.4333
+                },
+                {
+                  "vectra_player_id": "vxp_000698",
+                  "name": "Kristensen",
+                  "role": "Defender",
+                  "score": 0.4081,
+                  "reliability": 0.859,
+                  "confidence": 0.99,
+                  "role_relevance": 0.3,
+                  "weight": 0.5777,
+                  "weighted_contribution": 0.2358
+                }
+              ]
+            },
+            "goalkeeping": {
+              "score": 0.7369,
+              "fallback_used": false,
+              "weighted_players": 1,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 10,
+              "total_weight": 0.998,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000697",
+                  "name": "Okoye",
+                  "role": "Goalkeeper",
+                  "score": 0.7369,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.7354
+                }
+              ]
+            },
+            "defensive_duel": {
+              "score": 0.4648,
+              "fallback_used": false,
+              "weighted_players": 10,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 1,
+              "total_weight": 9.0506,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000688",
+                  "name": "Solet",
+                  "role": "Defender",
+                  "score": 0.6266,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.6253
+                },
+                {
+                  "vectra_player_id": "vxp_000698",
+                  "name": "Kristensen",
+                  "role": "Defender",
+                  "score": 0.5759,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.5747
+                },
+                {
+                  "vectra_player_id": "vxp_000695",
+                  "name": "Kabasele",
+                  "role": "Defender",
+                  "score": 0.5186,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.5176
+                },
+                {
+                  "vectra_player_id": "vxp_000687",
+                  "name": "Karlström",
+                  "role": "Midfielder",
+                  "score": 0.5681,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.8,
+                  "weight": 0.888,
+                  "weighted_contribution": 0.5045
+                },
+                {
+                  "vectra_player_id": "vxp_000692",
+                  "name": "Ehizibue",
+                  "role": "Defender",
+                  "score": 0.4253,
+                  "reliability": 0.9795,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9929,
+                  "weighted_contribution": 0.4223
+                }
+              ]
+            },
+            "aerial_attack": {
+              "score": 0.3812,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 8.5161,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000698",
+                  "name": "Kristensen",
+                  "role": "Defender",
+                  "score": 0.7462,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.8,
+                  "weight": 0.888,
+                  "weighted_contribution": 0.6626
+                },
+                {
+                  "vectra_player_id": "vxp_000693",
+                  "name": "Davis",
+                  "role": "Forward",
+                  "score": 0.6529,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.6516
+                },
+                {
+                  "vectra_player_id": "vxp_000695",
+                  "name": "Kabasele",
+                  "role": "Defender",
+                  "score": 0.4575,
+                  "reliability": 0.85,
+                  "confidence": 0.99,
+                  "role_relevance": 0.8,
+                  "weight": 0.8505,
+                  "weighted_contribution": 0.3891
+                },
+                {
+                  "vectra_player_id": "vxp_000689",
+                  "name": "Piotrowski",
+                  "role": "Midfielder",
+                  "score": 0.4473,
+                  "reliability": 0.9755,
+                  "confidence": 0.99,
+                  "role_relevance": 0.55,
+                  "weight": 0.7444,
+                  "weighted_contribution": 0.333
+                },
+                {
+                  "vectra_player_id": "vxp_000694",
+                  "name": "Atta",
+                  "role": "Midfielder",
+                  "score": 0.405,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.55,
+                  "weight": 0.7505,
+                  "weighted_contribution": 0.3039
+                }
+              ]
+            },
+            "aerial_defense": {
+              "score": 0.4397,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 9.2211,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000695",
+                  "name": "Kabasele",
+                  "role": "Defender",
+                  "score": 0.8329,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.8312
+                },
+                {
+                  "vectra_player_id": "vxp_000698",
+                  "name": "Kristensen",
+                  "role": "Defender",
+                  "score": 0.8094,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.8078
+                },
+                {
+                  "vectra_player_id": "vxp_000688",
+                  "name": "Solet",
+                  "role": "Defender",
+                  "score": 0.7135,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.7121
+                },
+                {
+                  "vectra_player_id": "vxp_000693",
+                  "name": "Davis",
+                  "role": "Forward",
+                  "score": 0.5458,
+                  "reliability": 0.92,
+                  "confidence": 0.99,
+                  "role_relevance": 0.35,
+                  "weight": 0.6205,
+                  "weighted_contribution": 0.3387
+                },
+                {
+                  "vectra_player_id": "vxp_000687",
+                  "name": "Karlström",
+                  "role": "Midfielder",
+                  "score": 0.4129,
+                  "reliability": 0.885,
+                  "confidence": 0.99,
+                  "role_relevance": 0.65,
+                  "weight": 0.7768,
+                  "weighted_contribution": 0.3207
+                }
+              ]
+            },
+            "discipline_risk": {
+              "score": 0.5542,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 10.0577,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000693",
+                  "name": "Davis",
+                  "role": "Forward",
+                  "score": 0.7687,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.75,
+                  "weight": 0.8605,
+                  "weighted_contribution": 0.6614
+                },
+                {
+                  "vectra_player_id": "vxp_000692",
+                  "name": "Ehizibue",
+                  "role": "Defender",
+                  "score": 0.651,
+                  "reliability": 0.9795,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9929,
+                  "weighted_contribution": 0.6464
+                },
+                {
+                  "vectra_player_id": "vxp_000695",
+                  "name": "Kabasele",
+                  "role": "Defender",
+                  "score": 0.5693,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.5682
+                },
+                {
+                  "vectra_player_id": "vxp_000687",
+                  "name": "Karlström",
+                  "role": "Midfielder",
+                  "score": 0.5631,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.9,
+                  "weight": 0.943,
+                  "weighted_contribution": 0.531
+                },
+                {
+                  "vectra_player_id": "vxp_000704",
+                  "name": "Zemura",
+                  "role": "Defender",
+                  "score": 0.5386,
+                  "reliability": 0.7625,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9386,
+                  "weighted_contribution": 0.5055
+                }
+              ]
+            },
+            "discipline_stability": {
+              "score": 0.4458,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 10.0577,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000688",
+                  "name": "Solet",
+                  "role": "Defender",
+                  "score": 0.5611,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.56
+                },
+                {
+                  "vectra_player_id": "vxp_000698",
+                  "name": "Kristensen",
+                  "role": "Defender",
+                  "score": 0.5194,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.5184
+                },
+                {
+                  "vectra_player_id": "vxp_000689",
+                  "name": "Piotrowski",
+                  "role": "Midfielder",
+                  "score": 0.4708,
+                  "reliability": 0.9755,
+                  "confidence": 0.99,
+                  "role_relevance": 0.9,
+                  "weight": 0.9369,
+                  "weighted_contribution": 0.441
+                },
+                {
+                  "vectra_player_id": "vxp_000694",
+                  "name": "Atta",
+                  "role": "Midfielder",
+                  "score": 0.4662,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.9,
+                  "weight": 0.943,
+                  "weighted_contribution": 0.4396
+                },
+                {
+                  "vectra_player_id": "vxp_000704",
+                  "name": "Zemura",
+                  "role": "Defender",
+                  "score": 0.4614,
+                  "reliability": 0.7625,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.9386,
+                  "weighted_contribution": 0.4331
+                }
+              ]
+            },
+            "foul_gain": {
+              "score": 0.5339,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 8.2011,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000694",
+                  "name": "Atta",
+                  "role": "Midfielder",
+                  "score": 0.7572,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.85,
+                  "weight": 0.9155,
+                  "weighted_contribution": 0.6932
+                },
+                {
+                  "vectra_player_id": "vxp_000693",
+                  "name": "Davis",
+                  "role": "Forward",
+                  "score": 0.6864,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.685
+                },
+                {
+                  "vectra_player_id": "vxp_000689",
+                  "name": "Piotrowski",
+                  "role": "Midfielder",
+                  "score": 0.6375,
+                  "reliability": 0.9755,
+                  "confidence": 0.99,
+                  "role_relevance": 0.85,
+                  "weight": 0.9094,
+                  "weighted_contribution": 0.5797
+                },
+                {
+                  "vectra_player_id": "vxp_000688",
+                  "name": "Solet",
+                  "role": "Defender",
+                  "score": 0.7882,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.4,
+                  "weight": 0.668,
+                  "weighted_contribution": 0.5265
+                },
+                {
+                  "vectra_player_id": "vxp_000704",
+                  "name": "Zemura",
+                  "role": "Defender",
+                  "score": 0.6473,
+                  "reliability": 0.7625,
+                  "confidence": 0.99,
+                  "role_relevance": 0.4,
+                  "weight": 0.6086,
+                  "weighted_contribution": 0.394
+                }
+              ]
+            },
+            "physical": {
+              "score": 0.7768,
+              "fallback_used": false,
+              "weighted_players": 11,
+              "missing_profile_players": 0,
+              "skipped_zero_role_players": 0,
+              "total_weight": 10.1731,
+              "contributors": [
+                {
+                  "vectra_player_id": "vxp_000694",
+                  "name": "Atta",
+                  "role": "Midfielder",
+                  "score": 1.0,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.998
+                },
+                {
+                  "vectra_player_id": "vxp_000687",
+                  "name": "Karlström",
+                  "role": "Midfielder",
+                  "score": 0.9674,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 1.0,
+                  "weight": 0.998,
+                  "weighted_contribution": 0.9655
+                },
+                {
+                  "vectra_player_id": "vxp_000698",
+                  "name": "Kristensen",
+                  "role": "Defender",
+                  "score": 0.8584,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.9,
+                  "weight": 0.943,
+                  "weighted_contribution": 0.8094
+                },
+                {
+                  "vectra_player_id": "vxp_000693",
+                  "name": "Davis",
+                  "role": "Forward",
+                  "score": 0.8742,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.85,
+                  "weight": 0.9155,
+                  "weighted_contribution": 0.8003
+                },
+                {
+                  "vectra_player_id": "vxp_000688",
+                  "name": "Solet",
+                  "role": "Defender",
+                  "score": 0.8455,
+                  "reliability": 1.0,
+                  "confidence": 0.99,
+                  "role_relevance": 0.9,
+                  "weight": 0.943,
+                  "weighted_contribution": 0.7973
+                }
+              ]
+            }
+          }
+        }
+      },
       "lambda_before_referee": {
         "home": 2.2325,
         "away": 0.821
@@ -7583,23 +9329,6 @@
       "lambda_referee": {
         "home": 2.2325,
         "away": 0.821
-      },
-      "lambda_before": {
-        "home": 2.2325,
-        "away": 0.821
-      },
-      "lambda_after": {
-        "home": 2.2325,
-        "away": 0.821
-      },
-      "referee_modifier": {
-        "applied": true,
-        "vectra_referee_id": "vxr_000055",
-        "reason_flags": [
-          "low_referee_strictness",
-          "balanced_referee_interaction",
-          "referee_sample_low_reliability"
-        ]
       },
       "referee_impact": {
         "applied": true,
@@ -7699,6 +9428,15 @@
           "referee_sample_low_reliability"
         ]
       },
+      "referee_modifier": {
+        "applied": true,
+        "vectra_referee_id": "vxr_000055",
+        "reason_flags": [
+          "low_referee_strictness",
+          "balanced_referee_interaction",
+          "referee_sample_low_reliability"
+        ]
+      },
       "referee_factors": {
         "goal_environment_factor": 1.0,
         "home_shift_factor": 1.0,
@@ -7709,7 +9447,7 @@
         "home_bias_signal": 0.5,
         "sample_reliability": 0.0
       },
-      "active_stage_source": "match_lambdas_referee.json",
+      "active_stage_source": "match_lambdas_lineups.json",
       "vectra_season_id": "vxs_serie_a_2025_2026",
       "vectra_matchday_id": "vxd_serie_a_2025_2026_038",
       "matchday": 38,
@@ -7722,8 +9460,8 @@
       "stadium": "Diego Armando Maradona",
       "city": "Napoli",
       "active_lambda": {
-        "home": 2.2325,
-        "away": 0.821
+        "home": 2.2203,
+        "away": 0.8371
       }
     },
     "vxm_000076": {
