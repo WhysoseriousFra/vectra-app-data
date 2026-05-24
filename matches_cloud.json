@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T15:35:36.324059Z",
+  "generated_at": "2026-05-24T16:05:36.222313Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_038",
   "matchday": 38,
@@ -235,7 +235,7 @@
         "city": "Napoli"
       },
       "status": {
-        "match_status": "UPCOMING",
+        "match_status": "LIVE",
         "prediction_stage": "lineups_ready",
         "has_lineups": true,
         "has_referee": true

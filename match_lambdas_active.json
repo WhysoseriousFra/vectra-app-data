@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T15:35:24.907663Z",
+  "generated_at": "2026-05-24T16:05:24.897845Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -9455,7 +9455,7 @@
       "away_team_id": "vxt_000028",
       "home_team_name": "Napoli",
       "away_team_name": "Udinese",
-      "match_status": "UPCOMING",
+      "match_status": "LIVE",
       "kickoff_utc": "2026-05-24T16:00:00Z",
       "stadium": "Diego Armando Maradona",
       "city": "Napoli",
