@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T14:05:26.252958Z",
+  "generated_at": "2026-05-24T14:35:25.066709Z",
   "season_folder": "season_2025_2026",
   "base_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas.json",
   "referee_file": "vectra/cloud_backend/outputs/season_2025_2026/match_lambdas_referee.json",
@@ -5930,8 +5930,8 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000498",
-              "name": "Troilo",
+              "vectra_player_id": "vxp_000491",
+              "name": "Britschgi",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -5951,15 +5951,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000490",
-              "name": "Valeri",
+              "vectra_player_id": "vxp_000498",
+              "name": "Troilo",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000491",
-              "name": "Britschgi",
+              "vectra_player_id": "vxp_000490",
+              "name": "Valeri",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -6684,15 +6684,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000608",
-              "name": "Idzes",
+              "vectra_player_id": "vxp_000640",
+              "name": "Macchioni",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000640",
-              "name": "Macchioni",
+              "vectra_player_id": "vxp_000608",
+              "name": "Idzes",
               "role": "Defender",
               "is_goalkeeper": false,
               "confidence": 0.99
@@ -6733,15 +6733,15 @@
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000609",
-              "name": "Pinamonti",
+              "vectra_player_id": "vxp_000607",
+              "name": "Laurienté",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
             },
             {
-              "vectra_player_id": "vxp_000607",
-              "name": "Laurienté",
+              "vectra_player_id": "vxp_000609",
+              "name": "Pinamonti",
               "role": "Forward",
               "is_goalkeeper": false,
               "confidence": 0.99
