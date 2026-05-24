@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T19:05:37.793029Z",
+  "generated_at": "2026-05-24T19:35:37.610220Z",
   "season_id": "vxs_serie_a_2025_2026",
   "matchday_id": "vxd_serie_a_2025_2026_038",
   "matchday": 38,
@@ -294,7 +294,7 @@
       },
       "score": {
         "home_score": 1,
-        "away_score": 0
+        "away_score": 1
       },
       "referee": {
         "assigned": true,
@@ -346,7 +346,7 @@
       },
       "score": {
         "home_score": 0,
-        "away_score": 0
+        "away_score": 1
       },
       "referee": {
         "assigned": true,
