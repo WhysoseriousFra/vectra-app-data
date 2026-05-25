@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T21:05:38.011856Z",
+  "generated_at": "2026-05-25T17:06:15.476606Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -217,7 +217,7 @@
       "vectra_match_id": "vxm_000079",
       "home_team_name": "Torino",
       "away_team_name": "Juventus",
-      "match_status": "LIVE",
+      "match_status": "FINISHED",
       "semantic_tags": {
         "goal_environment_label": "open_match",
         "balance_edge_label": "strong_away_edge",
