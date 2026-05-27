@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T09:00:42.559754Z",
+  "generated_at": "2026-05-27T10:05:44.173412Z",
   "season_folder": "season_2025_2026",
   "source_file": "/home/vinkovic/VECTRA/vectra/cloud_backend/outputs/season_2025_2026/match_explanations.json",
   "exporter_version": "v1.0.0",
@@ -206,7 +206,7 @@
         "key_insights": [
           "Margine strutturale: un lieve vantaggio per la squadra ospite.",
           "Ambiente partita: un ambiente offensivo intermedio.",
-          "Minaccia offensiva Lecce: bassa.",
+          "Minaccia offensiva Lecce: presente ma contenuta.",
           "Minaccia offensiva Genoa: presente ma contenuta."
         ],
         "premium_deep_explanation": "La lettura profonda del modello parte da un lieve vantaggio per la squadra ospite dentro un ambiente offensivo intermedio. Il quadro avanzato del match conferma la lettura semantica già emersa: il rapporto tra margine strutturale e ambiente offensivo resta il criterio principale per interpretare la partita. Lo stato attuale arriva dal layer `lineups_ready`, quindi questa spiegazione descrive il miglior quadro disponibile in questa fase di avvicinamento alla partita.",
